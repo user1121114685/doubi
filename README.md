@@ -50,6 +50,7 @@
 - 脚本说明: Shadowsocks 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/ss-jc67/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/ss-jc67.html
 - 项目地址: https://github.com/shadowsocks/go-shadowsocks2
 
 #### 脚本特点:
@@ -62,13 +63,12 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 
 ---
 
-
----
 ## brook.sh
 
 - 脚本说明: Brook 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian7+ / Ubuntu14+
 - 使用方法: https://doub.io/brook-jc3/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/brook-jc3.html
 
 #### 下载安装:
 ``` bash
@@ -81,6 +81,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: GoFlyway 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian7+ / Ubuntu14+
 - 使用方法: https://doub.io/goflyway-jc2/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/goflyway-jc2.html
 
 #### 下载安装:
 ``` bash
@@ -93,6 +94,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: LightSocks 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian7+ / Ubuntu14+
 - 使用方法: https://doub.io/lightsocks-jc1/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/lightsocks-jc1.html
 
 #### 下载安装:
 ``` bash
@@ -105,6 +107,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: DAZE 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian7+ / Ubuntu14+
 - 使用方法: https://doub.io/daze-jc3/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/daze-jc3.html
 
 #### 下载安装:
 ``` bash
@@ -117,6 +120,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: Mtproto Proxy 一键安装管理脚本
 - 系统支持: CentOS7 / Debian7+ / Ubuntu14+
 - 使用方法: https://doub.io/shell-jc7/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/shell-jc7.html
 
 #### 下载安装:
 ``` bash
@@ -129,6 +133,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: Mtproto Proxy Go版 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian7+ / Ubuntu14+
 - 使用方法: https://doub.io/shell-jc9/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/shell-jc9.html
 
 #### 下载安装:
 ``` bash
@@ -144,6 +149,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: iptables 端口转发 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/wlzy-20/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/wlzy-20.html
 
 #### 下载安装:
 ``` bash
@@ -156,6 +162,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: Brook 端口转发 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/wlzy-37/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/wlzy-37.html
 
 #### 下载安装:
 ``` bash
@@ -168,6 +175,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: HaProxy 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/wlzy-19/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/wlzy-19.html
 
 #### 下载安装:
 ``` bash
@@ -180,6 +188,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: Socat 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/wlzy-18/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/wlzy-18.html
 
 #### 下载安装:
 ``` bash
@@ -192,6 +201,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: tinyPortMapper 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/wlzy-36/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/wlzy-36.html
 
 #### 下载安装:
 ``` bash
@@ -207,6 +217,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: Aria2 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/shell-jc4/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/shell-jc4.html
 
 #### 下载安装:
 ``` bash
@@ -219,7 +230,9 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: Cloud Torrent 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/wlzy-12/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/wlzy-12.html
 - 项目地址: https://github.com/jpillora/cloud-torrent
+
 
 #### 下载安装:
 ``` bash
@@ -232,6 +245,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: Peerflix Server 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/wlzy-13/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/wlzy-13.html
 - 项目地址: https://github.com/asapach/peerflix-server
 
 #### 下载安装:
@@ -248,6 +262,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: BBR 一键安装管理脚本
 - 系统支持: Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/wlzy-16/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/wlzy-16.html
 
 #### 下载安装:
 ``` bash
@@ -260,6 +275,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: ServerStatus 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/shell-jc3/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/shell-jc3.html
 
 #### 下载安装:
 ``` bash
@@ -272,6 +288,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: iptables 垃圾邮件(SPAM)/BT/PT 一键封禁脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/shell-jc2/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/shell-jc2.html
 
 #### 下载安装:
 ``` bash
@@ -284,6 +301,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: SSH 一键修改端口脚本
 - 系统支持: Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/linux-jc11/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/linux-jc11.html
 
 #### 下载安装:
 ``` bash
@@ -299,6 +317,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: Ocserv AnyConnect 一键安装管理脚本
 - 系统支持: Debian7+ / Ubuntu14+
 - 使用方法: https://doub.io/vpnzy-7/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/vpnzy-7.html
 
 #### 下载安装:
 ``` bash
@@ -314,6 +333,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: DowsDNS 一键安装管理脚本
 - 系统支持: CentOS7 / Debian7+ / Ubuntu14+
 - 使用方法: https://doub.io/dowsdns-jc3/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/dowsdns-jc3.html
 
 #### 下载安装:
 ``` bash
@@ -329,6 +349,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: Caddy 一键安装脚本
 - 系统支持: CentOS6+ / Debian7+ / Ubuntu14+
 - 使用方法: https://doub.io/shell-jc1
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/shell-jc1.html
 
 #### 下载安装:
 ``` bash
@@ -348,6 +369,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: SimpleHTTPServer 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/wlzy-8/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/wlzy-8.html
 
 #### 下载安装:
 ``` bash
@@ -363,6 +385,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: ADbyby 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/adbyby-jc2/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/adbyby-jc2.html
 
 #### 下载安装:
 ``` bash
@@ -374,6 +397,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: 监测服务器IP是否被墙并推送至 Telegram 一键脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/shell-jc8/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/shell-jc8.html
 
 #### 下载安装:
 ``` bash
@@ -386,6 +410,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: libsodium 一键安装管理脚本
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/shell-jc6/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/shell-jc6.html
 
 #### 下载安装:
 ``` bash
@@ -398,6 +423,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/
 - 脚本说明: GoGo Tunnel 一键安装管理脚本（该软件已停更）
 - 系统支持: CentOS6+ / Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/wlzy-24/
+- 快照地址: https://user1121114685.github.io/doubi/WebSnapshot/wlzy-24.html
 
 #### 下载安装:
 ``` bash
