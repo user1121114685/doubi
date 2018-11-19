@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://doub.io/wlzy-18/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta http-equiv="X-UA-Compatible" content="IE=10,IE=9,IE=8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <style type="text/css">
@@ -11,31 +11,31 @@
 @font-face {font-family: 'LiDeBiao-Xing320e75d0253036';src: url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.gif');src: url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.gif?#iefix') format('embedded-opentype'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.bmp') format('woff'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.jpg') format('truetype'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.png#LiDeBiao-Xing3') format('svg');   }.css20e75d0253036{font-family: 'LiDeBiao-Xing320e75d0253036';}
 tbody tr:nth-child(odd) { background-color:#f9f9f9; }
 </style>
-<link rel="stylesheet" type="text/css" href="https://doub.io/wp-content/themes/yusi1.0/csshake.css">
-<link id="favicon" href="https://doub.io/wp-content/themes/yusi1.0/img/logo.ico" rel="icon" type="img/x-icon" />
+<link rel="stylesheet" type="text/css" href="./wlzy-18_files/csshake.css">
+<link id="favicon" href="https://doub.io/wp-content/themes/yusi1.0/img/logo.ico" rel="icon" type="img/x-icon">
 <title>『原创』Shadowsocks Socat 中继(中转/端口转发) 便捷管理脚本 | 逗比根据地</title>
-<script>
+<script type="text/javascript" async="" src="./wlzy-18_files/analytics.js.下载"></script><script src="./wlzy-18_files/hm.js.下载"></script><script async="" src="./wlzy-18_files/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ"></script><script>
 window._deel = {name: '逗比根据地',url: 'https://doub.io/wp-content/themes/yusi1.0', ajaxpager: 'on', commenton: 1, roll: [1,3]}
 </script>
 
 <!-- All in One SEO Pack 2.3.16 by Michael Torbert of Semper Fi Web Design[1897,1958] -->
-<meta name="description"  content="最近没什么教程好写的，那就闲的没事写个脚本吧！ Shadowsocks 中继（中转）能用的工具很多，我的网站介绍过 HaProxy、iptables、Socat。 其中HaProxy只能转发TCP流量，但是支持端口段；iptables可以转发TCP/UDP，也支持端口段，但是配置容易出错莫名其妙的，ipta" />
+<meta name="description" content="最近没什么教程好写的，那就闲的没事写个脚本吧！ Shadowsocks 中继（中转）能用的工具很多，我的网站介绍过 HaProxy、iptables、Socat。 其中HaProxy只能转发TCP流量，但是支持端口段；iptables可以转发TCP/UDP，也支持端口段，但是配置容易出错莫名其妙的，ipta">
 
-<meta name="keywords"  content="shadowsocks,socat,国内中转,服务器中转,端口转发" />
+<meta name="keywords" content="shadowsocks,socat,国内中转,服务器中转,端口转发">
 
-<link rel="canonical" href="https://doub.io/wlzy-18/" />
+<link rel="canonical" href="https://doub.io/wlzy-18/">
 <!-- /all in one seo pack -->
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='toggle-box-css'  href='https://doub.io/wp-content/plugins/toggle-box/toggle-box.css?ver=4.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='style-css'  href='https://doub.io/wp-content/themes/yusi1.0/style.css?ver=1.0' type='text/css' media='all' />
-<script>!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://steadfastsystem.com/v2/0/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script><script type='text/javascript' src='https://doub.io/wp-content/themes/yusi1.0/js/jquery1.min.js?ver=1.0'></script>
-<script type='text/javascript' src='https://doub.io/wp-content/plugins/toggle-box/js/toggle-box.js?ver=4.8.1'></script>
-<link rel='https://api.w.org/' href='https://doub.io/wp-json/' />
-<link rel='prev' title='多线程 HTTP/BT/磁力链接 下载工具 —— Aria2 (Windows版教程)' href='https://doub.io/wlzy-17/' />
-<link rel='next' title='『原创』Shadowsocks HaProxy 中继(中转/端口转发) 便捷管理脚本' href='https://doub.io/wlzy-19/' />
-<link rel='shortlink' href='https://doub.io/?p=1744' />
-<link rel="alternate" type="application/json+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-18%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-18%2F&#038;format=xml" />
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="stylesheet" id="toggle-box-css" href="./wlzy-18_files/toggle-box.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="./wlzy-18_files/style.css" type="text/css" media="all">
+<script>!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://steadfastsystem.com/v2/0/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script><script type="text/javascript" src="./wlzy-18_files/jquery1.min.js.下载"></script>
+<script type="text/javascript" src="./wlzy-18_files/toggle-box.js.下载"></script>
+<link rel="https://api.w.org/" href="https://doub.io/wp-json/">
+<link rel="prev" title="多线程 HTTP/BT/磁力链接 下载工具 —— Aria2 (Windows版教程)" href="https://doub.io/wlzy-17/">
+<link rel="next" title="『原创』Shadowsocks HaProxy 中继(中转/端口转发) 便捷管理脚本" href="https://doub.io/wlzy-19/">
+<link rel="shortlink" href="https://doub.io/?p=1744">
+<link rel="alternate" type="application/json+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-18%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-18%2F&amp;format=xml">
 <style>
 .ek753a4{
     font-size: 20px;
@@ -382,7 +382,7 @@ window._deel = {name: '逗比根据地',url: 'https://doub.io/wp-content/themes/
         killAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
     }
 </script>
-    <link rel="stylesheet" href="https://doub.io/wp-content/plugins/wp-content-index/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./wlzy-18_files/style(1).css" type="text/css" media="all">
 <meta name="keywords" content="Shadowsocks, socat, 国内中转, 服务器中转, 端口转发, Shadowsocks, Shell脚本, 网络资源">
 <meta name="description" content="最近没什么教程好写的，那就闲的没事写个脚本吧！  Shadowsocks 中继（中转）能用的工具很多，我的网站介绍过 HaProxy、iptables、Socat。  其中HaProxy只能转发TCP流量，但是支持端口段；iptables可以转发TCP/UDP，也支持端口段，但是配置容易出错莫名其妙的，iptables规则我也不熟悉；而Socat支持转发TCP/UDP，但是不支持端口段，所以多个端口操作起来有点麻烦，于是我就写一个脚本来">
 <!--[if lt IE 9]><script src="https://doub.io/wp-content/themes/yusi1.0/js/html5.js"></script><![endif]-->
@@ -408,10 +408,10 @@ window.uabInject = function() {};
 <header id="header" class="header">
 <div class="container-inner" style="display: block;">
  <div class="yusi-logo" style="display: block;">
-                    <a href="/">
+                    <a href="https://doub.io/">
                         <h1>
-                                                        <span style="font-family:'jin_mei_mxplzx86d456993036';color: #fff;font-weight: normal;font-size: 54px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">逗比根据地</span>
-                                                        <span style="font-family:'LiDeBiao-Xing320e75d0253036';color: #fff;font-size: 24px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">– 世界那么逗，我想出去看看</span>
+                                                        <span style="font-family:&#39;jin_mei_mxplzx86d456993036&#39;;color: #fff;font-weight: normal;font-size: 54px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">逗比根据地</span>
+                                                        <span style="font-family:&#39;LiDeBiao-Xing320e75d0253036&#39;;color: #fff;font-size: 24px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">– 世界那么逗，我想出去看看</span>
                                                     </h1>
                     </a>
     </div>
@@ -420,9 +420,9 @@ window.uabInject = function() {};
 	<div id="nav-header" class="navbar" style="display: block;">
 		
 		<ul class="nav">
-			<li><a href="https://doub.io"><i class="fa fa-fire"></i> 首页</a></li>
+			<li><a href="https://doub.io/"><i class="fa fa-fire"></i> 首页</a></li>
 <li><a target="_blank" href="https://doub.io/dbtj/"><i class="fa fa-star"></i> 逗比推荐</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/dbwz/">碉堡网站</a></li>
 	<li><a target="_blank" href="https://doub.io/dbrj/">逗比软件</a></li>
 	<li><a target="_blank" href="https://doub.io/xnzj/">虚拟主机</a></li>
@@ -430,7 +430,7 @@ window.uabInject = function() {};
 </ul>
 </li>
 <li class="current-post-ancestor"><a target="_blank" href="https://doub.io/kxsw/"><i class="fa fa-globe fa-spin"></i> 科学上网</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/androidkxsw/">安卓合集</a></li>
 	<li><a target="_blank" href="https://doub.io/pckxsw/">电脑合集</a></li>
 	<li class="current-post-ancestor current-menu-parent"><a target="_blank" href="https://doub.io/wlzy/">网络资源</a></li>
@@ -441,7 +441,7 @@ window.uabInject = function() {};
 </ul>
 </li>
 <li><a target="_blank" href="https://doub.io/ss-jc26/"><i class="fa fa-paper-plane" style="font-size: 19px;"></i> Shadowsocks</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/all-one/"><span style="color: #ffe200;">网站文章 合辑</span></a></li>
 	<li><a target="_blank" href="https://doub.io/ss-jc26/">所有教程 合辑</a></li>
 	<li><a target="_blank" href="https://doub.io/ss-jc35/">小白常见 问题</a></li>
@@ -456,10 +456,10 @@ window.uabInject = function() {};
 <li><a target="_blank" href="https://softs.wtf/"><i class="fa fa-cloud"></i> 逗比云</a></li>
 <li><a target="_blank" href="https://doub.io/guestbook/"><i class="fa fa-list-alt"></i> 留言</a></li>
 <li style="float:right;">
-                    <div class="toggle-search" style="width: 60px;"><i class="fa fa-search"></i><a href="#" style="padding: 0;">搜索</a></div>
-<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href='https://doub.io/search/' + encodeURIComponent(this.s.value).replace(/%20/g, '+'); return false;" action="/"><div> <input type="ext" class="search" name="s" onblur="if(this.value=='')this.value='请善用搜索功能...';" onfocus="if(this.value=='请善用搜索功能...')this.value='';" value="请善用搜索功能..."></div></form></div></div>
+                    <div class="toggle-search" style="width: 60px;"><i class="fa fa-search"></i><a href="https://doub.io/wlzy-18/#" style="padding: 0;">搜索</a></div>
+<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href=&#39;https://doub.io/search/&#39; + encodeURIComponent(this.s.value).replace(/%20/g, &#39;+&#39;); return false;" action="https://doub.io/"><div> <input type="ext" class="search" name="s" onblur="if(this.value==&#39;&#39;)this.value=&#39;请善用搜索功能...&#39;;" onfocus="if(this.value==&#39;请善用搜索功能...&#39;)this.value=&#39;&#39;;" value="请善用搜索功能..."></div></form></div></div>
 </li>
-		</ul>
+		</ul><div class="screen-mini"><button data-type="screen-nav" class="btn btn-inverse screen-nav"><i class="fa fa-list"></i></button></div>
 	</div>
 </header>
 <section class="container"><div class="speedbar">
@@ -467,7 +467,7 @@ window.uabInject = function() {};
 <div style="float: right;margin: 0 10px;"><a target="_blank" href="https://doub.io/tougao/"><i class="fa fa-envelope" style="color: #1abc9c;opacity: 1;"></i>投稿文章</a> | <a target="_blank" href="https://doub.io/guanggao/"><i class="fa fa-money" style="color: #1abc9c;opacity: 1;"></i>广告合作</a> | <a target="_blank" href="https://doub.io/go/tg"><i class="fa fa-paper-plane" style="color: #1abc9c;opacity: 1;"></i>Telegram 群组</a> / <a target="_blank" href="https://doub.io/go/tg_a">公告频道</a> / <a target="_blank" href="https://doub.io/telegram-jc1/">使用教程</a></div></div>
 	</div>
 	<div class="guangg guangg-site"><div style="position: absolute;left: 4px;top: 14px;font-size: 12px;color: #fff;border: 1px solid #ffffff;line-height: 12px;opacity: 0.9;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/gigsgigscloud/"><img src="https://img.doub.pw/abc/gigsgigscloud-06.gif" class="top_guangg" /></a></div><div class="content-wrap">
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/gigsgigscloud/"><img src="./wlzy-18_files/gigsgigscloud-06.gif" class="top_guangg"></a></div><div class="content-wrap">
 <div style="display: block;">
 	<div class="content" style="display: block;">
 
@@ -480,18 +480,18 @@ window.uabInject = function() {};
 				<span class="muted"><i class="fa fa-comments-o"></i> <a href="https://doub.io/wlzy-18/#comments">44评论</a></span>							</div>
 		</header>
 <div class="guangg guangg-post"><div style="position: absolute;left: 3px;top: 14px;font-size: 12px;color: #fff;border: 1px solid #ffffff;line-height: 12px;opacity: 0.9;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/yitianjian_shadow/"><img src="https://img.doub.pw/abc/yitianjian_shadow_01.png" class="top_guangg" /></a></div>		<article class="article-content">
-			<div id="content-index" class="content-index"><div class="content-index-title"><a id="content-index-togglelink" href="javascript:content_index_toggleToc()">文章目录 ⚐</a></div>
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/yitianjian_shadow/"><img src="./wlzy-18_files/yitianjian_shadow_01.png" class="top_guangg"></a></div>		<article class="article-content">
+			<div id="content-index" class="content-index"><div class="content-index-title"><a id="content-index-togglelink" href="javascript:content_index_toggleToc()" data-original-title="" title="">文章目录 ⚐</a></div>
 <script type="text/javascript" language="javascript">
 window.content_index_showTocToggle=false;function content_index_toggleToc(){var tts="文章目录 ⚐";var tth="文章目录 ⚑";if(window.content_index_showTocToggle){window.content_index_showTocToggle=false;document.getElementById("content-index-contents").style.display="none";document.getElementById("content-index-togglelink").innerHTML=tts}else{window.content_index_showTocToggle=true;document.getElementById("content-index-contents").style.display="block";document.getElementById("content-index-togglelink").innerHTML=tth}}
 </script>
-<ul id="content-index-contents" style="display: none;"><li class="content-index-level-1"><a href="https://doub.io/wlzy-18/#系统要求" title="系统要求"><span>系统要求</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#脚本版本" title="脚本版本"><span>脚本版本</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-18/#安装步骤" title="安装步骤"><span>安装步骤</span></a></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-18/#使用方法" title="使用方法"><span>使用方法</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#Shadowsocks客户端说明" title="Shadowsocks客户端说明"><span>Shadowsocks客户端说明</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#安装目录" title="安装目录"><span>安装目录</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-18/#其他说明" title="其他说明"><span>其他说明</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#提示wget: unknown host “raw.githubusercontent.com” 之类的错误" title="提示wget: unknown host “raw.githubusercontent.com” 之类的错误"><span>提示wget: unknown host “raw.githubusercontent.com” 之类的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#提示 wget: command not found 的错误" title="提示 wget: command not found 的错误"><span>提示 wget: command not found 的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#更换 apt源，解决安装错误：[错误] Socat安装失败 等等" title="更换 apt源，解决安装错误：[错误] Socat安装失败 等等"><span>更换 apt源，解决安装错误：[错误] Socat安装失败 等等</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-18/#更新日志" title="更新日志"><span>更新日志</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#2018年01月18日，版本 v1.0.5" title="2018年01月18日，版本 v1.0.5"><span>2018年01月18日，版本 v1.0.5</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#2017年07月24日，版本 v1.0.4" title="2017年07月24日，版本 v1.0.4"><span>2017年07月24日，版本 v1.0.4</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#2017年07月23日，版本 v1.0.3" title="2017年07月23日，版本 v1.0.3"><span>2017年07月23日，版本 v1.0.3</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#2016年12月24日，版本 v1.0.1" title="2016年12月24日，版本 v1.0.1"><span>2016年12月24日，版本 v1.0.1</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#2016年12月21日，版本 v1.0.0" title="2016年12月21日，版本 v1.0.0"><span>2016年12月21日，版本 v1.0.0</span></a></li></ul></li></ul></div>
-<div class="old-message">本文最后更新于 <a><strong>2018年9月20日 20:10</strong></a> 可能会因为没有更新而失效。如已失效或需要修正，请留言！</div><p>最近没什么教程好写的，那就闲的没事写个脚本吧！</p>
+<ul id="content-index-contents" style="display: none;"><li class="content-index-level-1"><a href="https://doub.io/wlzy-18/#%E7%B3%BB%E7%BB%9F%E8%A6%81%E6%B1%82" title="" data-original-title="系统要求"><span>系统要求</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#%E8%84%9A%E6%9C%AC%E7%89%88%E6%9C%AC" title="" data-original-title="脚本版本"><span>脚本版本</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-18/#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4" title="" data-original-title="安装步骤"><span>安装步骤</span></a></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-18/#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" title="" data-original-title="使用方法"><span>使用方法</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#Shadowsocks%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AF%B4%E6%98%8E" title="" data-original-title="Shadowsocks客户端说明"><span>Shadowsocks客户端说明</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95" title="" data-original-title="安装目录"><span>安装目录</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-18/#%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E" title="" data-original-title="其他说明"><span>其他说明</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#%E6%8F%90%E7%A4%BAwget:%C2%A0unknown%20host%20%E2%80%9Craw.githubusercontent.com%E2%80%9D%20%E4%B9%8B%E7%B1%BB%E7%9A%84%E9%94%99%E8%AF%AF" title="" data-original-title="提示wget: unknown host “raw.githubusercontent.com” 之类的错误"><span>提示wget:&nbsp;unknown host “raw.githubusercontent.com” 之类的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#%E6%8F%90%E7%A4%BA%20wget:%20command%20not%20found%20%E7%9A%84%E9%94%99%E8%AF%AF" title="" data-original-title="提示 wget: command not found 的错误"><span>提示 wget: command not found 的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#%E6%9B%B4%E6%8D%A2%20apt%E6%BA%90%EF%BC%8C%E8%A7%A3%E5%86%B3%E5%AE%89%E8%A3%85%E9%94%99%E8%AF%AF%EF%BC%9A[%E9%94%99%E8%AF%AF]%20Socat%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5%C2%A0%E7%AD%89%E7%AD%89" title="" data-original-title="更换 apt源，解决安装错误：[错误] Socat安装失败 等等"><span>更换 apt源，解决安装错误：[错误] Socat安装失败&nbsp;等等</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-18/#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97" title="" data-original-title="更新日志"><span>更新日志</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#2018%E5%B9%B401%E6%9C%8818%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.5" title="" data-original-title="2018年01月18日，版本 v1.0.5"><span>2018年01月18日，版本 v1.0.5</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#2017%E5%B9%B407%E6%9C%8824%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.4" title="" data-original-title="2017年07月24日，版本 v1.0.4"><span>2017年07月24日，版本 v1.0.4</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#2017%E5%B9%B407%E6%9C%8823%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.3" title="" data-original-title="2017年07月23日，版本 v1.0.3"><span>2017年07月23日，版本 v1.0.3</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#2016%E5%B9%B412%E6%9C%8824%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.1" title="" data-original-title="2016年12月24日，版本 v1.0.1"><span>2016年12月24日，版本 v1.0.1</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-18/#2016%E5%B9%B412%E6%9C%8821%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.0" title="" data-original-title="2016年12月21日，版本 v1.0.0"><span>2016年12月21日，版本 v1.0.0</span></a></li></ul></li></ul></div>
+<div class="old-message">本文最后更新于 <a data-original-title="" title=""><strong>2018年9月20日 20:10</strong></a> 可能会因为没有更新而失效。如已失效或需要修正，请留言！</div><p>最近没什么教程好写的，那就闲的没事写个脚本吧！</p>
 <p>Shadowsocks 中继（中转）能用的工具很多，我的网站介绍过 HaProxy、iptables、Socat。</p>
 <p>其中HaProxy只能转发TCP流量，但是支持端口段；iptables可以转发TCP/UDP，也支持端口段，但是配置容易出错莫名其妙的，iptables规则我也不熟悉；而Socat支持转发TCP/UDP，但是不支持端口段，所以多个端口操作起来有点麻烦，于是我就写一个脚本来添加和管理Socat。</p>
-<hr />
+<hr>
 <p><strong>Socat手动教程：<a title="" href="https://doub.io/ss-jc40/" target="_blank" rel="noopener" data-original-title="Shadowsocks利用 Socat 实现单端口 中继（中转）加速">Shadowsocks利用 Socat 实现单端口 中继（中转）加速</a></strong></p>
-<p><strong>其他 Shadowsocks中继（中转）教程：<a href="https://doub.io/ss-jc26/#服务器中继（国内中转）" target="_blank" rel="noopener">传送门</a></strong></p>
+<p><strong>其他 Shadowsocks中继（中转）教程：<a href="https://doub.io/ss-jc26/#%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%AD%E7%BB%A7%EF%BC%88%E5%9B%BD%E5%86%85%E4%B8%AD%E8%BD%AC%EF%BC%89" target="_blank" rel="noopener" data-original-title="" title="">传送门</a></strong></p>
 <p><strong>Socat：</strong></p>
 <p><strong>优点：</strong>支持 TCP/UDP 转发。<strong>缺点：</strong>不支持端口段（多个端口需要开启多个转发）</p>
 <p><strong>HaProxy：</strong></p>
@@ -503,106 +503,37 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <h3 id="脚本版本">脚本版本</h3>
 <p><strong>Ver:</strong> 1.0.5</p>
 <h2 id="安装步骤">安装步骤</h2>
-<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/doubi/master/socat.sh &amp;&amp; chmod +x socat.sh &amp;&amp; bash socat.sh
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">wget </span><span class="pun">-</span><span class="pln">N </span><span class="pun">--</span><span class="kwd">no</span><span class="pun">-</span><span class="pln">check</span><span class="pun">-</span><span class="pln">certificate https</span><span class="pun">:</span><span class="com">//raw.githubusercontent.com/user1121114685/doubi/master/socat.sh &amp;&amp; chmod +x socat.sh &amp;&amp; bash socat.sh</span></li></ol></pre>
 <p>下载并运行脚本后，输入<code> 1 </code>并回车就会开始安装。</p>
 <h2 id="使用方法">使用方法</h2>
-<pre class="prettyprint linenums">./socat.sh
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">./</span><span class="pln">socat</span><span class="pun">.</span><span class="pln">sh</span></li></ol></pre>
 <p>运行脚本后，会显示菜单：</p>
-<pre class="prettyprint linenums">  SoCat 一键管理脚本 [v1.0.5]
-  -- Toyo | doub.io/wlzy-18 --
-  
- 0. 升级脚本
-
- 1. 安装 SoCat
- 2. 卸载 SoCat
-
- 3. 新增 SoCat
- 4. 删除 SoCat
-
- 5. 查看 SoCat 信息
- 6. 查看 SoCat 日志
-
- 当前状态: 已安装
-
- 请输入数字 [0-9]:</pre>
-<p>选择<code> 3. 新增 SoCat </code>后，会提示你依次输入 本地监听端口、欲转发IP、欲转发端口、转发类型：</p>
-<pre class="prettyprint linenums">请输入 Socat 的 本地监听端口 [1-65535]
-(默认端口: 23333):10000
-————————————————
-本地监听端口 : 10000
-————————————————
-请输入 Socat 远程被转发的 端口 [1-65535]
-(默认端口: 10000):
-————————————————
-远程转发端口 : 10000
-————————————————
-请输入 Socat 远程被转发的 IP:2.2.2.2
-————————————————
-远程转发 IP : 2.2.2.2
-————————————————
-
-请输入数字 来选择 Socat 转发类型:
-1. TCP
-2. UDP
-3. TCP+UDP
-
-(默认: TCP+UDP):
-————————————————
-请检查 Socat 配置是否有误 !
-
-本地监听端口 : 10000
-远程转发 IP : 2.2.2.2
-远程转发端口 : 10000
-转发类型 : TCP+UDP
-————————————————
-
-请按任意键继续，如有配置错误请使用 Ctrl+C 退出。
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">  </span><span class="typ">SoCat</span><span class="pln"> </span><span class="pun">一键管理脚本</span><span class="pln"> </span><span class="pun">[</span><span class="pln">v1</span><span class="pun">.</span><span class="lit">0.5</span><span class="pun">]</span></li><li class="L1"><span class="pln">  </span><span class="pun">--</span><span class="pln"> </span><span class="typ">Toyo</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> doub</span><span class="pun">.</span><span class="pln">io</span><span class="pun">/</span><span class="pln">wlzy</span><span class="pun">-</span><span class="lit">18</span><span class="pln"> </span><span class="pun">--</span></li><li class="L2"><span class="pln">  </span></li><li class="L3"><span class="pln"> </span><span class="lit">0.</span><span class="pln"> </span><span class="pun">升级脚本</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pln"> </span><span class="lit">1.</span><span class="pln"> </span><span class="pun">安装</span><span class="pln"> </span><span class="typ">SoCat</span></li><li class="L6"><span class="pln"> </span><span class="lit">2.</span><span class="pln"> </span><span class="pun">卸载</span><span class="pln"> </span><span class="typ">SoCat</span></li><li class="L7"><span class="pln">&nbsp;</span></li><li class="L8"><span class="pln"> </span><span class="lit">3.</span><span class="pln"> </span><span class="pun">新增</span><span class="pln"> </span><span class="typ">SoCat</span></li><li class="L9"><span class="pln"> </span><span class="lit">4.</span><span class="pln"> </span><span class="pun">删除</span><span class="pln"> </span><span class="typ">SoCat</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="pln"> </span><span class="lit">5.</span><span class="pln"> </span><span class="pun">查看</span><span class="pln"> </span><span class="typ">SoCat</span><span class="pln"> </span><span class="pun">信息</span></li><li class="L2"><span class="pln"> </span><span class="lit">6.</span><span class="pln"> </span><span class="pun">查看</span><span class="pln"> </span><span class="typ">SoCat</span><span class="pln"> </span><span class="pun">日志</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="pln"> </span><span class="pun">当前状态:</span><span class="pln"> </span><span class="pun">已安装</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pln"> </span><span class="pun">请输入数字</span><span class="pln"> </span><span class="pun">[</span><span class="lit">0</span><span class="pun">-</span><span class="lit">9</span><span class="pun">]:</span></li></ol></pre>
+<p>选择<code>&nbsp;3. 新增 SoCat&nbsp;</code>后，会提示你依次输入 本地监听端口、欲转发IP、欲转发端口、转发类型：</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">请输入</span><span class="pln"> </span><span class="typ">Socat</span><span class="pln"> </span><span class="pun">的</span><span class="pln"> </span><span class="pun">本地监听端口</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">-</span><span class="lit">65535</span><span class="pun">]</span></li><li class="L1"><span class="pun">(默认端口:</span><span class="pln"> </span><span class="lit">23333</span><span class="pun">):</span><span class="lit">10000</span></li><li class="L2"><span class="pun">————————————————</span></li><li class="L3"><span class="pun">本地监听端口</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="lit">10000</span></li><li class="L4"><span class="pun">————————————————</span></li><li class="L5"><span class="pun">请输入</span><span class="pln"> </span><span class="typ">Socat</span><span class="pln"> </span><span class="pun">远程被转发的</span><span class="pln"> </span><span class="pun">端口</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">-</span><span class="lit">65535</span><span class="pun">]</span></li><li class="L6"><span class="pun">(默认端口:</span><span class="pln"> </span><span class="lit">10000</span><span class="pun">):</span></li><li class="L7"><span class="pun">————————————————</span></li><li class="L8"><span class="pun">远程转发端口</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="lit">10000</span></li><li class="L9"><span class="pun">————————————————</span></li><li class="L0"><span class="pun">请输入</span><span class="pln"> </span><span class="typ">Socat</span><span class="pln"> </span><span class="pun">远程被转发的</span><span class="pln"> IP</span><span class="pun">:</span><span class="lit">2.2</span><span class="pun">.</span><span class="lit">2.2</span></li><li class="L1"><span class="pun">————————————————</span></li><li class="L2"><span class="pun">远程转发</span><span class="pln"> IP </span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.2</span><span class="pun">.</span><span class="lit">2.2</span></li><li class="L3"><span class="pun">————————————————</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pun">请输入数字</span><span class="pln"> </span><span class="pun">来选择</span><span class="pln"> </span><span class="typ">Socat</span><span class="pln"> </span><span class="pun">转发类型:</span></li><li class="L6"><span class="lit">1.</span><span class="pln"> TCP</span></li><li class="L7"><span class="lit">2.</span><span class="pln"> UDP</span></li><li class="L8"><span class="lit">3.</span><span class="pln"> TCP</span><span class="pun">+</span><span class="pln">UDP</span></li><li class="L9"><span class="pln">&nbsp;</span></li><li class="L0"><span class="pun">(默认:</span><span class="pln"> TCP</span><span class="pun">+</span><span class="pln">UDP</span><span class="pun">):</span></li><li class="L1"><span class="pun">————————————————</span></li><li class="L2"><span class="pun">请检查</span><span class="pln"> </span><span class="typ">Socat</span><span class="pln"> </span><span class="pun">配置是否有误</span><span class="pln"> </span><span class="pun">!</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="pun">本地监听端口</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="lit">10000</span></li><li class="L5"><span class="pun">远程转发</span><span class="pln"> IP </span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.2</span><span class="pun">.</span><span class="lit">2.2</span></li><li class="L6"><span class="pun">远程转发端口</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="lit">10000</span></li><li class="L7"><span class="pun">转发类型</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> TCP</span><span class="pun">+</span><span class="pln">UDP</span></li><li class="L8"><span class="pun">————————————————</span></li><li class="L9"><span class="pln">&nbsp;</span></li><li class="L0"><span class="pun">请按任意键继续，如有配置错误请使用</span><span class="pln"> </span><span class="typ">Ctrl</span><span class="pun">+</span><span class="pln">C </span><span class="pun">退出。</span></li></ol></pre>
 <p>最后会提示你确认配置是否有误，如果没有问题就按任意键继续，启动成功后就会提示：</p>
-<pre class="prettyprint linenums">Socat 已启动 !
-
-本地 IP : 1.1.1.1
-本地监听端口 : 10000
-
-远程转发 IP : 2.2.2.2
-远程转发端口 : 10000
-转发类型 : TCP+UDP
-</pre>
-<p>选择<code> 5. 查看 SoCat 信息 </code>后，会显示如下：</p>
-<pre class="prettyprint linenums">当前有 2 个Socat转发进程。
-1. 进程PID: 32288 类型: TCP4 监听端口: 10000 转发IP和端口: 2.2.2.2:10000
-2. 进程PID: 32289 类型: UDP4 监听端口: 10000 转发IP和端口: 2.2.2.2:10000
-</pre>
-<p>选择<code> 4. 删除 SoCat </code>后，也会显示列表，然后让你选择要终止的 Socat 数字。</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="typ">Socat</span><span class="pln"> </span><span class="pun">已启动</span><span class="pln"> </span><span class="pun">!</span></li><li class="L1"><span class="pln">&nbsp;</span></li><li class="L2"><span class="pun">本地</span><span class="pln"> IP </span><span class="pun">:</span><span class="pln">&nbsp;</span><span class="lit">1.1</span><span class="pun">.</span><span class="lit">1.1</span></li><li class="L3"><span class="pun">本地监听端口</span><span class="pln"> </span><span class="pun">:</span><span class="pln">&nbsp;</span><span class="lit">10000</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pun">远程转发</span><span class="pln"> IP </span><span class="pun">:</span><span class="pln">&nbsp;</span><span class="lit">2.2</span><span class="pun">.</span><span class="lit">2.2</span></li><li class="L6"><span class="pun">远程转发端口</span><span class="pln"> </span><span class="pun">:</span><span class="pln">&nbsp;</span><span class="lit">10000</span></li><li class="L7"><span class="pun">转发类型</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> TCP</span><span class="pun">+</span><span class="pln">UDP</span></li></ol></pre>
+<p>选择<code>&nbsp;5. 查看 SoCat 信息 </code>后，会显示如下：</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">当前有</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">个</span><span class="typ">Socat</span><span class="pun">转发进程。</span></li><li class="L1"><span class="lit">1.</span><span class="pln"> </span><span class="pun">进程</span><span class="pln">PID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">32288</span><span class="pln"> </span><span class="pun">类型:</span><span class="pln"> TCP4 </span><span class="pun">监听端口:</span><span class="pln"> </span><span class="lit">10000</span><span class="pln"> </span><span class="pun">转发</span><span class="pln">IP</span><span class="pun">和端口:</span><span class="pln"> </span><span class="lit">2.2</span><span class="pun">.</span><span class="lit">2.2</span><span class="pun">:</span><span class="lit">10000</span></li><li class="L2"><span class="lit">2.</span><span class="pln"> </span><span class="pun">进程</span><span class="pln">PID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">32289</span><span class="pln"> </span><span class="pun">类型:</span><span class="pln"> UDP4 </span><span class="pun">监听端口:</span><span class="pln"> </span><span class="lit">10000</span><span class="pln"> </span><span class="pun">转发</span><span class="pln">IP</span><span class="pun">和端口:</span><span class="pln"> </span><span class="lit">2.2</span><span class="pun">.</span><span class="lit">2.2</span><span class="pun">:</span><span class="lit">10000</span></li></ol></pre>
+<p>选择<code>&nbsp;4. 删除 SoCat </code>后，也会显示列表，然后让你选择要终止的 Socat 数字。</p>
 <h3 id="Shadowsocks客户端说明">Shadowsocks客户端说明</h3>
-<p>假设你的 <strong>海外服务器(被中转) </strong>中搭建的Shadowsocks服务端的IP是<code> 2.2.2.2  </code>，SS端口是<code> 10000 </code>。</p>
-<p>假设你的 <strong>中转服务器 </strong>的IP是<code> 1.1.1.1 </code>，本地监听端口和SS端口一致，都是<code> 10000 </code>。</p>
+<p>假设你的&nbsp;<strong>海外服务器(被中转)&nbsp;</strong>中搭建的Shadowsocks服务端的IP是<code> 2.2.2.2 &nbsp;</code>，SS端口是<code> 10000 </code>。</p>
+<p>假设你的 <strong>中转服务器&nbsp;</strong>的IP是<code> 1.1.1.1 </code>，本地监听端口和SS端口一致，都是<code> 10000 </code>。</p>
 <p>那么，你的Shadowsocks客户端，添加Shadowsocks服务器，IP填写<code> 1.1.1.1 </code>，端口填写<code> 10000 </code>，<strong>其他的 密码/加密方式/协议/混淆等等 全部和原Shadowsocks账号一样！</strong></p>
 <h3 id="安装目录">安装目录</h3>
 <p>socat是通过 yum/apt 软件包安装的，所以我就单独搞了一个log日志文件的目录。</p>
 <p><strong>日志文件：</strong>/etc/socat/socat.log</p>
 <h2 id="其他说明">其他说明</h2>
-<h3 id="提示wget: unknown host “raw.githubusercontent.com” 之类的错误">提示wget: unknown host “raw.githubusercontent.com” 之类的错误</h3>
+<h3 id="提示wget: unknown host “raw.githubusercontent.com” 之类的错误">提示wget:&nbsp;unknown host “raw.githubusercontent.com” 之类的错误</h3>
 <p>这是无法解析我的域名，多半是DNS的问题，请更换DNS为谷歌DNS。</p>
-<pre class="prettyprint linenums">echo "nameserver 8.8.8.8" &gt; /etc/resolv.conf
-echo "nameserver 8.8.4.4" &gt;&gt; /etc/resolv.conf
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">echo </span><span class="str">"nameserver 8.8.8.8"</span><span class="pln"> </span><span class="pun">&gt;</span><span class="pln"> </span><span class="str">/etc/</span><span class="pln">resolv</span><span class="pun">.</span><span class="pln">conf</span></li><li class="L1"><span class="pln">echo </span><span class="str">"nameserver 8.8.4.4"</span><span class="pln"> </span><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="str">/etc/</span><span class="pln">resolv</span><span class="pun">.</span><span class="pln">conf</span></li></ol></pre>
 <h3 id="提示 wget: command not found 的错误">提示 wget: command not found 的错误</h3>
 <p>这是你的系统精简的太干净了，wget都没有安装，所以需要安装wget。</p>
-<pre class="prettyprint linenums"># Centos系统:
-yum install -y wget
-
-# Debian/Ubuntu系统:
-apt-get install -y wget
-</pre>
-<h3 id="更换 apt源，解决安装错误：[错误] Socat安装失败 等等">更换 apt源，解决安装错误：[错误] Socat安装失败 等等</h3>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># Centos系统:</span></li><li class="L1"><span class="pln">yum install </span><span class="pun">-</span><span class="pln">y wget</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="com"># Debian/Ubuntu系统:</span></li><li class="L4"><span class="pln">apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> install </span><span class="pun">-</span><span class="pln">y wget</span></li></ol></pre>
+<h3 id="更换 apt源，解决安装错误：[错误] Socat安装失败 等等">更换 apt源，解决安装错误：[错误] Socat安装失败&nbsp;等等</h3>
 <p>一些VPS的 apt源太老旧，导致无法安装socat，所以我这里写上如何更换 apt源。所以我只针对这两个系统，Centos的自己去谷歌yum镜像源。</p>
-<p>依次输入就可以更换apt源了，下面的代码是以 us美国 为例，你可以自己去这里<a href="https://github.com/user1121114685/doubi/tree/master/sources" target="_blank" rel="noopener">选一个近一些合适</a>的，然后替换下面代码中 <strong>us.sources.list</strong> 的 us 。</p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate -P /etc/apt https://raw.githubusercontent.com/user1121114685/doubi/master/sources/us.sources.list
-rm -rf /etc/apt/sources.list
-cp /etc/apt/us.sources.list /etc/apt/sources.list</pre>
+<p>依次输入就可以更换apt源了，下面的代码是以 us美国 为例，你可以自己去这里<a href="https://github.com/user1121114685/doubi/tree/master/sources" target="_blank" rel="noopener" data-original-title="" title="">选一个近一些合适</a>的，然后替换下面代码中&nbsp;<strong>us.sources.list</strong> 的 us 。</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">wget </span><span class="pun">-</span><span class="pln">N </span><span class="pun">--</span><span class="kwd">no</span><span class="pun">-</span><span class="pln">check</span><span class="pun">-</span><span class="pln">certificate </span><span class="pun">-</span><span class="pln">P </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">apt https</span><span class="pun">:</span><span class="com">//raw.githubusercontent.com/user1121114685/doubi/master/sources/us.sources.list</span></li><li class="L1"><span class="pln">rm </span><span class="pun">-</span><span class="pln">rf </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">apt</span><span class="pun">/</span><span class="pln">sources</span><span class="pun">.</span><span class="pln">list</span></li><li class="L2"><span class="pln">cp </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">apt</span><span class="pun">/</span><span class="pln">us</span><span class="pun">.</span><span class="pln">sources</span><span class="pun">.</span><span class="pln">list </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">apt</span><span class="pun">/</span><span class="pln">sources</span><span class="pun">.</span><span class="pln">list</span></li></ol></pre>
 <h2 id="更新日志">更新日志</h2>
 <h3 id="2018年01月18日，版本 v1.0.5">2018年01月18日，版本 v1.0.5</h3>
 <p><strong>1. 修复</strong> 一些显示问题。</p>
@@ -619,17 +550,17 @@ cp /etc/apt/us.sources.list /etc/apt/sources.list</pre>
 <p><strong>3. 修复</strong> 启动/停止 成功，但是提示失败的BUG。</p>
 <h3 id="2016年12月21日，版本 v1.0.0"><strong>2016年12月21日，版本 v1.0.0</strong></h3>
 <p><strong>1. 推出</strong> 正式版本。</p>
-<hr />
+<hr>
 <p><strong>Socat手动教程：<a title="" href="https://doub.io/ss-jc40/" target="_blank" rel="noopener" data-original-title="Shadowsocks利用 Socat 实现单端口 中继（中转）加速">Shadowsocks利用 Socat 实现单端口 中继（中转）加速</a></strong></p>
-<p><strong>其他 Shadowsocks中继（中转）教程：<a href="https://doub.io/ss-jc26/#服务器中继（国内中转）" target="_blank" rel="noopener">传送门</a></strong></p>
-<p><pre style="border-left: solid 4px #1abc9c;"><strong>转载请超链接注明：</strong><a href="https://doub.io">逗比根据地</a> &raquo; <a href="https://doub.io/wlzy-18/">『原创』Shadowsocks Socat 中继(中转/端口转发) 便捷管理脚本</a></pre><pre><strong>责任声明：</strong>本站一切资源仅用作交流学习，请勿用作商业或违法行为！如造成任何后果，本站概不负责！</pre></p>
+<p><strong>其他 Shadowsocks中继（中转）教程：<a href="https://doub.io/ss-jc26/#%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%AD%E7%BB%A7%EF%BC%88%E5%9B%BD%E5%86%85%E4%B8%AD%E8%BD%AC%EF%BC%89" target="_blank" rel="noopener" data-original-title="" title="">传送门</a></strong></p>
+<p></p><pre style="border-left: solid 4px #1abc9c;"><strong>转载请超链接注明：</strong><a href="https://doub.io/" data-original-title="" title="">逗比根据地</a> » <a href="https://doub.io/wlzy-18/" data-original-title="" title="">『原创』Shadowsocks Socat 中继(中转/端口转发) 便捷管理脚本</a></pre><pre><strong>责任声明：</strong>本站一切资源仅用作交流学习，请勿用作商业或违法行为！如造成任何后果，本站概不负责！</pre><p></p>
 
       
 <div class="article-social">
-			<a href="javascript:;" data-action="ding" data-id="1744" id="Addlike" class="action"><i class="fa fa-thumbs-o-up"></i>赞 (<span class="count">32</span>)</a></div>
+			<a href="javascript:;" data-action="ding" data-id="1744" id="Addlike" class="action" data-original-title="" title=""><i class="fa fa-thumbs-o-up"></i>赞 (<span class="count">32</span>)</a></div>
 	</article>	
 				<footer class="article-footer">
-			<div class="article-tags"><i class="fa fa-tags"></i><a href="https://doub.io/tag/shadowsocks/" rel="tag">Shadowsocks</a><a href="https://doub.io/tag/socat/" rel="tag">socat</a><a href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/" rel="tag">国内中转</a><a href="https://doub.io/tag/%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%ad%e8%bd%ac/" rel="tag">服务器中转</a><a href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/" rel="tag">端口转发</a></div></footer>
+			<div class="article-tags"><i class="fa fa-tags"></i><a href="https://doub.io/tag/shadowsocks/" rel="tag" data-original-title="" title="">Shadowsocks</a><a href="https://doub.io/tag/socat/" rel="tag" data-original-title="" title="">socat</a><a href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/" rel="tag" data-original-title="" title="">国内中转</a><a href="https://doub.io/tag/%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%ad%e8%bd%ac/" rel="tag" data-original-title="" title="">服务器中转</a><a href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/" rel="tag" data-original-title="" title="">端口转发</a></div></footer>
 	<nav class="article-nav">
 			<span class="article-nav-prev"><i class="fa fa-angle-double-left"></i> <a href="https://doub.io/wlzy-17/" rel="prev">多线程 HTTP/BT/磁力链接 下载工具 —— Aria2 (Windows版教程)</a></span>
 			<span class="article-nav-next"><a href="https://doub.io/wlzy-19/" rel="next">『原创』Shadowsocks HaProxy 中继(中转/端口转发) 便捷管理脚本</a>  <i class="fa fa-angle-double-right"></i></span>
@@ -638,24 +569,24 @@ cp /etc/apt/us.sources.list /etc/apt/sources.list</pre>
 		<div class="related_top">
 			<div class="related_posts"><ul class="related_img">
 
-		<li class="related_box"  >
-		<a href="https://doub.io/ss-jc67/" title="『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/shadowsocks3.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本" />	<br><span class="r_title">『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本</span></a>
+		<li class="related_box">
+		<a href="https://doub.io/ss-jc67/" title="『原创』Shadowsocks &lt;strong&gt;Go版&lt;/strong&gt; 一键安装管理脚本" target="_blank">
+<img src="./wlzy-18_files/timthumb.php" alt="『原创』Shadowsocks &lt;strong&gt;Go版&lt;/strong&gt; 一键安装管理脚本">	<br><span class="r_title">『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/ss-jc66/" title="给目前正在使用 SSR 代理翻墙的人一点点建议(混淆方面)" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/shadowsocksR-1.png&h=110&w=185&q=90&zc=1&ct=1" alt="给目前正在使用 SSR 代理翻墙的人一点点建议(混淆方面)" />	<br><span class="r_title">给目前正在使用 SSR 代理翻墙的人一点点建议(混淆方面)</span></a>
+<img src="./wlzy-18_files/timthumb(1).php" alt="给目前正在使用 SSR 代理翻墙的人一点点建议(混淆方面)">	<br><span class="r_title">给目前正在使用 SSR 代理翻墙的人一点点建议(混淆方面)</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/wlzy-jc37/" title="『原创』Shadowsocks Brook 中继(中转/端口转发) 便捷管理脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/brook1.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Shadowsocks Brook 中继(中转/端口转发) 便捷管理脚本" />	<br><span class="r_title">『原创』Shadowsocks Brook 中继(中转/端口转发) 便捷管理脚本</span></a>
+<img src="./wlzy-18_files/timthumb(2).php" alt="『原创』Shadowsocks Brook 中继(中转/端口转发) 便捷管理脚本">	<br><span class="r_title">『原创』Shadowsocks Brook 中继(中转/端口转发) 便捷管理脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/ss-jc63/" title="Shadowsocks利用 Brook 实现中继(中转/端口转发)加速" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/brook1.png&h=110&w=185&q=90&zc=1&ct=1" alt="Shadowsocks利用 Brook 实现中继(中转/端口转发)加速" />	<br><span class="r_title">Shadowsocks利用 Brook 实现中继(中转/端口转发)加速</span></a>
+<img src="./wlzy-18_files/timthumb(2).php" alt="Shadowsocks利用 Brook 实现中继(中转/端口转发)加速">	<br><span class="r_title">Shadowsocks利用 Brook 实现中继(中转/端口转发)加速</span></a>
 		</li>
 	</ul>
 
@@ -674,18 +605,18 @@ cp /etc/apt/us.sources.list /etc/apt/sources.list</pre>
 		
 		<div class="comt">
 			<div class="comt-box">
-				<textarea placeholder="本站所有评论均会审核，因缓存原因，审核中的评论刷新页面后就会不显示，请知晓勿重发。" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById('submit').click();return false};"></textarea>
+				<textarea placeholder="本站所有评论均会审核，因缓存原因，审核中的评论刷新页面后就会不显示，请知晓勿重发。" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById(&#39;submit&#39;).click();return false};"></textarea>
 				<div class="comt-ctrl">
 					<button class="btn btn-primary pull-right" type="submit" name="submit" id="submit" tabindex="5"><i class="fa fa-check-square-o"></i> 提交评论</button>
-					<div class="comt-tips pull-right"><input type='hidden' name='comment_post_ID' value='1744' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</div>
+					<div class="comt-tips pull-right"><input type="hidden" name="comment_post_ID" value="1744" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+<div class="comt-tip comt-loading" style="display: none;">正在提交, 请稍候...</div><div class="comt-tip comt-error" style="display: none;">#</div></div>
 					<span data-type="comment-insert-smilie" class="muted comt-smilie"><i class="fa fa-smile-o"></i> 表情</span>
-					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked"/>有人回复时邮件通知我</label></span>
+					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked">有人回复时邮件通知我</label></span>
 				</div>
 			</div>
 
-												<div class="comt-comterinfo" id="comment-author-info" >
+												<div class="comt-comterinfo" id="comment-author-info">
 						<h4>Hi，您需要填写昵称和邮箱！</h4>
 						<ul>
 							<li class="form-inline"><label class="hide" for="author">昵称</label><input class="ipt" type="text" name="author" id="author" value="" tabindex="2" placeholder="昵称"><span class="help-inline">昵称 (必填)</span></li>
@@ -704,45 +635,43 @@ cp /etc/apt/us.sources.list /etc/apt/sources.list</pre>
 		<i class="fa fa-comments-o"></i> <b> (44)</b>个小伙伴在吐槽
 	</div>
 	<ol class="commentlist">
-		<li class="comment even thread-even depth-1" id="comment-45571"><div class="c-avatar"><div class="c-main" id="div-comment-45571">用这个会被判DDOS攻击吗<div class="c-meta"><span class="c-author">ds</span>2018-11-05 17:19 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=45571#respond' onclick='return addComment.moveForm( "div-comment-45571", "45571", "respond", "1744" )' aria-label='回复给ds'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45573"><div class="c-avatar"><div class="c-main" id="div-comment-45573">这和DDOS有什么关系？<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-05 17:43 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=45573#respond' onclick='return addComment.moveForm( "div-comment-45573", "45573", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-45571"><div class="c-avatar"><div class="c-main" id="div-comment-45571">用这个会被判DDOS攻击吗<div class="c-meta"><span class="c-author">ds</span>2018-11-05 17:19 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=45571#respond" onclick="return addComment.moveForm( &quot;div-comment-45571&quot;, &quot;45571&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给ds">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45573"><div class="c-avatar"><div class="c-main" id="div-comment-45573">这和DDOS有什么关系？<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-05 17:43 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=45573#respond" onclick="return addComment.moveForm( &quot;div-comment-45573&quot;, &quot;45573&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-32953"><div class="c-avatar"><div class="c-main" id="div-comment-32953">请问设置后 SSR 提示 SSL handshake error 该如何解决？<div class="c-meta"><span class="c-author">Tim</span>2018-03-10 23:48 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=32953#respond' onclick='return addComment.moveForm( "div-comment-32953", "32953", "respond", "1744" )' aria-label='回复给Tim'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-32435"><div class="c-avatar"><div class="c-main" id="div-comment-32435">Hello，Socat脚本在Ubuntu 17.04 64Bit上安装失败<div class="c-meta"><span class="c-author">Jon.Wang</span>2018-03-02 09:17 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=32435#respond' onclick='return addComment.moveForm( "div-comment-32435", "32435", "respond", "1744" )' aria-label='回复给Jon.Wang'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-32448"><div class="c-avatar"><div class="c-main" id="div-comment-32448">贴出详细信息，或者请 <a href="https://t.me/doubi/" target="_blank" rel="nofollow">Telegram群组</a>(<a href="https://doub.io/telegram-jc1/" target="_blank">TG使用教程</a>)私聊联系我讨论解决。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-03-02 12:03 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=32448#respond' onclick='return addComment.moveForm( "div-comment-32448", "32448", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-32953"><div class="c-avatar"><div class="c-main" id="div-comment-32953">请问设置后 SSR 提示 SSL handshake error 该如何解决？<div class="c-meta"><span class="c-author">Tim</span>2018-03-10 23:48 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=32953#respond" onclick="return addComment.moveForm( &quot;div-comment-32953&quot;, &quot;32953&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Tim">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-32435"><div class="c-avatar"><div class="c-main" id="div-comment-32435">Hello，Socat脚本在Ubuntu 17.04 64Bit上安装失败<div class="c-meta"><span class="c-author">Jon.Wang</span>2018-03-02 09:17 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=32435#respond" onclick="return addComment.moveForm( &quot;div-comment-32435&quot;, &quot;32435&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Jon.Wang">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-32448"><div class="c-avatar"><div class="c-main" id="div-comment-32448">贴出详细信息，或者请 <a href="https://t.me/doubi/" target="_blank" rel="nofollow">Telegram群组</a>(<a href="https://doub.io/telegram-jc1/" target="_blank">TG使用教程</a>)私聊联系我讨论解决。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-03-02 12:03 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=32448#respond" onclick="return addComment.moveForm( &quot;div-comment-32448&quot;, &quot;32448&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-22671"><div class="c-avatar"><div class="c-main" id="div-comment-22671">我也出现了“奶牛”兄弟说的问题。平台是腾讯云 debian9。1000+个socat的进程，吃了300M的内存。<div class="c-meta"><span class="c-author">noName</span>2017-11-13 20:46 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=22671#respond' onclick='return addComment.moveForm( "div-comment-22671", "22671", "respond", "1744" )' aria-label='回复给noName'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-22276"><div class="c-avatar"><div class="c-main" id="div-comment-22276">socat在配置运行完成后每次连接都会fork很多子进程，然后你的list和del选项都用不了，sad，我也看了socat的文档，暂时还没看明白怎么自动杀死这些子进程。测试平台：ubuntu server。不过，这个socat真的很不错，配置选项也很丰富，不过看来我也得自己细细翻译翻译读读了。最后还是很感谢你提供的方案，很赞。<div class="c-meta"><span class="c-author"><a href='http://www.nenew.net' rel='external nofollow' class='url'>奶牛</a></span>2017-11-09 22:36 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=22276#respond' onclick='return addComment.moveForm( "div-comment-22276", "22276", "respond", "1744" )' aria-label='回复给奶牛'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-22277"><div class="c-avatar"><div class="c-main" id="div-comment-22277">list和del 用不了是什么意思？Debian 7 x64 脚本测试都正常。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-11-09 22:54 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=22277#respond' onclick='return addComment.moveForm( "div-comment-22277", "22277", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment even depth-3" id="comment-22778"><div class="c-avatar"><div class="c-main" id="div-comment-22778">这样说吧，用脚本添加了一个中转之后，每次发生tcp或者udp转发的时候都会触发socat的fork选项，这个选项是为了提高socat的性能，在短时间可以接受大量请求而设计的，但是触发之后我发现并没有自动杀掉这些无用的子进程，导致ps产生大量子进程，所以，你可以再测试下配置好之后多进行一些流量触发，就知道我说的情况了。<div class="c-meta"><span class="c-author"><a href='http://www.nenew.net' rel='external nofollow' class='url'>奶牛</a></span>2017-11-15 02:00 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=22778#respond' onclick='return addComment.moveForm( "div-comment-22778", "22778", "respond", "1744" )' aria-label='回复给奶牛'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-4" id="comment-22790"><div class="c-avatar"><div class="c-main" id="div-comment-22790">那这种 Socat自身的问题，我也没办法解决。。。一般来说理想情况下用 iptables 转发最高效最方便，不过 iptables 转发可能会莫名其妙的用不了，各个中转方案都有各种优势和缺点...<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-11-15 09:57 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=22790#respond' onclick='return addComment.moveForm( "div-comment-22790", "22790", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment even depth-5" id="comment-42027"><div class="c-avatar"><div class="c-main" id="div-comment-42027">socat fork的那一堆子进程，后台看的我头皮发麻......<div class="c-meta"><span class="c-author">大愛逗比</span>2018-08-22 05:45 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=42027#respond' onclick='return addComment.moveForm( "div-comment-42027", "42027", "respond", "1744" )' aria-label='回复给大愛逗比'>回复</a></div></div></div></li><!-- #comment-## -->
-</ul><!-- .children -->
-</li><!-- #comment-## -->
-</ul><!-- .children -->
-</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-22671"><div class="c-avatar"><div class="c-main" id="div-comment-22671">我也出现了“奶牛”兄弟说的问题。平台是腾讯云 debian9。1000+个socat的进程，吃了300M的内存。<div class="c-meta"><span class="c-author">noName</span>2017-11-13 20:46 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=22671#respond" onclick="return addComment.moveForm( &quot;div-comment-22671&quot;, &quot;22671&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给noName">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="comment-22276"><div class="c-avatar"><div class="c-main" id="div-comment-22276">socat在配置运行完成后每次连接都会fork很多子进程，然后你的list和del选项都用不了，sad，我也看了socat的文档，暂时还没看明白怎么自动杀死这些子进程。测试平台：ubuntu server。不过，这个socat真的很不错，配置选项也很丰富，不过看来我也得自己细细翻译翻译读读了。最后还是很感谢你提供的方案，很赞。<div class="c-meta"><span class="c-author"><a href="http://www.nenew.net/" rel="external nofollow" class="url" target="_blank">奶牛</a></span>2017-11-09 22:36 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=22276#respond" onclick="return addComment.moveForm( &quot;div-comment-22276&quot;, &quot;22276&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给奶牛">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-22277"><div class="c-avatar"><div class="c-main" id="div-comment-22277">list和del 用不了是什么意思？Debian 7 x64 脚本测试都正常。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-11-09 22:54 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=22277#respond" onclick="return addComment.moveForm( &quot;div-comment-22277&quot;, &quot;22277&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment even depth-3" id="comment-22778"><div class="c-avatar"><div class="c-main" id="div-comment-22778">这样说吧，用脚本添加了一个中转之后，每次发生tcp或者udp转发的时候都会触发socat的fork选项，这个选项是为了提高socat的性能，在短时间可以接受大量请求而设计的，但是触发之后我发现并没有自动杀掉这些无用的子进程，导致ps产生大量子进程，所以，你可以再测试下配置好之后多进行一些流量触发，就知道我说的情况了。<div class="c-meta"><span class="c-author"><a href="http://www.nenew.net/" rel="external nofollow" class="url" target="_blank">奶牛</a></span>2017-11-15 02:00 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=22778#respond" onclick="return addComment.moveForm( &quot;div-comment-22778&quot;, &quot;22778&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给奶牛">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-4" id="comment-22790"><div class="c-avatar"><div class="c-main" id="div-comment-22790">那这种 Socat自身的问题，我也没办法解决。。。一般来说理想情况下用 iptables 转发最高效最方便，不过 iptables 转发可能会莫名其妙的用不了，各个中转方案都有各种优势和缺点...<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-11-15 09:57 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=22790#respond" onclick="return addComment.moveForm( &quot;div-comment-22790&quot;, &quot;22790&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment even depth-5" id="comment-42027"><div class="c-avatar"><div class="c-main" id="div-comment-42027">socat fork的那一堆子进程，后台看的我头皮发麻......<div class="c-meta"><span class="c-author">大愛逗比</span>2018-08-22 05:45 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=42027#respond" onclick="return addComment.moveForm( &quot;div-comment-42027&quot;, &quot;42027&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给大愛逗比">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-21362"><div class="c-avatar"><div class="c-main" id="div-comment-21362">如何删除之前转发的设置<div class="c-meta"><span class="c-author">Jcciam</span>2017-10-28 10:51 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=21362#respond' onclick='return addComment.moveForm( "div-comment-21362", "21362", "respond", "1744" )' aria-label='回复给Jcciam'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-21403"><div class="c-avatar"><div class="c-main" id="div-comment-21403">你不看文章？<a href="https://doub.io/wlzy-18/#使用方法">https://doub.io/wlzy-18/#使用方法</a>
-<pre class="prettyprint linenums" ># 删除/停止Socat
-bash socat.sh del
-</pre><div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-10-28 23:38 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=21403#respond' onclick='return addComment.moveForm( "div-comment-21403", "21403", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-21304"><div class="c-avatar"><div class="c-main" id="div-comment-21304">使用本脚本在微软Azure 上似乎不能正常使用，可以麻烦您在Azure上面做一下测试吗？或者是不是可以和您邮件沟通<div class="c-meta"><span class="c-author"><a href='http://jamber.io' rel='external nofollow' class='url'>炮</a></span>2017-10-27 13:55 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=21304#respond' onclick='return addComment.moveForm( "div-comment-21304", "21304", "respond", "1744" )' aria-label='回复给炮'>回复</a></div></div></div></li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-21362"><div class="c-avatar"><div class="c-main" id="div-comment-21362">如何删除之前转发的设置<div class="c-meta"><span class="c-author">Jcciam</span>2017-10-28 10:51 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=21362#respond" onclick="return addComment.moveForm( &quot;div-comment-21362&quot;, &quot;21362&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Jcciam">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-21403"><div class="c-avatar"><div class="c-main" id="div-comment-21403">你不看文章？<a href="https://doub.io/wlzy-18/#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">https://doub.io/wlzy-18/#使用方法</a>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># 删除/停止Socat</span></li><li class="L1"><span class="pln">bash socat</span><span class="pun">.</span><span class="pln">sh </span><span class="kwd">del</span></li></ol></pre><div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-10-28 23:38 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=21403#respond" onclick="return addComment.moveForm( &quot;div-comment-21403&quot;, &quot;21403&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-21304"><div class="c-avatar"><div class="c-main" id="div-comment-21304">使用本脚本在微软Azure 上似乎不能正常使用，可以麻烦您在Azure上面做一下测试吗？或者是不是可以和您邮件沟通<div class="c-meta"><span class="c-author"><a href="http://jamber.io/" rel="external nofollow" class="url" target="_blank">炮</a></span>2017-10-27 13:55 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=21304#respond" onclick="return addComment.moveForm( &quot;div-comment-21304&quot;, &quot;21304&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给炮">回复</a></div></div></div></li><!-- #comment-## -->
 <li class="comment even thread-odd thread-alt depth-1" id="comment-21148"><div class="c-avatar"><div class="c-main" id="div-comment-21148">SOCAT在中转服务器上面监听中转端口，然后你本地SSR账号链接中转端口，SOCAT收到监听中转端口的数据后，就会原封不动的收到的数据转发到指定 服务器IP(SSR)和端口，然后你的SSR服务器收到数据，交给SSR服务端处理，最后原路返回。然后我用中转服务器连接外网，比如百度，百度收到的IP会是中转的IP，是吧？不是本地IP？
-简单说就是本地用SSR连接中转，最后外网得到的是布置SSR的IP。中转直接上网，外网是中转的IP？<div class="c-meta"><span class="c-author">随手打个昵称</span>2017-10-25 19:04 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=21148#respond' onclick='return addComment.moveForm( "div-comment-21148", "21148", "respond", "1744" )' aria-label='回复给随手打个昵称'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-21182"><div class="c-avatar"><div class="c-main" id="div-comment-21182">看你说的好乱。<br />
-假设本地设备(SSR客户端)外网IP：1.1.1.1、中转服务器(Socat)外网IP：2.2.2.2、被中转服务器(SSR服务端)外网IP：3.3.3.3<br />
-不挂代理直接访问 ipip.net 显示的IP是 1.1.1.1<br />
-使用SSR客户端直接链接 SSR服务端的服务器，全局访问 ipip.net 显示的IP就是 3.3.3.3<br />
-配置中转并使用SSR客户端 通过中转服务器 链接 SSR服务端的服务器后，全局访问 ipip.net 显示的IP就是 3.3.3.3<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-10-26 02:13 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=21182#respond' onclick='return addComment.moveForm( "div-comment-21182", "21182", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment even depth-3" id="comment-21456"><div class="c-avatar"><div class="c-main" id="div-comment-21456">使用SSR客户端直接链接 SSR服务端的服务器，全局访问 ipip.net 显示的IP就是 2.2.2.2?   不是3.3.3.3？<div class="c-meta"><span class="c-author">随手打个昵称</span>2017-10-29 19:27 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=21456#respond' onclick='return addComment.moveForm( "div-comment-21456", "21456", "respond", "1744" )' aria-label='回复给随手打个昵称'>回复</a></div></div></div></li><!-- #comment-## -->
+简单说就是本地用SSR连接中转，最后外网得到的是布置SSR的IP。中转直接上网，外网是中转的IP？<div class="c-meta"><span class="c-author">随手打个昵称</span>2017-10-25 19:04 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=21148#respond" onclick="return addComment.moveForm( &quot;div-comment-21148&quot;, &quot;21148&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给随手打个昵称">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-21182"><div class="c-avatar"><div class="c-main" id="div-comment-21182">看你说的好乱。<br>
+假设本地设备(SSR客户端)外网IP：1.1.1.1、中转服务器(Socat)外网IP：2.2.2.2、被中转服务器(SSR服务端)外网IP：3.3.3.3<br>
+不挂代理直接访问 ipip.net 显示的IP是 1.1.1.1<br>
+使用SSR客户端直接链接 SSR服务端的服务器，全局访问 ipip.net 显示的IP就是 3.3.3.3<br>
+配置中转并使用SSR客户端 通过中转服务器 链接 SSR服务端的服务器后，全局访问 ipip.net 显示的IP就是 3.3.3.3<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-10-26 02:13 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=21182#respond" onclick="return addComment.moveForm( &quot;div-comment-21182&quot;, &quot;21182&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment even depth-3" id="comment-21456"><div class="c-avatar"><div class="c-main" id="div-comment-21456">使用SSR客户端直接链接 SSR服务端的服务器，全局访问 ipip.net 显示的IP就是 2.2.2.2?   不是3.3.3.3？<div class="c-meta"><span class="c-author">随手打个昵称</span>2017-10-29 19:27 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=21456#respond" onclick="return addComment.moveForm( &quot;div-comment-21456&quot;, &quot;21456&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给随手打个昵称">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
@@ -750,49 +679,49 @@ bash socat.sh del
 <li class="comment odd alt thread-even depth-1" id="comment-19357"><div class="c-avatar"><div class="c-main" id="div-comment-19357">2017/10/04 06:48:44 socat[2099] E write(6, 0x251b110, 5292): Broken pipe
 2017/10/04 06:50:08 socat[2259] E write(5, 0x16c1110, 65): Broken pipe
 
-这种是什么错误？<div class="c-meta"><span class="c-author">L.G.Y</span>2017-10-04 07:03 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=19357#respond' onclick='return addComment.moveForm( "div-comment-19357", "19357", "respond", "1744" )' aria-label='回复给L.G.Y'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-17746"><div class="c-avatar"><div class="c-main" id="div-comment-17746">亲，我在Azure香港机部署了SOCAT. 发现大概1天半左右SOCAT TCP及UDP端口转发进程就不在了。另外，一段时间后VPS连不上，SSH也不行。SS VPS用的加密方式是none + auth_chain_a.  是不是因为转发的流量都是不带加密的所以香港的中继服务器被墙了？但看文档说non+auth_chain_a模式下自带RC4加密呀。。。不解。。。<div class="c-meta"><span class="c-author">oree</span>2017-08-29 11:06 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=17746#respond' onclick='return addComment.moveForm( "div-comment-17746", "17746", "respond", "1744" )' aria-label='回复给oree'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-17748"><div class="c-avatar"><div class="c-main" id="div-comment-17748">如果国外能ping通，国内ping不通，就是被墙了，我还没见过SSR账号被墙的呢。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-08-29 12:20 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=17748#respond' onclick='return addComment.moveForm( "div-comment-17748", "17748", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
+这种是什么错误？<div class="c-meta"><span class="c-author">L.G.Y</span>2017-10-04 07:03 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=19357#respond" onclick="return addComment.moveForm( &quot;div-comment-19357&quot;, &quot;19357&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给L.G.Y">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-17746"><div class="c-avatar"><div class="c-main" id="div-comment-17746">亲，我在Azure香港机部署了SOCAT. 发现大概1天半左右SOCAT TCP及UDP端口转发进程就不在了。另外，一段时间后VPS连不上，SSH也不行。SS VPS用的加密方式是none + auth_chain_a.  是不是因为转发的流量都是不带加密的所以香港的中继服务器被墙了？但看文档说non+auth_chain_a模式下自带RC4加密呀。。。不解。。。<div class="c-meta"><span class="c-author">oree</span>2017-08-29 11:06 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=17746#respond" onclick="return addComment.moveForm( &quot;div-comment-17746&quot;, &quot;17746&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给oree">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-17748"><div class="c-avatar"><div class="c-main" id="div-comment-17748">如果国外能ping通，国内ping不通，就是被墙了，我还没见过SSR账号被墙的呢。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-08-29 12:20 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=17748#respond" onclick="return addComment.moveForm( &quot;div-comment-17748&quot;, &quot;17748&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
 <li class="comment even depth-3" id="comment-17931"><div class="c-avatar"><div class="c-main" id="div-comment-17931">其实很奇怪，也许是Azure的问题，国内ping不同，用VPS也ping不通。
-亲，这种情况下SOCAT的数据流是加密的吗？<div class="c-meta"><span class="c-author">oree</span>2017-09-01 14:28 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=17931#respond' onclick='return addComment.moveForm( "div-comment-17931", "17931", "respond", "1744" )' aria-label='回复给oree'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-4" id="comment-17936"><div class="c-avatar"><div class="c-main" id="div-comment-17936">SOCAT在中转服务器上面监听中转端口，然后你本地SSR账号链接中转端口，SOCAT收到监听中转端口的数据后，就会原封不动的收到的数据转发到指定 服务器IP(SSR)和端口，然后你的SSR服务器收到数据，交给SSR服务端处理，最后原路返回。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-09-01 15:19 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=17936#respond' onclick='return addComment.moveForm( "div-comment-17936", "17936", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+亲，这种情况下SOCAT的数据流是加密的吗？<div class="c-meta"><span class="c-author">oree</span>2017-09-01 14:28 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=17931#respond" onclick="return addComment.moveForm( &quot;div-comment-17931&quot;, &quot;17931&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给oree">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-4" id="comment-17936"><div class="c-avatar"><div class="c-main" id="div-comment-17936">SOCAT在中转服务器上面监听中转端口，然后你本地SSR账号链接中转端口，SOCAT收到监听中转端口的数据后，就会原封不动的收到的数据转发到指定 服务器IP(SSR)和端口，然后你的SSR服务器收到数据，交给SSR服务端处理，最后原路返回。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-09-01 15:19 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=17936#respond" onclick="return addComment.moveForm( &quot;div-comment-17936&quot;, &quot;17936&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-15767"><div class="c-avatar"><div class="c-main" id="div-comment-15767">大胸弟，无法开机自启，查看rc.local发现nohup socat…代码在exit 0下边，然后看脚本里的#系统判断全写的debian<div class="c-meta"><span class="c-author">npt</span>2017-07-23 00:31 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=15767#respond' onclick='return addComment.moveForm( "div-comment-15767", "15767", "respond", "1744" )' aria-label='回复给npt'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-15768"><div class="c-avatar"><div class="c-main" id="div-comment-15768">脚本里添加rc.local是分 ubuntu/debian 的，除了if->Debian就是else->Ubuntu了。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-07-23 00:54 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=15768#respond' onclick='return addComment.moveForm( "div-comment-15768", "15768", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment even depth-3" id="comment-15803"><div class="c-avatar"><div class="c-main" id="div-comment-15803">更新了，兄弟稳！！<div class="c-meta"><span class="c-author">npt</span>2017-07-23 23:10 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=15803#respond' onclick='return addComment.moveForm( "div-comment-15803", "15803", "respond", "1744" )' aria-label='回复给npt'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="comment-15767"><div class="c-avatar"><div class="c-main" id="div-comment-15767">大胸弟，无法开机自启，查看rc.local发现nohup socat…代码在exit 0下边，然后看脚本里的#系统判断全写的debian<div class="c-meta"><span class="c-author">npt</span>2017-07-23 00:31 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=15767#respond" onclick="return addComment.moveForm( &quot;div-comment-15767&quot;, &quot;15767&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给npt">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-15768"><div class="c-avatar"><div class="c-main" id="div-comment-15768">脚本里添加rc.local是分 ubuntu/debian 的，除了if-&gt;Debian就是else-&gt;Ubuntu了。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-07-23 00:54 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=15768#respond" onclick="return addComment.moveForm( &quot;div-comment-15768&quot;, &quot;15768&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment even depth-3" id="comment-15803"><div class="c-avatar"><div class="c-main" id="div-comment-15803">更新了，兄弟稳！！<div class="c-meta"><span class="c-author">npt</span>2017-07-23 23:10 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=15803#respond" onclick="return addComment.moveForm( &quot;div-comment-15803&quot;, &quot;15803&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给npt">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-15485"><div class="c-avatar"><div class="c-main" id="div-comment-15485">大神~我在阿里云安装这个脚本都是成功的~也开通了防火墙端口~但是转发失败~连不上网<div class="c-meta"><span class="c-author">在流浪的葡萄</span>2017-07-14 23:00 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=15485#respond' onclick='return addComment.moveForm( "div-comment-15485", "15485", "respond", "1744" )' aria-label='回复给在流浪的葡萄'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-15489"><div class="c-avatar"><div class="c-main" id="div-comment-15489">失败，怎么失败？SSR客户端 链接统计窗口提示什么（错误/超时/空连）？<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-07-15 00:08 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=15489#respond' onclick='return addComment.moveForm( "div-comment-15489", "15489", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment odd alt depth-2" id="comment-15561"><div class="c-avatar"><div class="c-main" id="div-comment-15561">换debian7试试<div class="c-meta"><span class="c-author">KKK</span>2017-07-17 04:22 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=15561#respond' onclick='return addComment.moveForm( "div-comment-15561", "15561", "respond", "1744" )' aria-label='回复给KKK'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-15485"><div class="c-avatar"><div class="c-main" id="div-comment-15485">大神~我在阿里云安装这个脚本都是成功的~也开通了防火墙端口~但是转发失败~连不上网<div class="c-meta"><span class="c-author">在流浪的葡萄</span>2017-07-14 23:00 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=15485#respond" onclick="return addComment.moveForm( &quot;div-comment-15485&quot;, &quot;15485&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给在流浪的葡萄">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-15489"><div class="c-avatar"><div class="c-main" id="div-comment-15489">失败，怎么失败？SSR客户端 链接统计窗口提示什么（错误/超时/空连）？<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-07-15 00:08 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=15489#respond" onclick="return addComment.moveForm( &quot;div-comment-15489&quot;, &quot;15489&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt depth-2" id="comment-15561"><div class="c-avatar"><div class="c-main" id="div-comment-15561">换debian7试试<div class="c-meta"><span class="c-author">KKK</span>2017-07-17 04:22 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=15561#respond" onclick="return addComment.moveForm( &quot;div-comment-15561&quot;, &quot;15561&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给KKK">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-14683"><div class="c-avatar"><div class="c-main" id="div-comment-14683">你好，请问能不能增加ipv6的转发设置，与ipv4转发不太一样，谢谢啦<div class="c-meta"><span class="c-author">coldark</span>2017-06-11 08:17 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=14683#respond' onclick='return addComment.moveForm( "div-comment-14683", "14683", "respond", "1744" )' aria-label='回复给coldark'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-11859"><div class="c-avatar"><div class="c-main" id="div-comment-11859">大兄弟，感谢分享，只是测试发现好像开启了太多的pid，我就刷了一分钟的TUMBLE，后来的视频打开就很慢，一看list，乖乖，上百个PID。。。。。。我真的只开启了一个端口转发，没连接的话只有两个，上会儿网就出来一堆<div class="c-meta"><span class="c-author">灰太狼</span>2017-03-21 02:04 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=11859#respond' onclick='return addComment.moveForm( "div-comment-11859", "11859", "respond", "1744" )' aria-label='回复给灰太狼'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-11866"><div class="c-avatar"><div class="c-main" id="div-comment-11866">那可能就是 Socat的问题了。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-03-21 12:51 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=11866#respond' onclick='return addComment.moveForm( "div-comment-11866", "11866", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="comment-14683"><div class="c-avatar"><div class="c-main" id="div-comment-14683">你好，请问能不能增加ipv6的转发设置，与ipv4转发不太一样，谢谢啦<div class="c-meta"><span class="c-author">coldark</span>2017-06-11 08:17 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=14683#respond" onclick="return addComment.moveForm( &quot;div-comment-14683&quot;, &quot;14683&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给coldark">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-11859"><div class="c-avatar"><div class="c-main" id="div-comment-11859">大兄弟，感谢分享，只是测试发现好像开启了太多的pid，我就刷了一分钟的TUMBLE，后来的视频打开就很慢，一看list，乖乖，上百个PID。。。。。。我真的只开启了一个端口转发，没连接的话只有两个，上会儿网就出来一堆<div class="c-meta"><span class="c-author">灰太狼</span>2017-03-21 02:04 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=11859#respond" onclick="return addComment.moveForm( &quot;div-comment-11859&quot;, &quot;11859&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给灰太狼">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-11866"><div class="c-avatar"><div class="c-main" id="div-comment-11866">那可能就是 Socat的问题了。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-03-21 12:51 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=11866#respond" onclick="return addComment.moveForm( &quot;div-comment-11866&quot;, &quot;11866&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-10304"><div class="c-avatar"><div class="c-main" id="div-comment-10304">话说 socat会不会有 转发效率不足 类似的问题啊。。。<div class="c-meta"><span class="c-author"><a href='http://minami.sindery.me' rel='external nofollow' class='url'>南琴浪</a></span>2017-02-03 00:31 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=10304#respond' onclick='return addComment.moveForm( "div-comment-10304", "10304", "respond", "1744" )' aria-label='回复给南琴浪'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-10306"><div class="c-avatar"><div class="c-main" id="div-comment-10306">只要是流量转发(端口转发)都会涉及到转发速度损耗，不过一般影响很小，也没有人做过测试，因为影响的因素很多，测试起来因为损耗很小，所以也看不出是因为端口转发导致的速度损耗，还是因为其他因素影响。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-02-03 02:51 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=10306#respond' onclick='return addComment.moveForm( "div-comment-10306", "10306", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-10304"><div class="c-avatar"><div class="c-main" id="div-comment-10304">话说 socat会不会有 转发效率不足 类似的问题啊。。。<div class="c-meta"><span class="c-author"><a href="http://minami.sindery.me/" rel="external nofollow" class="url" target="_blank">南琴浪</a></span>2017-02-03 00:31 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=10304#respond" onclick="return addComment.moveForm( &quot;div-comment-10304&quot;, &quot;10304&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给南琴浪">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-10306"><div class="c-avatar"><div class="c-main" id="div-comment-10306">只要是流量转发(端口转发)都会涉及到转发速度损耗，不过一般影响很小，也没有人做过测试，因为影响的因素很多，测试起来因为损耗很小，所以也看不出是因为端口转发导致的速度损耗，还是因为其他因素影响。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-02-03 02:51 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=10306#respond" onclick="return addComment.moveForm( &quot;div-comment-10306&quot;, &quot;10306&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-10181"><div class="c-avatar"><div class="c-main" id="div-comment-10181">这个能同时转发多个端口吗/<div class="c-meta"><span class="c-author"><a href='http://www.ganwen.cn' rel='external nofollow' class='url'>甘文</a></span>2017-01-29 16:50 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=10181#respond' onclick='return addComment.moveForm( "div-comment-10181", "10181", "respond", "1744" )' aria-label='回复给甘文'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-10182"><div class="c-avatar"><div class="c-main" id="div-comment-10182">文章里已经写了，Socat一次只能配置一个端口转发，多个端口只能开多个socat程序，需要端口段转发看 iptables haproxy<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-01-29 17:00 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=10182#respond' onclick='return addComment.moveForm( "div-comment-10182", "10182", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-10181"><div class="c-avatar"><div class="c-main" id="div-comment-10181">这个能同时转发多个端口吗/<div class="c-meta"><span class="c-author"><a href="http://www.ganwen.cn/" rel="external nofollow" class="url" target="_blank">甘文</a></span>2017-01-29 16:50 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=10181#respond" onclick="return addComment.moveForm( &quot;div-comment-10181&quot;, &quot;10181&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给甘文">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-10182"><div class="c-avatar"><div class="c-main" id="div-comment-10182">文章里已经写了，Socat一次只能配置一个端口转发，多个端口只能开多个socat程序，需要端口段转发看 iptables haproxy<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-01-29 17:00 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=10182#respond" onclick="return addComment.moveForm( &quot;div-comment-10182&quot;, &quot;10182&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 <li class="comment odd alt thread-even depth-1" id="comment-9436"><div class="c-avatar"><div class="c-main" id="div-comment-9436">请问能不能将某个TCP端口也同样把UDP的数据转换成TCP，通过TCP端口转发出去？
-比如说我有一个1111的TCP端口，我想实现它既能发送TCP数据，又同样可以通过这个端口把UDP的数据转换成TCP通过1111的TCP转发出去？<div class="c-meta"><span class="c-author">SunZz</span>2016-12-28 16:34 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=9436#respond' onclick='return addComment.moveForm( "div-comment-9436", "9436", "respond", "1744" )' aria-label='回复给SunZz'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-9437"><div class="c-avatar"><div class="c-main" id="div-comment-9437">TCP是TCP，UDP是UDP完全不一样的，是否能实现你说的 我不清楚，但是我知道这个超出了 端口转发 或者说 socat 的能力范围。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2016-12-28 18:05 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=9437#respond' onclick='return addComment.moveForm( "div-comment-9437", "9437", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment odd alt depth-3" id="comment-9446"><div class="c-avatar"><div class="c-main" id="div-comment-9446">现在是这个样的，我有一个主机只能设置内部端口，比如我把内部端口1111的UDP和TCP开启，外部端口会随机分配两个端口已连接内部的1111端口，1111的TCP外部端口是1234，UDP是5678，这个时候如果我用SS连接（我用梅林，没有可以设置UDP端口的地方），只能设置TCP的1234端口，而无法连接5678端口，这个时候我该怎么做才能把UDP的流量转化成TCP走1234端口？还是说只能在SS里单独设置UDP端口？<div class="c-meta"><span class="c-author">SunZz</span>2016-12-29 14:45 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=9446#respond' onclick='return addComment.moveForm( "div-comment-9446", "9446", "respond", "1744" )' aria-label='回复给SunZz'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-4" id="comment-9448"><div class="c-avatar"><div class="c-main" id="div-comment-9448">这个应该实现很麻烦，我并没有研究，你可能需要谷歌。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2016-12-29 15:24 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=9448#respond' onclick='return addComment.moveForm( "div-comment-9448", "9448", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment odd alt depth-5" id="comment-9482"><div class="c-avatar"><div class="c-main" id="div-comment-9482">确实比较麻烦，所以正在询问几方看看有没有可以更容易实现的方法，谢谢。<div class="c-meta"><span class="c-author">SunZz</span>2016-12-30 16:01 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=9482#respond' onclick='return addComment.moveForm( "div-comment-9482", "9482", "respond", "1744" )' aria-label='回复给SunZz'>回复</a></div></div></div></li><!-- #comment-## -->
+比如说我有一个1111的TCP端口，我想实现它既能发送TCP数据，又同样可以通过这个端口把UDP的数据转换成TCP通过1111的TCP转发出去？<div class="c-meta"><span class="c-author">SunZz</span>2016-12-28 16:34 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=9436#respond" onclick="return addComment.moveForm( &quot;div-comment-9436&quot;, &quot;9436&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给SunZz">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-9437"><div class="c-avatar"><div class="c-main" id="div-comment-9437">TCP是TCP，UDP是UDP完全不一样的，是否能实现你说的 我不清楚，但是我知道这个超出了 端口转发 或者说 socat 的能力范围。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2016-12-28 18:05 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=9437#respond" onclick="return addComment.moveForm( &quot;div-comment-9437&quot;, &quot;9437&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment odd alt depth-3" id="comment-9446"><div class="c-avatar"><div class="c-main" id="div-comment-9446">现在是这个样的，我有一个主机只能设置内部端口，比如我把内部端口1111的UDP和TCP开启，外部端口会随机分配两个端口已连接内部的1111端口，1111的TCP外部端口是1234，UDP是5678，这个时候如果我用SS连接（我用梅林，没有可以设置UDP端口的地方），只能设置TCP的1234端口，而无法连接5678端口，这个时候我该怎么做才能把UDP的流量转化成TCP走1234端口？还是说只能在SS里单独设置UDP端口？<div class="c-meta"><span class="c-author">SunZz</span>2016-12-29 14:45 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=9446#respond" onclick="return addComment.moveForm( &quot;div-comment-9446&quot;, &quot;9446&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给SunZz">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-4" id="comment-9448"><div class="c-avatar"><div class="c-main" id="div-comment-9448">这个应该实现很麻烦，我并没有研究，你可能需要谷歌。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2016-12-29 15:24 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=9448#respond" onclick="return addComment.moveForm( &quot;div-comment-9448&quot;, &quot;9448&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment odd alt depth-5" id="comment-9482"><div class="c-avatar"><div class="c-main" id="div-comment-9482">确实比较麻烦，所以正在询问几方看看有没有可以更容易实现的方法，谢谢。<div class="c-meta"><span class="c-author">SunZz</span>2016-12-30 16:01 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=9482#respond" onclick="return addComment.moveForm( &quot;div-comment-9482&quot;, &quot;9482&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给SunZz">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
@@ -801,16 +730,16 @@ bash socat.sh del
 </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-9330"><div class="c-avatar"><div class="c-main" id="div-comment-9330">请问这个需要手动加入开机启动吗？<div class="c-meta"><span class="c-author">Hirotaka</span>2016-12-24 00:07 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=9330#respond' onclick='return addComment.moveForm( "div-comment-9330", "9330", "respond", "1744" )' aria-label='回复给Hirotaka'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-9331"><div class="c-avatar"><div class="c-main" id="div-comment-9331">脚本并没有设置开机启动，有需要的话，我明天可以加上。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2016-12-24 00:41 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=9331#respond' onclick='return addComment.moveForm( "div-comment-9331", "9331", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-9330"><div class="c-avatar"><div class="c-main" id="div-comment-9330">请问这个需要手动加入开机启动吗？<div class="c-meta"><span class="c-author">Hirotaka</span>2016-12-24 00:07 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=9330#respond" onclick="return addComment.moveForm( &quot;div-comment-9330&quot;, &quot;9330&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Hirotaka">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-9331"><div class="c-avatar"><div class="c-main" id="div-comment-9331">脚本并没有设置开机启动，有需要的话，我明天可以加上。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2016-12-24 00:41 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=9331#respond" onclick="return addComment.moveForm( &quot;div-comment-9331&quot;, &quot;9331&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-9283"><div class="c-avatar"><div class="c-main" id="div-comment-9283">国内VPS的宽带是1m的话,那我最高速度是不是也是1m?<div class="c-meta"><span class="c-author">肥鸡</span>2016-12-22 00:16 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=9283#respond' onclick='return addComment.moveForm( "div-comment-9283", "9283", "respond", "1744" )' aria-label='回复给肥鸡'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-9285"><div class="c-avatar"><div class="c-main" id="div-comment-9285">国内的这些VPS说的1Mbps宽带，都是独享1Mbps上行宽带，下行一般都不会限速的，也就是说VPS把数据传给你，只有1Mbps的速度，或者你下载VPS上面的文件，只有1Mbps的速度，理论速度128KB/S。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2016-12-22 01:03 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-18/?replytocom=9285#respond' onclick='return addComment.moveForm( "div-comment-9285", "9285", "respond", "1744" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="comment-9283"><div class="c-avatar"><div class="c-main" id="div-comment-9283">国内VPS的宽带是1m的话,那我最高速度是不是也是1m?<div class="c-meta"><span class="c-author">肥鸡</span>2016-12-22 00:16 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=9283#respond" onclick="return addComment.moveForm( &quot;div-comment-9283&quot;, &quot;9283&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给肥鸡">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-9285"><div class="c-avatar"><div class="c-main" id="div-comment-9285">国内的这些VPS说的1Mbps宽带，都是独享1Mbps上行宽带，下行一般都不会限速的，也就是说VPS把数据传给你，只有1Mbps的速度，或者你下载VPS上面的文件，只有1Mbps的速度，理论速度128KB/S。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2016-12-22 01:03 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-18/?replytocom=9285#respond" onclick="return addComment.moveForm( &quot;div-comment-9285&quot;, &quot;9285&quot;, &quot;respond&quot;, &quot;1744&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 	</ol>
-	<div class="commentnav"	>
+	<div class="commentnav">
 			</div>
 </div>
 </div>
@@ -819,7 +748,7 @@ bash socat.sh del
 </div>
 <aside class="sidebar">	
 <div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="position: absolute;left: 4px;top: 4px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/walllink/"><img src="https://img.doub.pw/abc/walllink-03.png" /></a></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align:center;padding: 10px 20px 5px;display: block;">
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/walllink/"><img src="./wlzy-18_files/walllink-03.png"></a></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align:center;padding: 10px 20px 5px;display: block;">
 <a class="wid-xiaobai" style="background-color: #03A9F4;padding-top:15px;padding-bottom:15px;font-size: 16px;font-weight: bold;" target="_blank" href="https://doub.io/all-one/">逗比根据地 所有文章教程分类合辑</a>
 <a class="wid-xiaobai" style="background-color: #1ABCFF;padding-top: 7px;padding-bottom: 7px;font-weight: bold;font-size: 15px;" target="_blank" href="https://doub.io/goflyway-jc3/">CDN 复活被墙IP 继续做代理</a>
 <a class="wid-xiaobai" style="background-color: #1ABCFF;padding-top: 7px;padding-bottom: 7px;font-weight: bold;font-size: 15px;" target="_blank" href="https://doub.io/goflyway-jc5/">KCP 复活被墙IP 继续做代理</a>
@@ -846,10 +775,10 @@ bash socat.sh del
 <a class="wid-xiaobai" style="background-color: #2d2d2d;" target="_blank" href="https://doub.io/paypal-jc2/">PayPal 更换汇率结算方式降低手续费</a>
 </div></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="background-color: #eee;">
 <div style="position: absolute;margin-left: 4px;margin-top: 4px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/kanfanba/"><img style="margin-bottom: 10px;" src="https://img.doub.pw/abc/kanfanba-02.png"/></a>
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/kanfanba/"><img style="margin-bottom: 10px;" src="./wlzy-18_files/kanfanba-02.png"></a>
 <div style="position: absolute;margin-left: 4px;margin-top: 4px;width: 24px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
 
-<div id="guangg_image"></div>
+<div id="guangg_image"><a target="_blank" title="特别声明：此图片为广告投放，与本站无任何关系。" href="https://doub.io/go/vultr-100/"><img src="./wlzy-18_files/vultr-02.png"></a></div>
 <script type="text/javascript">
 var image_url=new Array()
 image_url=["https://doub.io/go/vultr-100/","https://doub.io/vpszy-21/","https://doub.io/go/virmach-kvm/"]
@@ -865,17 +794,17 @@ document.getElementById("guangg_image").innerHTML = "<a target=\"_blank\" title=
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/10</span></p>
 			<span class="label label-1">v1.0.1</span>
-			<a target="_blank" href="https://doub.io/shell-jc9/" title="点击进入该文件的介绍页面。">MTProxy_go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/shell-jc9/" title="点击进入该文件的介绍页面。">MTProxy_go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./wlzy-18_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/10</span></p>
 			<span class="label label-2">v1.0.8</span>
-			<a target="_blank" href="https://doub.io/shell-jc7/" title="点击进入该文件的介绍页面。">MTProxy.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/shell-jc7/" title="点击进入该文件的介绍页面。">MTProxy.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./wlzy-18_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/07</span></p>
 			<span class="label label-3">v1.0.0</span>
-			<a target="_blank" href="https://doub.io/ss-jc67/" title="点击进入该文件的介绍页面。">ss-go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/ss-jc67/" title="点击进入该文件的介绍页面。">ss-go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./wlzy-18_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/02</span></p>
@@ -913,11 +842,11 @@ document.getElementById("guangg_image").innerHTML = "<a target=\"_blank\" title=
 			<a target="_blank" href="https://doub.io/dbrj-17/" title="点击进入该文件的介绍页面。">DAZE Tools</a>
 		</li>
 	</ul>
-</div></div></div><div class="widget d_tag"><div class="title"><h2>逗比の标签</h2></div><div class="d_tags"><a title="60个话题" target="_blank" href="https://doub.io/tag/shadowsocks/">Shadowsocks (60)</a><a title="47个话题" target="_blank" href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/">脚本 (47)</a><a title="45个话题" target="_blank" href="https://doub.io/tag/%e6%95%99%e7%a8%8b/">教程 (45)</a><a title="32个话题" target="_blank" href="https://doub.io/tag/shadowsocksr/">ShadowsocksR (32)</a><a title="30个话题" target="_blank" href="https://doub.io/tag/kxsw/">科学上网 (30)</a><a title="20个话题" target="_blank" href="https://doub.io/tag/shell/">shell (20)</a><a title="19个话题" target="_blank" href="https://doub.io/tag/vps/">VPS (19)</a><a title="18个话题" target="_blank" href="https://doub.io/tag/linux/">Linux (18)</a><a title="16个话题" target="_blank" href="https://doub.io/tag/vpn/">VPN (16)</a><a title="11个话题" target="_blank" href="https://doub.io/tag/bt/">BT (11)</a><a title="10个话题" target="_blank" href="https://doub.io/tag/%e7%a3%81%e5%8a%9b%e9%93%be%e6%8e%a5/">磁力链接 (10)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e5%8e%9f%e5%88%9b%e8%bd%af%e4%bb%b6/">原创软件 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/">端口转发 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e4%ba%91/">百度云 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/brook/">Brook (9)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/">国内中转 (8)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86/">反向代理 (8)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98/">百度网盘 (8)</a><a title="7个话题" target="_blank" href="https://doub.io/tag/goflyway/">GoFlyway (7)</a><a title="7个话题" target="_blank" href="https://doub.io/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/">搬瓦工 (7)</a></div></div></aside></section>
+</div></div></div><div class="widget d_tag"><div class="title"><h2>逗比の标签</h2></div><div class="d_tags"><a title="" target="_blank" href="https://doub.io/tag/shadowsocks/" data-original-title="60个话题">Shadowsocks (60)</a><a title="" target="_blank" href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" data-original-title="47个话题">脚本 (47)</a><a title="" target="_blank" href="https://doub.io/tag/%e6%95%99%e7%a8%8b/" data-original-title="45个话题">教程 (45)</a><a title="" target="_blank" href="https://doub.io/tag/shadowsocksr/" data-original-title="32个话题">ShadowsocksR (32)</a><a title="" target="_blank" href="https://doub.io/tag/kxsw/" data-original-title="30个话题">科学上网 (30)</a><a title="" target="_blank" href="https://doub.io/tag/shell/" data-original-title="20个话题">shell (20)</a><a title="" target="_blank" href="https://doub.io/tag/vps/" data-original-title="19个话题">VPS (19)</a><a title="" target="_blank" href="https://doub.io/tag/linux/" data-original-title="18个话题">Linux (18)</a><a title="" target="_blank" href="https://doub.io/tag/vpn/" data-original-title="16个话题">VPN (16)</a><a title="" target="_blank" href="https://doub.io/tag/bt/" data-original-title="11个话题">BT (11)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%a3%81%e5%8a%9b%e9%93%be%e6%8e%a5/" data-original-title="10个话题">磁力链接 (10)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%8e%9f%e5%88%9b%e8%bd%af%e4%bb%b6/" data-original-title="9个话题">原创软件 (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/" data-original-title="9个话题">端口转发 (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e4%ba%91/" data-original-title="9个话题">百度云 (9)</a><a title="" target="_blank" href="https://doub.io/tag/brook/" data-original-title="9个话题">Brook (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/" data-original-title="8个话题">国内中转 (8)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86/" data-original-title="8个话题">反向代理 (8)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98/" data-original-title="8个话题">百度网盘 (8)</a><a title="" target="_blank" href="https://doub.io/tag/goflyway/" data-original-title="7个话题">GoFlyway (7)</a><a title="" target="_blank" href="https://doub.io/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/" data-original-title="7个话题">搬瓦工 (7)</a></div></div></aside></section>
 <footer class="footer">
     <div class="footer-inner">
         <div class="copyright pull-left">
-         <a href="https://doub.io" title="逗比根据地">逗比根据地</a> 版权所有，保留一切权利 · 基于 <a href="https://cn.wordpress.org/" target="_blank">WordPress</a> · <a href="https://doub.io/jzzy-5/" target="_blank">欲思主题</a> © 2015-2018        </div>
+         <a href="https://doub.io/" title="逗比根据地">逗比根据地</a> 版权所有，保留一切权利 · 基于 <a href="https://cn.wordpress.org/" target="_blank">WordPress</a> · <a href="https://doub.io/jzzy-5/" target="_blank">欲思主题</a> © 2015-2018        </div>
         <div class="trackcode pull-right">
             <script>
 var _hmt = _hmt || [];
@@ -929,7 +858,7 @@ var _hmt = _hmt || [];
 })();
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72227254-1"></script>
+<script async="" src="./wlzy-18_files/js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -945,8 +874,8 @@ var _hmt = _hmt || [];
                 <span class="close-btn fa fa-times-circle"> </span>
                         <div class="ek753a4"></div>
     </div>
-</div><script type='text/javascript' src='https://doub.io/wp-content/themes/yusi1.0/js/jquery.js?ver=1.0'></script>
-<script type='text/javascript' src='https://doub.io/wp-includes/js/wp-embed.min.js?ver=4.8.1'></script>
+</div><script type="text/javascript" src="./wlzy-18_files/jquery.js.下载"></script>
+<script type="text/javascript" src="./wlzy-18_files/wp-embed.min.js.下载"></script>
 
 <script type="text/javascript">
 var open = false;
@@ -964,4 +893,4 @@ if(document.body.scrollWidth < 768){
     $(".hot-posts").hide();
 }
 </script>
-<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_6971c5901860620dc711b8ea461af719");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_6971c5901860620dc711b8ea461af719");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_6971c5901860620dc711b8ea461af719");if (z != "") e["url"].value = z;}</script></body></html><!-- hyper cache gzip 2018-11-19 10:19:58 -->
+<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_6971c5901860620dc711b8ea461af719");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_6971c5901860620dc711b8ea461af719");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_6971c5901860620dc711b8ea461af719");if (z != "") e["url"].value = z;}</script><div class="rollto"><button class="btn btn-inverse" data-type="totop" title="回顶部"><i class="fa fa-arrow-up"></i></button><button class="btn btn-inverse" data-type="Widescreen" title="宽屏显示"><i class="fa fa-arrows-h"></i></button><button class="btn btn-inverse" data-type="torespond" title="发评论"><i class="fa fa-comment-o"></i></button></div></body></html>

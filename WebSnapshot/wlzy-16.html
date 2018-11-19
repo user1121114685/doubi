@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://doub.io/wlzy-16/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta http-equiv="X-UA-Compatible" content="IE=10,IE=9,IE=8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <style type="text/css">
@@ -11,31 +11,31 @@
 @font-face {font-family: 'LiDeBiao-Xing320e75d0253036';src: url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.gif');src: url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.gif?#iefix') format('embedded-opentype'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.bmp') format('woff'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.jpg') format('truetype'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.png#LiDeBiao-Xing3') format('svg');   }.css20e75d0253036{font-family: 'LiDeBiao-Xing320e75d0253036';}
 tbody tr:nth-child(odd) { background-color:#f9f9f9; }
 </style>
-<link rel="stylesheet" type="text/css" href="https://doub.io/wp-content/themes/yusi1.0/csshake.css">
-<link id="favicon" href="https://doub.io/wp-content/themes/yusi1.0/img/logo.ico" rel="icon" type="img/x-icon" />
+<link rel="stylesheet" type="text/css" href="./wlzy-16_files/csshake.css">
+<link id="favicon" href="https://doub.io/wp-content/themes/yusi1.0/img/logo.ico" rel="icon" type="img/x-icon">
 <title>『原创』Debian/Ubuntu TCP拥塞控制技术 ——TCP-BBR 一键安装脚本 | 逗比根据地</title>
-<script>
+<script type="text/javascript" async="" src="./wlzy-16_files/analytics.js.下载"></script><script src="./wlzy-16_files/hm.js.下载"></script><script async="" src="./wlzy-16_files/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ"></script><script>
 window._deel = {name: '逗比根据地',url: 'https://doub.io/wp-content/themes/yusi1.0', ajaxpager: 'on', commenton: 1, roll: [1,3]}
 </script>
 
 <!-- All in One SEO Pack 2.3.16 by Michael Torbert of Semper Fi Web Design[1897,1962] -->
-<meta name="description"  content="这几天很火的BBR，我研究了一下，写了一个一键脚本，适合新手使用。 手动安装方法：比锐速还强的 TCP拥塞控制技术 —— TCP-BBR 测试及开启教程 注意：TCP" />
+<meta name="description" content="这几天很火的BBR，我研究了一下，写了一个一键脚本，适合新手使用。 手动安装方法：比锐速还强的 TCP拥塞控制技术 —— TCP-BBR 测试及开启教程 注意：TCP">
 
-<meta name="keywords"  content="tcp-bbr,vps,脚本" />
+<meta name="keywords" content="tcp-bbr,vps,脚本">
 
-<link rel="canonical" href="https://doub.io/wlzy-16/" />
+<link rel="canonical" href="https://doub.io/wlzy-16/">
 <!-- /all in one seo pack -->
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='toggle-box-css'  href='https://doub.io/wp-content/plugins/toggle-box/toggle-box.css?ver=4.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='style-css'  href='https://doub.io/wp-content/themes/yusi1.0/style.css?ver=1.0' type='text/css' media='all' />
-<script>!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://steadfastsystem.com/v2/0/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script><script type='text/javascript' src='https://doub.io/wp-content/themes/yusi1.0/js/jquery1.min.js?ver=1.0'></script>
-<script type='text/javascript' src='https://doub.io/wp-content/plugins/toggle-box/js/toggle-box.js?ver=4.8.1'></script>
-<link rel='https://api.w.org/' href='https://doub.io/wp-json/' />
-<link rel='prev' title='比锐速还强的 TCP拥塞控制技术 —— TCP-BBR 测试及开启教程' href='https://doub.io/wlzy-15/' />
-<link rel='next' title='Linux TCP加速工具 —— LotServer(锐速母公司) 一键安装脚本' href='https://doub.io/wlzy-21/' />
-<link rel='shortlink' href='https://doub.io/?p=1731' />
-<link rel="alternate" type="application/json+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-16%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-16%2F&#038;format=xml" />
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="stylesheet" id="toggle-box-css" href="./wlzy-16_files/toggle-box.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="./wlzy-16_files/style.css" type="text/css" media="all">
+<script>!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://steadfastsystem.com/v2/0/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script><script type="text/javascript" src="./wlzy-16_files/jquery1.min.js.下载"></script>
+<script type="text/javascript" src="./wlzy-16_files/toggle-box.js.下载"></script>
+<link rel="https://api.w.org/" href="https://doub.io/wp-json/">
+<link rel="prev" title="比锐速还强的 TCP拥塞控制技术 —— TCP-BBR 测试及开启教程" href="https://doub.io/wlzy-15/">
+<link rel="next" title="Linux TCP加速工具 —— LotServer(锐速母公司) 一键安装脚本" href="https://doub.io/wlzy-21/">
+<link rel="shortlink" href="https://doub.io/?p=1731">
+<link rel="alternate" type="application/json+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-16%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-16%2F&amp;format=xml">
 <style>
 .kk14ff2{
     font-size: 20px;
@@ -382,7 +382,7 @@ window._deel = {name: '逗比根据地',url: 'https://doub.io/wp-content/themes/
         killAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
     }
 </script>
-    <link rel="stylesheet" href="https://doub.io/wp-content/plugins/wp-content-index/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./wlzy-16_files/style(1).css" type="text/css" media="all">
 <meta name="keywords" content="TCP-BBR, VPS, 脚本, Shell脚本, 网络资源">
 <meta name="description" content="这几天很火的BBR，我研究了一下，写了一个一键脚本，适合新手使用。    手动安装方法：比锐速还强的 TCP拥塞控制技术 —— TCP-BBR 测试及开启教程  注意：TCP-BBR和锐速一样，不支持Openvz，查看本教程之前，请先确定你的VPS的虚拟化技术！ 注意：本教程涉及到VPS更换内核，所以如果步骤错误，或者VPS不兼容最新的内核，会导致无法开机等错误，请勿用于生产环境！！！！ BBR 简单介绍 BBR 是一个由谷歌社区开发的">
 <!--[if lt IE 9]><script src="https://doub.io/wp-content/themes/yusi1.0/js/html5.js"></script><![endif]-->
@@ -408,10 +408,10 @@ window.uabInject = function() {};
 <header id="header" class="header">
 <div class="container-inner" style="display: block;">
  <div class="yusi-logo" style="display: block;">
-                    <a href="/">
+                    <a href="https://doub.io/">
                         <h1>
-                                                        <span style="font-family:'jin_mei_mxplzx86d456993036';color: #fff;font-weight: normal;font-size: 54px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">逗比根据地</span>
-                                                        <span style="font-family:'LiDeBiao-Xing320e75d0253036';color: #fff;font-size: 24px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">– 世界那么逗，我想出去看看</span>
+                                                        <span style="font-family:&#39;jin_mei_mxplzx86d456993036&#39;;color: #fff;font-weight: normal;font-size: 54px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">逗比根据地</span>
+                                                        <span style="font-family:&#39;LiDeBiao-Xing320e75d0253036&#39;;color: #fff;font-size: 24px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">– 世界那么逗，我想出去看看</span>
                                                     </h1>
                     </a>
     </div>
@@ -420,9 +420,9 @@ window.uabInject = function() {};
 	<div id="nav-header" class="navbar" style="display: block;">
 		
 		<ul class="nav">
-			<li><a href="https://doub.io"><i class="fa fa-fire"></i> 首页</a></li>
+			<li><a href="https://doub.io/"><i class="fa fa-fire"></i> 首页</a></li>
 <li><a target="_blank" href="https://doub.io/dbtj/"><i class="fa fa-star"></i> 逗比推荐</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/dbwz/">碉堡网站</a></li>
 	<li><a target="_blank" href="https://doub.io/dbrj/">逗比软件</a></li>
 	<li><a target="_blank" href="https://doub.io/xnzj/">虚拟主机</a></li>
@@ -430,7 +430,7 @@ window.uabInject = function() {};
 </ul>
 </li>
 <li class="current-post-ancestor"><a target="_blank" href="https://doub.io/kxsw/"><i class="fa fa-globe fa-spin"></i> 科学上网</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/androidkxsw/">安卓合集</a></li>
 	<li><a target="_blank" href="https://doub.io/pckxsw/">电脑合集</a></li>
 	<li class="current-post-ancestor current-menu-parent"><a target="_blank" href="https://doub.io/wlzy/">网络资源</a></li>
@@ -441,7 +441,7 @@ window.uabInject = function() {};
 </ul>
 </li>
 <li><a target="_blank" href="https://doub.io/ss-jc26/"><i class="fa fa-paper-plane" style="font-size: 19px;"></i> Shadowsocks</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/all-one/"><span style="color: #ffe200;">网站文章 合辑</span></a></li>
 	<li><a target="_blank" href="https://doub.io/ss-jc26/">所有教程 合辑</a></li>
 	<li><a target="_blank" href="https://doub.io/ss-jc35/">小白常见 问题</a></li>
@@ -456,10 +456,10 @@ window.uabInject = function() {};
 <li><a target="_blank" href="https://softs.wtf/"><i class="fa fa-cloud"></i> 逗比云</a></li>
 <li><a target="_blank" href="https://doub.io/guestbook/"><i class="fa fa-list-alt"></i> 留言</a></li>
 <li style="float:right;">
-                    <div class="toggle-search" style="width: 60px;"><i class="fa fa-search"></i><a href="#" style="padding: 0;">搜索</a></div>
-<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href='https://doub.io/search/' + encodeURIComponent(this.s.value).replace(/%20/g, '+'); return false;" action="/"><div> <input type="ext" class="search" name="s" onblur="if(this.value=='')this.value='请善用搜索功能...';" onfocus="if(this.value=='请善用搜索功能...')this.value='';" value="请善用搜索功能..."></div></form></div></div>
+                    <div class="toggle-search" style="width: 60px;"><i class="fa fa-search"></i><a href="https://doub.io/wlzy-16/#" style="padding: 0;">搜索</a></div>
+<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href=&#39;https://doub.io/search/&#39; + encodeURIComponent(this.s.value).replace(/%20/g, &#39;+&#39;); return false;" action="https://doub.io/"><div> <input type="ext" class="search" name="s" onblur="if(this.value==&#39;&#39;)this.value=&#39;请善用搜索功能...&#39;;" onfocus="if(this.value==&#39;请善用搜索功能...&#39;)this.value=&#39;&#39;;" value="请善用搜索功能..."></div></form></div></div>
 </li>
-		</ul>
+		</ul><div class="screen-mini"><button data-type="screen-nav" class="btn btn-inverse screen-nav"><i class="fa fa-list"></i></button></div>
 	</div>
 </header>
 <section class="container"><div class="speedbar">
@@ -467,7 +467,7 @@ window.uabInject = function() {};
 <div style="float: right;margin: 0 10px;"><a target="_blank" href="https://doub.io/tougao/"><i class="fa fa-envelope" style="color: #1abc9c;opacity: 1;"></i>投稿文章</a> | <a target="_blank" href="https://doub.io/guanggao/"><i class="fa fa-money" style="color: #1abc9c;opacity: 1;"></i>广告合作</a> | <a target="_blank" href="https://doub.io/go/tg"><i class="fa fa-paper-plane" style="color: #1abc9c;opacity: 1;"></i>Telegram 群组</a> / <a target="_blank" href="https://doub.io/go/tg_a">公告频道</a> / <a target="_blank" href="https://doub.io/telegram-jc1/">使用教程</a></div></div>
 	</div>
 	<div class="guangg guangg-site"><div style="position: absolute;left: 4px;top: 14px;font-size: 12px;color: #fff;border: 1px solid #ffffff;line-height: 12px;opacity: 0.9;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/gigsgigscloud/"><img src="https://img.doub.pw/abc/gigsgigscloud-06.gif" class="top_guangg" /></a></div><div class="content-wrap">
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/gigsgigscloud/"><img src="./wlzy-16_files/gigsgigscloud-06.gif" class="top_guangg"></a></div><div class="content-wrap">
 <div style="display: block;">
 	<div class="content" style="display: block;">
 
@@ -480,15 +480,15 @@ window.uabInject = function() {};
 				<span class="muted"><i class="fa fa-comments-o"></i> <a href="https://doub.io/wlzy-16/#comments">241评论</a></span>							</div>
 		</header>
 <div class="guangg guangg-post"><div style="position: absolute;left: 3px;top: 14px;font-size: 12px;color: #fff;border: 1px solid #ffffff;line-height: 12px;opacity: 0.9;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/yitianjian_shadow/"><img src="https://img.doub.pw/abc/yitianjian_shadow_01.png" class="top_guangg" /></a></div>		<article class="article-content">
-			<div id="content-index" class="content-index"><div class="content-index-title"><a id="content-index-togglelink" href="javascript:content_index_toggleToc()">文章目录 ⚐</a></div>
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/yitianjian_shadow/"><img src="./wlzy-16_files/yitianjian_shadow_01.png" class="top_guangg"></a></div>		<article class="article-content">
+			<div id="content-index" class="content-index"><div class="content-index-title"><a id="content-index-togglelink" href="javascript:content_index_toggleToc()" data-original-title="" title="">文章目录 ⚐</a></div>
 <script type="text/javascript" language="javascript">
 window.content_index_showTocToggle=false;function content_index_toggleToc(){var tts="文章目录 ⚐";var tth="文章目录 ⚑";if(window.content_index_showTocToggle){window.content_index_showTocToggle=false;document.getElementById("content-index-contents").style.display="none";document.getElementById("content-index-togglelink").innerHTML=tts}else{window.content_index_showTocToggle=true;document.getElementById("content-index-contents").style.display="block";document.getElementById("content-index-togglelink").innerHTML=tth}}
 </script>
-<ul id="content-index-contents" style="display: none;"><li class="content-index-level-1"><a href="https://doub.io/wlzy-16/#系统要求" title="系统要求"><span>系统要求</span></a></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-16/#安装步骤" title="安装步骤"><span>安装步骤</span></a></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-16/#使用方法" title="使用方法"><span>使用方法</span></a></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-16/#其他说明" title="其他说明"><span>其他说明</span></a></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-16/#更新日志" title="更新日志"><span>更新日志</span></a></li><li class="content-index-level-1"><a class="hide" onclick="return false;" href="https://doub.io/wlzy-16/#" title=""><span></span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#BBR 简单介绍" title="BBR 简单介绍"><span>BBR 简单介绍</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#脚本版本" title="脚本版本"><span>脚本版本</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#升级BBR" title="升级BBR"><span>升级BBR</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#卸载BBR" title="卸载BBR"><span>卸载BBR</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#更换内核后重启服务器无法启动 的问题" title="更换内核后重启服务器无法启动 的问题"><span>更换内核后重启服务器无法启动 的问题</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#提示 wget: unknown host “raw.githubusercontent.com” 之类的错误" title="提示 wget: unknown host “raw.githubusercontent.com” 之类的错误"><span>提示 wget: unknown host “raw.githubusercontent.com” 之类的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#提示 wget: command not found 的错误" title="提示 wget: command not found 的错误"><span>提示 wget: command not found 的错误</span></a></li><li class="content-index-level-2"><a class="hide" onclick="return false;" href="https://doub.io/wlzy-16/#" title=""><span></span></a><ul class="children"><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2018年02月04日，版本 v1.0.21" title="2018年02月04日，版本 v1.0.21"><span>2018年02月04日，版本 v1.0.21</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017年12月02日，版本 v1.0.20" title="2017年12月02日，版本 v1.0.20"><span>2017年12月02日，版本 v1.0.20</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017年11月13日，版本 v1.0.19" title="2017年11月13日，版本 v1.0.19"><span>2017年11月13日，版本 v1.0.19</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017年11月13日，版本 v1.0.18" title="2017年11月13日，版本 v1.0.18"><span>2017年11月13日，版本 v1.0.18</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017年09月06日，版本 v1.0.17" title="2017年09月06日，版本 v1.0.17"><span>2017年09月06日，版本 v1.0.17</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017年08月05日，版本 v1.0.15" title="2017年08月05日，版本 v1.0.15"><span>2017年08月05日，版本 v1.0.15</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017年08月04日，版本 v1.0.14" title="2017年08月04日，版本 v1.0.14"><span>2017年08月04日，版本 v1.0.14</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017年07月26日，版本 v1.0.13" title="2017年07月26日，版本 v1.0.13"><span>2017年07月26日，版本 v1.0.13</span></a></li></ul></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017年07月21日，版本 v1.0.12" title="2017年07月21日，版本 v1.0.12"><span>2017年07月21日，版本 v1.0.12</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017年05月07日，版本 v1.0.11" title="2017年05月07日，版本 v1.0.11"><span>2017年05月07日，版本 v1.0.11</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017年04月25日，版本 v1.0.10" title="2017年04月25日，版本 v1.0.10"><span>2017年04月25日，版本 v1.0.10</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017年02月27日，版本 v1.0.9" title="2017年02月27日，版本 v1.0.9"><span>2017年02月27日，版本 v1.0.9</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017年01月27日，版本 v1.0.8" title="2017年01月27日，版本 v1.0.8"><span>2017年01月27日，版本 v1.0.8</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017年01月21日，版本 v1.0.7" title="2017年01月21日，版本 v1.0.7"><span>2017年01月21日，版本 v1.0.7</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017年01月16日，版本 v1.0.6" title="2017年01月16日，版本 v1.0.6"><span>2017年01月16日，版本 v1.0.6</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017年01月12日，版本 v1.0.5" title="2017年01月12日，版本 v1.0.5"><span>2017年01月12日，版本 v1.0.5</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017年01月12日，版本 v1.0.4" title="2017年01月12日，版本 v1.0.4"><span>2017年01月12日，版本 v1.0.4</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017年01月09日，版本 v1.0.3" title="2017年01月09日，版本 v1.0.3"><span>2017年01月09日，版本 v1.0.3</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2016年12月12日，版本 v1.0.2" title="2016年12月12日，版本 v1.0.2"><span>2016年12月12日，版本 v1.0.2</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2016年12月10日，版本 v1.0.1" title="2016年12月10日，版本 v1.0.1"><span>2016年12月10日，版本 v1.0.1</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2016年12月10日，版本 v1.0.0" title="2016年12月10日，版本 v1.0.0"><span>2016年12月10日，版本 v1.0.0</span></a></li></ul></li></ul></div>
-<div class="old-message">本文最后更新于 <a><strong>2018年11月5日 16:47</strong></a> 可能会因为没有更新而失效。如已失效或需要修正，请留言！</div><p>这几天很火的BBR，我研究了一下，写了一个一键脚本，适合新手使用。</p>
-<hr />
-<p><strong>手动安装方法：</strong><a title="比锐速还强的 TCP拥塞控制技术 —— TCP-BBR 测试及开启教程" href="https://doub.io/wlzy-15/" target="_blank" rel="noopener">比锐速还强的 TCP拥塞控制技术 —— TCP-BBR 测试及开启教程</a></p>
+<ul id="content-index-contents" style="display: none;"><li class="content-index-level-1"><a href="https://doub.io/wlzy-16/#%E7%B3%BB%E7%BB%9F%E8%A6%81%E6%B1%82" title="" data-original-title="系统要求"><span>系统要求</span></a></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-16/#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4" title="" data-original-title="安装步骤"><span>安装步骤</span></a></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-16/#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" title="" data-original-title="使用方法"><span>使用方法</span></a></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-16/#%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E" title="" data-original-title="其他说明"><span>其他说明</span></a></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-16/#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97" title="" data-original-title="更新日志"><span>更新日志</span></a></li><li class="content-index-level-1"><a class="hide" onclick="return false;" href="https://doub.io/wlzy-16/#" title="" data-original-title=""><span></span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#BBR%20%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D" title="" data-original-title="BBR 简单介绍"><span>BBR 简单介绍</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#%E8%84%9A%E6%9C%AC%E7%89%88%E6%9C%AC" title="" data-original-title="脚本版本"><span>脚本版本</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#%E5%8D%87%E7%BA%A7BBR" title="" data-original-title="升级BBR"><span>升级BBR</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#%E5%8D%B8%E8%BD%BDBBR" title="" data-original-title="卸载BBR"><span>卸载BBR</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#%E6%9B%B4%E6%8D%A2%E5%86%85%E6%A0%B8%E5%90%8E%E9%87%8D%E5%90%AF%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8%20%E7%9A%84%E9%97%AE%E9%A2%98" title="" data-original-title="更换内核后重启服务器无法启动 的问题"><span>更换内核后重启服务器无法启动 的问题</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#%E6%8F%90%E7%A4%BA%20wget:%C2%A0unknown%20host%20%E2%80%9Craw.githubusercontent.com%E2%80%9D%20%E4%B9%8B%E7%B1%BB%E7%9A%84%E9%94%99%E8%AF%AF" title="" data-original-title="提示 wget: unknown host “raw.githubusercontent.com” 之类的错误"><span>提示 wget:&nbsp;unknown host “raw.githubusercontent.com” 之类的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#%E6%8F%90%E7%A4%BA%20wget:%20command%20not%20found%20%E7%9A%84%E9%94%99%E8%AF%AF" title="" data-original-title="提示 wget: command not found 的错误"><span>提示 wget: command not found 的错误</span></a></li><li class="content-index-level-2"><a class="hide" onclick="return false;" href="https://doub.io/wlzy-16/#" title="" data-original-title=""><span></span></a><ul class="children"><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2018%E5%B9%B402%E6%9C%8804%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.21" title="" data-original-title="2018年02月04日，版本 v1.0.21"><span>2018年02月04日，版本 v1.0.21</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B412%E6%9C%8802%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.20" title="" data-original-title="2017年12月02日，版本 v1.0.20"><span>2017年12月02日，版本 v1.0.20</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B411%E6%9C%8813%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.19" title="" data-original-title="2017年11月13日，版本 v1.0.19"><span>2017年11月13日，版本 v1.0.19</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B411%E6%9C%8813%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.18" title="" data-original-title="2017年11月13日，版本 v1.0.18"><span>2017年11月13日，版本 v1.0.18</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B409%E6%9C%8806%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.17" title="" data-original-title="2017年09月06日，版本 v1.0.17"><span>2017年09月06日，版本 v1.0.17</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B408%E6%9C%8805%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.15" title="" data-original-title="2017年08月05日，版本 v1.0.15"><span>2017年08月05日，版本 v1.0.15</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B408%E6%9C%8804%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.14" title="" data-original-title="2017年08月04日，版本 v1.0.14"><span>2017年08月04日，版本 v1.0.14</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B407%E6%9C%8826%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.13" title="" data-original-title="2017年07月26日，版本 v1.0.13"><span>2017年07月26日，版本 v1.0.13</span></a></li></ul></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B407%E6%9C%8821%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.12" title="" data-original-title="2017年07月21日，版本 v1.0.12"><span>2017年07月21日，版本 v1.0.12</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B405%E6%9C%8807%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.11" title="" data-original-title="2017年05月07日，版本 v1.0.11"><span>2017年05月07日，版本 v1.0.11</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B404%E6%9C%8825%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.10" title="" data-original-title="2017年04月25日，版本 v1.0.10"><span>2017年04月25日，版本 v1.0.10</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B402%E6%9C%8827%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.9" title="" data-original-title="2017年02月27日，版本 v1.0.9"><span>2017年02月27日，版本 v1.0.9</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B401%E6%9C%8827%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.8" title="" data-original-title="2017年01月27日，版本 v1.0.8"><span>2017年01月27日，版本 v1.0.8</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B401%E6%9C%8821%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.7" title="" data-original-title="2017年01月21日，版本 v1.0.7"><span>2017年01月21日，版本 v1.0.7</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B401%E6%9C%8816%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.6" title="" data-original-title="2017年01月16日，版本 v1.0.6"><span>2017年01月16日，版本 v1.0.6</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B401%E6%9C%8812%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.5" title="" data-original-title="2017年01月12日，版本 v1.0.5"><span>2017年01月12日，版本 v1.0.5</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B401%E6%9C%8812%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.4" title="" data-original-title="2017年01月12日，版本 v1.0.4"><span>2017年01月12日，版本 v1.0.4</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2017%E5%B9%B401%E6%9C%8809%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.3" title="" data-original-title="2017年01月09日，版本 v1.0.3"><span>2017年01月09日，版本 v1.0.3</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2016%E5%B9%B412%E6%9C%8812%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.2" title="" data-original-title="2016年12月12日，版本 v1.0.2"><span>2016年12月12日，版本 v1.0.2</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2016%E5%B9%B412%E6%9C%8810%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.1" title="" data-original-title="2016年12月10日，版本 v1.0.1"><span>2016年12月10日，版本 v1.0.1</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-16/#2016%E5%B9%B412%E6%9C%8810%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.0" title="" data-original-title="2016年12月10日，版本 v1.0.0"><span>2016年12月10日，版本 v1.0.0</span></a></li></ul></li></ul></div>
+<div class="old-message">本文最后更新于 <a data-original-title="" title=""><strong>2018年11月5日 16:47</strong></a> 可能会因为没有更新而失效。如已失效或需要修正，请留言！</div><p>这几天很火的BBR，我研究了一下，写了一个一键脚本，适合新手使用。</p>
+<hr>
+<p><strong>手动安装方法：</strong><a title="" href="https://doub.io/wlzy-15/" target="_blank" rel="noopener" data-original-title="比锐速还强的 TCP拥塞控制技术 —— TCP-BBR 测试及开启教程">比锐速还强的 TCP拥塞控制技术 —— TCP-BBR 测试及开启教程</a></p>
 <p><span style="color: #ff6464; font-size: 22px;"><strong>注意：TCP-BBR和锐速一样，不支持Openvz，查看本教程之前，请先确定你的VPS的虚拟化技术！</strong></span></p>
 <pre><strong><span style="color: #339966;">注意：本教程涉及到VPS更换内核，所以如果步骤错误，或者VPS不兼容最新的内核，会导致无法开机等错误，请勿用于生产环境！！！！</span></strong></pre>
 <h3 id="BBR 简单介绍">BBR 简单介绍</h3>
@@ -498,10 +498,10 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <p>在原始的TCP流量传输中，一条十字路口公路，很多车流量，但是却<strong>没有红绿灯和交警，导致大家左挤右挤的堵车了</strong>，这就是没有合理的管理导致的。</p>
 <p><strong>而BBR和锐速等TCP流量控制技术，就是红绿灯+交警</strong>，他们就是在无人管理的十字路口，去合理指挥分配车流量，然后最大化的利用车流量，保证路面畅通。</p></blockquote>
 <p>大概就是这样解释了，有什么错误请指出。</p>
-<p><strong>BBR官方项目地址：</strong><a href="https://github.com/google/bbr" target="_blank" rel="noopener">https://github.com/google/bbr</a></p>
+<p><strong>BBR官方项目地址：</strong><a href="https://github.com/google/bbr" target="_blank" rel="noopener" data-original-title="" title="">https://github.com/google/bbr</a></p>
 <h2 id="系统要求">系统要求</h2>
 <p><strong>Debian / Ubuntu 14.04 +</strong></p>
-<p><strong>CentOS用户请使用这个脚本：<a title="CentOS/Debian/Ubuntu系统 TCP-BBR 一键安装脚本" href="https://doub.io/wlzy-22/" target="_blank" rel="noopener">CentOS/Debian/Ubuntu系统 TCP-BBR 一键安装脚本</a></strong></p>
+<p><strong>CentOS用户请使用这个脚本：<a title="" href="https://doub.io/wlzy-22/" target="_blank" rel="noopener" data-original-title="CentOS/Debian/Ubuntu系统 TCP-BBR 一键安装脚本">CentOS/Debian/Ubuntu系统 TCP-BBR 一键安装脚本</a></strong></p>
 <p>本脚本只在 Debian 7 / Debian 8 / Ubuntu 14.04 / Ubuntu 16.04 (均 x64位) 这几个系统中测试过脚本可以正常运行(Vultr)！</p>
 <p>强烈推荐 <strong>Debian 8 x64</strong>，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。</p>
 <p>至于为什么不支持 CentOS 等系统，主要是我不怎么用其他的系统，就不做支持了。</p>
@@ -509,78 +509,55 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <p><strong>Ver:</strong> 1.0.22</p>
 <h2 id="安装步骤">安装步骤</h2>
 <p><strong>更换内核需要ROOT权限</strong>，所以如果你是普通用户 的话，需要ROOT账号权限，<strong>如果你是ROOT账号，那就忽略这个步骤</strong>：</p>
-<pre class="prettyprint linenums">sudo su
-</pre>
-<hr />
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">sudo su</span></li></ol></pre>
+<hr>
 <p>输入并回车后，会提示让你输入当前账号的密码，输入并回车后就可以继续下面的步骤了。</p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/doubi/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; bash bbr.sh
-</pre>
-<p>下载并运行脚本后，会自动检测并开始安装，<strong>首先会提示你输入要下载的内核版本，可以安装自定义版本的内核，也可以直接回车安装最新版本的内核</strong>（<a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/" target="_blank" rel="noopener">内核版本获取</a>）！</p>
-<pre class="prettyprint linenums">请输入 要下载安装的Linux内核版本(BBR) [ 格式: x.xx.xx ，例如: 4.9.96 ]
-[注意] 内核版本列表请去这里获取：[ http://kernel.ubuntu.com/~kernel-ppa/mainline/ ]
-建议使用稳定版本：4.9.XX ，4.9 以上版本属于测试版，稳定版与测试版同步更新，BBR 加速效果无区别。
-(直接回车，自动获取最新稳定版本):
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">wget </span><span class="pun">-</span><span class="pln">N </span><span class="pun">--</span><span class="kwd">no</span><span class="pun">-</span><span class="pln">check</span><span class="pun">-</span><span class="pln">certificate https</span><span class="pun">:</span><span class="com">//raw.githubusercontent.com/user1121114685/doubi/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; bash bbr.sh</span></li></ol></pre>
+<p>下载并运行脚本后，会自动检测并开始安装，<strong>首先会提示你输入要下载的内核版本，可以安装自定义版本的内核，也可以直接回车安装最新版本的内核</strong>（<a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/" target="_blank" rel="noopener" data-original-title="" title="">内核版本获取</a>）！</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">请输入</span><span class="pln"> </span><span class="pun">要下载安装的</span><span class="typ">Linux</span><span class="pun">内核版本(</span><span class="pln">BBR</span><span class="pun">)</span><span class="pln"> </span><span class="pun">[</span><span class="pln"> </span><span class="pun">格式:</span><span class="pln"> x</span><span class="pun">.</span><span class="pln">xx</span><span class="pun">.</span><span class="pln">xx </span><span class="pun">，例如:</span><span class="pln"> </span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">96</span><span class="pln"> </span><span class="pun">]</span></li><li class="L1"><span class="pun">[注意]</span><span class="pln"> </span><span class="pun">内核版本列表请去这里获取：[</span><span class="pln"> http</span><span class="pun">:</span><span class="com">//kernel.ubuntu.com/~kernel-ppa/mainline/ ]</span></li><li class="L2"><span class="pun">建议使用稳定版本：</span><span class="lit">4.9</span><span class="pun">.</span><span class="pln">XX </span><span class="pun">，</span><span class="lit">4.9</span><span class="pln"> </span><span class="pun">以上版本属于测试版，稳定版与测试版同步更新，</span><span class="pln">BBR </span><span class="pun">加速效果无区别。</span></li><li class="L3"><span class="pun">(直接回车，自动获取最新稳定版本):</span></li></ol></pre>
 <p><strong>注意：在Debian系统中</strong>，删除旧内核时，会提示你是否终止删除内核的行为（如下图），这个需要你选择<code> &lt;No&gt; </code>(键盘方向键 选择，回车键 确认)。</p>
-<p><img class=" aligncenter" src="https://img.doub.pw/wlzy-15/wlzy-15-07.png" alt="" width="814" height="289" /></p>
+<p><img class=" aligncenter" src="./wlzy-16_files/wlzy-15-07.png" alt="" width="814" height="289"></p>
 <p>如果没有出错，内核更换完毕后，会提示是否立即重启VPS，直接回车或者输入<code> Y </code>。</p>
-<pre class="prettyprint linenums">需要重启VPS后，才能开启BBR，是否现在重启 ? [Y/n] : <strong>y</strong>
-<strong>[注意] 重启VPS后，请运行脚本查看 BBR 是否正常加载，运行命令： bash /xxx/bbr.sh status</strong> 
-
-[信息]  VPS 重启中...
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">需要重启</span><span class="pln">VPS</span><span class="pun">后，才能开启</span><span class="pln">BBR</span><span class="pun">，是否现在重启</span><span class="pln"> </span><span class="pun">?</span><span class="pln"> </span><span class="pun">[</span><span class="pln">Y</span><span class="pun">/</span><span class="pln">n</span><span class="pun">]</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><strong><span class="pln">y</span></strong></li><li class="L1"><strong><span class="pun">[注意]</span><span class="pln"> </span><span class="pun">重启</span><span class="pln">VPS</span><span class="pun">后，请运行脚本查看</span><span class="pln"> BBR </span><span class="pun">是否正常加载，运行命令：</span><span class="pln"> bash </span><span class="pun">/</span><span class="pln">xxx</span><span class="pun">/</span><span class="pln">bbr</span><span class="pun">.</span><span class="pln">sh status</span></strong><span class="pln"> </span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="pun">[信息]</span><span class="pln">  VPS </span><span class="pun">重启中...</span></li></ol></pre>
 <p>等待十几秒，VPS启动后，重新通过SSH连接VPS，运行重启时提示的命令<span style="color: #ff6464;"><strong>查看BBR是否加载成功。</strong></span></p>
-<pre class="prettyprint linenums">bash /xxx/bbr.sh status
-# /xxx/ 是BBR脚本所在目录，脚本会自动识别并显示给你，免得一些人找不到自己把 bbr.sh 脚本下载到哪里去了。</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">bash </span><span class="pun">/</span><span class="pln">xxx</span><span class="pun">/</span><span class="pln">bbr</span><span class="pun">.</span><span class="pln">sh status</span></li><li class="L1"><span class="com"># /xxx/ 是BBR脚本所在目录，脚本会自动识别并显示给你，免得一些人找不到自己把 bbr.sh 脚本下载到哪里去了。</span></li></ol></pre>
 <p>然后就会自动开启BBR。</p>
 <p><strong>如果重启VPS后，无法连接（或者链接后查看状态提示：BBR已开启但未启动），说明内核安装或与系统存在兼容性问题，无法正常启动，代表你的VPS当前系统无法使用BBR，请更换其他系统！</strong></p>
 <h2 id="使用方法">使用方法</h2>
-<pre class="prettyprint linenums"># 启动BBR
-bash bbr.sh start
-
-# 关闭BBR
-bash bbr.sh stop
-
-# 查看BBR状态
-bash bbr.sh status</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># 启动BBR</span></li><li class="L1"><span class="pln">bash bbr</span><span class="pun">.</span><span class="pln">sh start</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="com"># 关闭BBR</span></li><li class="L4"><span class="pln">bash bbr</span><span class="pun">.</span><span class="pln">sh stop</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="com"># 查看BBR状态</span></li><li class="L7"><span class="pln">bash bbr</span><span class="pun">.</span><span class="pln">sh status</span></li></ol></pre>
 <pre>注意：关闭BBR，需要重启VPS，所以脚本会提醒是否立即重启VPS。</pre>
 <h3 id="升级BBR">升级BBR</h3>
-<pre class="prettyprint linenums">bash bbr.sh
-# 重新执行脚本会检测最新内核和当前内核，对比版本</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">bash bbr</span><span class="pun">.</span><span class="pln">sh</span></li><li class="L1"><span class="com"># 重新执行脚本会检测最新内核和当前内核，对比版本</span></li></ol></pre>
 <p><strong>因为 BBR 只是内核中的一个模块，所以内核更新不一定是 BBR 更新</strong>，就像 Win10 中 IE 的位置一样，Win10 更新不代表是为了更新 IE ，所以是否要更新内核要看 BBR 官方源码有没有更新了。</p>
-<p><strong>BBR官方项目地址：</strong><a href="https://github.com/google/bbr" target="_blank" rel="noopener">https://github.com/google/bbr</a></p>
+<p><strong>BBR官方项目地址：</strong><a href="https://github.com/google/bbr" target="_blank" rel="noopener" data-original-title="" title="">https://github.com/google/bbr</a></p>
 <blockquote><p><em>另外</em>，4.9.xx 版本为稳定版内核，4.9 以后的版本都是测试版内核，稳定版和测试版同步更新，<strong>BBR 模块也是同步更新，建议使用稳定版内核。</strong></p></blockquote>
 <h3 id="卸载BBR">卸载BBR</h3>
 <p>BBR集成于内核中，所以卸载BBR=更换内核，教程：</p>
-<p><a title="Debian更换内核教程 —— 4.10.x(BBR) 降低内核版本为 支持锐速的内核" href="https://doub.io/linux-jc6/" target="_blank" rel="noopener">Debian/Ubuntu 内核降级教程 —— 降低(BBR)为支持锐速的内核版本</a></p>
+<p><a title="" href="https://doub.io/linux-jc6/" target="_blank" rel="noopener" data-original-title="Debian更换内核教程 —— 4.10.x(BBR) 降低内核版本为 支持锐速的内核">Debian/Ubuntu 内核降级教程 —— 降低(BBR)为支持锐速的内核版本</a></p>
 <h2 id="其他说明">其他说明</h2>
 <pre><strong>注意：TCP-BBR必须是 2016-12-05 21:00 更新的 4.9.0-rc8 内核及以后的版本 才能开启，而锐速并不支持这个最新的内核版本，所以TCP-BBR和锐速是不可能共存的。</strong></pre>
-<p><strong>裸SS / 锐速+SS / BBR+SS简单速度对比，仅供参考，<a href="https://doub.io/wlzy-15/#裸 SS/锐速+SS/BBR+SS 速度对比" target="_blank" rel="noopener">看这里</a>。</strong></p>
+<p><strong>裸SS / 锐速+SS / BBR+SS简单速度对比，仅供参考，<a href="https://doub.io/wlzy-15/#%E8%A3%B8%20SS/%E9%94%90%E9%80%9F+SS/BBR+SS%20%E9%80%9F%E5%BA%A6%E5%AF%B9%E6%AF%94" target="_blank" rel="noopener" data-original-title="" title="">看这里</a>。</strong></p>
 <h3 id="更换内核后重启服务器无法启动 的问题">更换内核后重启服务器无法启动 的问题</h3>
 <p>如果重启VPS后，无法连接，说明内核安装有问题 或 内核与系统存在兼容性问题，无法正常启动。</p>
 <p>这代表你的VPS当前系统不支持最新的内核版本，无法开启BBR，请更换其他系统尝试！</p>
-<h3 id="提示 wget: unknown host “raw.githubusercontent.com” 之类的错误">提示 wget: unknown host “raw.githubusercontent.com” 之类的错误</h3>
+<h3 id="提示 wget: unknown host “raw.githubusercontent.com” 之类的错误">提示 wget:&nbsp;unknown host “raw.githubusercontent.com” 之类的错误</h3>
 <p>这是无法解析我的域名，多半是DNS的问题，请更换DNS为谷歌DNS。</p>
-<pre class="prettyprint linenums">echo "nameserver 8.8.8.8" &gt; /etc/resolv.conf
-echo "nameserver 8.8.4.4" &gt;&gt; /etc/resolv.conf
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">echo </span><span class="str">"nameserver 8.8.8.8"</span><span class="pln"> </span><span class="pun">&gt;</span><span class="pln"> </span><span class="str">/etc/</span><span class="pln">resolv</span><span class="pun">.</span><span class="pln">conf</span></li><li class="L1"><span class="pln">echo </span><span class="str">"nameserver 8.8.4.4"</span><span class="pln"> </span><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="str">/etc/</span><span class="pln">resolv</span><span class="pun">.</span><span class="pln">conf</span></li></ol></pre>
 <h3 id="提示 wget: command not found 的错误">提示 wget: command not found 的错误</h3>
 <p>这是你的系统精简的太干净了，wget都没有安装，所以需要安装wget。</p>
-<pre class="prettyprint linenums"># Debian/Ubuntu 系统:
-apt-get install -y wget
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># Debian/Ubuntu 系统:</span></li><li class="L1"><span class="pln">apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> install </span><span class="pun">-</span><span class="pln">y wget</span></li></ol></pre>
 <h2 id="更新日志">更新日志</h2>
 <h4 id="2018年02月04日，版本 v1.0.21">2018年02月04日，版本 v1.0.21</h4>
 <p><strong>1. 修复</strong> v4.15.0 内核版本后，脚本检测BBR状态错误问题。</p>
 <h4 id="2017年12月02日，版本 v1.0.20">2017年12月02日，版本 v1.0.20</h4>
 <p><strong>1. 优化</strong> 卸载内核时，如多余内核等于0(除了刚安装的内核以外的)，那么将直接跳过卸载多余内核步骤（以前是提示内核数量错误中断脚本）。</p>
 <h4 id="2017年11月13日，版本 v1.0.19">2017年11月13日，版本 v1.0.19</h4>
-<p><strong>1. 修复</strong> 更换内核，卸载旧内核步骤时误删新内核的问题。</p>
+<p><strong>1. 修复</strong>&nbsp;更换内核，卸载旧内核步骤时误删新内核的问题。</p>
 <h4 id="2017年11月13日，版本 v1.0.18">2017年11月13日，版本 v1.0.18</h4>
 <p><strong>1. 修复</strong> 更换内核，卸载旧内核步骤时，判断内核数量有误的问题（更新脚本后，只需要重新执行<strong> bash bbr.sh install</strong> 即可继续删除旧内核步骤）。</p>
 <h4 id="2017年09月06日，版本 v1.0.17">2017年09月06日，版本 v1.0.17</h4>
-<p><strong>1.修复</strong> 在内核版本为 X.XX.0 的时候，检测BBR更新会提示更新的问题（很早就有的BUG，一直忘记修复，这是因为内核仓库版本号为 4.13 而安装后内核版本为 4.13.0 导致不一致，所以才会不停循环提示更新）。</p>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多更新日志</a></p><div class="toggle-box" style="display: none;"><p></p>
+<p><strong>1.修复</strong>&nbsp;在内核版本为 X.XX.0 的时候，检测BBR更新会提示更新的问题（很早就有的BUG，一直忘记修复，这是因为内核仓库版本号为 4.13 而安装后内核版本为 4.13.0 导致不一致，所以才会不停循环提示更新）。</p>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/wlzy-16/#" data-original-title="" title="">点击展开 查看更多更新日志</a></p><div class="toggle-box" style="display: none;"><p></p>
 <h4 id="2017年08月05日，版本 v1.0.15">2017年08月05日，版本 v1.0.15</h4>
 <p><strong>1.新增</strong> i686系统支持（32位 i386分支）。</p>
 <h4 id="2017年08月04日，版本 v1.0.14">2017年08月04日，版本 v1.0.14</h4>
@@ -591,14 +568,14 @@ apt-get install -y wget
 <p><strong>1.更新</strong> 再新新更换内核安装BBR并重启后，无需再运行脚本（bash bbr.sh start）。</p>
 <h3 id="2017年05月07日，版本 v1.0.11">2017年05月07日，版本 v1.0.11</h3>
 <p><strong>1.新增</strong> 支持内核 4.11.x 后的版本</p>
-<p>—— 已知BUG：获取的版本号是 4.11 ，而安装后本地查到的版本号是 4.11.0 会无法匹配，提示不是最新版本，无视就好。</p>
+<p>——&nbsp;已知BUG：获取的版本号是 4.11 ，而安装后本地查到的版本号是 4.11.0 会无法匹配，提示不是最新版本，无视就好。</p>
 <h3 id="2017年04月25日，版本 v1.0.10">2017年04月25日，版本 v1.0.10</h3>
 <p><strong>1.新增</strong> 安装内核时 可安装自定义内核版本（可升级/降级）</p>
 <h3 id="2017年02月27日，版本 v1.0.9">2017年02月27日，版本 v1.0.9</h3>
-<p><strong>1.新增</strong> 支持内核 4.1x.x 后的版本</p>
+<p><strong>1.新增</strong>&nbsp;支持内核 4.1x.x 后的版本</p>
 <h3 id="2017年01月27日，版本 v1.0.8">2017年01月27日，版本 v1.0.8</h3>
 <p><strong>1.新增</strong> 自动检测最新内核版本功能</p>
-<p>—— 不需要每次内核一更新，脚本也要更新了，自动检测代码来自泰迪的BBR脚本：<a href="https://teddysun.com/489.html" target="_blank" rel="noopener">https://teddysun.com/489.html</a></p>
+<p>—— 不需要每次内核一更新，脚本也要更新了，自动检测代码来自泰迪的BBR脚本：<a href="https://teddysun.com/489.html" target="_blank" rel="noopener" data-original-title="" title="">https://teddysun.com/489.html</a></p>
 <h3 id="2017年01月21日，版本 v1.0.7">2017年01月21日，版本 v1.0.7</h3>
 <p>1.<strong>更新</strong> 内核文件为 4.9.5 (2017/01/20更新)</p>
 <h3 id="2017年01月16日，版本 v1.0.6">2017年01月16日，版本 v1.0.6</h3>
@@ -618,19 +595,19 @@ apt-get install -y wget
 <p>——重新执行<code> bash bbr.sh </code>即会检测是否已经安装了最新的内核，和是否删除了多余的内核，如果存在就继续删除。</p>
 <p><strong>2.增加</strong> 启动BBR前先检测是否已经添加启动代码到<code> /etc/sysctl.conf </code>文件中，如果已经添加，就先删除。</p>
 <h3 id="2016年12月10日，版本 v1.0.0">2016年12月10日，版本 v1.0.0</h3>
-<p><strong>1.推出</strong> 正式版本。<br />
+<p><strong>1.推出</strong> 正式版本。<br>
 </p></div>
-<hr />
+<hr>
 <p>如果有什么BUG，请联系我或者在下面评论留言！</p>
 <p>允许转载，但是请注明源链接，谢谢！</p>
-<p><pre style="border-left: solid 4px #1abc9c;"><strong>转载请超链接注明：</strong><a href="https://doub.io">逗比根据地</a> &raquo; <a href="https://doub.io/wlzy-16/">『原创』Debian/Ubuntu TCP拥塞控制技术 ——TCP-BBR 一键安装脚本</a></pre><pre><strong>责任声明：</strong>本站一切资源仅用作交流学习，请勿用作商业或违法行为！如造成任何后果，本站概不负责！</pre></p>
+<p></p><pre style="border-left: solid 4px #1abc9c;"><strong>转载请超链接注明：</strong><a href="https://doub.io/" data-original-title="" title="">逗比根据地</a> » <a href="https://doub.io/wlzy-16/" data-original-title="" title="">『原创』Debian/Ubuntu TCP拥塞控制技术 ——TCP-BBR 一键安装脚本</a></pre><pre><strong>责任声明：</strong>本站一切资源仅用作交流学习，请勿用作商业或违法行为！如造成任何后果，本站概不负责！</pre><p></p>
 
       
 <div class="article-social">
-			<a href="javascript:;" data-action="ding" data-id="1731" id="Addlike" class="action"><i class="fa fa-thumbs-o-up"></i>赞 (<span class="count">67</span>)</a></div>
+			<a href="javascript:;" data-action="ding" data-id="1731" id="Addlike" class="action" data-original-title="" title=""><i class="fa fa-thumbs-o-up"></i>赞 (<span class="count">67</span>)</a></div>
 	</article>	
 				<footer class="article-footer">
-			<div class="article-tags"><i class="fa fa-tags"></i><a href="https://doub.io/tag/tcp-bbr/" rel="tag">TCP-BBR</a><a href="https://doub.io/tag/vps/" rel="tag">VPS</a><a href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" rel="tag">脚本</a></div></footer>
+			<div class="article-tags"><i class="fa fa-tags"></i><a href="https://doub.io/tag/tcp-bbr/" rel="tag" data-original-title="" title="">TCP-BBR</a><a href="https://doub.io/tag/vps/" rel="tag" data-original-title="" title="">VPS</a><a href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" rel="tag" data-original-title="" title="">脚本</a></div></footer>
 	<nav class="article-nav">
 			<span class="article-nav-prev"><i class="fa fa-angle-double-left"></i> <a href="https://doub.io/wlzy-15/" rel="prev">比锐速还强的 TCP拥塞控制技术 —— TCP-BBR 测试及开启教程</a></span>
 			<span class="article-nav-next"><a href="https://doub.io/wlzy-21/" rel="next">Linux TCP加速工具 —— LotServer(锐速母公司) 一键安装脚本</a>  <i class="fa fa-angle-double-right"></i></span>
@@ -639,24 +616,24 @@ apt-get install -y wget
 		<div class="related_top">
 			<div class="related_posts"><ul class="related_img">
 
-		<li class="related_box"  >
-		<a href="https://doub.io/ss-jc67/" title="『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/shadowsocks3.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本" />	<br><span class="r_title">『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本</span></a>
+		<li class="related_box">
+		<a href="https://doub.io/ss-jc67/" title="『原创』Shadowsocks &lt;strong&gt;Go版&lt;/strong&gt; 一键安装管理脚本" target="_blank">
+<img src="./wlzy-16_files/timthumb.php" alt="『原创』Shadowsocks &lt;strong&gt;Go版&lt;/strong&gt; 一键安装管理脚本">	<br><span class="r_title">『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
-		<a href="https://doub.io/shell-jc9/" title="『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/telegram.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本" />	<br><span class="r_title">『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本</span></a>
+		<li class="related_box">
+		<a href="https://doub.io/shell-jc9/" title="『原创』Telegram 专用的轻量化代理工具 —— MTProxy &lt;strong&gt;Go版&lt;/strong&gt; 一键脚本" target="_blank">
+<img src="./wlzy-16_files/timthumb(1).php" alt="『原创』Telegram 专用的轻量化代理工具 —— MTProxy &lt;strong&gt;Go版&lt;/strong&gt; 一键脚本">	<br><span class="r_title">『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/shell-jc8/" title="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/telegram.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本" />	<br><span class="r_title">『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本</span></a>
+<img src="./wlzy-16_files/timthumb(1).php" alt="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本">	<br><span class="r_title">『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/daze-jc3/" title="『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/daze-01.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本" />	<br><span class="r_title">『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本</span></a>
+<img src="./wlzy-16_files/timthumb(2).php" alt="『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本">	<br><span class="r_title">『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本</span></a>
 		</li>
 	</ul>
 
@@ -675,18 +652,18 @@ apt-get install -y wget
 		
 		<div class="comt">
 			<div class="comt-box">
-				<textarea placeholder="本站所有评论均会审核，因缓存原因，审核中的评论刷新页面后就会不显示，请知晓勿重发。" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById('submit').click();return false};"></textarea>
+				<textarea placeholder="本站所有评论均会审核，因缓存原因，审核中的评论刷新页面后就会不显示，请知晓勿重发。" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById(&#39;submit&#39;).click();return false};"></textarea>
 				<div class="comt-ctrl">
 					<button class="btn btn-primary pull-right" type="submit" name="submit" id="submit" tabindex="5"><i class="fa fa-check-square-o"></i> 提交评论</button>
-					<div class="comt-tips pull-right"><input type='hidden' name='comment_post_ID' value='1731' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</div>
+					<div class="comt-tips pull-right"><input type="hidden" name="comment_post_ID" value="1731" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+<div class="comt-tip comt-loading" style="display: none;">正在提交, 请稍候...</div><div class="comt-tip comt-error" style="display: none;">#</div></div>
 					<span data-type="comment-insert-smilie" class="muted comt-smilie"><i class="fa fa-smile-o"></i> 表情</span>
-					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked"/>有人回复时邮件通知我</label></span>
+					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked">有人回复时邮件通知我</label></span>
 				</div>
 			</div>
 
-												<div class="comt-comterinfo" id="comment-author-info" >
+												<div class="comt-comterinfo" id="comment-author-info">
 						<h4>Hi，您需要填写昵称和邮箱！</h4>
 						<ul>
 							<li class="form-inline"><label class="hide" for="author">昵称</label><input class="ipt" type="text" name="author" id="author" value="" tabindex="2" placeholder="昵称"><span class="help-inline">昵称 (必填)</span></li>
@@ -705,82 +682,38 @@ apt-get install -y wget
 		<i class="fa fa-comments-o"></i> <b> (241)</b>个小伙伴在吐槽
 	</div>
 	<ol class="commentlist">
-		<li class="comment even thread-even depth-1" id="comment-45830"><div class="c-avatar"><div class="c-main" id="div-comment-45830"><pre class="prettyprint linenums" >[信息] 内核安装包下载成功，开始安装内核...
-Selecting previously unselected package linux-image-4.9.135-0409135-generic.
-(Reading database ... 29724 files and directories currently installed.)
-Preparing to unpack linux-image-4.9.135-amd64.deb ...
-Done.
-Unpacking linux-image-4.9.135-0409135-generic (4.9.135-0409135.201810200830) ...
-Setting up linux-image-4.9.135-0409135-generic (4.9.135-0409135.201810200830) ...
-Running depmod.
-update-initramfs: deferring update (hook will be called later)
-Examining /etc/kernel/postinst.d.
-run-parts: executing /etc/kernel/postinst.d/apt-auto-removal 4.9.135-0409135-generic /boot/vmlinuz-4.9.135-0409135-generic
-run-parts: executing /etc/kernel/postinst.d/initramfs-tools 4.9.135-0409135-generic /boot/vmlinuz-4.9.135-0409135-generic
-update-initramfs: Generating /boot/initrd.img-4.9.135-0409135-generic
-run-parts: executing /etc/kernel/postinst.d/zz-update-grub 4.9.135-0409135-generic /boot/vmlinuz-4.9.135-0409135-generic
-Generating grub configuration file ...
-Found linux image: /boot/vmlinuz-4.9.135-0409135-generic
-Found initrd image: /boot/initrd.img-4.9.135-0409135-generic
-Found linux image: /boot/vmlinuz-3.16.0-4-amd64
-Found initrd image: /boot/initrd.img-3.16.0-4-amd64
-Segmentation fault
-
-卡住不动了，怎么回事？
-</pre><div class="c-meta"><span class="c-author">谦虚君</span>2018-11-09 22:59 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=45830#respond' onclick='return addComment.moveForm( "div-comment-45830", "45830", "respond", "1731" )' aria-label='回复给谦虚君'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45835"><div class="c-avatar"><div class="c-main" id="div-comment-45835">你的服务器系统无法更换内核。换个系统试试吧。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-09 23:29 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=45835#respond' onclick='return addComment.moveForm( "div-comment-45835", "45835", "respond", "1731" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-45830"><div class="c-avatar"><div class="c-main" id="div-comment-45830"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">[信息]</span><span class="pln"> </span><span class="pun">内核安装包下载成功，开始安装内核...</span></li><li class="L1"><span class="typ">Selecting</span><span class="pln"> previously unselected </span><span class="kwd">package</span><span class="pln"> linux</span><span class="pun">-</span><span class="pln">image</span><span class="pun">-</span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135</span><span class="pun">-</span><span class="pln">generic</span><span class="pun">.</span></li><li class="L2"><span class="pun">(</span><span class="typ">Reading</span><span class="pln"> database </span><span class="pun">...</span><span class="pln"> </span><span class="lit">29724</span><span class="pln"> files </span><span class="kwd">and</span><span class="pln"> directories currently installed</span><span class="pun">.)</span></li><li class="L3"><span class="typ">Preparing</span><span class="pln"> to unpack linux</span><span class="pun">-</span><span class="pln">image</span><span class="pun">-</span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="pln">amd64</span><span class="pun">.</span><span class="pln">deb </span><span class="pun">...</span></li><li class="L4"><span class="typ">Done</span><span class="pun">.</span></li><li class="L5"><span class="typ">Unpacking</span><span class="pln"> linux</span><span class="pun">-</span><span class="pln">image</span><span class="pun">-</span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135</span><span class="pun">-</span><span class="pln">generic </span><span class="pun">(</span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135.201810200830</span><span class="pun">)</span><span class="pln"> </span><span class="pun">...</span></li><li class="L6"><span class="typ">Setting</span><span class="pln"> up linux</span><span class="pun">-</span><span class="pln">image</span><span class="pun">-</span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135</span><span class="pun">-</span><span class="pln">generic </span><span class="pun">(</span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135.201810200830</span><span class="pun">)</span><span class="pln"> </span><span class="pun">...</span></li><li class="L7"><span class="typ">Running</span><span class="pln"> depmod</span><span class="pun">.</span></li><li class="L8"><span class="pln">update</span><span class="pun">-</span><span class="pln">initramfs</span><span class="pun">:</span><span class="pln"> deferring update </span><span class="pun">(</span><span class="pln">hook will be called later</span><span class="pun">)</span></li><li class="L9"><span class="typ">Examining</span><span class="pln"> </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">kernel</span><span class="pun">/</span><span class="pln">postinst</span><span class="pun">.</span><span class="pln">d</span><span class="pun">.</span></li><li class="L0"><span class="pln">run</span><span class="pun">-</span><span class="pln">parts</span><span class="pun">:</span><span class="pln"> executing </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">kernel</span><span class="pun">/</span><span class="pln">postinst</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">apt</span><span class="pun">-</span><span class="kwd">auto</span><span class="pun">-</span><span class="pln">removal </span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135</span><span class="pun">-</span><span class="pln">generic </span><span class="pun">/</span><span class="pln">boot</span><span class="pun">/</span><span class="pln">vmlinuz</span><span class="pun">-</span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135</span><span class="pun">-</span><span class="pln">generic</span></li><li class="L1"><span class="pln">run</span><span class="pun">-</span><span class="pln">parts</span><span class="pun">:</span><span class="pln"> executing </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">kernel</span><span class="pun">/</span><span class="pln">postinst</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">initramfs</span><span class="pun">-</span><span class="pln">tools </span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135</span><span class="pun">-</span><span class="pln">generic </span><span class="pun">/</span><span class="pln">boot</span><span class="pun">/</span><span class="pln">vmlinuz</span><span class="pun">-</span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135</span><span class="pun">-</span><span class="pln">generic</span></li><li class="L2"><span class="pln">update</span><span class="pun">-</span><span class="pln">initramfs</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Generating</span><span class="pln"> </span><span class="pun">/</span><span class="pln">boot</span><span class="pun">/</span><span class="pln">initrd</span><span class="pun">.</span><span class="pln">img</span><span class="pun">-</span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135</span><span class="pun">-</span><span class="pln">generic</span></li><li class="L3"><span class="pln">run</span><span class="pun">-</span><span class="pln">parts</span><span class="pun">:</span><span class="pln"> executing </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">kernel</span><span class="pun">/</span><span class="pln">postinst</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">zz</span><span class="pun">-</span><span class="pln">update</span><span class="pun">-</span><span class="pln">grub </span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135</span><span class="pun">-</span><span class="pln">generic </span><span class="pun">/</span><span class="pln">boot</span><span class="pun">/</span><span class="pln">vmlinuz</span><span class="pun">-</span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135</span><span class="pun">-</span><span class="pln">generic</span></li><li class="L4"><span class="typ">Generating</span><span class="pln"> grub configuration file </span><span class="pun">...</span></li><li class="L5"><span class="typ">Found</span><span class="pln"> linux image</span><span class="pun">:</span><span class="pln"> </span><span class="str">/boot/</span><span class="pln">vmlinuz</span><span class="pun">-</span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135</span><span class="pun">-</span><span class="pln">generic</span></li><li class="L6"><span class="typ">Found</span><span class="pln"> initrd image</span><span class="pun">:</span><span class="pln"> </span><span class="str">/boot/</span><span class="pln">initrd</span><span class="pun">.</span><span class="pln">img</span><span class="pun">-</span><span class="lit">4.9</span><span class="pun">.</span><span class="lit">135</span><span class="pun">-</span><span class="lit">0409135</span><span class="pun">-</span><span class="pln">generic</span></li><li class="L7"><span class="typ">Found</span><span class="pln"> linux image</span><span class="pun">:</span><span class="pln"> </span><span class="str">/boot/</span><span class="pln">vmlinuz</span><span class="pun">-</span><span class="lit">3.16</span><span class="pun">.</span><span class="lit">0</span><span class="pun">-</span><span class="lit">4</span><span class="pun">-</span><span class="pln">amd64</span></li><li class="L8"><span class="typ">Found</span><span class="pln"> initrd image</span><span class="pun">:</span><span class="pln"> </span><span class="str">/boot/</span><span class="pln">initrd</span><span class="pun">.</span><span class="pln">img</span><span class="pun">-</span><span class="lit">3.16</span><span class="pun">.</span><span class="lit">0</span><span class="pun">-</span><span class="lit">4</span><span class="pun">-</span><span class="pln">amd64</span></li><li class="L9"><span class="typ">Segmentation</span><span class="pln"> fault</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="pun">卡住不动了，怎么回事？</span></li></ol></pre><div class="c-meta"><span class="c-author">谦虚君</span>2018-11-09 22:59 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=45830#respond" onclick="return addComment.moveForm( &quot;div-comment-45830&quot;, &quot;45830&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给谦虚君">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45835"><div class="c-avatar"><div class="c-main" id="div-comment-45835">你的服务器系统无法更换内核。换个系统试试吧。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-09 23:29 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=45835#respond" onclick="return addComment.moveForm( &quot;div-comment-45835&quot;, &quot;45835&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-45568"><div class="c-avatar"><div class="c-main" id="div-comment-45568"><pre class="prettyprint linenums" >[信息] 检测到当前内核版本支持开启BBR 但不是最新内核版本，开始升级(或降级)内核...
---2018-11-05 16:33:59--  http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.9.96/linux-image-4.9.96-040996-generic_4.9.96-040996.201804240437_amd64.deb
-Resolving kernel.ubuntu.com (kernel.ubuntu.com)... failed: Name or service not known.
-wget: unable to resolve host address ‘kernel.ubuntu.com’
-[错误] 内核安装包下载失败，请检查 !
-
-什么情况！
-</pre><div class="c-meta"><span class="c-author">xrzyer</span>2018-11-05 16:38 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=45568#respond' onclick='return addComment.moveForm( "div-comment-45568", "45568", "respond", "1731" )' aria-label='回复给xrzyer'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45570"><div class="c-avatar"><div class="c-main" id="div-comment-45570"><a href="https://doub.io/wlzy-16/#提示 wget: unknown host “raw.githubusercontent.com” 之类的错误">https://doub.io/wlzy-16/#提示 wget: unknown host “raw.githubusercontent.com” 之类的错误</a><div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-05 16:47 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=45570#respond' onclick='return addComment.moveForm( "div-comment-45570", "45570", "respond", "1731" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-45568"><div class="c-avatar"><div class="c-main" id="div-comment-45568"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">[信息]</span><span class="pln"> </span><span class="pun">检测到当前内核版本支持开启</span><span class="pln">BBR </span><span class="pun">但不是最新内核版本，开始升级(或降级)内核...</span></li><li class="L1"><span class="pun">--</span><span class="lit">2018</span><span class="pun">-</span><span class="lit">11</span><span class="pun">-</span><span class="lit">05</span><span class="pln"> </span><span class="lit">16</span><span class="pun">:</span><span class="lit">33</span><span class="pun">:</span><span class="lit">59</span><span class="pun">--</span><span class="pln">  http</span><span class="pun">:</span><span class="com">//kernel.ubuntu.com/~kernel-ppa/mainline/v4.9.96/linux-image-4.9.96-040996-generic_4.9.96-040996.201804240437_amd64.deb</span></li><li class="L2"><span class="typ">Resolving</span><span class="pln"> kernel</span><span class="pun">.</span><span class="pln">ubuntu</span><span class="pun">.</span><span class="pln">com </span><span class="pun">(</span><span class="pln">kernel</span><span class="pun">.</span><span class="pln">ubuntu</span><span class="pun">.</span><span class="pln">com</span><span class="pun">)...</span><span class="pln"> failed</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Name</span><span class="pln"> </span><span class="kwd">or</span><span class="pln"> service </span><span class="kwd">not</span><span class="pln"> known</span><span class="pun">.</span></li><li class="L3"><span class="pln">wget</span><span class="pun">:</span><span class="pln"> unable to resolve host address </span><span class="pun">‘</span><span class="pln">kernel</span><span class="pun">.</span><span class="pln">ubuntu</span><span class="pun">.</span><span class="pln">com</span><span class="pun">’</span></li><li class="L4"><span class="pun">[错误]</span><span class="pln"> </span><span class="pun">内核安装包下载失败，请检查</span><span class="pln"> </span><span class="pun">!</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pun">什么情况！</span></li></ol></pre><div class="c-meta"><span class="c-author">xrzyer</span>2018-11-05 16:38 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=45568#respond" onclick="return addComment.moveForm( &quot;div-comment-45568&quot;, &quot;45568&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给xrzyer">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45570"><div class="c-avatar"><div class="c-main" id="div-comment-45570"><a href="https://doub.io/wlzy-16/#%E6%8F%90%E7%A4%BA%20wget:%C2%A0unknown%20host%20%E2%80%9Craw.githubusercontent.com%E2%80%9D%20%E4%B9%8B%E7%B1%BB%E7%9A%84%E9%94%99%E8%AF%AF">https://doub.io/wlzy-16/#提示 wget:&nbsp;unknown host “raw.githubusercontent.com” 之类的错误</a><div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-05 16:47 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=45570#respond" onclick="return addComment.moveForm( &quot;div-comment-45570&quot;, &quot;45570&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-45083"><div class="c-avatar"><div class="c-main" id="div-comment-45083">vultr 巴黎机房 Debian 8 系统，装最新稳定版 4.9.135 会导致重启后无法连接，退回到 4.9.130 就一切正常<div class="c-meta"><span class="c-author">vakarian</span>2018-10-26 15:00 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=45083#respond' onclick='return addComment.moveForm( "div-comment-45083", "45083", "respond", "1731" )' aria-label='回复给vakarian'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45090"><div class="c-avatar"><div class="c-main" id="div-comment-45090">不需要一味追求最新，及时是稳定版分支，也并不代表会没毛病。<br />
-如果你用某个版本号稳定，那么建议以后都用该版本号，反正BBR是都一样的。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-10-26 16:17 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=45090#respond' onclick='return addComment.moveForm( "div-comment-45090", "45090", "respond", "1731" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment even depth-3" id="comment-45579"><div class="c-avatar"><div class="c-main" id="div-comment-45579">默认回车的嘛 <img data-original="https://doub.io/wp-content/themes/yusi1.0/img/smilies/icon_lol.gif" alt=":lol:" class="wp-smiley" style="height: 1em; max-height: 1em;" /> 以后装得自己输了<div class="c-meta"><span class="c-author">vakarian</span>2018-11-05 21:46 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=45579#respond' onclick='return addComment.moveForm( "div-comment-45579", "45579", "respond", "1731" )' aria-label='回复给vakarian'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="comment-45083"><div class="c-avatar"><div class="c-main" id="div-comment-45083">vultr 巴黎机房 Debian 8 系统，装最新稳定版 4.9.135 会导致重启后无法连接，退回到 4.9.130 就一切正常<div class="c-meta"><span class="c-author">vakarian</span>2018-10-26 15:00 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=45083#respond" onclick="return addComment.moveForm( &quot;div-comment-45083&quot;, &quot;45083&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给vakarian">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45090"><div class="c-avatar"><div class="c-main" id="div-comment-45090">不需要一味追求最新，及时是稳定版分支，也并不代表会没毛病。<br>
+如果你用某个版本号稳定，那么建议以后都用该版本号，反正BBR是都一样的。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-10-26 16:17 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=45090#respond" onclick="return addComment.moveForm( &quot;div-comment-45090&quot;, &quot;45090&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment even depth-3" id="comment-45579"><div class="c-avatar"><div class="c-main" id="div-comment-45579">默认回车的嘛 <img data-original="https://doub.io/wp-content/themes/yusi1.0/img/smilies/icon_lol.gif" alt=":lol:" class="wp-smiley" style="height: 1em; max-height: 1em;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"> 以后装得自己输了<div class="c-meta"><span class="c-author">vakarian</span>2018-11-05 21:46 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=45579#respond" onclick="return addComment.moveForm( &quot;div-comment-45579&quot;, &quot;45579&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给vakarian">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-44845"><div class="c-avatar"><div class="c-main" id="div-comment-44845"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="47352828330731322b3335">[email&#160;protected]</a>:~# bash bbr.sh status
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-44845"><div class="c-avatar"><div class="c-main" id="div-comment-44845">root@vultr:~# bash bbr.sh status
 [信息] 检测稳定版内核最新版本中...
-[错误] 检测内核最新版本失败 !<div class="c-meta"><span class="c-author">LeonHu</span>2018-10-22 16:57 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=44845#respond' onclick='return addComment.moveForm( "div-comment-44845", "44845", "respond", "1731" )' aria-label='回复给LeonHu'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-44850"><div class="c-avatar"><div class="c-main" id="div-comment-44850">你的服务器与Ubuntu内核仓库链接有问题，脚本无法访问并获取最新版本号。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-10-22 19:54 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=44850#respond' onclick='return addComment.moveForm( "div-comment-44850", "44850", "respond", "1731" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+[错误] 检测内核最新版本失败 !<div class="c-meta"><span class="c-author">LeonHu</span>2018-10-22 16:57 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=44845#respond" onclick="return addComment.moveForm( &quot;div-comment-44845&quot;, &quot;44845&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给LeonHu">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-44850"><div class="c-avatar"><div class="c-main" id="div-comment-44850">你的服务器与Ubuntu内核仓库链接有问题，脚本无法访问并获取最新版本号。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-10-22 19:54 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=44850#respond" onclick="return addComment.moveForm( &quot;div-comment-44850&quot;, &quot;44850&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-44729"><div class="c-avatar"><div class="c-main" id="div-comment-44729">逗比我发现用你的ssr一键脚本搭建时，安装bbr，提示重启服务器后会发现服务器就连不上了，用站长工具一查vps的22端口被封了。。。<div class="c-meta"><span class="c-author">飞扬的旋律</span>2018-10-20 15:48 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=44729#respond' onclick='return addComment.moveForm( "div-comment-44729", "44729", "respond", "1731" )' aria-label='回复给飞扬的旋律'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-44733"><div class="c-avatar"><div class="c-main" id="div-comment-44733">不是端口被封，而是服务器启动失败，因为内核兼容性问题导致无法加载内核，最后开机失败。<br />
-请重装系统解决，重装系统后如果还要安装，那么尝试更换系统或者内核版本号。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-10-20 16:33 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=44733#respond' onclick='return addComment.moveForm( "div-comment-44733", "44733", "respond", "1731" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-44729"><div class="c-avatar"><div class="c-main" id="div-comment-44729">逗比我发现用你的ssr一键脚本搭建时，安装bbr，提示重启服务器后会发现服务器就连不上了，用站长工具一查vps的22端口被封了。。。<div class="c-meta"><span class="c-author">飞扬的旋律</span>2018-10-20 15:48 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=44729#respond" onclick="return addComment.moveForm( &quot;div-comment-44729&quot;, &quot;44729&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给飞扬的旋律">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-44733"><div class="c-avatar"><div class="c-main" id="div-comment-44733">不是端口被封，而是服务器启动失败，因为内核兼容性问题导致无法加载内核，最后开机失败。<br>
+请重装系统解决，重装系统后如果还要安装，那么尝试更换系统或者内核版本号。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-10-20 16:33 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=44733#respond" onclick="return addComment.moveForm( &quot;div-comment-44733&quot;, &quot;44733&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-44660"><div class="c-avatar"><div class="c-main" id="div-comment-44660"><pre class="prettyprint linenums" >[注意] 重启VPS后，请运行脚本查看 BBR 是否正常加载，运行命令：  bash /root/bbr.sh status 
-需要重启VPS后，才能开启BBR，是否现在重启 ? [Y/n] :Y
-[信息] VPS 重启中...
-
-Connection closed by foreign host.
-
-Disconnected from remote host(12345) at 11:49:04.
-
-Type `help' to learn how to use Xshell prompt.
-[c:\~]$ bash /root/bbr.sh status
-'bash' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-
-
-这是什么情况？？
-</pre><div class="c-meta"><span class="c-author">Joey胡</span>2018-10-19 11:53 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=44660#respond' onclick='return addComment.moveForm( "div-comment-44660", "44660", "respond", "1731" )' aria-label='回复给Joey胡'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-44662"><div class="c-avatar"><div class="c-main" id="div-comment-44662">你要链接SSH才能输入代码啊。<br />
-你现在是因为重启服务器的原因，SSH客户端的链接已经断开了，你需要等待重启完毕然后再次链接SSH，再去执行代码。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-10-19 12:28 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=44662#respond' onclick='return addComment.moveForm( "div-comment-44662", "44662", "respond", "1731" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment odd alt depth-3" id="comment-44664"><div class="c-avatar"><div class="c-main" id="div-comment-44664">可以了，谢谢。还有我想问下，为什么手机的速度很慢，电脑却很快，手机慢的很离谱的那种<div class="c-meta"><span class="c-author">Joey胡</span>2018-10-19 12:36 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=44664#respond' onclick='return addComment.moveForm( "div-comment-44664", "44664", "respond", "1731" )' aria-label='回复给Joey胡'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-4" id="comment-44665"><div class="c-avatar"><div class="c-main" id="div-comment-44665">可能是玄学吧，这类问题我也不清楚。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-10-19 12:40 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-16/?replytocom=44665#respond' onclick='return addComment.moveForm( "div-comment-44665", "44665", "respond", "1731" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-44660"><div class="c-avatar"><div class="c-main" id="div-comment-44660"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">[注意]</span><span class="pln"> </span><span class="pun">重启</span><span class="pln">VPS</span><span class="pun">后，请运行脚本查看</span><span class="pln"> BBR </span><span class="pun">是否正常加载，运行命令：</span><span class="pln">  bash </span><span class="pun">/</span><span class="pln">root</span><span class="pun">/</span><span class="pln">bbr</span><span class="pun">.</span><span class="pln">sh status </span></li><li class="L1"><span class="pun">需要重启</span><span class="pln">VPS</span><span class="pun">后，才能开启</span><span class="pln">BBR</span><span class="pun">，是否现在重启</span><span class="pln"> </span><span class="pun">?</span><span class="pln"> </span><span class="pun">[</span><span class="pln">Y</span><span class="pun">/</span><span class="pln">n</span><span class="pun">]</span><span class="pln"> </span><span class="pun">:</span><span class="pln">Y</span></li><li class="L2"><span class="pun">[信息]</span><span class="pln"> VPS </span><span class="pun">重启中...</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="typ">Connection</span><span class="pln"> closed </span><span class="kwd">by</span><span class="pln"> foreign host</span><span class="pun">.</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="typ">Disconnected</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> remote host</span><span class="pun">(</span><span class="lit">12345</span><span class="pun">)</span><span class="pln"> at </span><span class="lit">11</span><span class="pun">:</span><span class="lit">49</span><span class="pun">:</span><span class="lit">04.</span></li><li class="L7"><span class="pln">&nbsp;</span></li><li class="L8"><span class="typ">Type</span><span class="pln"> </span><span class="str">`help' to learn how to use Xshell prompt.</span></li><li class="L9"><span class="str">[c:\~]$ bash /root/bbr.sh status</span></li><li class="L0"><span class="str">'bash' 不是内部或外部命令，也不是可运行的程序</span></li><li class="L1"><span class="str">或批处理文件。</span></li><li class="L2"><span class="str">&nbsp;</span></li><li class="L3"><span class="str">&nbsp;</span></li><li class="L4"><span class="str">这是什么情况？？</span></li></ol></pre><div class="c-meta"><span class="c-author">Joey胡</span>2018-10-19 11:53 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=44660#respond" onclick="return addComment.moveForm( &quot;div-comment-44660&quot;, &quot;44660&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给Joey胡">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-44662"><div class="c-avatar"><div class="c-main" id="div-comment-44662">你要链接SSH才能输入代码啊。<br>
+你现在是因为重启服务器的原因，SSH客户端的链接已经断开了，你需要等待重启完毕然后再次链接SSH，再去执行代码。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-10-19 12:28 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=44662#respond" onclick="return addComment.moveForm( &quot;div-comment-44662&quot;, &quot;44662&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment odd alt depth-3" id="comment-44664"><div class="c-avatar"><div class="c-main" id="div-comment-44664">可以了，谢谢。还有我想问下，为什么手机的速度很慢，电脑却很快，手机慢的很离谱的那种<div class="c-meta"><span class="c-author">Joey胡</span>2018-10-19 12:36 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=44664#respond" onclick="return addComment.moveForm( &quot;div-comment-44664&quot;, &quot;44664&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给Joey胡">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-4" id="comment-44665"><div class="c-avatar"><div class="c-main" id="div-comment-44665">可能是玄学吧，这类问题我也不清楚。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-10-19 12:40 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-16/?replytocom=44665#respond" onclick="return addComment.moveForm( &quot;div-comment-44665&quot;, &quot;44665&quot;, &quot;respond&quot;, &quot;1731&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
@@ -788,11 +721,11 @@ Type `help' to learn how to use Xshell prompt.
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 	</ol>
-	<div class="commentnav"	>
+	<div class="commentnav">
 		<a class="prev page-numbers" href="https://doub.io/wlzy-16/comment-page-2/#comments">«</a>
-<a class='page-numbers' href='https://doub.io/wlzy-16/comment-page-1/#comments'>1</a>
-<a class='page-numbers' href='https://doub.io/wlzy-16/comment-page-2/#comments'>2</a>
-<span class='page-numbers current'>3</span>	</div>
+<a class="page-numbers" href="https://doub.io/wlzy-16/comment-page-1/#comments">1</a>
+<a class="page-numbers" href="https://doub.io/wlzy-16/comment-page-2/#comments">2</a>
+<span class="page-numbers current">3</span>	</div>
 </div>
 </div>
 			</div>
@@ -800,7 +733,7 @@ Type `help' to learn how to use Xshell prompt.
 </div>
 <aside class="sidebar">	
 <div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="position: absolute;left: 4px;top: 4px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/walllink/"><img src="https://img.doub.pw/abc/walllink-03.png" /></a></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align:center;padding: 10px 20px 5px;display: block;">
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/walllink/"><img src="./wlzy-16_files/walllink-03.png"></a></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align:center;padding: 10px 20px 5px;display: block;">
 <a class="wid-xiaobai" style="background-color: #03A9F4;padding-top:15px;padding-bottom:15px;font-size: 16px;font-weight: bold;" target="_blank" href="https://doub.io/all-one/">逗比根据地 所有文章教程分类合辑</a>
 <a class="wid-xiaobai" style="background-color: #1ABCFF;padding-top: 7px;padding-bottom: 7px;font-weight: bold;font-size: 15px;" target="_blank" href="https://doub.io/goflyway-jc3/">CDN 复活被墙IP 继续做代理</a>
 <a class="wid-xiaobai" style="background-color: #1ABCFF;padding-top: 7px;padding-bottom: 7px;font-weight: bold;font-size: 15px;" target="_blank" href="https://doub.io/goflyway-jc5/">KCP 复活被墙IP 继续做代理</a>
@@ -827,11 +760,11 @@ Type `help' to learn how to use Xshell prompt.
 <a class="wid-xiaobai" style="background-color: #2d2d2d;" target="_blank" href="https://doub.io/paypal-jc2/">PayPal 更换汇率结算方式降低手续费</a>
 </div></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="background-color: #eee;">
 <div style="position: absolute;margin-left: 4px;margin-top: 4px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/kanfanba/"><img style="margin-bottom: 10px;" src="https://img.doub.pw/abc/kanfanba-02.png"/></a>
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/kanfanba/"><img style="margin-bottom: 10px;" src="./wlzy-16_files/kanfanba-02.png"></a>
 <div style="position: absolute;margin-left: 4px;margin-top: 4px;width: 24px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
 
-<div id="guangg_image"></div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+<div id="guangg_image"><a target="_blank" title="特别声明：此图片为广告投放，与本站无任何关系。" href="https://doub.io/go/virmach-kvm/"><img src="./wlzy-16_files/virmach-03.png"></a></div>
+<script type="text/javascript">
 var image_url=new Array()
 image_url=["https://doub.io/go/vultr-100/","https://doub.io/vpszy-21/","https://doub.io/go/virmach-kvm/"]
 var guangg_url=new Array()
@@ -846,17 +779,17 @@ document.getElementById("guangg_image").innerHTML = "<a target=\"_blank\" title=
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/10</span></p>
 			<span class="label label-1">v1.0.1</span>
-			<a target="_blank" href="https://doub.io/shell-jc9/" title="点击进入该文件的介绍页面。">MTProxy_go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/shell-jc9/" title="点击进入该文件的介绍页面。">MTProxy_go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./wlzy-16_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/10</span></p>
 			<span class="label label-2">v1.0.8</span>
-			<a target="_blank" href="https://doub.io/shell-jc7/" title="点击进入该文件的介绍页面。">MTProxy.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/shell-jc7/" title="点击进入该文件的介绍页面。">MTProxy.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./wlzy-16_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/07</span></p>
 			<span class="label label-3">v1.0.0</span>
-			<a target="_blank" href="https://doub.io/ss-jc67/" title="点击进入该文件的介绍页面。">ss-go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/ss-jc67/" title="点击进入该文件的介绍页面。">ss-go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./wlzy-16_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/02</span></p>
@@ -894,11 +827,11 @@ document.getElementById("guangg_image").innerHTML = "<a target=\"_blank\" title=
 			<a target="_blank" href="https://doub.io/dbrj-17/" title="点击进入该文件的介绍页面。">DAZE Tools</a>
 		</li>
 	</ul>
-</div></div></div><div class="widget d_tag"><div class="title"><h2>逗比の标签</h2></div><div class="d_tags"><a title="60个话题" target="_blank" href="https://doub.io/tag/shadowsocks/">Shadowsocks (60)</a><a title="47个话题" target="_blank" href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/">脚本 (47)</a><a title="45个话题" target="_blank" href="https://doub.io/tag/%e6%95%99%e7%a8%8b/">教程 (45)</a><a title="32个话题" target="_blank" href="https://doub.io/tag/shadowsocksr/">ShadowsocksR (32)</a><a title="30个话题" target="_blank" href="https://doub.io/tag/kxsw/">科学上网 (30)</a><a title="20个话题" target="_blank" href="https://doub.io/tag/shell/">shell (20)</a><a title="19个话题" target="_blank" href="https://doub.io/tag/vps/">VPS (19)</a><a title="18个话题" target="_blank" href="https://doub.io/tag/linux/">Linux (18)</a><a title="16个话题" target="_blank" href="https://doub.io/tag/vpn/">VPN (16)</a><a title="11个话题" target="_blank" href="https://doub.io/tag/bt/">BT (11)</a><a title="10个话题" target="_blank" href="https://doub.io/tag/%e7%a3%81%e5%8a%9b%e9%93%be%e6%8e%a5/">磁力链接 (10)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e5%8e%9f%e5%88%9b%e8%bd%af%e4%bb%b6/">原创软件 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/">端口转发 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e4%ba%91/">百度云 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/brook/">Brook (9)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/">国内中转 (8)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86/">反向代理 (8)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98/">百度网盘 (8)</a><a title="7个话题" target="_blank" href="https://doub.io/tag/goflyway/">GoFlyway (7)</a><a title="7个话题" target="_blank" href="https://doub.io/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/">搬瓦工 (7)</a></div></div></aside></section>
+</div></div></div><div class="widget d_tag"><div class="title"><h2>逗比の标签</h2></div><div class="d_tags"><a title="" target="_blank" href="https://doub.io/tag/shadowsocks/" data-original-title="60个话题">Shadowsocks (60)</a><a title="" target="_blank" href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" data-original-title="47个话题">脚本 (47)</a><a title="" target="_blank" href="https://doub.io/tag/%e6%95%99%e7%a8%8b/" data-original-title="45个话题">教程 (45)</a><a title="" target="_blank" href="https://doub.io/tag/shadowsocksr/" data-original-title="32个话题">ShadowsocksR (32)</a><a title="" target="_blank" href="https://doub.io/tag/kxsw/" data-original-title="30个话题">科学上网 (30)</a><a title="" target="_blank" href="https://doub.io/tag/shell/" data-original-title="20个话题">shell (20)</a><a title="" target="_blank" href="https://doub.io/tag/vps/" data-original-title="19个话题">VPS (19)</a><a title="" target="_blank" href="https://doub.io/tag/linux/" data-original-title="18个话题">Linux (18)</a><a title="" target="_blank" href="https://doub.io/tag/vpn/" data-original-title="16个话题">VPN (16)</a><a title="" target="_blank" href="https://doub.io/tag/bt/" data-original-title="11个话题">BT (11)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%a3%81%e5%8a%9b%e9%93%be%e6%8e%a5/" data-original-title="10个话题">磁力链接 (10)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%8e%9f%e5%88%9b%e8%bd%af%e4%bb%b6/" data-original-title="9个话题">原创软件 (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/" data-original-title="9个话题">端口转发 (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e4%ba%91/" data-original-title="9个话题">百度云 (9)</a><a title="" target="_blank" href="https://doub.io/tag/brook/" data-original-title="9个话题">Brook (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/" data-original-title="8个话题">国内中转 (8)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86/" data-original-title="8个话题">反向代理 (8)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98/" data-original-title="8个话题">百度网盘 (8)</a><a title="" target="_blank" href="https://doub.io/tag/goflyway/" data-original-title="7个话题">GoFlyway (7)</a><a title="" target="_blank" href="https://doub.io/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/" data-original-title="7个话题">搬瓦工 (7)</a></div></div></aside></section>
 <footer class="footer">
     <div class="footer-inner">
         <div class="copyright pull-left">
-         <a href="https://doub.io" title="逗比根据地">逗比根据地</a> 版权所有，保留一切权利 · 基于 <a href="https://cn.wordpress.org/" target="_blank">WordPress</a> · <a href="https://doub.io/jzzy-5/" target="_blank">欲思主题</a> © 2015-2018        </div>
+         <a href="https://doub.io/" title="逗比根据地">逗比根据地</a> 版权所有，保留一切权利 · 基于 <a href="https://cn.wordpress.org/" target="_blank">WordPress</a> · <a href="https://doub.io/jzzy-5/" target="_blank">欲思主题</a> © 2015-2018        </div>
         <div class="trackcode pull-right">
             <script>
 var _hmt = _hmt || [];
@@ -910,7 +843,7 @@ var _hmt = _hmt || [];
 })();
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72227254-1"></script>
+<script async="" src="./wlzy-16_files/js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -926,8 +859,8 @@ var _hmt = _hmt || [];
                 <span class="close-btn fa fa-times-circle"> </span>
                         <div class="kk14ff2"></div>
     </div>
-</div><script type='text/javascript' src='https://doub.io/wp-content/themes/yusi1.0/js/jquery.js?ver=1.0'></script>
-<script type='text/javascript' src='https://doub.io/wp-includes/js/wp-embed.min.js?ver=4.8.1'></script>
+</div><script type="text/javascript" src="./wlzy-16_files/jquery.js.下载"></script>
+<script type="text/javascript" src="./wlzy-16_files/wp-embed.min.js.下载"></script>
 
 <script type="text/javascript">
 var open = false;
@@ -945,4 +878,4 @@ if(document.body.scrollWidth < 768){
     $(".hot-posts").hide();
 }
 </script>
-<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_6971c5901860620dc711b8ea461af719");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_6971c5901860620dc711b8ea461af719");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_6971c5901860620dc711b8ea461af719");if (z != "") e["url"].value = z;}</script></body></html><!-- hyper cache gzip 2018-11-18 11:59:21 -->
+<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_6971c5901860620dc711b8ea461af719");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_6971c5901860620dc711b8ea461af719");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_6971c5901860620dc711b8ea461af719");if (z != "") e["url"].value = z;}</script><div class="rollto"><button class="btn btn-inverse" data-type="totop" title="回顶部"><i class="fa fa-arrow-up"></i></button><button class="btn btn-inverse" data-type="Widescreen" title="宽屏显示"><i class="fa fa-arrows-h"></i></button><button class="btn btn-inverse" data-type="torespond" title="发评论"><i class="fa fa-comment-o"></i></button></div></body></html>

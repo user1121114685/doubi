@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://doub.io/wlzy-36/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta http-equiv="X-UA-Compatible" content="IE=10,IE=9,IE=8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <style type="text/css">
@@ -11,31 +11,31 @@
 @font-face {font-family: 'LiDeBiao-Xing320e75d0253036';src: url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.gif');src: url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.gif?#iefix') format('embedded-opentype'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.bmp') format('woff'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.jpg') format('truetype'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.png#LiDeBiao-Xing3') format('svg');   }.css20e75d0253036{font-family: 'LiDeBiao-Xing320e75d0253036';}
 tbody tr:nth-child(odd) { background-color:#f9f9f9; }
 </style>
-<link rel="stylesheet" type="text/css" href="https://doub.io/wp-content/themes/yusi1.0/csshake.css">
-<link id="favicon" href="https://doub.io/wp-content/themes/yusi1.0/img/logo.ico" rel="icon" type="img/x-icon" />
+<link rel="stylesheet" type="text/css" href="./wlzy-36_files/csshake.css">
+<link id="favicon" href="https://doub.io/wp-content/themes/yusi1.0/img/logo.ico" rel="icon" type="img/x-icon">
 <title>『原创』Shadowsocks tinyPortMapper 中继(中转/端口转发) 便捷管理脚本 | 逗比根据地</title>
-<script>
+<script type="text/javascript" async="" src="./wlzy-36_files/analytics.js.下载"></script><script src="./wlzy-36_files/hm.js.下载"></script><script async="" src="./wlzy-36_files/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ"></script><script>
 window._deel = {name: '逗比根据地',url: 'https://doub.io/wp-content/themes/yusi1.0', ajaxpager: 'on', commenton: 1, roll: [1,3]}
 </script>
 
 <!-- All in One SEO Pack 2.3.16 by Michael Torbert of Semper Fi Web Design[1897,1967] -->
-<meta name="description"  content="前天写了个 tinyPortMapper 的手动安装使用教程，今天就写个一键管理脚本。 优点是：安装、配置简单，支持TCP、UDP转发； 缺点是：不支持端口段转发，如果要转发多个端口，多开即可。 tinyPortMapper 手动教程：Shadowsocks利用 tinyPortMapper" />
+<meta name="description" content="前天写了个 tinyPortMapper 的手动安装使用教程，今天就写个一键管理脚本。 优点是：安装、配置简单，支持TCP、UDP转发； 缺点是：不支持端口段转发，如果要转发多个端口，多开即可。 tinyPortMapper 手动教程：Shadowsocks利用 tinyPortMapper">
 
-<meta name="keywords"  content="shadowsocks,shadowsocksr,shell,tinyportmapper,中继,端口转发,脚本" />
+<meta name="keywords" content="shadowsocks,shadowsocksr,shell,tinyportmapper,中继,端口转发,脚本">
 
-<link rel="canonical" href="https://doub.io/wlzy-36/" />
+<link rel="canonical" href="https://doub.io/wlzy-36/">
 <!-- /all in one seo pack -->
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='toggle-box-css'  href='https://doub.io/wp-content/plugins/toggle-box/toggle-box.css?ver=4.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='style-css'  href='https://doub.io/wp-content/themes/yusi1.0/style.css?ver=1.0' type='text/css' media='all' />
-<script>!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://steadfastsystem.com/v2/0/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script><script type='text/javascript' src='https://doub.io/wp-content/themes/yusi1.0/js/jquery1.min.js?ver=1.0'></script>
-<script type='text/javascript' src='https://doub.io/wp-content/plugins/toggle-box/js/toggle-box.js?ver=4.8.1'></script>
-<link rel='https://api.w.org/' href='https://doub.io/wp-json/' />
-<link rel='prev' title='Shadowsocks利用 tinyPortMapper 实现中继(中转/端口转发)加速' href='https://doub.io/ss-jc62/' />
-<link rel='next' title='BT/种子/磁力链接/HTTP/FTP 离线下载工具 —— Aria2 新 手动安装教程' href='https://doub.io/wlzy-37/' />
-<link rel='shortlink' href='https://doub.io/?p=2525' />
-<link rel="alternate" type="application/json+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-36%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-36%2F&#038;format=xml" />
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="stylesheet" id="toggle-box-css" href="./wlzy-36_files/toggle-box.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="./wlzy-36_files/style.css" type="text/css" media="all">
+<script>!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://steadfastsystem.com/v2/0/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script><script type="text/javascript" src="./wlzy-36_files/jquery1.min.js.下载"></script>
+<script type="text/javascript" src="./wlzy-36_files/toggle-box.js.下载"></script>
+<link rel="https://api.w.org/" href="https://doub.io/wp-json/">
+<link rel="prev" title="Shadowsocks利用 tinyPortMapper 实现中继(中转/端口转发)加速" href="https://doub.io/ss-jc62/">
+<link rel="next" title="BT/种子/磁力链接/HTTP/FTP 离线下载工具 —— Aria2 新 手动安装教程" href="https://doub.io/wlzy-37/">
+<link rel="shortlink" href="https://doub.io/?p=2525">
+<link rel="alternate" type="application/json+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-36%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-36%2F&amp;format=xml">
 <style>
 .sk17983{
     font-size: 20px;
@@ -382,7 +382,7 @@ window._deel = {name: '逗比根据地',url: 'https://doub.io/wp-content/themes/
         killAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
     }
 </script>
-    <link rel="stylesheet" href="https://doub.io/wp-content/plugins/wp-content-index/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./wlzy-36_files/style(1).css" type="text/css" media="all">
 <meta name="keywords" content="Shadowsocks, ShadowsocksR, shell, tinyPortMapper, 中继, 端口转发, 脚本, Shadowsocks, Shell脚本, 网络资源">
 <meta name="description" content="前天写了个 tinyPortMapper 的手动安装使用教程，今天就写个一键管理脚本。  优点是：安装、配置简单，支持TCP、UDP转发；  缺点是：不支持端口段转发，如果要转发多个端口，多开即可。    tinyPortMapper 手动教程：Shadowsocks利用 tinyPortMapper 实现中继(中转/端口转发)加速  其他 Shadowsocks中继（中转）教程：传送门 系统要求 CentOS 6+ / Debian ">
 <!--[if lt IE 9]><script src="https://doub.io/wp-content/themes/yusi1.0/js/html5.js"></script><![endif]-->
@@ -408,10 +408,10 @@ window.uabInject = function() {};
 <header id="header" class="header">
 <div class="container-inner" style="display: block;">
  <div class="yusi-logo" style="display: block;">
-                    <a href="/">
+                    <a href="https://doub.io/">
                         <h1>
-                                                        <span style="font-family:'jin_mei_mxplzx86d456993036';color: #fff;font-weight: normal;font-size: 54px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">逗比根据地</span>
-                                                        <span style="font-family:'LiDeBiao-Xing320e75d0253036';color: #fff;font-size: 24px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">– 世界那么逗，我想出去看看</span>
+                                                        <span style="font-family:&#39;jin_mei_mxplzx86d456993036&#39;;color: #fff;font-weight: normal;font-size: 54px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">逗比根据地</span>
+                                                        <span style="font-family:&#39;LiDeBiao-Xing320e75d0253036&#39;;color: #fff;font-size: 24px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">– 世界那么逗，我想出去看看</span>
                                                     </h1>
                     </a>
     </div>
@@ -420,9 +420,9 @@ window.uabInject = function() {};
 	<div id="nav-header" class="navbar" style="display: block;">
 		
 		<ul class="nav">
-			<li><a href="https://doub.io"><i class="fa fa-fire"></i> 首页</a></li>
+			<li><a href="https://doub.io/"><i class="fa fa-fire"></i> 首页</a></li>
 <li><a target="_blank" href="https://doub.io/dbtj/"><i class="fa fa-star"></i> 逗比推荐</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/dbwz/">碉堡网站</a></li>
 	<li><a target="_blank" href="https://doub.io/dbrj/">逗比软件</a></li>
 	<li><a target="_blank" href="https://doub.io/xnzj/">虚拟主机</a></li>
@@ -430,7 +430,7 @@ window.uabInject = function() {};
 </ul>
 </li>
 <li class="current-post-ancestor"><a target="_blank" href="https://doub.io/kxsw/"><i class="fa fa-globe fa-spin"></i> 科学上网</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/androidkxsw/">安卓合集</a></li>
 	<li><a target="_blank" href="https://doub.io/pckxsw/">电脑合集</a></li>
 	<li class="current-post-ancestor current-menu-parent"><a target="_blank" href="https://doub.io/wlzy/">网络资源</a></li>
@@ -441,7 +441,7 @@ window.uabInject = function() {};
 </ul>
 </li>
 <li><a target="_blank" href="https://doub.io/ss-jc26/"><i class="fa fa-paper-plane" style="font-size: 19px;"></i> Shadowsocks</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/all-one/"><span style="color: #ffe200;">网站文章 合辑</span></a></li>
 	<li><a target="_blank" href="https://doub.io/ss-jc26/">所有教程 合辑</a></li>
 	<li><a target="_blank" href="https://doub.io/ss-jc35/">小白常见 问题</a></li>
@@ -456,10 +456,10 @@ window.uabInject = function() {};
 <li><a target="_blank" href="https://softs.wtf/"><i class="fa fa-cloud"></i> 逗比云</a></li>
 <li><a target="_blank" href="https://doub.io/guestbook/"><i class="fa fa-list-alt"></i> 留言</a></li>
 <li style="float:right;">
-                    <div class="toggle-search" style="width: 60px;"><i class="fa fa-search"></i><a href="#" style="padding: 0;">搜索</a></div>
-<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href='https://doub.io/search/' + encodeURIComponent(this.s.value).replace(/%20/g, '+'); return false;" action="/"><div> <input type="ext" class="search" name="s" onblur="if(this.value=='')this.value='请善用搜索功能...';" onfocus="if(this.value=='请善用搜索功能...')this.value='';" value="请善用搜索功能..."></div></form></div></div>
+                    <div class="toggle-search" style="width: 60px;"><i class="fa fa-search"></i><a href="https://doub.io/wlzy-36/#" style="padding: 0;">搜索</a></div>
+<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href=&#39;https://doub.io/search/&#39; + encodeURIComponent(this.s.value).replace(/%20/g, &#39;+&#39;); return false;" action="https://doub.io/"><div> <input type="ext" class="search" name="s" onblur="if(this.value==&#39;&#39;)this.value=&#39;请善用搜索功能...&#39;;" onfocus="if(this.value==&#39;请善用搜索功能...&#39;)this.value=&#39;&#39;;" value="请善用搜索功能..."></div></form></div></div>
 </li>
-		</ul>
+		</ul><div class="screen-mini"><button data-type="screen-nav" class="btn btn-inverse screen-nav"><i class="fa fa-list"></i></button></div>
 	</div>
 </header>
 <section class="container"><div class="speedbar">
@@ -467,7 +467,7 @@ window.uabInject = function() {};
 <div style="float: right;margin: 0 10px;"><a target="_blank" href="https://doub.io/tougao/"><i class="fa fa-envelope" style="color: #1abc9c;opacity: 1;"></i>投稿文章</a> | <a target="_blank" href="https://doub.io/guanggao/"><i class="fa fa-money" style="color: #1abc9c;opacity: 1;"></i>广告合作</a> | <a target="_blank" href="https://doub.io/go/tg"><i class="fa fa-paper-plane" style="color: #1abc9c;opacity: 1;"></i>Telegram 群组</a> / <a target="_blank" href="https://doub.io/go/tg_a">公告频道</a> / <a target="_blank" href="https://doub.io/telegram-jc1/">使用教程</a></div></div>
 	</div>
 	<div class="guangg guangg-site"><div style="position: absolute;left: 4px;top: 14px;font-size: 12px;color: #fff;border: 1px solid #ffffff;line-height: 12px;opacity: 0.9;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/gigsgigscloud/"><img src="https://img.doub.pw/abc/gigsgigscloud-06.gif" class="top_guangg" /></a></div><div class="content-wrap">
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/gigsgigscloud/"><img src="./wlzy-36_files/gigsgigscloud-06.gif" class="top_guangg"></a></div><div class="content-wrap">
 <div style="display: block;">
 	<div class="content" style="display: block;">
 
@@ -480,111 +480,44 @@ window.uabInject = function() {};
 				<span class="muted"><i class="fa fa-comments-o"></i> <a href="https://doub.io/wlzy-36/#comments">30评论</a></span>							</div>
 		</header>
 <div class="guangg guangg-post"><div style="position: absolute;left: 3px;top: 14px;font-size: 12px;color: #fff;border: 1px solid #ffffff;line-height: 12px;opacity: 0.9;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/yitianjian_shadow/"><img src="https://img.doub.pw/abc/yitianjian_shadow_01.png" class="top_guangg" /></a></div>		<article class="article-content">
-			<div id="content-index" class="content-index"><div class="content-index-title"><a id="content-index-togglelink" href="javascript:content_index_toggleToc()">文章目录 ⚐</a></div>
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/yitianjian_shadow/"><img src="./wlzy-36_files/yitianjian_shadow_01.png" class="top_guangg"></a></div>		<article class="article-content">
+			<div id="content-index" class="content-index"><div class="content-index-title"><a id="content-index-togglelink" href="javascript:content_index_toggleToc()" data-original-title="" title="">文章目录 ⚐</a></div>
 <script type="text/javascript" language="javascript">
 window.content_index_showTocToggle=false;function content_index_toggleToc(){var tts="文章目录 ⚐";var tth="文章目录 ⚑";if(window.content_index_showTocToggle){window.content_index_showTocToggle=false;document.getElementById("content-index-contents").style.display="none";document.getElementById("content-index-togglelink").innerHTML=tts}else{window.content_index_showTocToggle=true;document.getElementById("content-index-contents").style.display="block";document.getElementById("content-index-togglelink").innerHTML=tth}}
 </script>
-<ul id="content-index-contents" style="display: none;"><li class="content-index-level-1"><a href="https://doub.io/wlzy-36/#系统要求" title="系统要求"><span>系统要求</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#脚本版本" title="脚本版本"><span>脚本版本</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-36/#安装步骤" title="安装步骤"><span>安装步骤</span></a></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-36/#使用方法" title="使用方法"><span>使用方法</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#添加端口转发" title="添加端口转发"><span>添加端口转发</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#显示所有端口转发" title="显示所有端口转发"><span>显示所有端口转发</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#Shadowsocks客户端说明" title="Shadowsocks客户端说明"><span>Shadowsocks客户端说明</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#文件信息" title="文件信息"><span>文件信息</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-36/#其他说明" title="其他说明"><span>其他说明</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#提示wget: unknown host “raw.githubusercontent.com” 之类的错误" title="提示wget: unknown host “raw.githubusercontent.com” 之类的错误"><span>提示wget: unknown host “raw.githubusercontent.com” 之类的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#提示 wget: command not found 的错误" title="提示 wget: command not found 的错误"><span>提示 wget: command not found 的错误</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-36/#更新日志" title="更新日志"><span>更新日志</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#2018年07月10日，版本 v1.0.2" title="2018年07月10日，版本 v1.0.2"><span>2018年07月10日，版本 v1.0.2</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#2018年06月28日，版本 v1.0.1" title="2018年06月28日，版本 v1.0.1"><span>2018年06月28日，版本 v1.0.1</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#2017年11月23日，版本 v1.0.0" title="2017年11月23日，版本 v1.0.0"><span>2017年11月23日，版本 v1.0.0</span></a></li></ul></li></ul></div>
-<div class="old-message">本文最后更新于 <a><strong>2018年9月20日 19:48</strong></a> 可能会因为没有更新而失效。如已失效或需要修正，请留言！</div><p>前天写了个 tinyPortMapper 的手动安装使用教程，今天就写个一键管理脚本。</p>
+<ul id="content-index-contents" style="display: none;"><li class="content-index-level-1"><a href="https://doub.io/wlzy-36/#%E7%B3%BB%E7%BB%9F%E8%A6%81%E6%B1%82" title="" data-original-title="系统要求"><span>系统要求</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#%E8%84%9A%E6%9C%AC%E7%89%88%E6%9C%AC" title="" data-original-title="脚本版本"><span>脚本版本</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-36/#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4" title="" data-original-title="安装步骤"><span>安装步骤</span></a></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-36/#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" title="" data-original-title="使用方法"><span>使用方法</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#%E6%B7%BB%E5%8A%A0%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91" title="" data-original-title="添加端口转发"><span>添加端口转发</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91" title="" data-original-title="显示所有端口转发"><span>显示所有端口转发</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#Shadowsocks%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AF%B4%E6%98%8E" title="" data-original-title="Shadowsocks客户端说明"><span>Shadowsocks客户端说明</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF" title="" data-original-title="文件信息"><span>文件信息</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-36/#%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E" title="" data-original-title="其他说明"><span>其他说明</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#%E6%8F%90%E7%A4%BAwget:%C2%A0unknown%20host%20%E2%80%9Craw.githubusercontent.com%E2%80%9D%20%E4%B9%8B%E7%B1%BB%E7%9A%84%E9%94%99%E8%AF%AF" title="" data-original-title="提示wget: unknown host “raw.githubusercontent.com” 之类的错误"><span>提示wget:&nbsp;unknown host “raw.githubusercontent.com” 之类的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#%E6%8F%90%E7%A4%BA%20wget:%20command%20not%20found%20%E7%9A%84%E9%94%99%E8%AF%AF" title="" data-original-title="提示 wget: command not found 的错误"><span>提示 wget: command not found 的错误</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/wlzy-36/#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97" title="" data-original-title="更新日志"><span>更新日志</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#2018%E5%B9%B407%E6%9C%8810%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.2" title="" data-original-title="2018年07月10日，版本 v1.0.2"><span>2018年07月10日，版本 v1.0.2</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#2018%E5%B9%B406%E6%9C%8828%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.1" title="" data-original-title="2018年06月28日，版本 v1.0.1"><span>2018年06月28日，版本 v1.0.1</span></a></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-36/#2017%E5%B9%B411%E6%9C%8823%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.0" title="" data-original-title="2017年11月23日，版本 v1.0.0"><span>2017年11月23日，版本 v1.0.0</span></a></li></ul></li></ul></div>
+<div class="old-message">本文最后更新于 <a data-original-title="" title=""><strong>2018年9月20日 19:48</strong></a> 可能会因为没有更新而失效。如已失效或需要修正，请留言！</div><p>前天写了个&nbsp;tinyPortMapper&nbsp;的手动安装使用教程，今天就写个一键管理脚本。</p>
 <p><strong>优点是：</strong>安装、配置简单，支持TCP、UDP转发；</p>
 <p><strong>缺点是：</strong>不支持端口段转发，如果要转发多个端口，多开即可。</p>
-<hr />
-<p><strong>tinyPortMapper 手动教程：<a title="Shadowsocks利用 tinyPortMapper 实现中继(中转/端口转发)加速" href="https://doub.io/ss-jc62/" target="_blank" rel="noopener">Shadowsocks利用 tinyPortMapper 实现中继(中转/端口转发)加速</a></strong></p>
-<p><strong>其他 Shadowsocks中继（中转）教程：<a href="https://doub.io/ss-jc26/#服务器中继（国内中转）" target="_blank" rel="noopener">传送门</a></strong></p>
+<hr>
+<p><strong>tinyPortMapper 手动教程：<a title="" href="https://doub.io/ss-jc62/" target="_blank" rel="noopener" data-original-title="Shadowsocks利用 tinyPortMapper 实现中继(中转/端口转发)加速">Shadowsocks利用 tinyPortMapper 实现中继(中转/端口转发)加速</a></strong></p>
+<p><strong>其他 Shadowsocks中继（中转）教程：<a href="https://doub.io/ss-jc26/#%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%AD%E7%BB%A7%EF%BC%88%E5%9B%BD%E5%86%85%E4%B8%AD%E8%BD%AC%EF%BC%89" target="_blank" rel="noopener" data-original-title="" title="">传送门</a></strong></p>
 <h2 id="系统要求">系统要求</h2>
 <p>CentOS 6+ / Debian 6+ / Ubuntu 14.04 +</p>
 <h3 id="脚本版本">脚本版本</h3>
 <p><strong>Ver:</strong> 1.0.2</p>
 <h2 id="安装步骤">安装步骤</h2>
-<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/doubi/master/tinymapper.sh &amp;&amp; chmod +x tinymapper.sh &amp;&amp; bash tinymapper.sh
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">wget </span><span class="pun">-</span><span class="pln">N </span><span class="pun">--</span><span class="kwd">no</span><span class="pun">-</span><span class="pln">check</span><span class="pun">-</span><span class="pln">certificate https</span><span class="pun">:</span><span class="com">//raw.githubusercontent.com/user1121114685/doubi/master/tinymapper.sh &amp;&amp; chmod +x tinymapper.sh &amp;&amp; bash tinymapper.sh</span></li></ol></pre>
 <p>下载并运行脚本后，会显示操作菜单，输入 <strong>1</strong> 并回车就会开始安装。</p>
 <h2 id="使用方法">使用方法</h2>
-<pre class="prettyprint linenums">bash tinymapper.sh
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">bash tinymapper</span><span class="pun">.</span><span class="pln">sh</span></li></ol></pre>
 <p>运行脚本后会显示操作菜单：</p>
-<pre class="prettyprint linenums"> tinyPortMapper 端口转发一键管理脚本 [vX.X.X]
-  -- Toyo | doub.io/wlzy-36 --
-  
- 0. 升级脚本
-————————————
- 1. 安装 tinyPortMapper
- 2. 卸载 tinyPortMapper
- 3. 清空 tinyPortMapper 端口转发
-————————————
- 4. 查看 tinyPortMapper 端口转发
- 5. 添加 tinyPortMapper 端口转发
- 6. 删除 tinyPortMapper 端口转发
-————————————
- 7. 查看 tinyPortMapper 输出日志
-
- 请输入数字 [0-7]:</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln"> tinyPortMapper </span><span class="pun">端口转发一键管理脚本</span><span class="pln"> </span><span class="pun">[</span><span class="pln">vX</span><span class="pun">.</span><span class="pln">X</span><span class="pun">.</span><span class="pln">X</span><span class="pun">]</span></li><li class="L1"><span class="pln">  </span><span class="pun">--</span><span class="pln"> </span><span class="typ">Toyo</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> doub</span><span class="pun">.</span><span class="pln">io</span><span class="pun">/</span><span class="pln">wlzy</span><span class="pun">-</span><span class="lit">36</span><span class="pln"> </span><span class="pun">--</span></li><li class="L2"><span class="pln">  </span></li><li class="L3"><span class="pln"> </span><span class="lit">0.</span><span class="pln"> </span><span class="pun">升级脚本</span></li><li class="L4"><span class="pun">————————————</span></li><li class="L5"><span class="pln"> </span><span class="lit">1.</span><span class="pln"> </span><span class="pun">安装</span><span class="pln"> tinyPortMapper</span></li><li class="L6"><span class="pln"> </span><span class="lit">2.</span><span class="pln"> </span><span class="pun">卸载</span><span class="pln"> tinyPortMapper</span></li><li class="L7"><span class="pln"> </span><span class="lit">3.</span><span class="pln"> </span><span class="pun">清空</span><span class="pln"> tinyPortMapper </span><span class="pun">端口转发</span></li><li class="L8"><span class="pun">————————————</span></li><li class="L9"><span class="pln"> </span><span class="lit">4.</span><span class="pln"> </span><span class="pun">查看</span><span class="pln"> tinyPortMapper </span><span class="pun">端口转发</span></li><li class="L0"><span class="pln"> </span><span class="lit">5.</span><span class="pln"> </span><span class="pun">添加</span><span class="pln"> tinyPortMapper </span><span class="pun">端口转发</span></li><li class="L1"><span class="pln"> </span><span class="lit">6.</span><span class="pln"> </span><span class="pun">删除</span><span class="pln"> tinyPortMapper </span><span class="pun">端口转发</span></li><li class="L2"><span class="pun">————————————</span></li><li class="L3"><span class="pln"> </span><span class="lit">7.</span><span class="pln"> </span><span class="pun">查看</span><span class="pln"> tinyPortMapper </span><span class="pun">输出日志</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pln"> </span><span class="pun">请输入数字</span><span class="pln"> </span><span class="pun">[</span><span class="lit">0</span><span class="pun">-</span><span class="lit">7</span><span class="pun">]:</span></li></ol></pre>
 <h3 id="添加端口转发">添加端口转发</h3>
 <p>输入 <strong>5</strong> 并回车后，会提示你依次输入 本地监听端口、欲转发IP、欲转发端口、转发类型：</p>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
-<pre class="prettyprint linenums">请输入 tinyPortMapper 的 本地监听端口 [1-65535]
-(默认回车取消):2366
-
-——————————————————————————————
-	本地监听端口 :  2366 
-——————————————————————————————
-
-请输入 tinyPortMapper 远程被转发 端口 [1-65535](就是被中转服务器的端口)
-(默认同本地监听端口: 2366):
-
-——————————————————————————————
-	远程转发端口 :  2366 
-——————————————————————————————
-
-请输入 tinyPortMapper 远程被转发 IP(就是被中转服务器的外网IP)
-(默认回车取消):1.1.1.1 
-
-——————————————————————————————
-	远程转发 IP :  1.1.1.1 
-——————————————————————————————
-
-请输入数字 来选择 tinyPortMapper 转发类型:
-	1. TCP
-	2. UDP
-	3. TCP+UDP(ALL)
-
-(默认: TCP+UDP):
-
-——————————————————————————————
-    请检查 tinyPortMapper 配置是否有误 !
-
-	本地监听端口	 :  2366 
-	远程转发 IP	 :  1.1.1.1 
-	远程转发端口	 :  2366 
-	转发类型	 :  TCP+UDP 
-——————————————————————————————
-
-请按任意键继续，如有配置错误请使用 Ctrl+C 退出。
-</pre>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/wlzy-36/#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">请输入</span><span class="pln"> tinyPortMapper </span><span class="pun">的</span><span class="pln"> </span><span class="pun">本地监听端口</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">-</span><span class="lit">65535</span><span class="pun">]</span></li><li class="L1"><span class="pun">(默认回车取消):</span><span class="lit">2366</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="pun">——————————————————————————————</span></li><li class="L4"><span class="pln">	</span><span class="pun">本地监听端口</span><span class="pln"> </span><span class="pun">:</span><span class="pln">  </span><span class="lit">2366</span><span class="pln"> </span></li><li class="L5"><span class="pun">——————————————————————————————</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="pun">请输入</span><span class="pln"> tinyPortMapper </span><span class="pun">远程被转发</span><span class="pln"> </span><span class="pun">端口</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">-</span><span class="lit">65535</span><span class="pun">](就是被中转服务器的端口)</span></li><li class="L8"><span class="pun">(默认同本地监听端口:</span><span class="pln"> </span><span class="lit">2366</span><span class="pun">):</span></li><li class="L9"><span class="pln">&nbsp;</span></li><li class="L0"><span class="pun">——————————————————————————————</span></li><li class="L1"><span class="pln">	</span><span class="pun">远程转发端口</span><span class="pln"> </span><span class="pun">:</span><span class="pln">  </span><span class="lit">2366</span><span class="pln"> </span></li><li class="L2"><span class="pun">——————————————————————————————</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="pun">请输入</span><span class="pln"> tinyPortMapper </span><span class="pun">远程被转发</span><span class="pln"> IP</span><span class="pun">(就是被中转服务器的外网</span><span class="pln">IP</span><span class="pun">)</span></li><li class="L5"><span class="pun">(默认回车取消):</span><span class="lit">1.1</span><span class="pun">.</span><span class="lit">1.1</span><span class="pln"> </span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="pun">——————————————————————————————</span></li><li class="L8"><span class="pln">	</span><span class="pun">远程转发</span><span class="pln"> IP </span><span class="pun">:</span><span class="pln">  </span><span class="lit">1.1</span><span class="pun">.</span><span class="lit">1.1</span><span class="pln"> </span></li><li class="L9"><span class="pun">——————————————————————————————</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="pun">请输入数字</span><span class="pln"> </span><span class="pun">来选择</span><span class="pln"> tinyPortMapper </span><span class="pun">转发类型:</span></li><li class="L2"><span class="pln">	</span><span class="lit">1.</span><span class="pln"> TCP</span></li><li class="L3"><span class="pln">	</span><span class="lit">2.</span><span class="pln"> UDP</span></li><li class="L4"><span class="pln">	</span><span class="lit">3.</span><span class="pln"> TCP</span><span class="pun">+</span><span class="pln">UDP</span><span class="pun">(</span><span class="pln">ALL</span><span class="pun">)</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pun">(默认:</span><span class="pln"> TCP</span><span class="pun">+</span><span class="pln">UDP</span><span class="pun">):</span></li><li class="L7"><span class="pln">&nbsp;</span></li><li class="L8"><span class="pun">——————————————————————————————</span></li><li class="L9"><span class="pln">    </span><span class="pun">请检查</span><span class="pln"> tinyPortMapper </span><span class="pun">配置是否有误</span><span class="pln"> </span><span class="pun">!</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="pln">	</span><span class="pun">本地监听端口</span><span class="pln">	 </span><span class="pun">:</span><span class="pln">  </span><span class="lit">2366</span><span class="pln"> </span></li><li class="L2"><span class="pln">	</span><span class="pun">远程转发</span><span class="pln"> IP	 </span><span class="pun">:</span><span class="pln">  </span><span class="lit">1.1</span><span class="pun">.</span><span class="lit">1.1</span><span class="pln"> </span></li><li class="L3"><span class="pln">	</span><span class="pun">远程转发端口</span><span class="pln">	 </span><span class="pun">:</span><span class="pln">  </span><span class="lit">2366</span><span class="pln"> </span></li><li class="L4"><span class="pln">	</span><span class="pun">转发类型</span><span class="pln">	 </span><span class="pun">:</span><span class="pln">  TCP</span><span class="pun">+</span><span class="pln">UDP </span></li><li class="L5"><span class="pun">——————————————————————————————</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="pun">请按任意键继续，如有配置错误请使用</span><span class="pln"> </span><span class="typ">Ctrl</span><span class="pun">+</span><span class="pln">C </span><span class="pun">退出。</span></li></ol></pre>
 <p>最后会提示你确认配置是否有误，如果没有问题就按任意键继续，启动成功后就会提示：</p>
-<pre class="prettyprint linenums">——————————————————————————————
-	tinyPortMapper 已启动 !
-
-	本地监听 IP	 :  50.118.225.120 
-	本地监听端口	 :  2366 
-
-	远程转发 IP	 :  1.1.1.1 
-	远程转发端口	 :  2366 
-	转发类型	 :  TCP+UDP 
-——————————————————————————————
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">——————————————————————————————</span></li><li class="L1"><span class="pln">	tinyPortMapper </span><span class="pun">已启动</span><span class="pln"> </span><span class="pun">!</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="pln">	</span><span class="pun">本地监听</span><span class="pln"> IP	 </span><span class="pun">:</span><span class="pln">  </span><span class="lit">50.118</span><span class="pun">.</span><span class="lit">225.120</span><span class="pln"> </span></li><li class="L4"><span class="pln">	</span><span class="pun">本地监听端口</span><span class="pln">	 </span><span class="pun">:</span><span class="pln">  </span><span class="lit">2366</span><span class="pln"> </span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pln">	</span><span class="pun">远程转发</span><span class="pln"> IP	 </span><span class="pun">:</span><span class="pln">  </span><span class="lit">1.1</span><span class="pun">.</span><span class="lit">1.1</span><span class="pln"> </span></li><li class="L7"><span class="pln">	</span><span class="pun">远程转发端口</span><span class="pln">	 </span><span class="pun">:</span><span class="pln">  </span><span class="lit">2366</span><span class="pln"> </span></li><li class="L8"><span class="pln">	</span><span class="pun">转发类型</span><span class="pln">	 </span><span class="pun">:</span><span class="pln">  TCP</span><span class="pun">+</span><span class="pln">UDP </span></li><li class="L9"><span class="pun">——————————————————————————————</span></li></ol></pre>
 <p></p></div>
 <h3 id="显示所有端口转发">显示所有端口转发</h3>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/wlzy-36/#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
 <p>输入 <strong>4</strong> 并回车后，会显示如下：</p>
-<pre class="prettyprint linenums">当前有 1 个 tinyPortMapper 端口转发进程。
-进程PID: 24330 类型: TCP+UDP 监听端口: 2366 转发IP和端口: 1.1.1.1:2366
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">当前有</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">个</span><span class="pln"> tinyPortMapper </span><span class="pun">端口转发进程。</span></li><li class="L1"><span class="pun">进程</span><span class="pln">PID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">24330</span><span class="pln"> </span><span class="pun">类型:</span><span class="pln"> TCP</span><span class="pun">+</span><span class="pln">UDP </span><span class="pun">监听端口:</span><span class="pln"> </span><span class="lit">2366</span><span class="pln"> </span><span class="pun">转发</span><span class="pln">IP</span><span class="pun">和端口:</span><span class="pln"> </span><span class="lit">1.1</span><span class="pun">.</span><span class="lit">1.1</span><span class="pun">:</span><span class="lit">2366</span></li></ol></pre>
 <p></p></div>
 <h3 id="Shadowsocks客户端说明">Shadowsocks客户端说明</h3>
-<p>假设你的 <strong>海外服务器(被中转) </strong>中搭建的Shadowsocks服务端的IP是<code> 2.2.2.2  </code>，SS端口是<code> 10000 </code>。</p>
-<p>假设你的 <strong>中转服务器 </strong>的IP是<code> 1.1.1.1 </code>，本地监听端口和SS端口一致，都是<code> 10000 </code>。</p>
+<p>假设你的&nbsp;<strong>海外服务器(被中转)&nbsp;</strong>中搭建的Shadowsocks服务端的IP是<code> 2.2.2.2 &nbsp;</code>，SS端口是<code> 10000 </code>。</p>
+<p>假设你的 <strong>中转服务器&nbsp;</strong>的IP是<code> 1.1.1.1 </code>，本地监听端口和SS端口一致，都是<code> 10000 </code>。</p>
 <p>那么，你的Shadowsocks客户端，添加Shadowsocks服务器，IP填写<code> 1.1.1.1 </code>，端口填写<code> 10000 </code>，<strong>其他的 密码/加密方式/协议/混淆等等 全部和原Shadowsocks账号一样！</strong></p>
 <h3 id="文件信息">文件信息</h3>
 <p><strong>安装目录：</strong>/usr/local/tinyPortMapper</p>
@@ -592,21 +525,15 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <p><strong>日志文件：</strong>/tmp/tinymapper.log （存在临时文件夹中，重启系统后自动清空）</p>
 <h2 id="其他说明">其他说明</h2>
 <blockquote><p><strong>注意：</strong>目前该脚本还<strong>不支持开机启动 tinyPortMapper</strong> ，预计以后的版本会添加。</p></blockquote>
-<h3 id="提示wget: unknown host “raw.githubusercontent.com” 之类的错误">提示wget: unknown host “raw.githubusercontent.com” 之类的错误</h3>
+<h3 id="提示wget: unknown host “raw.githubusercontent.com” 之类的错误">提示wget:&nbsp;unknown host “raw.githubusercontent.com” 之类的错误</h3>
 <p>这是无法解析我的域名，多半是DNS的问题，请更换DNS为谷歌DNS。</p>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
-<pre class="prettyprint linenums">echo -e "nameserver 8.8.8.8\nnameserver 8.8.4.4" &gt; /etc/resolv.conf
-</pre>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/wlzy-36/#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">echo </span><span class="pun">-</span><span class="pln">e </span><span class="str">"nameserver 8.8.8.8\nnameserver 8.8.4.4"</span><span class="pln"> </span><span class="pun">&gt;</span><span class="pln"> </span><span class="str">/etc/</span><span class="pln">resolv</span><span class="pun">.</span><span class="pln">conf</span></li></ol></pre>
 <p></p></div>
 <h3 id="提示 wget: command not found 的错误">提示 wget: command not found 的错误</h3>
 <p>这是你的系统精简的太干净了，wget都没有安装，所以需要安装wget。</p>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
-<pre class="prettyprint linenums"># Centos系统:
-yum install -y wget
-
-# Debian/Ubuntu系统:
-apt-get install -y wget
-</pre>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/wlzy-36/#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># Centos系统:</span></li><li class="L1"><span class="pln">yum install </span><span class="pun">-</span><span class="pln">y wget</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="com"># Debian/Ubuntu系统:</span></li><li class="L4"><span class="pln">apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> install </span><span class="pun">-</span><span class="pln">y wget</span></li></ol></pre>
 <p></p></div>
 <h2 id="更新日志">更新日志</h2>
 <h3 id="2018年07月10日，版本 v1.0.2">2018年07月10日，版本 v1.0.2</h3>
@@ -615,17 +542,17 @@ apt-get install -y wget
 <p><strong>1. 修复</strong> 最新版本下载失败的问题。</p>
 <h3 id="2017年11月23日，版本 v1.0.0"><strong>2017年11月23日，版本 v1.0.0</strong></h3>
 <p><strong>1.推出</strong> 正式版本。</p>
-<hr />
-<p><strong>tinyPortMapper 手动教程：<a title="Shadowsocks利用 tinyPortMapper 实现中继(中转/端口转发)加速" href="https://doub.io/ss-jc62/" target="_blank" rel="noopener">Shadowsocks利用 tinyPortMapper 实现中继(中转/端口转发)加速</a></strong></p>
-<p><strong>其他 Shadowsocks中继（中转）教程：<a href="https://doub.io/ss-jc26/#服务器中继（国内中转）" target="_blank" rel="noopener">传送门</a></strong></p>
-<p><pre style="border-left: solid 4px #1abc9c;"><strong>转载请超链接注明：</strong><a href="https://doub.io">逗比根据地</a> &raquo; <a href="https://doub.io/wlzy-36/">『原创』Shadowsocks tinyPortMapper 中继(中转/端口转发) 便捷管理脚本</a></pre><pre><strong>责任声明：</strong>本站一切资源仅用作交流学习，请勿用作商业或违法行为！如造成任何后果，本站概不负责！</pre></p>
+<hr>
+<p><strong>tinyPortMapper 手动教程：<a title="" href="https://doub.io/ss-jc62/" target="_blank" rel="noopener" data-original-title="Shadowsocks利用 tinyPortMapper 实现中继(中转/端口转发)加速">Shadowsocks利用 tinyPortMapper 实现中继(中转/端口转发)加速</a></strong></p>
+<p><strong>其他 Shadowsocks中继（中转）教程：<a href="https://doub.io/ss-jc26/#%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%AD%E7%BB%A7%EF%BC%88%E5%9B%BD%E5%86%85%E4%B8%AD%E8%BD%AC%EF%BC%89" target="_blank" rel="noopener" data-original-title="" title="">传送门</a></strong></p>
+<p></p><pre style="border-left: solid 4px #1abc9c;"><strong>转载请超链接注明：</strong><a href="https://doub.io/" data-original-title="" title="">逗比根据地</a> » <a href="https://doub.io/wlzy-36/" data-original-title="" title="">『原创』Shadowsocks tinyPortMapper 中继(中转/端口转发) 便捷管理脚本</a></pre><pre><strong>责任声明：</strong>本站一切资源仅用作交流学习，请勿用作商业或违法行为！如造成任何后果，本站概不负责！</pre><p></p>
 
       
 <div class="article-social">
-			<a href="javascript:;" data-action="ding" data-id="2525" id="Addlike" class="action"><i class="fa fa-thumbs-o-up"></i>赞 (<span class="count">56</span>)</a></div>
+			<a href="javascript:;" data-action="ding" data-id="2525" id="Addlike" class="action" data-original-title="" title=""><i class="fa fa-thumbs-o-up"></i>赞 (<span class="count">56</span>)</a></div>
 	</article>	
 				<footer class="article-footer">
-			<div class="article-tags"><i class="fa fa-tags"></i><a href="https://doub.io/tag/shadowsocks/" rel="tag">Shadowsocks</a><a href="https://doub.io/tag/shadowsocksr/" rel="tag">ShadowsocksR</a><a href="https://doub.io/tag/shell/" rel="tag">shell</a><a href="https://doub.io/tag/tinyportmapper/" rel="tag">tinyPortMapper</a><a href="https://doub.io/tag/%e4%b8%ad%e7%bb%a7/" rel="tag">中继</a><a href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/" rel="tag">端口转发</a><a href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" rel="tag">脚本</a></div></footer>
+			<div class="article-tags"><i class="fa fa-tags"></i><a href="https://doub.io/tag/shadowsocks/" rel="tag" data-original-title="" title="">Shadowsocks</a><a href="https://doub.io/tag/shadowsocksr/" rel="tag" data-original-title="" title="">ShadowsocksR</a><a href="https://doub.io/tag/shell/" rel="tag" data-original-title="" title="">shell</a><a href="https://doub.io/tag/tinyportmapper/" rel="tag" data-original-title="" title="">tinyPortMapper</a><a href="https://doub.io/tag/%e4%b8%ad%e7%bb%a7/" rel="tag" data-original-title="" title="">中继</a><a href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/" rel="tag" data-original-title="" title="">端口转发</a><a href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" rel="tag" data-original-title="" title="">脚本</a></div></footer>
 	<nav class="article-nav">
 			<span class="article-nav-prev"><i class="fa fa-angle-double-left"></i> <a href="https://doub.io/ss-jc62/" rel="prev">Shadowsocks利用 tinyPortMapper 实现中继(中转/端口转发)加速</a></span>
 			<span class="article-nav-next"><a href="https://doub.io/wlzy-37/" rel="next">BT/种子/磁力链接/HTTP/FTP 离线下载工具 —— Aria2 新 手动安装教程</a>  <i class="fa fa-angle-double-right"></i></span>
@@ -634,24 +561,24 @@ apt-get install -y wget
 		<div class="related_top">
 			<div class="related_posts"><ul class="related_img">
 
-		<li class="related_box"  >
-		<a href="https://doub.io/ss-jc67/" title="『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/shadowsocks3.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本" />	<br><span class="r_title">『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本</span></a>
+		<li class="related_box">
+		<a href="https://doub.io/ss-jc67/" title="『原创』Shadowsocks &lt;strong&gt;Go版&lt;/strong&gt; 一键安装管理脚本" target="_blank">
+<img src="./wlzy-36_files/timthumb.php" alt="『原创』Shadowsocks &lt;strong&gt;Go版&lt;/strong&gt; 一键安装管理脚本">	<br><span class="r_title">『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/ss-jc66/" title="给目前正在使用 SSR 代理翻墙的人一点点建议(混淆方面)" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/shadowsocksR-1.png&h=110&w=185&q=90&zc=1&ct=1" alt="给目前正在使用 SSR 代理翻墙的人一点点建议(混淆方面)" />	<br><span class="r_title">给目前正在使用 SSR 代理翻墙的人一点点建议(混淆方面)</span></a>
+<img src="./wlzy-36_files/timthumb(1).php" alt="给目前正在使用 SSR 代理翻墙的人一点点建议(混淆方面)">	<br><span class="r_title">给目前正在使用 SSR 代理翻墙的人一点点建议(混淆方面)</span></a>
 		</li>
 	
-		<li class="related_box"  >
-		<a href="https://doub.io/shell-jc9/" title="『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/telegram.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本" />	<br><span class="r_title">『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本</span></a>
+		<li class="related_box">
+		<a href="https://doub.io/shell-jc9/" title="『原创』Telegram 专用的轻量化代理工具 —— MTProxy &lt;strong&gt;Go版&lt;/strong&gt; 一键脚本" target="_blank">
+<img src="./wlzy-36_files/timthumb(2).php" alt="『原创』Telegram 专用的轻量化代理工具 —— MTProxy &lt;strong&gt;Go版&lt;/strong&gt; 一键脚本">	<br><span class="r_title">『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/shell-jc8/" title="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/telegram.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本" />	<br><span class="r_title">『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本</span></a>
+<img src="./wlzy-36_files/timthumb(2).php" alt="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本">	<br><span class="r_title">『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本</span></a>
 		</li>
 	</ul>
 
@@ -670,18 +597,18 @@ apt-get install -y wget
 		
 		<div class="comt">
 			<div class="comt-box">
-				<textarea placeholder="本站所有评论均会审核，因缓存原因，审核中的评论刷新页面后就会不显示，请知晓勿重发。" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById('submit').click();return false};"></textarea>
+				<textarea placeholder="本站所有评论均会审核，因缓存原因，审核中的评论刷新页面后就会不显示，请知晓勿重发。" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById(&#39;submit&#39;).click();return false};"></textarea>
 				<div class="comt-ctrl">
 					<button class="btn btn-primary pull-right" type="submit" name="submit" id="submit" tabindex="5"><i class="fa fa-check-square-o"></i> 提交评论</button>
-					<div class="comt-tips pull-right"><input type='hidden' name='comment_post_ID' value='2525' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</div>
+					<div class="comt-tips pull-right"><input type="hidden" name="comment_post_ID" value="2525" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+<div class="comt-tip comt-loading" style="display: none;">正在提交, 请稍候...</div><div class="comt-tip comt-error" style="display: none;">#</div></div>
 					<span data-type="comment-insert-smilie" class="muted comt-smilie"><i class="fa fa-smile-o"></i> 表情</span>
-					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked"/>有人回复时邮件通知我</label></span>
+					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked">有人回复时邮件通知我</label></span>
 				</div>
 			</div>
 
-												<div class="comt-comterinfo" id="comment-author-info" >
+												<div class="comt-comterinfo" id="comment-author-info">
 						<h4>Hi，您需要填写昵称和邮箱！</h4>
 						<ul>
 							<li class="form-inline"><label class="hide" for="author">昵称</label><input class="ipt" type="text" name="author" id="author" value="" tabindex="2" placeholder="昵称"><span class="help-inline">昵称 (必填)</span></li>
@@ -700,77 +627,70 @@ apt-get install -y wget
 		<i class="fa fa-comments-o"></i> <b> (30)</b>个小伙伴在吐槽
 	</div>
 	<ol class="commentlist">
-		<li class="comment even thread-even depth-1" id="comment-45911"><div class="c-avatar"><div class="c-main" id="div-comment-45911">老哥 不知道啥原因 udp转发一直失败  好奇怪<div class="c-meta"><span class="c-author">asura</span>2018-11-10 18:29 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=45911#respond' onclick='return addComment.moveForm( "div-comment-45911", "45911", "respond", "2525" )' aria-label='回复给asura'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-44734"><div class="c-avatar"><div class="c-main" id="div-comment-44734">站长你好,我在设置端口转发的时候提示tinymapper.sh: line 271: 11732 Segmentation fault      nohup ./tinymapper -l 0.0.0.0:${local_Port} -r ${Mapper_IP}:${Mapper_Port} $1 &gt; ${LOG_File} 2&gt;&amp;1,该如何解决<div class="c-meta"><span class="c-author">iii</span>2018-10-20 19:25 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=44734#respond' onclick='return addComment.moveForm( "div-comment-44734", "44734", "respond", "2525" )' aria-label='回复给iii'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-44740"><div class="c-avatar"><div class="c-main" id="div-comment-44740">不是很清楚，我查了下 Segmentation fault ，有说是程序问题导致的，有说是系统分配内存出错导致的。。。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-10-20 21:32 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=44740#respond' onclick='return addComment.moveForm( "div-comment-44740", "44740", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-45911"><div class="c-avatar"><div class="c-main" id="div-comment-45911">老哥 不知道啥原因 udp转发一直失败  好奇怪<div class="c-meta"><span class="c-author">asura</span>2018-11-10 18:29 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=45911#respond" onclick="return addComment.moveForm( &quot;div-comment-45911&quot;, &quot;45911&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给asura">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-44734"><div class="c-avatar"><div class="c-main" id="div-comment-44734">站长你好,我在设置端口转发的时候提示tinymapper.sh: line 271: 11732 Segmentation fault      nohup ./tinymapper -l 0.0.0.0:${local_Port} -r ${Mapper_IP}:${Mapper_Port} $1 &gt; ${LOG_File} 2&gt;&amp;1,该如何解决<div class="c-meta"><span class="c-author">iii</span>2018-10-20 19:25 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=44734#respond" onclick="return addComment.moveForm( &quot;div-comment-44734&quot;, &quot;44734&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给iii">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-44740"><div class="c-avatar"><div class="c-main" id="div-comment-44740">不是很清楚，我查了下 Segmentation fault ，有说是程序问题导致的，有说是系统分配内存出错导致的。。。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-10-20 21:32 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=44740#respond" onclick="return addComment.moveForm( &quot;div-comment-44740&quot;, &quot;44740&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-43798"><div class="c-avatar"><div class="c-main" id="div-comment-43798">我发现这个没办法监听ipv6流量，手动试了一下，报错（ip打码了 <img data-original="https://doub.io/wp-content/themes/yusi1.0/img/smilies/icon_lol.gif" alt=":lol:" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ）
-<pre class="prettyprint linenums" >[<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="22504d4d566246434149">[email&#160;protected]</a> tinyPortMapper]# ./tinymapper -l :::12345 -r 1.1.1.1:12346 -t -u
-[2018-09-30 16:10:57][INFO]argc=7 ./tinymapper -l :::12345 -r 1.1.1.1:12346 -t -u
-[2018-09-30 16:10:57][INFO]parsing address: :::12345
-[2018-09-30 16:10:57][ERROR]failed to parse
-</pre><div class="c-meta"><span class="c-author">lll</span>2018-09-30 16:18 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=43798#respond' onclick='return addComment.moveForm( "div-comment-43798", "43798", "respond", "2525" )' aria-label='回复给lll'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-43800"><div class="c-avatar"><div class="c-main" id="div-comment-43800">那应该就是不支持了。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-09-30 19:01 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=43800#respond' onclick='return addComment.moveForm( "div-comment-43800", "43800", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-43798"><div class="c-avatar"><div class="c-main" id="div-comment-43798">我发现这个没办法监听ipv6流量，手动试了一下，报错（ip打码了 <img data-original="https://doub.io/wp-content/themes/yusi1.0/img/smilies/icon_lol.gif" alt=":lol:" class="wp-smiley" style="height: 1em; max-height: 1em;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"> ）
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">[</span><span class="pln">root@dack</span><span class="pln"> tinyPortMapper</span><span class="pun">]</span><span class="com"># ./tinymapper -l :::12345 -r 1.1.1.1:12346 -t -u</span></li><li class="L1"><span class="pun">[</span><span class="lit">2018</span><span class="pun">-</span><span class="lit">09</span><span class="pun">-</span><span class="lit">30</span><span class="pln"> </span><span class="lit">16</span><span class="pun">:</span><span class="lit">10</span><span class="pun">:</span><span class="lit">57</span><span class="pun">][</span><span class="pln">INFO</span><span class="pun">]</span><span class="pln">argc</span><span class="pun">=</span><span class="lit">7</span><span class="pln"> </span><span class="pun">./</span><span class="pln">tinymapper </span><span class="pun">-</span><span class="pln">l </span><span class="pun">:::</span><span class="lit">12345</span><span class="pln"> </span><span class="pun">-</span><span class="pln">r </span><span class="lit">1.1</span><span class="pun">.</span><span class="lit">1.1</span><span class="pun">:</span><span class="lit">12346</span><span class="pln"> </span><span class="pun">-</span><span class="pln">t </span><span class="pun">-</span><span class="pln">u</span></li><li class="L2"><span class="pun">[</span><span class="lit">2018</span><span class="pun">-</span><span class="lit">09</span><span class="pun">-</span><span class="lit">30</span><span class="pln"> </span><span class="lit">16</span><span class="pun">:</span><span class="lit">10</span><span class="pun">:</span><span class="lit">57</span><span class="pun">][</span><span class="pln">INFO</span><span class="pun">]</span><span class="pln">parsing address</span><span class="pun">:</span><span class="pln"> </span><span class="pun">:::</span><span class="lit">12345</span></li><li class="L3"><span class="pun">[</span><span class="lit">2018</span><span class="pun">-</span><span class="lit">09</span><span class="pun">-</span><span class="lit">30</span><span class="pln"> </span><span class="lit">16</span><span class="pun">:</span><span class="lit">10</span><span class="pun">:</span><span class="lit">57</span><span class="pun">][</span><span class="pln">ERROR</span><span class="pun">]</span><span class="pln">failed to parse</span></li></ol></pre><div class="c-meta"><span class="c-author">lll</span>2018-09-30 16:18 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=43798#respond" onclick="return addComment.moveForm( &quot;div-comment-43798&quot;, &quot;43798&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给lll">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-43800"><div class="c-avatar"><div class="c-main" id="div-comment-43800">那应该就是不支持了。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-09-30 19:01 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=43800#respond" onclick="return addComment.moveForm( &quot;div-comment-43800&quot;, &quot;43800&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-43787"><div class="c-avatar"><div class="c-main" id="div-comment-43787">大佬，能联系一下作者吗？我希望能支持ipv6转发，毕竟很多时候ipv6连接速度要比ipv4好，而且我的主机都只能用ipv6访问<div class="c-meta"><span class="c-author">JACK LEE</span>2018-09-30 00:55 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=43787#respond' onclick='return addComment.moveForm( "div-comment-43787", "43787", "respond", "2525" )' aria-label='回复给JACK LEE'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-43803"><div class="c-avatar"><div class="c-main" id="div-comment-43803">请自行去 <a href="https://github.com/wangyu-/tinyPortMapper/issues" target="_blank" rel="nofollow">Github</a> 联系作者。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-09-30 19:05 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=43803#respond' onclick='return addComment.moveForm( "div-comment-43803", "43803", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-43787"><div class="c-avatar"><div class="c-main" id="div-comment-43787">大佬，能联系一下作者吗？我希望能支持ipv6转发，毕竟很多时候ipv6连接速度要比ipv4好，而且我的主机都只能用ipv6访问<div class="c-meta"><span class="c-author">JACK LEE</span>2018-09-30 00:55 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=43787#respond" onclick="return addComment.moveForm( &quot;div-comment-43787&quot;, &quot;43787&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给JACK LEE">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-43803"><div class="c-avatar"><div class="c-main" id="div-comment-43803">请自行去 <a href="https://github.com/wangyu-/tinyPortMapper/issues" target="_blank" rel="nofollow">Github</a> 联系作者。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-09-30 19:05 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=43803#respond" onclick="return addComment.moveForm( &quot;div-comment-43803&quot;, &quot;43803&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-43274"><div class="c-avatar"><div class="c-main" id="div-comment-43274">这个中继具体是什么原理呢 国内服务器去连接国外服务器 然后我的主机再去链接国内的服务器 这样多了一台服务器中转 讲道理延迟不应该更高了吗 为什么还会降低呢<div class="c-meta"><span class="c-author">超人呐</span>2018-09-16 20:00 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=43274#respond' onclick='return addComment.moveForm( "div-comment-43274", "43274", "respond", "2525" )' aria-label='回复给超人呐'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-43282"><div class="c-avatar"><div class="c-main" id="div-comment-43282">中转就是，中转服务器把某个端口接收到数据原封不动的发给被中转服务器。<br />
-在被中转服务器看来，唯一的区别就是发送者的IP不一样。<br />
+<li class="comment odd alt thread-even depth-1" id="comment-43274"><div class="c-avatar"><div class="c-main" id="div-comment-43274">这个中继具体是什么原理呢 国内服务器去连接国外服务器 然后我的主机再去链接国内的服务器 这样多了一台服务器中转 讲道理延迟不应该更高了吗 为什么还会降低呢<div class="c-meta"><span class="c-author">超人呐</span>2018-09-16 20:00 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=43274#respond" onclick="return addComment.moveForm( &quot;div-comment-43274&quot;, &quot;43274&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给超人呐">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-43282"><div class="c-avatar"><div class="c-main" id="div-comment-43282">中转就是，中转服务器把某个端口接收到数据原封不动的发给被中转服务器。<br>
+在被中转服务器看来，唯一的区别就是发送者的IP不一样。<br>
 延迟是否增加，取决于线路：
-<pre class="prettyprint linenums" >假设你链接服务器A，去程延迟(本地Ping) 200ms。
-而你链接服务器B（延迟30ms），服务器B中转到服务器C（线路好，延迟150ms）。
-那么总去程延迟就是 180ms了。
-</pre>
-在代理界，中转主要用于降低延迟和加速，这两者的前提都是<strong>你与目标服务器链接质量不好</strong>，而<strong>中转服务器与你们双方链接质量都足够优秀</strong>。这样才能起到降低延迟或加速的效果。<br />
-两者有一个不满足条件，就可能会没有加速效果，甚至减速/增加延迟。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-09-16 23:27 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=43282#respond' onclick='return addComment.moveForm( "div-comment-43282", "43282", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">假设你链接服务器</span><span class="pln">A</span><span class="pun">，去程延迟(本地</span><span class="typ">Ping</span><span class="pun">)</span><span class="pln"> </span><span class="lit">200ms</span><span class="pun">。</span></li><li class="L1"><span class="pun">而你链接服务器</span><span class="pln">B</span><span class="pun">（延迟</span><span class="lit">30ms</span><span class="pun">），服务器</span><span class="pln">B</span><span class="pun">中转到服务器</span><span class="pln">C</span><span class="pun">（线路好，延迟</span><span class="lit">150ms</span><span class="pun">）。</span></li><li class="L2"><span class="pun">那么总去程延迟就是</span><span class="pln"> </span><span class="lit">180ms</span><span class="pun">了。</span></li></ol></pre>
+在代理界，中转主要用于降低延迟和加速，这两者的前提都是<strong>你与目标服务器链接质量不好</strong>，而<strong>中转服务器与你们双方链接质量都足够优秀</strong>。这样才能起到降低延迟或加速的效果。<br>
+两者有一个不满足条件，就可能会没有加速效果，甚至减速/增加延迟。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-09-16 23:27 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=43282#respond" onclick="return addComment.moveForm( &quot;div-comment-43282&quot;, &quot;43282&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-39575"><div class="c-avatar"><div class="c-main" id="div-comment-39575">亲爱的博主，脚本已失效，可以修复下吗？<div class="c-meta"><span class="c-author">哈哈哈</span>2018-06-27 12:23 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=39575#respond' onclick='return addComment.moveForm( "div-comment-39575", "39575", "respond", "2525" )' aria-label='回复给哈哈哈'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-39612"><div class="c-avatar"><div class="c-main" id="div-comment-39612">哪里失效？请贴出错误信息。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-06-28 10:05 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=39612#respond' onclick='return addComment.moveForm( "div-comment-39612", "39612", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment odd alt depth-3" id="comment-39621"><div class="c-avatar"><div class="c-main" id="div-comment-39621">检测到最新版本是“20180620.0”，但releases页没有提供20180620.0版的tinymapper_binaries.tar.gz。所以会提示“ tinyPortMapper 压缩包下载失败 !”<div class="c-meta"><span class="c-author">Yalisiting</span>2018-06-28 10:31 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=39621#respond' onclick='return addComment.moveForm( "div-comment-39621", "39621", "respond", "2525" )' aria-label='回复给Yalisiting'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-4" id="comment-39622"><div class="c-avatar"><div class="c-main" id="div-comment-39622">好吧，我修复下，作者这就蛋疼了，不按套路出牌。。。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-06-28 11:06 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=39622#respond' onclick='return addComment.moveForm( "div-comment-39622", "39622", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-4" id="comment-39624"><div class="c-avatar"><div class="c-main" id="div-comment-39624">已经修复，请更新脚本。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-06-28 11:18 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=39624#respond' onclick='return addComment.moveForm( "div-comment-39624", "39624", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-39575"><div class="c-avatar"><div class="c-main" id="div-comment-39575">亲爱的博主，脚本已失效，可以修复下吗？<div class="c-meta"><span class="c-author">哈哈哈</span>2018-06-27 12:23 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=39575#respond" onclick="return addComment.moveForm( &quot;div-comment-39575&quot;, &quot;39575&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给哈哈哈">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-39612"><div class="c-avatar"><div class="c-main" id="div-comment-39612">哪里失效？请贴出错误信息。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-06-28 10:05 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=39612#respond" onclick="return addComment.moveForm( &quot;div-comment-39612&quot;, &quot;39612&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment odd alt depth-3" id="comment-39621"><div class="c-avatar"><div class="c-main" id="div-comment-39621">检测到最新版本是“20180620.0”，但releases页没有提供20180620.0版的tinymapper_binaries.tar.gz。所以会提示“ tinyPortMapper 压缩包下载失败 !”<div class="c-meta"><span class="c-author">Yalisiting</span>2018-06-28 10:31 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=39621#respond" onclick="return addComment.moveForm( &quot;div-comment-39621&quot;, &quot;39621&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Yalisiting">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-4" id="comment-39622"><div class="c-avatar"><div class="c-main" id="div-comment-39622">好吧，我修复下，作者这就蛋疼了，不按套路出牌。。。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-06-28 11:06 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=39622#respond" onclick="return addComment.moveForm( &quot;div-comment-39622&quot;, &quot;39622&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-4" id="comment-39624"><div class="c-avatar"><div class="c-main" id="div-comment-39624">已经修复，请更新脚本。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-06-28 11:18 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=39624#respond" onclick="return addComment.moveForm( &quot;div-comment-39624&quot;, &quot;39624&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-38848"><div class="c-avatar"><div class="c-main" id="div-comment-38848">能不能加个自启动脚本？每次重启都要重新转发.<div class="c-meta"><span class="c-author">鱼干</span>2018-06-06 23:39 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=38848#respond' onclick='return addComment.moveForm( "div-comment-38848", "38848", "respond", "2525" )' aria-label='回复给鱼干'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-38292"><div class="c-avatar"><div class="c-main" id="div-comment-38292">socket bind failed, Address already in use，提示我[错误] tinyPortMapper TCP+UDP 启动失败 !请问这是什么原因啊，是我开了连接个数限制吗<div class="c-meta"><span class="c-author">haiqiaoya</span>2018-05-23 23:39 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=38292#respond' onclick='return addComment.moveForm( "div-comment-38292", "38292", "respond", "2525" )' aria-label='回复给haiqiaoya'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-38328"><div class="c-avatar"><div class="c-main" id="div-comment-38328">端口被占用，请更换端口或者关闭占用端口的程序，可以用 <code>netstat -lntp</code> 来查看本地端口占用情况。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-05-24 15:34 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=38328#respond' onclick='return addComment.moveForm( "div-comment-38328", "38328", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="comment-38848"><div class="c-avatar"><div class="c-main" id="div-comment-38848">能不能加个自启动脚本？每次重启都要重新转发.<div class="c-meta"><span class="c-author">鱼干</span>2018-06-06 23:39 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=38848#respond" onclick="return addComment.moveForm( &quot;div-comment-38848&quot;, &quot;38848&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给鱼干">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-38292"><div class="c-avatar"><div class="c-main" id="div-comment-38292">socket bind failed, Address already in use，提示我[错误] tinyPortMapper TCP+UDP 启动失败 !请问这是什么原因啊，是我开了连接个数限制吗<div class="c-meta"><span class="c-author">haiqiaoya</span>2018-05-23 23:39 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=38292#respond" onclick="return addComment.moveForm( &quot;div-comment-38292&quot;, &quot;38292&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给haiqiaoya">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-38328"><div class="c-avatar"><div class="c-main" id="div-comment-38328">端口被占用，请更换端口或者关闭占用端口的程序，可以用 <code>netstat -lntp</code> 来查看本地端口占用情况。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-05-24 15:34 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=38328#respond" onclick="return addComment.moveForm( &quot;div-comment-38328&quot;, &quot;38328&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-32553"><div class="c-avatar"><div class="c-main" id="div-comment-32553">帅哥，为什么这个中转不能装在bbr。一装载bbr就不能中继了<div class="c-meta"><span class="c-author">Hi先生</span>2018-03-03 17:21 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=32553#respond' onclick='return addComment.moveForm( "div-comment-32553", "32553", "respond", "2525" )' aria-label='回复给Hi先生'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-32632"><div class="c-avatar"><div class="c-main" id="div-comment-32632">应该没冲突的呀？BBR只是内核中的一个模块，会监听网卡，进出网卡的TCP流量都会被加速，而这个软件只是监听一个端口把收到的数据转发到其他服务器。我测试没有冲突的。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-03-04 14:39 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=32632#respond' onclick='return addComment.moveForm( "div-comment-32632", "32632", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-32553"><div class="c-avatar"><div class="c-main" id="div-comment-32553">帅哥，为什么这个中转不能装在bbr。一装载bbr就不能中继了<div class="c-meta"><span class="c-author">Hi先生</span>2018-03-03 17:21 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=32553#respond" onclick="return addComment.moveForm( &quot;div-comment-32553&quot;, &quot;32553&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Hi先生">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-32632"><div class="c-avatar"><div class="c-main" id="div-comment-32632">应该没冲突的呀？BBR只是内核中的一个模块，会监听网卡，进出网卡的TCP流量都会被加速，而这个软件只是监听一个端口把收到的数据转发到其他服务器。我测试没有冲突的。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-03-04 14:39 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=32632#respond" onclick="return addComment.moveForm( &quot;div-comment-32632&quot;, &quot;32632&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-31236"><div class="c-avatar"><div class="c-main" id="div-comment-31236">每次重启都得重新添加端口么？？<div class="c-meta"><span class="c-author">leo</span>2018-02-08 21:02 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=31236#respond' onclick='return addComment.moveForm( "div-comment-31236", "31236", "respond", "2525" )' aria-label='回复给leo'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-30010"><div class="c-avatar"><div class="c-main" id="div-comment-30010">特地搞了个阿里云的ECS，1CPU 1G 20M宽带按量计费，用脚本安装了转发，为啥感觉还变慢了呢......是不是哪里姿势不对......<div class="c-meta"><span class="c-author">misaka</span>2018-01-23 19:59 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=30010#respond' onclick='return addComment.moveForm( "div-comment-30010", "30010", "respond", "2525" )' aria-label='回复给misaka'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-30020"><div class="c-avatar"><div class="c-main" id="div-comment-30020">没有说中转后绝对变快的。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-01-23 22:23 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=30020#respond' onclick='return addComment.moveForm( "div-comment-30020", "30020", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-31236"><div class="c-avatar"><div class="c-main" id="div-comment-31236">每次重启都得重新添加端口么？？<div class="c-meta"><span class="c-author">leo</span>2018-02-08 21:02 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=31236#respond" onclick="return addComment.moveForm( &quot;div-comment-31236&quot;, &quot;31236&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给leo">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="comment-30010"><div class="c-avatar"><div class="c-main" id="div-comment-30010">特地搞了个阿里云的ECS，1CPU 1G 20M宽带按量计费，用脚本安装了转发，为啥感觉还变慢了呢......是不是哪里姿势不对......<div class="c-meta"><span class="c-author">misaka</span>2018-01-23 19:59 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=30010#respond" onclick="return addComment.moveForm( &quot;div-comment-30010&quot;, &quot;30010&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给misaka">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-30020"><div class="c-avatar"><div class="c-main" id="div-comment-30020">没有说中转后绝对变快的。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-01-23 22:23 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=30020#respond" onclick="return addComment.moveForm( &quot;div-comment-30020&quot;, &quot;30020&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-28681"><div class="c-avatar"><div class="c-main" id="div-comment-28681">老大能更新支持下开机启动吗，弄个转发配置文件也可以。。<div class="c-meta"><span class="c-author">rick</span>2017-12-20 11:10 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=28681#respond' onclick='return addComment.moveForm( "div-comment-28681", "28681", "respond", "2525" )' aria-label='回复给rick'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-23935"><div class="c-avatar"><div class="c-main" id="div-comment-23935">启动脚本的命令是啥啊，我重启一下就启动不了了- -<div class="c-meta"><span class="c-author"><a href='http://X1BE.CN' rel='external nofollow' class='url'>X1BE</a></span>2017-12-06 11:36 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=23935#respond' onclick='return addComment.moveForm( "div-comment-23935", "23935", "respond", "2525" )' aria-label='回复给X1BE'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-23936"><div class="c-avatar"><div class="c-main" id="div-comment-23936">文章里写的有<code> bash tinymapper.sh </code>，另外该脚本目前并不支持开机启动。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-12-06 11:55 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=23936#respond' onclick='return addComment.moveForm( "div-comment-23936", "23936", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-28681"><div class="c-avatar"><div class="c-main" id="div-comment-28681">老大能更新支持下开机启动吗，弄个转发配置文件也可以。。<div class="c-meta"><span class="c-author">rick</span>2017-12-20 11:10 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=28681#respond" onclick="return addComment.moveForm( &quot;div-comment-28681&quot;, &quot;28681&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给rick">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-23935"><div class="c-avatar"><div class="c-main" id="div-comment-23935">启动脚本的命令是啥啊，我重启一下就启动不了了- -<div class="c-meta"><span class="c-author"><a href="http://x1be.cn/" rel="external nofollow" class="url" target="_blank">X1BE</a></span>2017-12-06 11:36 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=23935#respond" onclick="return addComment.moveForm( &quot;div-comment-23935&quot;, &quot;23935&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给X1BE">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-23936"><div class="c-avatar"><div class="c-main" id="div-comment-23936">文章里写的有<code> bash tinymapper.sh </code>，另外该脚本目前并不支持开机启动。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-12-06 11:55 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=23936#respond" onclick="return addComment.moveForm( &quot;div-comment-23936&quot;, &quot;23936&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-23793"><div class="c-avatar"><div class="c-main" id="div-comment-23793">发现一个问题，ubuntu下非root用户不给使用比较低的端口，比如80之类的。这个时候就会直接提示错误，我弄了半天才发现是因为这个……<div class="c-meta"><span class="c-author">Cloud</span>2017-12-03 19:17 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=23793#respond' onclick='return addComment.moveForm( "div-comment-23793", "23793", "respond", "2525" )' aria-label='回复给Cloud'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-23840"><div class="c-avatar"><div class="c-main" id="div-comment-23840">任何系统的 普通用户都无法使用 1024 以下的端口。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-12-04 18:46 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=23840#respond' onclick='return addComment.moveForm( "div-comment-23840", "23840", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-23793"><div class="c-avatar"><div class="c-main" id="div-comment-23793">发现一个问题，ubuntu下非root用户不给使用比较低的端口，比如80之类的。这个时候就会直接提示错误，我弄了半天才发现是因为这个……<div class="c-meta"><span class="c-author">Cloud</span>2017-12-03 19:17 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=23793#respond" onclick="return addComment.moveForm( &quot;div-comment-23793&quot;, &quot;23793&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Cloud">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-23840"><div class="c-avatar"><div class="c-main" id="div-comment-23840">任何系统的 普通用户都无法使用 1024 以下的端口。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-12-04 18:46 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=23840#respond" onclick="return addComment.moveForm( &quot;div-comment-23840&quot;, &quot;23840&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-23618"><div class="c-avatar"><div class="c-main" id="div-comment-23618">这个和iptables有什么区别？<div class="c-meta"><span class="c-author">CarBon</span>2017-11-30 19:19 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=23618#respond' onclick='return addComment.moveForm( "div-comment-23618", "23618", "respond", "2525" )' aria-label='回复给CarBon'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-23394"><div class="c-avatar"><div class="c-main" id="div-comment-23394">阿里云1M的带宽做中转的话，带宽太小是不是效果会更差？<div class="c-meta"><span class="c-author">kissvv</span>2017-11-26 15:17 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=23394#respond' onclick='return addComment.moveForm( "div-comment-23394", "23394", "respond", "2525" )' aria-label='回复给kissvv'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-23459"><div class="c-avatar"><div class="c-main" id="div-comment-23459">1Mbps会成为速度瓶颈，理论上中转后最大速度是 128KB/s 左右。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-11-27 16:41 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-36/?replytocom=23459#respond' onclick='return addComment.moveForm( "div-comment-23459", "23459", "respond", "2525" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-23618"><div class="c-avatar"><div class="c-main" id="div-comment-23618">这个和iptables有什么区别？<div class="c-meta"><span class="c-author">CarBon</span>2017-11-30 19:19 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=23618#respond" onclick="return addComment.moveForm( &quot;div-comment-23618&quot;, &quot;23618&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给CarBon">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-23394"><div class="c-avatar"><div class="c-main" id="div-comment-23394">阿里云1M的带宽做中转的话，带宽太小是不是效果会更差？<div class="c-meta"><span class="c-author">kissvv</span>2017-11-26 15:17 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=23394#respond" onclick="return addComment.moveForm( &quot;div-comment-23394&quot;, &quot;23394&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给kissvv">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-23459"><div class="c-avatar"><div class="c-main" id="div-comment-23459">1Mbps会成为速度瓶颈，理论上中转后最大速度是 128KB/s 左右。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-11-27 16:41 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-36/?replytocom=23459#respond" onclick="return addComment.moveForm( &quot;div-comment-23459&quot;, &quot;23459&quot;, &quot;respond&quot;, &quot;2525&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 	</ol>
-	<div class="commentnav"	>
+	<div class="commentnav">
 			</div>
 </div>
 </div>
@@ -779,7 +699,7 @@ apt-get install -y wget
 </div>
 <aside class="sidebar">	
 <div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="position: absolute;left: 4px;top: 4px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/walllink/"><img src="https://img.doub.pw/abc/walllink-03.png" /></a></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align:center;padding: 10px 20px 5px;display: block;">
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/walllink/"><img src="./wlzy-36_files/walllink-03.png"></a></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align:center;padding: 10px 20px 5px;display: block;">
 <a class="wid-xiaobai" style="background-color: #03A9F4;padding-top:15px;padding-bottom:15px;font-size: 16px;font-weight: bold;" target="_blank" href="https://doub.io/all-one/">逗比根据地 所有文章教程分类合辑</a>
 <a class="wid-xiaobai" style="background-color: #1ABCFF;padding-top: 7px;padding-bottom: 7px;font-weight: bold;font-size: 15px;" target="_blank" href="https://doub.io/goflyway-jc3/">CDN 复活被墙IP 继续做代理</a>
 <a class="wid-xiaobai" style="background-color: #1ABCFF;padding-top: 7px;padding-bottom: 7px;font-weight: bold;font-size: 15px;" target="_blank" href="https://doub.io/goflyway-jc5/">KCP 复活被墙IP 继续做代理</a>
@@ -806,11 +726,11 @@ apt-get install -y wget
 <a class="wid-xiaobai" style="background-color: #2d2d2d;" target="_blank" href="https://doub.io/paypal-jc2/">PayPal 更换汇率结算方式降低手续费</a>
 </div></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="background-color: #eee;">
 <div style="position: absolute;margin-left: 4px;margin-top: 4px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/kanfanba/"><img style="margin-bottom: 10px;" src="https://img.doub.pw/abc/kanfanba-02.png"/></a>
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/kanfanba/"><img style="margin-bottom: 10px;" src="./wlzy-36_files/kanfanba-02.png"></a>
 <div style="position: absolute;margin-left: 4px;margin-top: 4px;width: 24px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
 
-<div id="guangg_image"></div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+<div id="guangg_image"><a target="_blank" title="特别声明：此图片为广告投放，与本站无任何关系。" href="https://doub.io/go/vultr-100/"><img src="./wlzy-36_files/vultr-02.png"></a></div>
+<script type="text/javascript">
 var image_url=new Array()
 image_url=["https://doub.io/go/vultr-100/","https://doub.io/vpszy-21/","https://doub.io/go/virmach-kvm/"]
 var guangg_url=new Array()
@@ -825,17 +745,17 @@ document.getElementById("guangg_image").innerHTML = "<a target=\"_blank\" title=
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/10</span></p>
 			<span class="label label-1">v1.0.1</span>
-			<a target="_blank" href="https://doub.io/shell-jc9/" title="点击进入该文件的介绍页面。">MTProxy_go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/shell-jc9/" title="点击进入该文件的介绍页面。">MTProxy_go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./wlzy-36_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/10</span></p>
 			<span class="label label-2">v1.0.8</span>
-			<a target="_blank" href="https://doub.io/shell-jc7/" title="点击进入该文件的介绍页面。">MTProxy.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/shell-jc7/" title="点击进入该文件的介绍页面。">MTProxy.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./wlzy-36_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/07</span></p>
 			<span class="label label-3">v1.0.0</span>
-			<a target="_blank" href="https://doub.io/ss-jc67/" title="点击进入该文件的介绍页面。">ss-go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/ss-jc67/" title="点击进入该文件的介绍页面。">ss-go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./wlzy-36_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/02</span></p>
@@ -873,11 +793,11 @@ document.getElementById("guangg_image").innerHTML = "<a target=\"_blank\" title=
 			<a target="_blank" href="https://doub.io/dbrj-17/" title="点击进入该文件的介绍页面。">DAZE Tools</a>
 		</li>
 	</ul>
-</div></div></div><div class="widget d_tag"><div class="title"><h2>逗比の标签</h2></div><div class="d_tags"><a title="60个话题" target="_blank" href="https://doub.io/tag/shadowsocks/">Shadowsocks (60)</a><a title="47个话题" target="_blank" href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/">脚本 (47)</a><a title="45个话题" target="_blank" href="https://doub.io/tag/%e6%95%99%e7%a8%8b/">教程 (45)</a><a title="32个话题" target="_blank" href="https://doub.io/tag/shadowsocksr/">ShadowsocksR (32)</a><a title="30个话题" target="_blank" href="https://doub.io/tag/kxsw/">科学上网 (30)</a><a title="20个话题" target="_blank" href="https://doub.io/tag/shell/">shell (20)</a><a title="19个话题" target="_blank" href="https://doub.io/tag/vps/">VPS (19)</a><a title="18个话题" target="_blank" href="https://doub.io/tag/linux/">Linux (18)</a><a title="16个话题" target="_blank" href="https://doub.io/tag/vpn/">VPN (16)</a><a title="11个话题" target="_blank" href="https://doub.io/tag/bt/">BT (11)</a><a title="10个话题" target="_blank" href="https://doub.io/tag/%e7%a3%81%e5%8a%9b%e9%93%be%e6%8e%a5/">磁力链接 (10)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e5%8e%9f%e5%88%9b%e8%bd%af%e4%bb%b6/">原创软件 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/">端口转发 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e4%ba%91/">百度云 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/brook/">Brook (9)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/">国内中转 (8)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86/">反向代理 (8)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98/">百度网盘 (8)</a><a title="7个话题" target="_blank" href="https://doub.io/tag/goflyway/">GoFlyway (7)</a><a title="7个话题" target="_blank" href="https://doub.io/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/">搬瓦工 (7)</a></div></div></aside></section>
+</div></div></div><div class="widget d_tag"><div class="title"><h2>逗比の标签</h2></div><div class="d_tags"><a title="" target="_blank" href="https://doub.io/tag/shadowsocks/" data-original-title="60个话题">Shadowsocks (60)</a><a title="" target="_blank" href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" data-original-title="47个话题">脚本 (47)</a><a title="" target="_blank" href="https://doub.io/tag/%e6%95%99%e7%a8%8b/" data-original-title="45个话题">教程 (45)</a><a title="" target="_blank" href="https://doub.io/tag/shadowsocksr/" data-original-title="32个话题">ShadowsocksR (32)</a><a title="" target="_blank" href="https://doub.io/tag/kxsw/" data-original-title="30个话题">科学上网 (30)</a><a title="" target="_blank" href="https://doub.io/tag/shell/" data-original-title="20个话题">shell (20)</a><a title="" target="_blank" href="https://doub.io/tag/vps/" data-original-title="19个话题">VPS (19)</a><a title="" target="_blank" href="https://doub.io/tag/linux/" data-original-title="18个话题">Linux (18)</a><a title="" target="_blank" href="https://doub.io/tag/vpn/" data-original-title="16个话题">VPN (16)</a><a title="" target="_blank" href="https://doub.io/tag/bt/" data-original-title="11个话题">BT (11)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%a3%81%e5%8a%9b%e9%93%be%e6%8e%a5/" data-original-title="10个话题">磁力链接 (10)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%8e%9f%e5%88%9b%e8%bd%af%e4%bb%b6/" data-original-title="9个话题">原创软件 (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/" data-original-title="9个话题">端口转发 (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e4%ba%91/" data-original-title="9个话题">百度云 (9)</a><a title="" target="_blank" href="https://doub.io/tag/brook/" data-original-title="9个话题">Brook (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/" data-original-title="8个话题">国内中转 (8)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86/" data-original-title="8个话题">反向代理 (8)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98/" data-original-title="8个话题">百度网盘 (8)</a><a title="" target="_blank" href="https://doub.io/tag/goflyway/" data-original-title="7个话题">GoFlyway (7)</a><a title="" target="_blank" href="https://doub.io/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/" data-original-title="7个话题">搬瓦工 (7)</a></div></div></aside></section>
 <footer class="footer">
     <div class="footer-inner">
         <div class="copyright pull-left">
-         <a href="https://doub.io" title="逗比根据地">逗比根据地</a> 版权所有，保留一切权利 · 基于 <a href="https://cn.wordpress.org/" target="_blank">WordPress</a> · <a href="https://doub.io/jzzy-5/" target="_blank">欲思主题</a> © 2015-2018        </div>
+         <a href="https://doub.io/" title="逗比根据地">逗比根据地</a> 版权所有，保留一切权利 · 基于 <a href="https://cn.wordpress.org/" target="_blank">WordPress</a> · <a href="https://doub.io/jzzy-5/" target="_blank">欲思主题</a> © 2015-2018        </div>
         <div class="trackcode pull-right">
             <script>
 var _hmt = _hmt || [];
@@ -889,7 +809,7 @@ var _hmt = _hmt || [];
 })();
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72227254-1"></script>
+<script async="" src="./wlzy-36_files/js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -905,8 +825,8 @@ var _hmt = _hmt || [];
                 <span class="close-btn fa fa-times-circle"> </span>
                         <div class="sk17983"></div>
     </div>
-</div><script type='text/javascript' src='https://doub.io/wp-content/themes/yusi1.0/js/jquery.js?ver=1.0'></script>
-<script type='text/javascript' src='https://doub.io/wp-includes/js/wp-embed.min.js?ver=4.8.1'></script>
+</div><script type="text/javascript" src="./wlzy-36_files/jquery.js.下载"></script>
+<script type="text/javascript" src="./wlzy-36_files/wp-embed.min.js.下载"></script>
 
 <script type="text/javascript">
 var open = false;
@@ -924,4 +844,4 @@ if(document.body.scrollWidth < 768){
     $(".hot-posts").hide();
 }
 </script>
-<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_6971c5901860620dc711b8ea461af719");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_6971c5901860620dc711b8ea461af719");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_6971c5901860620dc711b8ea461af719");if (z != "") e["url"].value = z;}</script></body></html><!-- hyper cache gzip 2018-11-18 01:05:11 -->
+<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_6971c5901860620dc711b8ea461af719");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_6971c5901860620dc711b8ea461af719");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_6971c5901860620dc711b8ea461af719");if (z != "") e["url"].value = z;}</script><div class="rollto"><button class="btn btn-inverse" data-type="totop" title="回顶部"><i class="fa fa-arrow-up"></i></button><button class="btn btn-inverse" data-type="Widescreen" title="宽屏显示"><i class="fa fa-arrows-h"></i></button><button class="btn btn-inverse" data-type="torespond" title="发评论"><i class="fa fa-comment-o"></i></button></div></body></html>

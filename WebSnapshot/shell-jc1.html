@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://doub.io/shell-jc1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta http-equiv="X-UA-Compatible" content="IE=10,IE=9,IE=8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <style type="text/css">
@@ -11,31 +11,31 @@
 @font-face {font-family: 'LiDeBiao-Xing320e75d0253036';src: url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.gif');src: url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.gif?#iefix') format('embedded-opentype'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.bmp') format('woff'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.jpg') format('truetype'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.png#LiDeBiao-Xing3') format('svg');   }.css20e75d0253036{font-family: 'LiDeBiao-Xing320e75d0253036';}
 tbody tr:nth-child(odd) { background-color:#f9f9f9; }
 </style>
-<link rel="stylesheet" type="text/css" href="https://doub.io/wp-content/themes/yusi1.0/csshake.css">
-<link id="favicon" href="https://doub.io/wp-content/themes/yusi1.0/img/logo.ico" rel="icon" type="img/x-icon" />
+<link rel="stylesheet" type="text/css" href="./shell-jc1_files/csshake.css">
+<link id="favicon" href="https://doub.io/wp-content/themes/yusi1.0/img/logo.ico" rel="icon" type="img/x-icon">
 <title>『原创』Go语言 跨平台支持的极简 HTTP Server —— Caddy一键安装脚本 | 逗比根据地</title>
-<script>
+<script type="text/javascript" async="" src="./shell-jc1_files/analytics.js.下载"></script><script src="./shell-jc1_files/hm.js.下载"></script><script async="" src="./shell-jc1_files/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ"></script><script>
 window._deel = {name: '逗比根据地',url: 'https://doub.io/wp-content/themes/yusi1.0', ajaxpager: 'on', commenton: 1, roll: [1,3]}
 </script>
 
 <!-- All in One SEO Pack 2.3.16 by Michael Torbert of Semper Fi Web Design[1897,1962] -->
-<meta name="description"  content="Caddy是我最近发现的一个 HTTP服务器，可以非常简单的安装（Go语言编写，二进制单文件），配置文件也很简单，同时还有一些有趣的扩展，可以非常方便的搭建一个HTTP服务，所以写了一个一键脚本，让其他教程可以调用。 系统要求 CentOS 6+ / Debian 6+ / Ubuntu 14.04 + 推荐" />
+<meta name="description" content="Caddy是我最近发现的一个 HTTP服务器，可以非常简单的安装（Go语言编写，二进制单文件），配置文件也很简单，同时还有一些有趣的扩展，可以非常方便的搭建一个HTTP服务，所以写了一个一键脚本，让其他教程可以调用。 系统要求 CentOS 6+ / Debian 6+ / Ubuntu 14.04 + 推荐">
 
-<meta name="keywords"  content="caddy,shell,脚本" />
+<meta name="keywords" content="caddy,shell,脚本">
 
-<link rel="canonical" href="https://doub.io/shell-jc1/" />
+<link rel="canonical" href="https://doub.io/shell-jc1/">
 <!-- /all in one seo pack -->
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='toggle-box-css'  href='https://doub.io/wp-content/plugins/toggle-box/toggle-box.css?ver=4.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='style-css'  href='https://doub.io/wp-content/themes/yusi1.0/style.css?ver=1.0' type='text/css' media='all' />
-<script>!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://steadfastsystem.com/v2/0/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script><script type='text/javascript' src='https://doub.io/wp-content/themes/yusi1.0/js/jquery1.min.js?ver=1.0'></script>
-<script type='text/javascript' src='https://doub.io/wp-content/plugins/toggle-box/js/toggle-box.js?ver=4.8.1'></script>
-<link rel='https://api.w.org/' href='https://doub.io/wp-json/' />
-<link rel='prev' title='Debian/Ubuntu 内核降级教程 —— 降低(BBR)为支持锐速的内核版本' href='https://doub.io/linux-jc6/' />
-<link rel='next' title='利用 Caddy 非常简单的部署 反向代理/镜像（支持自签SSL证书）' href='https://doub.io/jzzy-2/' />
-<link rel='shortlink' href='https://doub.io/?p=2093' />
-<link rel="alternate" type="application/json+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fshell-jc1%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fshell-jc1%2F&#038;format=xml" />
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="stylesheet" id="toggle-box-css" href="./shell-jc1_files/toggle-box.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="./shell-jc1_files/style.css" type="text/css" media="all">
+<script>!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://steadfastsystem.com/v2/0/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script><script type="text/javascript" src="./shell-jc1_files/jquery1.min.js.下载"></script>
+<script type="text/javascript" src="./shell-jc1_files/toggle-box.js.下载"></script>
+<link rel="https://api.w.org/" href="https://doub.io/wp-json/">
+<link rel="prev" title="Debian/Ubuntu 内核降级教程 —— 降低(BBR)为支持锐速的内核版本" href="https://doub.io/linux-jc6/">
+<link rel="next" title="利用 Caddy 非常简单的部署 反向代理/镜像（支持自签SSL证书）" href="https://doub.io/jzzy-2/">
+<link rel="shortlink" href="https://doub.io/?p=2093">
+<link rel="alternate" type="application/json+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fshell-jc1%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fshell-jc1%2F&amp;format=xml">
 <style>
 .wk08043{
     font-size: 20px;
@@ -382,7 +382,7 @@ window._deel = {name: '逗比根据地',url: 'https://doub.io/wp-content/themes/
         killAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
     }
 </script>
-    <link rel="stylesheet" href="https://doub.io/wp-content/plugins/wp-content-index/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./shell-jc1_files/style(1).css" type="text/css" media="all">
 <meta name="keywords" content="Caddy, shell, 脚本, Shell脚本">
 <meta name="description" content="Caddy是我最近发现的一个 HTTP服务器，可以非常简单的安装（Go语言编写，二进制单文件），配置文件也很简单，同时还有一些有趣的扩展，可以非常方便的搭建一个HTTP服务，所以写了一个一键脚本，让其他教程可以调用。 系统要求 CentOS 6+ / Debian 6+ / Ubuntu 14.04 +  推荐 Debian 8 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。 脚本版本 Ver: 1.0.8  本脚本">
 <!--[if lt IE 9]><script src="https://doub.io/wp-content/themes/yusi1.0/js/html5.js"></script><![endif]-->
@@ -408,10 +408,10 @@ window.uabInject = function() {};
 <header id="header" class="header">
 <div class="container-inner" style="display: block;">
  <div class="yusi-logo" style="display: block;">
-                    <a href="/">
+                    <a href="https://doub.io/">
                         <h1>
-                                                        <span style="font-family:'jin_mei_mxplzx86d456993036';color: #fff;font-weight: normal;font-size: 54px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">逗比根据地</span>
-                                                        <span style="font-family:'LiDeBiao-Xing320e75d0253036';color: #fff;font-size: 24px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">– 世界那么逗，我想出去看看</span>
+                                                        <span style="font-family:&#39;jin_mei_mxplzx86d456993036&#39;;color: #fff;font-weight: normal;font-size: 54px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">逗比根据地</span>
+                                                        <span style="font-family:&#39;LiDeBiao-Xing320e75d0253036&#39;;color: #fff;font-size: 24px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">– 世界那么逗，我想出去看看</span>
                                                     </h1>
                     </a>
     </div>
@@ -420,9 +420,9 @@ window.uabInject = function() {};
 	<div id="nav-header" class="navbar" style="display: block;">
 		
 		<ul class="nav">
-			<li><a href="https://doub.io"><i class="fa fa-fire"></i> 首页</a></li>
+			<li><a href="https://doub.io/"><i class="fa fa-fire"></i> 首页</a></li>
 <li><a target="_blank" href="https://doub.io/dbtj/"><i class="fa fa-star"></i> 逗比推荐</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/dbwz/">碉堡网站</a></li>
 	<li><a target="_blank" href="https://doub.io/dbrj/">逗比软件</a></li>
 	<li><a target="_blank" href="https://doub.io/xnzj/">虚拟主机</a></li>
@@ -430,7 +430,7 @@ window.uabInject = function() {};
 </ul>
 </li>
 <li><a target="_blank" href="https://doub.io/kxsw/"><i class="fa fa-globe fa-spin"></i> 科学上网</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/androidkxsw/">安卓合集</a></li>
 	<li><a target="_blank" href="https://doub.io/pckxsw/">电脑合集</a></li>
 	<li><a target="_blank" href="https://doub.io/wlzy/">网络资源</a></li>
@@ -441,7 +441,7 @@ window.uabInject = function() {};
 </ul>
 </li>
 <li><a target="_blank" href="https://doub.io/ss-jc26/"><i class="fa fa-paper-plane" style="font-size: 19px;"></i> Shadowsocks</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/all-one/"><span style="color: #ffe200;">网站文章 合辑</span></a></li>
 	<li><a target="_blank" href="https://doub.io/ss-jc26/">所有教程 合辑</a></li>
 	<li><a target="_blank" href="https://doub.io/ss-jc35/">小白常见 问题</a></li>
@@ -456,10 +456,10 @@ window.uabInject = function() {};
 <li><a target="_blank" href="https://softs.wtf/"><i class="fa fa-cloud"></i> 逗比云</a></li>
 <li><a target="_blank" href="https://doub.io/guestbook/"><i class="fa fa-list-alt"></i> 留言</a></li>
 <li style="float:right;">
-                    <div class="toggle-search" style="width: 60px;"><i class="fa fa-search"></i><a href="#" style="padding: 0;">搜索</a></div>
-<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href='https://doub.io/search/' + encodeURIComponent(this.s.value).replace(/%20/g, '+'); return false;" action="/"><div> <input type="ext" class="search" name="s" onblur="if(this.value=='')this.value='请善用搜索功能...';" onfocus="if(this.value=='请善用搜索功能...')this.value='';" value="请善用搜索功能..."></div></form></div></div>
+                    <div class="toggle-search" style="width: 60px;"><i class="fa fa-search"></i><a href="https://doub.io/shell-jc1#" style="padding: 0;">搜索</a></div>
+<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href=&#39;https://doub.io/search/&#39; + encodeURIComponent(this.s.value).replace(/%20/g, &#39;+&#39;); return false;" action="https://doub.io/"><div> <input type="ext" class="search" name="s" onblur="if(this.value==&#39;&#39;)this.value=&#39;请善用搜索功能...&#39;;" onfocus="if(this.value==&#39;请善用搜索功能...&#39;)this.value=&#39;&#39;;" value="请善用搜索功能..."></div></form></div></div>
 </li>
-		</ul>
+		</ul><div class="screen-mini"><button data-type="screen-nav" class="btn btn-inverse screen-nav"><i class="fa fa-list"></i></button></div>
 	</div>
 </header>
 <section class="container"><div class="speedbar">
@@ -467,7 +467,7 @@ window.uabInject = function() {};
 <div style="float: right;margin: 0 10px;"><a target="_blank" href="https://doub.io/tougao/"><i class="fa fa-envelope" style="color: #1abc9c;opacity: 1;"></i>投稿文章</a> | <a target="_blank" href="https://doub.io/guanggao/"><i class="fa fa-money" style="color: #1abc9c;opacity: 1;"></i>广告合作</a> | <a target="_blank" href="https://doub.io/go/tg"><i class="fa fa-paper-plane" style="color: #1abc9c;opacity: 1;"></i>Telegram 群组</a> / <a target="_blank" href="https://doub.io/go/tg_a">公告频道</a> / <a target="_blank" href="https://doub.io/telegram-jc1/">使用教程</a></div></div>
 	</div>
 	<div class="guangg guangg-site"><div style="position: absolute;left: 4px;top: 14px;font-size: 12px;color: #fff;border: 1px solid #ffffff;line-height: 12px;opacity: 0.9;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/gigsgigscloud/"><img src="https://img.doub.pw/abc/gigsgigscloud-06.gif" class="top_guangg" /></a></div><div class="content-wrap">
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/gigsgigscloud/"><img src="./shell-jc1_files/gigsgigscloud-06.gif" class="top_guangg"></a></div><div class="content-wrap">
 <div style="display: block;">
 	<div class="content" style="display: block;">
 
@@ -480,13 +480,13 @@ window.uabInject = function() {};
 				<span class="muted"><i class="fa fa-comments-o"></i> <a href="https://doub.io/shell-jc1/#comments">40评论</a></span>							</div>
 		</header>
 <div class="guangg guangg-post"><div style="position: absolute;left: 3px;top: 14px;font-size: 12px;color: #fff;border: 1px solid #ffffff;line-height: 12px;opacity: 0.9;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/yitianjian_shadow/"><img src="https://img.doub.pw/abc/yitianjian_shadow_01.png" class="top_guangg" /></a></div>		<article class="article-content">
-			<div id="content-index" class="content-index"><div class="content-index-title"><a id="content-index-togglelink" href="javascript:content_index_toggleToc()">文章目录 ⚐</a></div>
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/yitianjian_shadow/"><img src="./shell-jc1_files/yitianjian_shadow_01.png" class="top_guangg"></a></div>		<article class="article-content">
+			<div id="content-index" class="content-index"><div class="content-index-title"><a id="content-index-togglelink" href="javascript:content_index_toggleToc()" data-original-title="" title="">文章目录 ⚐</a></div>
 <script type="text/javascript" language="javascript">
 window.content_index_showTocToggle=false;function content_index_toggleToc(){var tts="文章目录 ⚐";var tth="文章目录 ⚑";if(window.content_index_showTocToggle){window.content_index_showTocToggle=false;document.getElementById("content-index-contents").style.display="none";document.getElementById("content-index-togglelink").innerHTML=tts}else{window.content_index_showTocToggle=true;document.getElementById("content-index-contents").style.display="block";document.getElementById("content-index-togglelink").innerHTML=tth}}
 </script>
-<ul id="content-index-contents" style="display: none;"><li class="content-index-level-1"><a href="https://doub.io/shell-jc1/#系统要求" title="系统要求"><span>系统要求</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#脚本版本" title="脚本版本"><span>脚本版本</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc1/#安装步骤" title="安装步骤"><span>安装步骤</span></a></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc1/#使用说明" title="使用说明"><span>使用说明</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#查看已安装的插件" title="查看已安装的插件"><span>查看已安装的插件</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#升级Caddy或者更新扩展" title="升级Caddy或者更新扩展"><span>升级Caddy或者更新扩展</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#卸载Caddy" title="卸载Caddy"><span>卸载Caddy</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc1/#其他说明" title="其他说明"><span>其他说明</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#提示wget: unknown host “raw.githubusercontent.com” 之类的错误" title="提示wget: unknown host “raw.githubusercontent.com” 之类的错误"><span>提示wget: unknown host “raw.githubusercontent.com” 之类的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#提示 wget: command not found 的错误" title="提示 wget: command not found 的错误"><span>提示 wget: command not found 的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#Caddy下载文件频繁中断" title="Caddy下载文件频繁中断"><span>Caddy下载文件频繁中断</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#启动提示失败，或提示成功但是实际失败" title="启动提示失败，或提示成功但是实际失败"><span>启动提示失败，或提示成功但是实际失败</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#Caddy启动失败，打开 http://ip 显示的是 It works !" title="Caddy启动失败，打开 http://ip 显示的是 It works !"><span>Caddy启动失败，打开 http://ip 显示的是 It works !</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#启动 Caddy后，无法访问" title="启动 Caddy后，无法访问"><span>启动 Caddy后，无法访问</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#升级脚本" title="升级脚本"><span>升级脚本</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc1/#更新日志" title="更新日志"><span>更新日志</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2018年10月08日，版本 v1.0.8" title="2018年10月08日，版本 v1.0.8"><span>2018年10月08日，版本 v1.0.8</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2018年03月19日，版本 v1.0.7" title="2018年03月19日，版本 v1.0.7"><span>2018年03月19日，版本 v1.0.7</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017年08月03日，版本 v1.0.6" title="2017年08月03日，版本 v1.0.6"><span>2017年08月03日，版本 v1.0.6</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017年05月11日，版本 v1.0.5" title="2017年05月11日，版本 v1.0.5"><span>2017年05月11日，版本 v1.0.5</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017年04月27日，版本 v1.0.4" title="2017年04月27日，版本 v1.0.4"><span>2017年04月27日，版本 v1.0.4</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017年04月21日，版本 v1.0.3" title="2017年04月21日，版本 v1.0.3"><span>2017年04月21日，版本 v1.0.3</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017年04月03日，版本 v1.0.2" title="2017年04月03日，版本 v1.0.2"><span>2017年04月03日，版本 v1.0.2</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017年03月24日，版本 v1.0.1" title="2017年03月24日，版本 v1.0.1"><span>2017年03月24日，版本 v1.0.1</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017年03月13日，版本 v1.0.0" title="2017年03月13日，版本 v1.0.0"><span>2017年03月13日，版本 v1.0.0</span></a></li></ul></li></ul></div>
-<div class="old-message">本文最后更新于 <a><strong>2018年11月5日 14:23</strong></a> 可能会因为没有更新而失效。如已失效或需要修正，请留言！</div><p>Caddy是我最近发现的一个 HTTP服务器，可以非常简单的安装（Go语言编写，二进制单文件），配置文件也很简单，同时还有一些有趣的扩展，可以非常方便的搭建一个HTTP服务，所以写了一个一键脚本，让其他教程可以调用。</p>
+<ul id="content-index-contents" style="display: none;"><li class="content-index-level-1"><a href="https://doub.io/shell-jc1/#%E7%B3%BB%E7%BB%9F%E8%A6%81%E6%B1%82" title="" data-original-title="系统要求"><span>系统要求</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#%E8%84%9A%E6%9C%AC%E7%89%88%E6%9C%AC" title="" data-original-title="脚本版本"><span>脚本版本</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc1/#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4" title="" data-original-title="安装步骤"><span>安装步骤</span></a></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc1/#%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" title="" data-original-title="使用说明"><span>使用说明</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#%E6%9F%A5%E7%9C%8B%E5%B7%B2%E5%AE%89%E8%A3%85%E7%9A%84%E6%8F%92%E4%BB%B6" title="" data-original-title="查看已安装的插件"><span>查看已安装的插件</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#%E5%8D%87%E7%BA%A7Caddy%E6%88%96%E8%80%85%E6%9B%B4%E6%96%B0%E6%89%A9%E5%B1%95" title="" data-original-title="升级Caddy或者更新扩展"><span>升级Caddy或者更新扩展</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#%E5%8D%B8%E8%BD%BDCaddy" title="" data-original-title="卸载Caddy"><span>卸载Caddy</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc1/#%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E" title="" data-original-title="其他说明"><span>其他说明</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#%E6%8F%90%E7%A4%BAwget:%C2%A0unknown%20host%20%E2%80%9Craw.githubusercontent.com%E2%80%9D%20%E4%B9%8B%E7%B1%BB%E7%9A%84%E9%94%99%E8%AF%AF" title="" data-original-title="提示wget: unknown host “raw.githubusercontent.com” 之类的错误"><span>提示wget:&nbsp;unknown host “raw.githubusercontent.com” 之类的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#%E6%8F%90%E7%A4%BA%20wget:%20command%20not%20found%20%E7%9A%84%E9%94%99%E8%AF%AF" title="" data-original-title="提示 wget: command not found 的错误"><span>提示 wget: command not found 的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#Caddy%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E9%A2%91%E7%B9%81%E4%B8%AD%E6%96%AD" title="" data-original-title="Caddy下载文件频繁中断"><span>Caddy下载文件频繁中断</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#%E5%90%AF%E5%8A%A8%E6%8F%90%E7%A4%BA%E5%A4%B1%E8%B4%A5%EF%BC%8C%E6%88%96%E6%8F%90%E7%A4%BA%E6%88%90%E5%8A%9F%E4%BD%86%E6%98%AF%E5%AE%9E%E9%99%85%E5%A4%B1%E8%B4%A5" title="" data-original-title="启动提示失败，或提示成功但是实际失败"><span>启动提示失败，或提示成功但是实际失败</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#Caddy%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%EF%BC%8C%E6%89%93%E5%BC%80%20http://ip%20%E6%98%BE%E7%A4%BA%E7%9A%84%E6%98%AF%20It%20works%20!" title="" data-original-title="Caddy启动失败，打开 http://ip 显示的是 It works !"><span>Caddy启动失败，打开 http://ip 显示的是 It works !</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#%E5%90%AF%E5%8A%A8%20Caddy%E5%90%8E%EF%BC%8C%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE" title="" data-original-title="启动 Caddy后，无法访问"><span>启动 Caddy后，无法访问</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#%E5%8D%87%E7%BA%A7%E8%84%9A%E6%9C%AC" title="" data-original-title="升级脚本"><span>升级脚本</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc1/#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97" title="" data-original-title="更新日志"><span>更新日志</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2018%E5%B9%B410%E6%9C%8808%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.8" title="" data-original-title="2018年10月08日，版本 v1.0.8"><span>2018年10月08日，版本 v1.0.8</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2018%E5%B9%B403%E6%9C%8819%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.7" title="" data-original-title="2018年03月19日，版本 v1.0.7"><span>2018年03月19日，版本 v1.0.7</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017%E5%B9%B408%E6%9C%8803%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.6" title="" data-original-title="2017年08月03日，版本 v1.0.6"><span>2017年08月03日，版本 v1.0.6</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017%E5%B9%B405%E6%9C%8811%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.5" title="" data-original-title="2017年05月11日，版本 v1.0.5"><span>2017年05月11日，版本 v1.0.5</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017%E5%B9%B404%E6%9C%8827%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.4" title="" data-original-title="2017年04月27日，版本 v1.0.4"><span>2017年04月27日，版本 v1.0.4</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017%E5%B9%B404%E6%9C%8821%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.3" title="" data-original-title="2017年04月21日，版本 v1.0.3"><span>2017年04月21日，版本 v1.0.3</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017%E5%B9%B404%E6%9C%8803%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.2" title="" data-original-title="2017年04月03日，版本 v1.0.2"><span>2017年04月03日，版本 v1.0.2</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017%E5%B9%B403%E6%9C%8824%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.1" title="" data-original-title="2017年03月24日，版本 v1.0.1"><span>2017年03月24日，版本 v1.0.1</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc1/#2017%E5%B9%B403%E6%9C%8813%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.0" title="" data-original-title="2017年03月13日，版本 v1.0.0"><span>2017年03月13日，版本 v1.0.0</span></a></li></ul></li></ul></div>
+<div class="old-message">本文最后更新于 <a data-original-title="" title=""><strong>2018年11月5日 14:23</strong></a> 可能会因为没有更新而失效。如已失效或需要修正，请留言！</div><p>Caddy是我最近发现的一个 HTTP服务器，可以非常简单的安装（Go语言编写，二进制单文件），配置文件也很简单，同时还有一些有趣的扩展，可以非常方便的搭建一个HTTP服务，所以写了一个一键脚本，让其他教程可以调用。</p>
 <h2 id="系统要求">系统要求</h2>
 <p>CentOS 6+ / Debian 6+ / Ubuntu 14.04 +</p>
 <p>推荐 Debian 8 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。</p>
@@ -496,8 +496,8 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <h2 id="安装步骤">安装步骤</h2>
 <p>执行下面的代码安装 Caddy，默认给你们安装了 filemanager扩展（在线文件管理器/私人网盘），如果你不调用扩展的话，是不会占据额外内存的。</p>
 <p>如果想要安装其他扩展可以把名字加到命令后面，<strong>例如安装扩展：http.filemanager、http.git、http.filter</strong></p>
-<p>那么就是：<code> bash caddy_install.sh install http.filemanager,http.git,http.filter </code>（扩展之间英文半角逗号分割），扩展列表<a href="https://caddyserver.com/download" target="_blank" rel="noopener">看这里</a>。</p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/doubi/master/caddy_install.sh &amp;&amp; chmod +x caddy_install.sh &amp;&amp; bash caddy_install.sh install http.filemanager</pre>
+<p>那么就是：<code> bash caddy_install.sh install http.filemanager,http.git,http.filter&nbsp;</code>（扩展之间英文半角逗号分割），扩展列表<a href="https://caddyserver.com/download" target="_blank" rel="noopener" data-original-title="" title="">看这里</a>。</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">wget </span><span class="pun">-</span><span class="pln">N </span><span class="pun">--</span><span class="kwd">no</span><span class="pun">-</span><span class="pln">check</span><span class="pun">-</span><span class="pln">certificate https</span><span class="pun">:</span><span class="com">//raw.githubusercontent.com/user1121114685/doubi/master/caddy_install.sh &amp;&amp; chmod +x caddy_install.sh &amp;&amp; bash caddy_install.sh install http.filemanager</span></li></ol></pre>
 <h2 id="使用说明">使用说明</h2>
 <p><strong>启动：</strong>/etc/init.d/caddy start</p>
 <p><strong>停止：</strong>/etc/init.d/caddy stop</p>
@@ -507,104 +507,66 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <p><strong>安装目录：</strong>/usr/local/caddy</p>
 <p><strong>Caddy配置文件位置：</strong>/usr/local/caddy/Caddyfile</p>
 <p><strong>Caddy自动申请SSL证书位置：</strong>/.caddy/acme/acme-v02.api.letsencrypt.org/sites/xxx.xxx(域名)/</p>
-<hr />
+<hr>
 <h3 id="查看已安装的插件">查看已安装的插件</h3>
-<pre class="prettyprint linenums">./caddy -plugins
-</pre>
-<hr />
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">./</span><span class="pln">caddy </span><span class="pun">-</span><span class="pln">plugins</span></li></ol></pre>
+<hr>
 <h3 id="升级Caddy或者更新扩展">升级Caddy或者更新扩展</h3>
 <p>只需要<strong>重新执行你当初安装时候用的命令</strong>即可，会覆盖安装最新的Caddy+扩展（如有）</p>
-<hr />
+<hr>
 <h3 id="卸载Caddy">卸载Caddy</h3>
 <p>卸载不会删除虚拟主机的内容，只会删除Caddy自身和配置文件。</p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/doubi/master/caddy_install.sh &amp;&amp; bash caddy_install.sh uninstall
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">wget </span><span class="pun">-</span><span class="pln">N </span><span class="pun">--</span><span class="kwd">no</span><span class="pun">-</span><span class="pln">check</span><span class="pun">-</span><span class="pln">certificate https</span><span class="pun">:</span><span class="com">//raw.githubusercontent.com/user1121114685/doubi/master/caddy_install.sh &amp;&amp; bash caddy_install.sh uninstall</span></li></ol></pre>
 <h2 id="其他说明">其他说明</h2>
-<h3 id="提示wget: unknown host “raw.githubusercontent.com” 之类的错误">提示wget: unknown host “raw.githubusercontent.com” 之类的错误</h3>
+<h3 id="提示wget: unknown host “raw.githubusercontent.com” 之类的错误">提示wget:&nbsp;unknown host “raw.githubusercontent.com” 之类的错误</h3>
 <p>这是无法解析我的域名，多半是DNS的问题，请更换DNS为谷歌DNS。</p>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
-<pre class="prettyprint linenums">echo "nameserver 8.8.8.8
-nameserver 8.8.4.4" &gt; /etc/resolv.conf
-</pre>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/shell-jc1#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">echo </span><span class="str">"nameserver 8.8.8.8</span></li><li class="L1"><span class="str">nameserver 8.8.4.4"</span><span class="pln"> </span><span class="pun">&gt;</span><span class="pln"> </span><span class="str">/etc/</span><span class="pln">resolv</span><span class="pun">.</span><span class="pln">conf</span></li></ol></pre>
 <p></p></div>
-<hr />
+<hr>
 <h3 id="提示 wget: command not found 的错误">提示 wget: command not found 的错误</h3>
 <p>这是你的系统精简的太干净了，wget都没有安装，所以需要安装wget。</p>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
-<pre class="prettyprint linenums"># CentOS系统:
-yum install -y wget
-
-# Debian/Ubuntu系统:
-apt-get install -y wget</pre>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/shell-jc1#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># CentOS系统:</span></li><li class="L1"><span class="pln">yum install </span><span class="pun">-</span><span class="pln">y wget</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="com"># Debian/Ubuntu系统:</span></li><li class="L4"><span class="pln">apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> install </span><span class="pun">-</span><span class="pln">y wget</span></li></ol></pre>
 <p></p></div>
-<hr />
+<hr>
 <h3 id="Caddy下载文件频繁中断">Caddy下载文件频繁中断</h3>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
-<p>可能是因为 Caddy的超时时间机制导致的，可以在配置文件中加入这句代码<code> timeouts none </code>，例如这样：</p>
-<pre class="prettyprint linenums">http://toyoo.pw (
-	timeouts none
-	root /home/www
-	...
-)
-</pre>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/shell-jc1#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<p>可能是因为 Caddy的超时时间机制导致的，可以在配置文件中加入这句代码<code>&nbsp;timeouts none </code>，例如这样：</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">http</span><span class="pun">:</span><span class="com">//toyoo.pw (</span></li><li class="L1"><span class="pln">	timeouts none</span></li><li class="L2"><span class="pln">	root </span><span class="pun">/</span><span class="pln">home</span><span class="pun">/</span><span class="pln">www</span></li><li class="L3"><span class="pln">	</span><span class="pun">...</span></li><li class="L4"><span class="pun">)</span></li></ol></pre>
 <p></p></div>
-<hr />
+<hr>
 <h3 id="启动提示失败，或提示成功但是实际失败">启动提示失败，或提示成功但是实际失败</h3>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/shell-jc1#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
 <p>启动失败或提示成功但是实际失败，请查看日志，如果看到类似这个提示：</p>
-<pre class="prettyprint linenums">2017/0X/0X XX:XX:XX  listen tcp :80: bind: address already in use
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="lit">2017</span><span class="pun">/</span><span class="lit">0X</span><span class="pun">/</span><span class="lit">0X</span><span class="pln"> XX</span><span class="pun">:</span><span class="pln">XX</span><span class="pun">:</span><span class="pln">XX &nbsp;listen tcp </span><span class="pun">:</span><span class="lit">80</span><span class="pun">:</span><span class="pln"> bind</span><span class="pun">:</span><span class="pln"> address already </span><span class="kwd">in</span><span class="pln"> </span><span class="kwd">use</span></li></ol></pre>
 <p>那么说明是因为端口被占用导致的无法绑定端口从而无法启动。</p>
 <p>用这个命令<code> netstat -lntp </code>查看一下那个程序占用了端口并结束它。</p>
 <p>这个已经不需要了，所以隐藏起来</p>
 <p></p></div>
-<hr />
+<hr>
 <h3 id="Caddy启动失败，打开 http://ip 显示的是 It works !">Caddy启动失败，打开 http://ip 显示的是 It works !</h3>
 <p>一些系统会自带 apache2 ，而 apache2 会占用80端口，导致Caddy无法绑定端口，所以只要关掉就好了。</p>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
-<pre class="prettyprint linenums">netstat -lntp
-# 我们可以通过这个命令查看是不是被其他软件占用了 80 端口。
-</pre>
-<p>不过 apache2 会默认开机自启动，如果不需要可以关闭自启动或者卸载 apache2 。<br />
-<strong><br />
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/shell-jc1#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">netstat </span><span class="pun">-</span><span class="pln">lntp</span></li><li class="L1"><span class="com"># 我们可以通过这个命令查看是不是被其他软件占用了 80 端口。</span></li></ol></pre>
+<p>不过 apache2 会默认开机自启动，如果不需要可以关闭自启动或者卸载 apache2 。<br>
+<strong><br>
 停止 Apache2</strong></p>
-<pre class="prettyprint linenums"># CentOS系统
-/etc/init.d/httpd stop
-# Debian/Ubuntu系统
-/etc/init.d/apache2 stop
-
-# 尝试使用上面代码关闭，如果没效果或者提示什么错误无法关闭，那就用下面这个强行关闭进程。
-kill -9 $(ps -ef|grep "apache2"|grep -v "grep"|awk '{print $2}')
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># CentOS系统</span></li><li class="L1"><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">init</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">httpd stop</span></li><li class="L2"><span class="com"># Debian/Ubuntu系统</span></li><li class="L3"><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">init</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">apache2 stop</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="com"># 尝试使用上面代码关闭，如果没效果或者提示什么错误无法关闭，那就用下面这个强行关闭进程。</span></li><li class="L6"><span class="pln">kill </span><span class="pun">-</span><span class="lit">9</span><span class="pln"> $</span><span class="pun">(</span><span class="pln">ps </span><span class="pun">-</span><span class="pln">ef</span><span class="pun">|</span><span class="pln">grep </span><span class="str">"apache2"</span><span class="pun">|</span><span class="pln">grep </span><span class="pun">-</span><span class="pln">v </span><span class="str">"grep"</span><span class="pun">|</span><span class="pln">awk </span><span class="str">'{print $2}'</span><span class="pun">)</span></li></ol></pre>
 <p><strong>取消开机自启动</strong></p>
-<pre class="prettyprint linenums"># CentOS 系统
-chkconfig --del httpd
-# Debian/Ubuntu 系统
-update-rc.d -f apache2 remove
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># CentOS 系统</span></li><li class="L1"><span class="pln">chkconfig </span><span class="pun">--</span><span class="kwd">del</span><span class="pln"> httpd</span></li><li class="L2"><span class="com"># Debian/Ubuntu 系统</span></li><li class="L3"><span class="pln">update</span><span class="pun">-</span><span class="pln">rc</span><span class="pun">.</span><span class="pln">d </span><span class="pun">-</span><span class="pln">f apache2 remove</span></li></ol></pre>
 <p><strong>卸载 Apache2</strong></p>
-<pre class="prettyprint linenums"># CentOS 系统
-yum remove httpd
-# Debian/Ubuntu 系统
-apt-get remove --purge apache2
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># CentOS 系统</span></li><li class="L1"><span class="pln">yum remove httpd</span></li><li class="L2"><span class="com"># Debian/Ubuntu 系统</span></li><li class="L3"><span class="pln">apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> remove </span><span class="pun">--</span><span class="pln">purge apache2</span></li></ol></pre>
 <p>关闭 Apache2后，就可以尝试启动 Caddy ，并试试能不能打开网页。</p>
-<pre class="prettyprint linenums">/etc/init.d/caddy start
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="str">/etc/</span><span class="pln">init</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">caddy start</span></li></ol></pre>
 <p></p></div>
-<hr />
+<hr>
 <h3 id="启动 Caddy后，无法访问">启动 Caddy后，无法访问</h3>
 <p>这个可能是防火墙的问题，开放防火墙端口即可。</p>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
-<pre class="prettyprint linenums">iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 端口 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 端口 -j ACCEPT
-
-# 删除防火墙规则，内容一样把 -I 换成 -D 就行了：
-iptables -D INPUT -m state --state NEW -m tcp -p tcp --dport 端口 -j ACCEPT
-iptables -D INPUT -m state --state NEW -m udp -p udp --dport 端口 -j ACCEPT
-</pre>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/shell-jc1#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">iptables </span><span class="pun">-</span><span class="pln">I INPUT </span><span class="pun">-</span><span class="pln">m state </span><span class="pun">--</span><span class="pln">state NEW </span><span class="pun">-</span><span class="pln">m tcp </span><span class="pun">-</span><span class="pln">p tcp </span><span class="pun">--</span><span class="pln">dport </span><span class="pun">端口</span><span class="pln"> </span><span class="pun">-</span><span class="pln">j ACCEPT</span></li><li class="L1"><span class="pln">iptables </span><span class="pun">-</span><span class="pln">I INPUT </span><span class="pun">-</span><span class="pln">m state </span><span class="pun">--</span><span class="pln">state NEW </span><span class="pun">-</span><span class="pln">m udp </span><span class="pun">-</span><span class="pln">p udp </span><span class="pun">--</span><span class="pln">dport </span><span class="pun">端口</span><span class="pln"> </span><span class="pun">-</span><span class="pln">j ACCEPT</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="com"># 删除防火墙规则，内容一样把 -I 换成 -D 就行了：</span></li><li class="L4"><span class="pln">iptables </span><span class="pun">-</span><span class="pln">D INPUT </span><span class="pun">-</span><span class="pln">m state </span><span class="pun">--</span><span class="pln">state NEW </span><span class="pun">-</span><span class="pln">m tcp </span><span class="pun">-</span><span class="pln">p tcp </span><span class="pun">--</span><span class="pln">dport </span><span class="pun">端口</span><span class="pln"> </span><span class="pun">-</span><span class="pln">j ACCEPT</span></li><li class="L5"><span class="pln">iptables </span><span class="pun">-</span><span class="pln">D INPUT </span><span class="pun">-</span><span class="pln">m state </span><span class="pun">--</span><span class="pln">state NEW </span><span class="pun">-</span><span class="pln">m udp </span><span class="pun">-</span><span class="pln">p udp </span><span class="pun">--</span><span class="pln">dport </span><span class="pun">端口</span><span class="pln"> </span><span class="pun">-</span><span class="pln">j ACCEPT</span></li></ol></pre>
 <p></p></div>
-<hr />
+<hr>
 <h3 id="升级脚本">升级脚本</h3>
 <p>升级脚本只需要重新下载脚本文件就可以了，会自动覆盖原文件。</p>
 <h2 id="更新日志">更新日志</h2>
@@ -612,7 +574,7 @@ iptables -D INPUT -m state --state NEW -m udp -p udp --dport 端口 -j ACCEPT
 <p><strong>1. 新增</strong> 支持 ARM(armv7l) 安装。</p>
 <h3 id="2018年03月19日，版本 v1.0.7">2018年03月19日，版本 v1.0.7</h3>
 <p><strong>1.修复</strong> 下载 Caddy 报错400的问题。</p>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/shell-jc1#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
 <h3 id="2017年08月03日，版本 v1.0.6">2017年08月03日，版本 v1.0.6</h3>
 <p><strong>1.新增</strong> 可重复运行脚本<code> bash caddy_install.sh install &lt; 扩展名&gt; </code>来更新Caddy或扩展（如有）。</p>
 <h3 id="2017年05月11日，版本 v1.0.5">2017年05月11日，版本 v1.0.5</h3>
@@ -626,18 +588,18 @@ iptables -D INPUT -m state --state NEW -m udp -p udp --dport 端口 -j ACCEPT
 <p><strong>1.新增</strong> 32位 i686系统支持。</p>
 <h3 id="2017年03月24日，版本 v1.0.1">2017年03月24日，版本 v1.0.1</h3>
 <p><strong>1.新增</strong> 安装时可以添加扩展参数。</p>
-<p>—— 例如这样：bash caddy_install.sh install xxx,xxx,xxx ，扩展列表<a href="https://caddyserver.com/download" target="_blank" rel="noopener">看这里</a></p>
+<p>—— 例如这样：bash caddy_install.sh install xxx,xxx,xxx ，扩展列表<a href="https://caddyserver.com/download" target="_blank" rel="noopener" data-original-title="" title="">看这里</a></p>
 <h3 id="2017年03月13日，版本 v1.0.0">2017年03月13日，版本 v1.0.0</h3>
-<p><strong>1. 推出</strong> 正式版。<br />
+<p><strong>1. 推出</strong> 正式版。<br>
 </p></div>
-<p><pre style="border-left: solid 4px #1abc9c;"><strong>转载请超链接注明：</strong><a href="https://doub.io">逗比根据地</a> &raquo; <a href="https://doub.io/shell-jc1/">『原创』Go语言 跨平台支持的极简 HTTP Server —— Caddy一键安装脚本</a></pre><pre><strong>责任声明：</strong>本站一切资源仅用作交流学习，请勿用作商业或违法行为！如造成任何后果，本站概不负责！</pre></p>
+<p></p><pre style="border-left: solid 4px #1abc9c;"><strong>转载请超链接注明：</strong><a href="https://doub.io/" data-original-title="" title="">逗比根据地</a> » <a href="https://doub.io/shell-jc1/" data-original-title="" title="">『原创』Go语言 跨平台支持的极简 HTTP Server —— Caddy一键安装脚本</a></pre><pre><strong>责任声明：</strong>本站一切资源仅用作交流学习，请勿用作商业或违法行为！如造成任何后果，本站概不负责！</pre><p></p>
 
       
 <div class="article-social">
-			<a href="javascript:;" data-action="ding" data-id="2093" id="Addlike" class="action"><i class="fa fa-thumbs-o-up"></i>赞 (<span class="count">11</span>)</a></div>
+			<a href="javascript:;" data-action="ding" data-id="2093" id="Addlike" class="action" data-original-title="" title=""><i class="fa fa-thumbs-o-up"></i>赞 (<span class="count">11</span>)</a></div>
 	</article>	
 				<footer class="article-footer">
-			<div class="article-tags"><i class="fa fa-tags"></i><a href="https://doub.io/tag/caddy/" rel="tag">Caddy</a><a href="https://doub.io/tag/shell/" rel="tag">shell</a><a href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" rel="tag">脚本</a></div></footer>
+			<div class="article-tags"><i class="fa fa-tags"></i><a href="https://doub.io/tag/caddy/" rel="tag" data-original-title="" title="">Caddy</a><a href="https://doub.io/tag/shell/" rel="tag" data-original-title="" title="">shell</a><a href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" rel="tag" data-original-title="" title="">脚本</a></div></footer>
 	<nav class="article-nav">
 			<span class="article-nav-prev"><i class="fa fa-angle-double-left"></i> <a href="https://doub.io/linux-jc6/" rel="prev">Debian/Ubuntu 内核降级教程 —— 降低(BBR)为支持锐速的内核版本</a></span>
 			<span class="article-nav-next"><a href="https://doub.io/jzzy-2/" rel="next">利用 Caddy 非常简单的部署 反向代理/镜像（支持自签SSL证书）</a>  <i class="fa fa-angle-double-right"></i></span>
@@ -646,24 +608,24 @@ iptables -D INPUT -m state --state NEW -m udp -p udp --dport 端口 -j ACCEPT
 		<div class="related_top">
 			<div class="related_posts"><ul class="related_img">
 
-		<li class="related_box"  >
-		<a href="https://doub.io/ss-jc67/" title="『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/shadowsocks3.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本" />	<br><span class="r_title">『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本</span></a>
+		<li class="related_box">
+		<a href="https://doub.io/ss-jc67/" title="『原创』Shadowsocks &lt;strong&gt;Go版&lt;/strong&gt; 一键安装管理脚本" target="_blank">
+<img src="./shell-jc1_files/timthumb.php" alt="『原创』Shadowsocks &lt;strong&gt;Go版&lt;/strong&gt; 一键安装管理脚本">	<br><span class="r_title">『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
-		<a href="https://doub.io/shell-jc9/" title="『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/telegram.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本" />	<br><span class="r_title">『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本</span></a>
+		<li class="related_box">
+		<a href="https://doub.io/shell-jc9/" title="『原创』Telegram 专用的轻量化代理工具 —— MTProxy &lt;strong&gt;Go版&lt;/strong&gt; 一键脚本" target="_blank">
+<img src="./shell-jc1_files/timthumb(1).php" alt="『原创』Telegram 专用的轻量化代理工具 —— MTProxy &lt;strong&gt;Go版&lt;/strong&gt; 一键脚本">	<br><span class="r_title">『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/shell-jc8/" title="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/telegram.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本" />	<br><span class="r_title">『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本</span></a>
+<img src="./shell-jc1_files/timthumb(1).php" alt="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本">	<br><span class="r_title">『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/daze-jc3/" title="『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/daze-01.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本" />	<br><span class="r_title">『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本</span></a>
+<img src="./shell-jc1_files/timthumb(2).php" alt="『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本">	<br><span class="r_title">『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本</span></a>
 		</li>
 	</ul>
 
@@ -682,18 +644,18 @@ iptables -D INPUT -m state --state NEW -m udp -p udp --dport 端口 -j ACCEPT
 		
 		<div class="comt">
 			<div class="comt-box">
-				<textarea placeholder="本站所有评论均会审核，因缓存原因，审核中的评论刷新页面后就会不显示，请知晓勿重发。" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById('submit').click();return false};"></textarea>
+				<textarea placeholder="本站所有评论均会审核，因缓存原因，审核中的评论刷新页面后就会不显示，请知晓勿重发。" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById(&#39;submit&#39;).click();return false};"></textarea>
 				<div class="comt-ctrl">
 					<button class="btn btn-primary pull-right" type="submit" name="submit" id="submit" tabindex="5"><i class="fa fa-check-square-o"></i> 提交评论</button>
-					<div class="comt-tips pull-right"><input type='hidden' name='comment_post_ID' value='2093' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</div>
+					<div class="comt-tips pull-right"><input type="hidden" name="comment_post_ID" value="2093" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+<div class="comt-tip comt-loading" style="display: none;">正在提交, 请稍候...</div><div class="comt-tip comt-error" style="display: none;">#</div></div>
 					<span data-type="comment-insert-smilie" class="muted comt-smilie"><i class="fa fa-smile-o"></i> 表情</span>
-					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked"/>有人回复时邮件通知我</label></span>
+					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked">有人回复时邮件通知我</label></span>
 				</div>
 			</div>
 
-												<div class="comt-comterinfo" id="comment-author-info" >
+												<div class="comt-comterinfo" id="comment-author-info">
 						<h4>Hi，您需要填写昵称和邮箱！</h4>
 						<ul>
 							<li class="form-inline"><label class="hide" for="author">昵称</label><input class="ipt" type="text" name="author" id="author" value="" tabindex="2" placeholder="昵称"><span class="help-inline">昵称 (必填)</span></li>
@@ -712,67 +674,53 @@ iptables -D INPUT -m state --state NEW -m udp -p udp --dport 端口 -j ACCEPT
 		<i class="fa fa-comments-o"></i> <b> (40)</b>个小伙伴在吐槽
 	</div>
 	<ol class="commentlist">
-		<li class="comment even thread-even depth-1" id="comment-45014"><div class="c-avatar"><div class="c-main" id="div-comment-45014">我忘了我之前都加了什么插件，哪里可以查看呢？<div class="c-meta"><span class="c-author">dray</span>2018-10-25 18:28 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=45014#respond' onclick='return addComment.moveForm( "div-comment-45014", "45014", "respond", "2093" )' aria-label='回复给dray'>回复</a></div></div></div><ul class="children">
+		<li class="comment even thread-even depth-1" id="comment-45014"><div class="c-avatar"><div class="c-main" id="div-comment-45014">我忘了我之前都加了什么插件，哪里可以查看呢？<div class="c-meta"><span class="c-author">dray</span>2018-10-25 18:28 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=45014#respond" onclick="return addComment.moveForm( &quot;div-comment-45014&quot;, &quot;45014&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给dray">回复</a></div></div></div><ul class="children">
 <li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45017"><div class="c-avatar"><div class="c-main" id="div-comment-45017">去 Caddy 安装目录下执行：
-<pre class="prettyprint linenums" ># 脚本安装目录：/usr/local/caddy
-./caddy -plugins
-</pre><div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-10-25 18:41 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=45017#respond' onclick='return addComment.moveForm( "div-comment-45017", "45017", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment even depth-3" id="comment-45082"><div class="c-avatar"><div class="c-main" id="div-comment-45082">谢谢<div class="c-meta"><span class="c-author">dray</span>2018-10-26 14:03 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=45082#respond' onclick='return addComment.moveForm( "div-comment-45082", "45082", "respond", "2093" )' aria-label='回复给dray'>回复</a></div></div></div></li><!-- #comment-## -->
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># 脚本安装目录：/usr/local/caddy</span></li><li class="L1"><span class="pun">./</span><span class="pln">caddy </span><span class="pun">-</span><span class="pln">plugins</span></li></ol></pre><div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-10-25 18:41 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=45017#respond" onclick="return addComment.moveForm( &quot;div-comment-45017&quot;, &quot;45017&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment even depth-3" id="comment-45082"><div class="c-avatar"><div class="c-main" id="div-comment-45082">谢谢<div class="c-meta"><span class="c-author">dray</span>2018-10-26 14:03 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=45082#respond" onclick="return addComment.moveForm( &quot;div-comment-45082&quot;, &quot;45082&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给dray">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-43211"><div class="c-avatar"><div class="c-main" id="div-comment-43211">URL failed to get certificate: acme: Error 400 - urn:ietf:params:acme:error:connection - Fetching URL/.well-known/acme-challenge/D0r0EZtuqSXDDDDXXXXXgtvtnaV5uuohUnLI: Timeout during connect (likely firewall problem)
-已开放80 443<div class="c-meta"><span class="c-author">halo</span>2018-09-14 22:42 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=43211#respond' onclick='return addComment.moveForm( "div-comment-43211", "43211", "respond", "2093" )' aria-label='回复给halo'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-42865"><div class="c-avatar"><div class="c-main" id="div-comment-42865">老大,我用caddy+v2ray+CloudFlare+Websocket,一直都正常,但今天出问题了,代理和网页都不行,访问网页提示:连接 www.XXXXXX.tk 时发生错误。 无法安全地与对等端通信：没有双方共用的加密算法。 错误代码: SSL_ERROR_NO_CYPHER_OVERLAP,我看证书是8月16号的,还没有到期啊,caddy.v2ray也正常运行,找不到原因了<div class="c-meta"><span class="c-author">ygra</span>2018-09-07 09:51 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=42865#respond' onclick='return addComment.moveForm( "div-comment-42865", "42865", "respond", "2093" )' aria-label='回复给ygra'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-39009"><div class="c-avatar"><div class="c-main" id="div-comment-39009">我在魔方云的Ubuntu18.04上用这个脚本，caddy正常运行，但是netstat显示没绑定任何端口，网站也无法访问是怎么回事呢？<div class="c-meta"><span class="c-author"><a href='https://www.iszy.me' rel='external nofollow' class='url'>Zvonimir</a></span>2018-06-12 15:08 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=39009#respond' onclick='return addComment.moveForm( "div-comment-39009", "39009", "respond", "2093" )' aria-label='回复给Zvonimir'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-39025"><div class="c-avatar"><div class="c-main" id="div-comment-39025">没有成功监听端口，说明 Caddy 根本没有正常运行。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-06-13 08:31 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=39025#respond' onclick='return addComment.moveForm( "div-comment-39025", "39025", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+已开放80 443<div class="c-meta"><span class="c-author">halo</span>2018-09-14 22:42 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=43211#respond" onclick="return addComment.moveForm( &quot;div-comment-43211&quot;, &quot;43211&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给halo">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="comment-42865"><div class="c-avatar"><div class="c-main" id="div-comment-42865">老大,我用caddy+v2ray+CloudFlare+Websocket,一直都正常,但今天出问题了,代理和网页都不行,访问网页提示:连接 www.XXXXXX.tk 时发生错误。 无法安全地与对等端通信：没有双方共用的加密算法。 错误代码: SSL_ERROR_NO_CYPHER_OVERLAP,我看证书是8月16号的,还没有到期啊,caddy.v2ray也正常运行,找不到原因了<div class="c-meta"><span class="c-author">ygra</span>2018-09-07 09:51 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=42865#respond" onclick="return addComment.moveForm( &quot;div-comment-42865&quot;, &quot;42865&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给ygra">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-39009"><div class="c-avatar"><div class="c-main" id="div-comment-39009">我在魔方云的Ubuntu18.04上用这个脚本，caddy正常运行，但是netstat显示没绑定任何端口，网站也无法访问是怎么回事呢？<div class="c-meta"><span class="c-author"><a href="https://www.iszy.me/" rel="external nofollow" class="url" target="_blank">Zvonimir</a></span>2018-06-12 15:08 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=39009#respond" onclick="return addComment.moveForm( &quot;div-comment-39009&quot;, &quot;39009&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Zvonimir">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-39025"><div class="c-avatar"><div class="c-main" id="div-comment-39025">没有成功监听端口，说明 Caddy 根本没有正常运行。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-06-13 08:31 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=39025#respond" onclick="return addComment.moveForm( &quot;div-comment-39025&quot;, &quot;39025&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-37801"><div class="c-avatar"><div class="c-main" id="div-comment-37801">站长，debian9系统依然报错400<div class="c-meta"><span class="c-author">piaopiaole</span>2018-05-14 23:41 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=37801#respond' onclick='return addComment.moveForm( "div-comment-37801", "37801", "respond", "2093" )' aria-label='回复给piaopiaole'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-37815"><div class="c-avatar"><div class="c-main" id="div-comment-37815">用的是老版本脚本？如果是最新版本的话，请贴出脚本操作期间完整输出信息。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-05-15 13:14 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=37815#respond' onclick='return addComment.moveForm( "div-comment-37815", "37815", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-37801"><div class="c-avatar"><div class="c-main" id="div-comment-37801">站长，debian9系统依然报错400<div class="c-meta"><span class="c-author">piaopiaole</span>2018-05-14 23:41 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=37801#respond" onclick="return addComment.moveForm( &quot;div-comment-37801&quot;, &quot;37801&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给piaopiaole">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-37815"><div class="c-avatar"><div class="c-main" id="div-comment-37815">用的是老版本脚本？如果是最新版本的话，请贴出脚本操作期间完整输出信息。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-05-15 13:14 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=37815#respond" onclick="return addComment.moveForm( &quot;div-comment-37815&quot;, &quot;37815&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-37079"><div class="c-avatar"><div class="c-main" id="div-comment-37079">请问一下，用脚本安装的caddy如何加-quic参数运行呢？<div class="c-meta"><span class="c-author"><a href='https://www.haomwei.com' rel='external nofollow' class='url'>屠夫9441</a></span>2018-04-28 01:12 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=37079#respond' onclick='return addComment.moveForm( "div-comment-37079", "37079", "respond", "2093" )' aria-label='回复给屠夫9441'>回复</a></div></div></div><ul class="children">
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-37079"><div class="c-avatar"><div class="c-main" id="div-comment-37079">请问一下，用脚本安装的caddy如何加-quic参数运行呢？<div class="c-meta"><span class="c-author"><a href="https://www.haomwei.com/" rel="external nofollow" class="url" target="_blank">屠夫9441</a></span>2018-04-28 01:12 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=37079#respond" onclick="return addComment.moveForm( &quot;div-comment-37079&quot;, &quot;37079&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给屠夫9441">回复</a></div></div></div><ul class="children">
 <li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-37089"><div class="c-avatar"><div class="c-main" id="div-comment-37089">打开服务脚本：<code>/etc/init.d/caddy</code>
-<pre class="prettyprint linenums" ># 找到位于 40行左右的下面这行代码
-nohup "$BIN" --conf="$CONF" -agree >> /tmp/caddy.log 2>&1 &
-# 你可以把想要添加的启动参数追加到 -agree 的后面， > > 的前面。
-</pre><div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-04-28 14:02 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=37089#respond' onclick='return addComment.moveForm( "div-comment-37089", "37089", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># 找到位于 40行左右的下面这行代码</span></li><li class="L1"><span class="pln">nohup </span><span class="str">"$BIN"</span><span class="pln"> </span><span class="pun">--</span><span class="pln">conf</span><span class="pun">=</span><span class="str">"$CONF"</span><span class="pln"> </span><span class="pun">-</span><span class="pln">agree </span><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="str">/tmp/</span><span class="pln">caddy</span><span class="pun">.</span><span class="pln">log </span><span class="lit">2</span><span class="pun">&gt;&amp;</span><span class="lit">1</span><span class="pln"> </span><span class="pun">&amp;</span></li><li class="L2"><span class="com"># 你可以把想要添加的启动参数追加到 -agree 的后面， &gt; &gt; 的前面。</span></li></ol></pre><div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-04-28 14:02 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=37089#respond" onclick="return addComment.moveForm( &quot;div-comment-37089&quot;, &quot;37089&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-35125"><div class="c-avatar"><div class="c-main" id="div-comment-35125">重新运行脚本，安装的还是0.10.11旧版本哦，最新版是0.10.12，支持ACME V2和通配符证书。<div class="c-meta"><span class="c-author">Lenno</span>2018-03-28 13:25 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=35125#respond' onclick='return addComment.moveForm( "div-comment-35125", "35125", "respond", "2093" )' aria-label='回复给Lenno'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-35126"><div class="c-avatar"><div class="c-main" id="div-comment-35126">脚本是从官网下载，官网什么版本下载的就是什么版本。可能是缓存原因。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-03-28 13:59 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=35126#respond' onclick='return addComment.moveForm( "div-comment-35126", "35126", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-35125"><div class="c-avatar"><div class="c-main" id="div-comment-35125">重新运行脚本，安装的还是0.10.11旧版本哦，最新版是0.10.12，支持ACME V2和通配符证书。<div class="c-meta"><span class="c-author">Lenno</span>2018-03-28 13:25 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=35125#respond" onclick="return addComment.moveForm( &quot;div-comment-35125&quot;, &quot;35125&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Lenno">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-35126"><div class="c-avatar"><div class="c-main" id="div-comment-35126">脚本是从官网下载，官网什么版本下载的就是什么版本。可能是缓存原因。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-03-28 13:59 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=35126#respond" onclick="return addComment.moveForm( &quot;div-comment-35126&quot;, &quot;35126&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-35056"><div class="c-avatar"><div class="c-main" id="div-comment-35056">站长，caddy今天发布了更新，使用本脚本安装后启动失败，要求同意协议，启动日志：
 Your sites will be served over HTTPS automatically using Let's Encrypt.
 By continuing, you agree to the Let's Encrypt Subscriber Agreement at:
   https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf
-Do you agree to the terms? (y/n): 2018/03/27 13:22:34 user must agree to CA terms (use -agree flag)<div class="c-meta"><span class="c-author">piaopiaole</span>2018-03-27 21:33 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=35056#respond' onclick='return addComment.moveForm( "div-comment-35056", "35056", "respond", "2093" )' aria-label='回复给piaopiaole'>回复</a></div></div></div><ul class="children">
+Do you agree to the terms? (y/n): 2018/03/27 13:22:34 user must agree to CA terms (use -agree flag)<div class="c-meta"><span class="c-author">piaopiaole</span>2018-03-27 21:33 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=35056#respond" onclick="return addComment.moveForm( &quot;div-comment-35056&quot;, &quot;35056&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给piaopiaole">回复</a></div></div></div><ul class="children">
 <li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-35071"><div class="c-avatar"><div class="c-main" id="div-comment-35071">已修复。重装 Caddy 或者手动下载替换服务脚本：
-<pre class="prettyprint linenums" ># CentOS 系统：
-wget --no-check-certificate https://softs.host/Bash/other/caddy_centos -O /etc/init.d/caddy
-# Debian/Ubuntu 系统：
-wget --no-check-certificate https://softs.host/Bash/other/caddy_debian -O /etc/init.d/caddy
-</pre><div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-03-27 23:15 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=35071#respond' onclick='return addComment.moveForm( "div-comment-35071", "35071", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># CentOS 系统：</span></li><li class="L1"><span class="pln">wget </span><span class="pun">--</span><span class="kwd">no</span><span class="pun">-</span><span class="pln">check</span><span class="pun">-</span><span class="pln">certificate https</span><span class="pun">:</span><span class="com">//softs.host/Bash/other/caddy_centos -O /etc/init.d/caddy</span></li><li class="L2"><span class="com"># Debian/Ubuntu 系统：</span></li><li class="L3"><span class="pln">wget </span><span class="pun">--</span><span class="kwd">no</span><span class="pun">-</span><span class="pln">check</span><span class="pun">-</span><span class="pln">certificate https</span><span class="pun">:</span><span class="com">//softs.host/Bash/other/caddy_debian -O /etc/init.d/caddy</span></li></ol></pre><div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-03-27 23:15 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=35071#respond" onclick="return addComment.moveForm( &quot;div-comment-35071&quot;, &quot;35071&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-34239"><div class="c-avatar"><div class="c-main" id="div-comment-34239">大佬,ip被封的能用么?解析到cloud,能用么?<div class="c-meta"><span class="c-author"><a href='http://www.xmanwq.top' rel='external nofollow' class='url'>xman</a></span>2018-03-21 14:32 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=34239#respond' onclick='return addComment.moveForm( "div-comment-34239", "34239", "respond", "2093" )' aria-label='回复给xman'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-34249"><div class="c-avatar"><div class="c-main" id="div-comment-34249">Caddy和被墙的IP有什么关系。。。<br />
-你服务器IP被墙，你无论服务器上面用什么HTTP服务，都无法直接访问这个IP。除非你挂个CDN。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-03-21 14:54 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=34249#respond' onclick='return addComment.moveForm( "div-comment-34249", "34249", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-34239"><div class="c-avatar"><div class="c-main" id="div-comment-34239">大佬,ip被封的能用么?解析到cloud,能用么?<div class="c-meta"><span class="c-author"><a href="http://www.xmanwq.top/" rel="external nofollow" class="url" target="_blank">xman</a></span>2018-03-21 14:32 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=34239#respond" onclick="return addComment.moveForm( &quot;div-comment-34239&quot;, &quot;34239&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给xman">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-34249"><div class="c-avatar"><div class="c-main" id="div-comment-34249">Caddy和被墙的IP有什么关系。。。<br>
+你服务器IP被墙，你无论服务器上面用什么HTTP服务，都无法直接访问这个IP。除非你挂个CDN。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-03-21 14:54 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=34249#respond" onclick="return addComment.moveForm( &quot;div-comment-34249&quot;, &quot;34249&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-30944"><div class="c-avatar"><div class="c-main" id="div-comment-30944">如何设置Caddy开机自启动呢<div class="c-meta"><span class="c-author">zzz</span>2018-02-02 23:44 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=30944#respond' onclick='return addComment.moveForm( "div-comment-30944", "30944", "respond", "2093" )' aria-label='回复给zzz'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-30946"><div class="c-avatar"><div class="c-main" id="div-comment-30946">脚本配置了服务脚本并默认配置开机启动，如果开机发现没启动，那么请检查是否有日志输出，如果重启的时候有日志输出 说明是因为什么原因启动失败，而如果没有日志输出，说明根本没有启动。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-02-03 00:13 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=30946#respond' onclick='return addComment.moveForm( "div-comment-30946", "30946", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment odd alt depth-3" id="comment-31234"><div class="c-avatar"><div class="c-main" id="div-comment-31234">看了下是没有日志文件的，但是我之前都是好好的，就是每次reboot服务器之后，就要手动发命令启动。感觉还是没有设置自动启动<div class="c-meta"><span class="c-author">zzz</span>2018-02-08 19:59 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=31234#respond' onclick='return addComment.moveForm( "div-comment-31234", "31234", "respond", "2093" )' aria-label='回复给zzz'>回复</a></div></div></div><ul class="children">
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-30944"><div class="c-avatar"><div class="c-main" id="div-comment-30944">如何设置Caddy开机自启动呢<div class="c-meta"><span class="c-author">zzz</span>2018-02-02 23:44 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=30944#respond" onclick="return addComment.moveForm( &quot;div-comment-30944&quot;, &quot;30944&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给zzz">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-30946"><div class="c-avatar"><div class="c-main" id="div-comment-30946">脚本配置了服务脚本并默认配置开机启动，如果开机发现没启动，那么请检查是否有日志输出，如果重启的时候有日志输出 说明是因为什么原因启动失败，而如果没有日志输出，说明根本没有启动。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-02-03 00:13 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=30946#respond" onclick="return addComment.moveForm( &quot;div-comment-30946&quot;, &quot;30946&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment odd alt depth-3" id="comment-31234"><div class="c-avatar"><div class="c-main" id="div-comment-31234">看了下是没有日志文件的，但是我之前都是好好的，就是每次reboot服务器之后，就要手动发命令启动。感觉还是没有设置自动启动<div class="c-meta"><span class="c-author">zzz</span>2018-02-08 19:59 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=31234#respond" onclick="return addComment.moveForm( &quot;div-comment-31234&quot;, &quot;31234&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给zzz">回复</a></div></div></div><ul class="children">
 <li class="comment byuser comment-author-toyo bypostauthor even depth-4" id="comment-31250"><div class="c-avatar"><div class="c-main" id="div-comment-31250">下面的命令就是配置 caddy 服务脚本开机启动，脚本都是默认执行的。
-<pre class="prettyprint linenums" ># CenOS
-chkconfig --add caddy
-chkconfig caddy on
-# Debian/Ubuntu
-update-rc.d -f caddy defaults
-</pre><div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-02-09 10:12 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=31250#respond' onclick='return addComment.moveForm( "div-comment-31250", "31250", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># CenOS</span></li><li class="L1"><span class="pln">chkconfig </span><span class="pun">--</span><span class="pln">add caddy</span></li><li class="L2"><span class="pln">chkconfig caddy on</span></li><li class="L3"><span class="com"># Debian/Ubuntu</span></li><li class="L4"><span class="pln">update</span><span class="pun">-</span><span class="pln">rc</span><span class="pun">.</span><span class="pln">d </span><span class="pun">-</span><span class="pln">f caddy defaults</span></li></ol></pre><div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-02-09 10:12 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=31250#respond" onclick="return addComment.moveForm( &quot;div-comment-31250&quot;, &quot;31250&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
@@ -780,68 +728,68 @@ update-rc.d -f caddy defaults
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 <li class="comment odd alt thread-even depth-1" id="comment-29796"><div class="c-avatar"><div class="c-main" id="div-comment-29796">用一键脚本搭建了caddy之后，假如配置文件只设置 ：80{ 解析出来的domain是http://domain.ltd/download
-但是如果是：80/files  则是可以访问filemanager。。。。这是为什么呢？<div class="c-meta"><span class="c-author">逗比998</span>2018-01-19 16:09 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=29796#respond' onclick='return addComment.moveForm( "div-comment-29796", "29796", "respond", "2093" )' aria-label='回复给逗比998'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-29822"><div class="c-avatar"><div class="c-main" id="div-comment-29822">看你说的很乱，贴出你的完整配置文件（域名打码）。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-01-20 00:49 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=29822#respond' onclick='return addComment.moveForm( "div-comment-29822", "29822", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+但是如果是：80/files  则是可以访问filemanager。。。。这是为什么呢？<div class="c-meta"><span class="c-author">逗比998</span>2018-01-19 16:09 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=29796#respond" onclick="return addComment.moveForm( &quot;div-comment-29796&quot;, &quot;29796&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给逗比998">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-29822"><div class="c-avatar"><div class="c-main" id="div-comment-29822">看你说的很乱，贴出你的完整配置文件（域名打码）。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-01-20 00:49 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=29822#respond" onclick="return addComment.moveForm( &quot;div-comment-29822&quot;, &quot;29822&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-29795"><div class="c-avatar"><div class="c-main" id="div-comment-29795">请问caddy支持php吗？想用typecho搭建blog，但是进去浏览器进去/build/install.php只是显示一堆源码。。。是不是php环境有问题？<div class="c-meta"><span class="c-author">逗比998</span>2018-01-19 16:06 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=29795#respond' onclick='return addComment.moveForm( "div-comment-29795", "29795", "respond", "2093" )' aria-label='回复给逗比998'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-29823"><div class="c-avatar"><div class="c-main" id="div-comment-29823">Caddy 只是一个HTTP服务，相当于 Nginx 、Apache，你听说过光安装 Nginx 就能运行 PHP 网页吗？<br />
-无论是什么HTTP服务，想要运行 PHP 网页，必须安装 PHP 环境，并且与HTTP服务对接，不过这方面我不清楚。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-01-20 00:51 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=29823#respond' onclick='return addComment.moveForm( "div-comment-29823", "29823", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-29795"><div class="c-avatar"><div class="c-main" id="div-comment-29795">请问caddy支持php吗？想用typecho搭建blog，但是进去浏览器进去/build/install.php只是显示一堆源码。。。是不是php环境有问题？<div class="c-meta"><span class="c-author">逗比998</span>2018-01-19 16:06 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=29795#respond" onclick="return addComment.moveForm( &quot;div-comment-29795&quot;, &quot;29795&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给逗比998">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-29823"><div class="c-avatar"><div class="c-main" id="div-comment-29823">Caddy 只是一个HTTP服务，相当于 Nginx 、Apache，你听说过光安装 Nginx 就能运行 PHP 网页吗？<br>
+无论是什么HTTP服务，想要运行 PHP 网页，必须安装 PHP 环境，并且与HTTP服务对接，不过这方面我不清楚。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-01-20 00:51 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=29823#respond" onclick="return addComment.moveForm( &quot;div-comment-29823&quot;, &quot;29823&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-29764"><div class="c-avatar"><div class="c-main" id="div-comment-29764">如何安装2个及以上的插件呢<div class="c-meta"><span class="c-author">手动Anonymous</span>2018-01-19 02:39 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=29764#respond' onclick='return addComment.moveForm( "div-comment-29764", "29764", "respond", "2093" )' aria-label='回复给手动Anonymous'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-29790"><div class="c-avatar"><div class="c-main" id="div-comment-29790">文章一开头就写了：<a href="https://doub.io/shell-jc1/#安装步骤">https://doub.io/shell-jc1/#安装步骤</a> ，不过可能写的太简单，我又补充详细了一点。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-01-19 15:16 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=29790#respond' onclick='return addComment.moveForm( "div-comment-29790", "29790", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-29764"><div class="c-avatar"><div class="c-main" id="div-comment-29764">如何安装2个及以上的插件呢<div class="c-meta"><span class="c-author">手动Anonymous</span>2018-01-19 02:39 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=29764#respond" onclick="return addComment.moveForm( &quot;div-comment-29764&quot;, &quot;29764&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给手动Anonymous">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-29790"><div class="c-avatar"><div class="c-main" id="div-comment-29790">文章一开头就写了：<a href="https://doub.io/shell-jc1/#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4">https://doub.io/shell-jc1/#安装步骤</a> ，不过可能写的太简单，我又补充详细了一点。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-01-19 15:16 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=29790#respond" onclick="return addComment.moveForm( &quot;div-comment-29790&quot;, &quot;29790&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-23870"><div class="c-avatar"><div class="c-main" id="div-comment-23870"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="14667b7b60547071">[email&#160;protected]</a>:~# /etc/init.d/caddy start
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-23870"><div class="c-avatar"><div class="c-main" id="div-comment-23870">root@de:~# /etc/init.d/caddy start
 [信息] Caddy 启动成功 !
-<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5f2d30302b1f3b3a">[email&#160;protected]</a>:~#  /etc/rc2.d/S20caddy start
+root@de:~#  /etc/rc2.d/S20caddy start
 [信息] Caddy (PID 1228
 1242
 1243) 正在运行...
-<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6a1805051e2a0e0f">[email&#160;protected]</a>:~# /etc/init.d/caddy status
+root@de:~# /etc/init.d/caddy status
 [信息] Caddy (PID 1228) 正在运行...
-<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3e4c51514a7e5a5b">[email&#160;protected]</a>:~# /etc/rc2.d/S20caddy start
+root@de:~# /etc/rc2.d/S20caddy start
 [信息] Caddy (PID 1228
 1258
 1259) 正在运行...
-<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bbc9d4d4cffbdfde">[email&#160;protected]</a>:~#  /etc/rc2.d/S20caddy stop
+root@de:~#  /etc/rc2.d/S20caddy stop
 Killed
-<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="25574a4a51654140">[email&#160;protected]</a>:~#  /etc/rc2.d/S20caddy status
+root@de:~#  /etc/rc2.d/S20caddy status
 [信息] Caddy (PID 1274
 1275) 正在运行...
-<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="71031e1e05311514">[email&#160;protected]</a>:~#  /etc/init.d/caddy status
+root@de:~#  /etc/init.d/caddy status
 [信息] Caddy 未运行 !
-<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f785989883b79392">[email&#160;protected]</a>:~# /etc/rc2.d/S20caddy start
+root@de:~# /etc/rc2.d/S20caddy start
 [信息] Caddy (PID 1290
 1291) 正在运行...
-<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b3c1dcdcc7f3d7d6">[email&#160;protected]</a>:~#  /etc/init.d/caddy status
-[信息] Caddy 未运行 !<div class="c-meta"><span class="c-author">segwev</span>2017-12-05 09:58 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=23870#respond' onclick='return addComment.moveForm( "div-comment-23870", "23870", "respond", "2093" )' aria-label='回复给segwev'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-23881"><div class="c-avatar"><div class="c-main" id="div-comment-23881">/etc/rc2.d/S20caddy 是什么鬼。用 ps -ef 查看进程看是不是多开了 Caddy。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-12-05 12:34 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=23881#respond' onclick='return addComment.moveForm( "div-comment-23881", "23881", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+root@de:~#  /etc/init.d/caddy status
+[信息] Caddy 未运行 !<div class="c-meta"><span class="c-author">segwev</span>2017-12-05 09:58 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=23870#respond" onclick="return addComment.moveForm( &quot;div-comment-23870&quot;, &quot;23870&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给segwev">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-23881"><div class="c-avatar"><div class="c-main" id="div-comment-23881">/etc/rc2.d/S20caddy 是什么鬼。用 ps -ef 查看进程看是不是多开了 Caddy。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-12-05 12:34 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=23881#respond" onclick="return addComment.moveForm( &quot;div-comment-23881&quot;, &quot;23881&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-23866"><div class="c-avatar"><div class="c-main" id="div-comment-23866">一键安装后，手动启动重启查看状态都正常，但是不能开机自启动，ubuntu14.04，没启动就没日志，启动正常时日志也正常<div class="c-meta"><span class="c-author">segwev</span>2017-12-05 09:37 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=23866#respond' onclick='return addComment.moveForm( "div-comment-23866", "23866", "respond", "2093" )' aria-label='回复给segwev'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-23882"><div class="c-avatar"><div class="c-main" id="div-comment-23882">我在 CentOS6 7 Debian7 8 Ubuntu14.04 16.04 系统上测试都是正常开机启动的（但是不能代表所有的系统，各IDC的系统模板存在差异），如果开机后没有启动错误日志，那么说明根本没有启动，如果有错误日志则代表启动但是失败了。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-12-05 12:36 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=23882#respond' onclick='return addComment.moveForm( "div-comment-23882", "23882", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-23866"><div class="c-avatar"><div class="c-main" id="div-comment-23866">一键安装后，手动启动重启查看状态都正常，但是不能开机自启动，ubuntu14.04，没启动就没日志，启动正常时日志也正常<div class="c-meta"><span class="c-author">segwev</span>2017-12-05 09:37 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=23866#respond" onclick="return addComment.moveForm( &quot;div-comment-23866&quot;, &quot;23866&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给segwev">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-23882"><div class="c-avatar"><div class="c-main" id="div-comment-23882">我在 CentOS6 7 Debian7 8 Ubuntu14.04 16.04 系统上测试都是正常开机启动的（但是不能代表所有的系统，各IDC的系统模板存在差异），如果开机后没有启动错误日志，那么说明根本没有启动，如果有错误日志则代表启动但是失败了。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-12-05 12:36 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=23882#respond" onclick="return addComment.moveForm( &quot;div-comment-23882&quot;, &quot;23882&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-21911"><div class="c-avatar"><div class="c-main" id="div-comment-21911">能不能在启动的时候添加启动参数“-quic”，很想实验性的体验一下quic<div class="c-meta"><span class="c-author">weee</span>2017-11-04 19:08 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=21911#respond' onclick='return addComment.moveForm( "div-comment-21911", "21911", "respond", "2093" )' aria-label='回复给weee'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-21926"><div class="c-avatar"><div class="c-main" id="div-comment-21926">自行修改 /etc/init.d/caddy 服务脚本文件相关代码。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-11-04 23:45 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=21926#respond' onclick='return addComment.moveForm( "div-comment-21926", "21926", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-21911"><div class="c-avatar"><div class="c-main" id="div-comment-21911">能不能在启动的时候添加启动参数“-quic”，很想实验性的体验一下quic<div class="c-meta"><span class="c-author">weee</span>2017-11-04 19:08 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=21911#respond" onclick="return addComment.moveForm( &quot;div-comment-21911&quot;, &quot;21911&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给weee">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-21926"><div class="c-avatar"><div class="c-main" id="div-comment-21926">自行修改 /etc/init.d/caddy 服务脚本文件相关代码。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-11-04 23:45 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=21926#respond" onclick="return addComment.moveForm( &quot;div-comment-21926&quot;, &quot;21926&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-19829"><div class="c-avatar"><div class="c-main" id="div-comment-19829">怎么配置php呢，逗比知道不。。<div class="c-meta"><span class="c-author">指尖</span>2017-10-10 19:59 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=19829#respond' onclick='return addComment.moveForm( "div-comment-19829", "19829", "respond", "2093" )' aria-label='回复给指尖'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-19612"><div class="c-avatar"><div class="c-main" id="div-comment-19612">可不可以发个手把手教caddy建站的教程呀，最好是小白也能学会那种<div class="c-meta"><span class="c-author">break</span>2017-10-08 13:37 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=19612#respond' onclick='return addComment.moveForm( "div-comment-19612", "19612", "respond", "2093" )' aria-label='回复给break'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-15078"><div class="c-avatar"><div class="c-main" id="div-comment-15078">可以加个php7更一键化吗?<div class="c-meta"><span class="c-author">mk</span>2017-06-25 15:54 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=15078#respond' onclick='return addComment.moveForm( "div-comment-15078", "15078", "respond", "2093" )' aria-label='回复给mk'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-15086"><div class="c-avatar"><div class="c-main" id="div-comment-15086">这个脚本仅仅是为了方便其他脚本或教程使用而写的，只需要实现一键安装Caddy即可，其他功能（PHP MYSQL等）都不会考虑添加，毕竟他不是一个LNMP类的脚本。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-06-25 21:54 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=15086#respond' onclick='return addComment.moveForm( "div-comment-15086", "15086", "respond", "2093" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-19829"><div class="c-avatar"><div class="c-main" id="div-comment-19829">怎么配置php呢，逗比知道不。。<div class="c-meta"><span class="c-author">指尖</span>2017-10-10 19:59 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=19829#respond" onclick="return addComment.moveForm( &quot;div-comment-19829&quot;, &quot;19829&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给指尖">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-19612"><div class="c-avatar"><div class="c-main" id="div-comment-19612">可不可以发个手把手教caddy建站的教程呀，最好是小白也能学会那种<div class="c-meta"><span class="c-author">break</span>2017-10-08 13:37 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=19612#respond" onclick="return addComment.moveForm( &quot;div-comment-19612&quot;, &quot;19612&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给break">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-15078"><div class="c-avatar"><div class="c-main" id="div-comment-15078">可以加个php7更一键化吗?<div class="c-meta"><span class="c-author">mk</span>2017-06-25 15:54 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=15078#respond" onclick="return addComment.moveForm( &quot;div-comment-15078&quot;, &quot;15078&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给mk">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-15086"><div class="c-avatar"><div class="c-main" id="div-comment-15086">这个脚本仅仅是为了方便其他脚本或教程使用而写的，只需要实现一键安装Caddy即可，其他功能（PHP MYSQL等）都不会考虑添加，毕竟他不是一个LNMP类的脚本。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-06-25 21:54 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=15086#respond" onclick="return addComment.moveForm( &quot;div-comment-15086&quot;, &quot;15086&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-12962"><div class="c-avatar"><div class="c-main" id="div-comment-12962">希望支持arm设备，比如树莓派 <img data-original="https://doub.io/wp-content/themes/yusi1.0/img/smilies/icon_lol.gif" alt=":lol:" class="wp-smiley" style="height: 1em; max-height: 1em;" /><div class="c-meta"><span class="c-author">starP</span>2017-04-19 11:07 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=12962#respond' onclick='return addComment.moveForm( "div-comment-12962", "12962", "respond", "2093" )' aria-label='回复给starP'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-12962"><div class="c-avatar"><div class="c-main" id="div-comment-12962">希望支持arm设备，比如树莓派 <img data-original="https://doub.io/wp-content/themes/yusi1.0/img/smilies/icon_lol.gif" alt=":lol:" class="wp-smiley" style="height: 1em; max-height: 1em;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"><div class="c-meta"><span class="c-author">starP</span>2017-04-19 11:07 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=12962#respond" onclick="return addComment.moveForm( &quot;div-comment-12962&quot;, &quot;12962&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给starP">回复</a></div></div></div></li><!-- #comment-## -->
 <li class="comment even thread-even depth-1" id="comment-12413"><div class="c-avatar"><div class="c-main" id="div-comment-12413">求指点，通过aria2离线了win10镜像，使用caddy下载到本地会出现只能单线程下载，并且下载不用超过1分钟就会被远程服务器关闭连接。而同一vps使用nginx则完全无压力可以满速下载。是caddy性能问题还是因为我配置的问题呢。
-caddyfile只设置了http最基础的{root /etc/html/  gzip}。<div class="c-meta"><span class="c-author">dtv</span>2017-04-04 09:13 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=12413#respond' onclick='return addComment.moveForm( "div-comment-12413", "12413", "respond", "2093" )' aria-label='回复给dtv'>回复</a></div></div></div><ul class="children">
-<li class="comment odd alt depth-2" id="comment-12560"><div class="c-avatar"><div class="c-main" id="div-comment-12560">设置问题，参考https://nota.moe/2017/caddy-download-network-error-solution/<div class="c-meta"><span class="c-author">kkren</span>2017-04-07 22:46 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc1/?replytocom=12560#respond' onclick='return addComment.moveForm( "div-comment-12560", "12560", "respond", "2093" )' aria-label='回复给kkren'>回复</a></div></div></div></li><!-- #comment-## -->
+caddyfile只设置了http最基础的{root /etc/html/  gzip}。<div class="c-meta"><span class="c-author">dtv</span>2017-04-04 09:13 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=12413#respond" onclick="return addComment.moveForm( &quot;div-comment-12413&quot;, &quot;12413&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给dtv">回复</a></div></div></div><ul class="children">
+<li class="comment odd alt depth-2" id="comment-12560"><div class="c-avatar"><div class="c-main" id="div-comment-12560">设置问题，参考https://nota.moe/2017/caddy-download-network-error-solution/<div class="c-meta"><span class="c-author">kkren</span>2017-04-07 22:46 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc1/?replytocom=12560#respond" onclick="return addComment.moveForm( &quot;div-comment-12560&quot;, &quot;12560&quot;, &quot;respond&quot;, &quot;2093&quot; )" aria-label="回复给kkren">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 	</ol>
-	<div class="commentnav"	>
+	<div class="commentnav">
 			</div>
 </div>
 </div>
@@ -850,7 +798,7 @@ caddyfile只设置了http最基础的{root /etc/html/  gzip}。<div class="c-met
 </div>
 <aside class="sidebar">	
 <div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="position: absolute;left: 4px;top: 4px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/walllink/"><img src="https://img.doub.pw/abc/walllink-03.png" /></a></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align:center;padding: 10px 20px 5px;display: block;">
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/walllink/"><img src="./shell-jc1_files/walllink-03.png"></a></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align:center;padding: 10px 20px 5px;display: block;">
 <a class="wid-xiaobai" style="background-color: #03A9F4;padding-top:15px;padding-bottom:15px;font-size: 16px;font-weight: bold;" target="_blank" href="https://doub.io/all-one/">逗比根据地 所有文章教程分类合辑</a>
 <a class="wid-xiaobai" style="background-color: #1ABCFF;padding-top: 7px;padding-bottom: 7px;font-weight: bold;font-size: 15px;" target="_blank" href="https://doub.io/goflyway-jc3/">CDN 复活被墙IP 继续做代理</a>
 <a class="wid-xiaobai" style="background-color: #1ABCFF;padding-top: 7px;padding-bottom: 7px;font-weight: bold;font-size: 15px;" target="_blank" href="https://doub.io/goflyway-jc5/">KCP 复活被墙IP 继续做代理</a>
@@ -877,11 +825,11 @@ caddyfile只设置了http最基础的{root /etc/html/  gzip}。<div class="c-met
 <a class="wid-xiaobai" style="background-color: #2d2d2d;" target="_blank" href="https://doub.io/paypal-jc2/">PayPal 更换汇率结算方式降低手续费</a>
 </div></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="background-color: #eee;">
 <div style="position: absolute;margin-left: 4px;margin-top: 4px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/kanfanba/"><img style="margin-bottom: 10px;" src="https://img.doub.pw/abc/kanfanba-02.png"/></a>
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/kanfanba/"><img style="margin-bottom: 10px;" src="./shell-jc1_files/kanfanba-02.png"></a>
 <div style="position: absolute;margin-left: 4px;margin-top: 4px;width: 24px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
 
-<div id="guangg_image"></div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+<div id="guangg_image"><a target="_blank" title="特别声明：此图片为广告投放，与本站无任何关系。" href="https://doub.io/go/virmach-kvm/"><img src="./shell-jc1_files/virmach-03.png"></a></div>
+<script type="text/javascript">
 var image_url=new Array()
 image_url=["https://doub.io/go/vultr-100/","https://doub.io/vpszy-21/","https://doub.io/go/virmach-kvm/"]
 var guangg_url=new Array()
@@ -896,17 +844,17 @@ document.getElementById("guangg_image").innerHTML = "<a target=\"_blank\" title=
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/10</span></p>
 			<span class="label label-1">v1.0.1</span>
-			<a target="_blank" href="https://doub.io/shell-jc9/" title="点击进入该文件的介绍页面。">MTProxy_go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/shell-jc9/" title="点击进入该文件的介绍页面。">MTProxy_go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./shell-jc1_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/10</span></p>
 			<span class="label label-2">v1.0.8</span>
-			<a target="_blank" href="https://doub.io/shell-jc7/" title="点击进入该文件的介绍页面。">MTProxy.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/shell-jc7/" title="点击进入该文件的介绍页面。">MTProxy.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./shell-jc1_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/07</span></p>
 			<span class="label label-3">v1.0.0</span>
-			<a target="_blank" href="https://doub.io/ss-jc67/" title="点击进入该文件的介绍页面。">ss-go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/ss-jc67/" title="点击进入该文件的介绍页面。">ss-go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./shell-jc1_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/02</span></p>
@@ -944,11 +892,11 @@ document.getElementById("guangg_image").innerHTML = "<a target=\"_blank\" title=
 			<a target="_blank" href="https://doub.io/dbrj-17/" title="点击进入该文件的介绍页面。">DAZE Tools</a>
 		</li>
 	</ul>
-</div></div></div><div class="widget d_tag"><div class="title"><h2>逗比の标签</h2></div><div class="d_tags"><a title="60个话题" target="_blank" href="https://doub.io/tag/shadowsocks/">Shadowsocks (60)</a><a title="47个话题" target="_blank" href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/">脚本 (47)</a><a title="45个话题" target="_blank" href="https://doub.io/tag/%e6%95%99%e7%a8%8b/">教程 (45)</a><a title="32个话题" target="_blank" href="https://doub.io/tag/shadowsocksr/">ShadowsocksR (32)</a><a title="30个话题" target="_blank" href="https://doub.io/tag/kxsw/">科学上网 (30)</a><a title="20个话题" target="_blank" href="https://doub.io/tag/shell/">shell (20)</a><a title="19个话题" target="_blank" href="https://doub.io/tag/vps/">VPS (19)</a><a title="18个话题" target="_blank" href="https://doub.io/tag/linux/">Linux (18)</a><a title="16个话题" target="_blank" href="https://doub.io/tag/vpn/">VPN (16)</a><a title="11个话题" target="_blank" href="https://doub.io/tag/bt/">BT (11)</a><a title="10个话题" target="_blank" href="https://doub.io/tag/%e7%a3%81%e5%8a%9b%e9%93%be%e6%8e%a5/">磁力链接 (10)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e5%8e%9f%e5%88%9b%e8%bd%af%e4%bb%b6/">原创软件 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/">端口转发 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e4%ba%91/">百度云 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/brook/">Brook (9)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/">国内中转 (8)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86/">反向代理 (8)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98/">百度网盘 (8)</a><a title="7个话题" target="_blank" href="https://doub.io/tag/goflyway/">GoFlyway (7)</a><a title="7个话题" target="_blank" href="https://doub.io/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/">搬瓦工 (7)</a></div></div></aside></section>
+</div></div></div><div class="widget d_tag"><div class="title"><h2>逗比の标签</h2></div><div class="d_tags"><a title="" target="_blank" href="https://doub.io/tag/shadowsocks/" data-original-title="60个话题">Shadowsocks (60)</a><a title="" target="_blank" href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" data-original-title="47个话题">脚本 (47)</a><a title="" target="_blank" href="https://doub.io/tag/%e6%95%99%e7%a8%8b/" data-original-title="45个话题">教程 (45)</a><a title="" target="_blank" href="https://doub.io/tag/shadowsocksr/" data-original-title="32个话题">ShadowsocksR (32)</a><a title="" target="_blank" href="https://doub.io/tag/kxsw/" data-original-title="30个话题">科学上网 (30)</a><a title="" target="_blank" href="https://doub.io/tag/shell/" data-original-title="20个话题">shell (20)</a><a title="" target="_blank" href="https://doub.io/tag/vps/" data-original-title="19个话题">VPS (19)</a><a title="" target="_blank" href="https://doub.io/tag/linux/" data-original-title="18个话题">Linux (18)</a><a title="" target="_blank" href="https://doub.io/tag/vpn/" data-original-title="16个话题">VPN (16)</a><a title="" target="_blank" href="https://doub.io/tag/bt/" data-original-title="11个话题">BT (11)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%a3%81%e5%8a%9b%e9%93%be%e6%8e%a5/" data-original-title="10个话题">磁力链接 (10)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%8e%9f%e5%88%9b%e8%bd%af%e4%bb%b6/" data-original-title="9个话题">原创软件 (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/" data-original-title="9个话题">端口转发 (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e4%ba%91/" data-original-title="9个话题">百度云 (9)</a><a title="" target="_blank" href="https://doub.io/tag/brook/" data-original-title="9个话题">Brook (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/" data-original-title="8个话题">国内中转 (8)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86/" data-original-title="8个话题">反向代理 (8)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98/" data-original-title="8个话题">百度网盘 (8)</a><a title="" target="_blank" href="https://doub.io/tag/goflyway/" data-original-title="7个话题">GoFlyway (7)</a><a title="" target="_blank" href="https://doub.io/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/" data-original-title="7个话题">搬瓦工 (7)</a></div></div></aside></section>
 <footer class="footer">
     <div class="footer-inner">
         <div class="copyright pull-left">
-         <a href="https://doub.io" title="逗比根据地">逗比根据地</a> 版权所有，保留一切权利 · 基于 <a href="https://cn.wordpress.org/" target="_blank">WordPress</a> · <a href="https://doub.io/jzzy-5/" target="_blank">欲思主题</a> © 2015-2018        </div>
+         <a href="https://doub.io/" title="逗比根据地">逗比根据地</a> 版权所有，保留一切权利 · 基于 <a href="https://cn.wordpress.org/" target="_blank">WordPress</a> · <a href="https://doub.io/jzzy-5/" target="_blank">欲思主题</a> © 2015-2018        </div>
         <div class="trackcode pull-right">
             <script>
 var _hmt = _hmt || [];
@@ -960,7 +908,7 @@ var _hmt = _hmt || [];
 })();
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72227254-1"></script>
+<script async="" src="./shell-jc1_files/js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -976,8 +924,8 @@ var _hmt = _hmt || [];
                 <span class="close-btn fa fa-times-circle"> </span>
                         <div class="wk08043"></div>
     </div>
-</div><script type='text/javascript' src='https://doub.io/wp-content/themes/yusi1.0/js/jquery.js?ver=1.0'></script>
-<script type='text/javascript' src='https://doub.io/wp-includes/js/wp-embed.min.js?ver=4.8.1'></script>
+</div><script type="text/javascript" src="./shell-jc1_files/jquery.js.下载"></script>
+<script type="text/javascript" src="./shell-jc1_files/wp-embed.min.js.下载"></script>
 
 <script type="text/javascript">
 var open = false;
@@ -995,4 +943,4 @@ if(document.body.scrollWidth < 768){
     $(".hot-posts").hide();
 }
 </script>
-<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_6971c5901860620dc711b8ea461af719");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_6971c5901860620dc711b8ea461af719");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_6971c5901860620dc711b8ea461af719");if (z != "") e["url"].value = z;}</script></body></html><!-- hyper cache gzip 2018-11-19 08:34:07 -->
+<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_6971c5901860620dc711b8ea461af719");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_6971c5901860620dc711b8ea461af719");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_6971c5901860620dc711b8ea461af719");if (z != "") e["url"].value = z;}</script><div class="rollto"><button class="btn btn-inverse" data-type="totop" title="回顶部"><i class="fa fa-arrow-up"></i></button><button class="btn btn-inverse" data-type="Widescreen" title="宽屏显示"><i class="fa fa-arrows-h"></i></button><button class="btn btn-inverse" data-type="torespond" title="发评论"><i class="fa fa-comment-o"></i></button></div></body></html>

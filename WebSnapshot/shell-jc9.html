@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://doub.io/shell-jc9/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta http-equiv="X-UA-Compatible" content="IE=10,IE=9,IE=8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <style type="text/css">
@@ -11,31 +11,31 @@
 @font-face {font-family: 'LiDeBiao-Xing320e75d0253036';src: url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.gif');src: url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.gif?#iefix') format('embedded-opentype'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.bmp') format('woff'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.jpg') format('truetype'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.png#LiDeBiao-Xing3') format('svg');   }.css20e75d0253036{font-family: 'LiDeBiao-Xing320e75d0253036';}
 tbody tr:nth-child(odd) { background-color:#f9f9f9; }
 </style>
-<link rel="stylesheet" type="text/css" href="https://doub.io/wp-content/themes/yusi1.0/csshake.css">
-<link id="favicon" href="https://doub.io/wp-content/themes/yusi1.0/img/logo.ico" rel="icon" type="img/x-icon" />
+<link rel="stylesheet" type="text/css" href="./shell-jc9_files/csshake.css">
+<link id="favicon" href="https://doub.io/wp-content/themes/yusi1.0/img/logo.ico" rel="icon" type="img/x-icon">
 <title>『原创』Telegram 专用的轻量化代理工具 —— MTProxy Go版 一键脚本 | 逗比根据地</title>
-<script>
+<script type="text/javascript" async="" src="./shell-jc9_files/analytics.js.下载"></script><script src="./shell-jc9_files/hm.js.下载"></script><script async="" src="./shell-jc9_files/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ"></script><script>
 window._deel = {name: '逗比根据地',url: 'https://doub.io/wp-content/themes/yusi1.0', ajaxpager: 'on', commenton: 1, roll: [1,3]}
 </script>
 
 <!-- All in One SEO Pack 2.3.16 by Michael Torbert of Semper Fi Web Design[1897,1961] -->
-<meta name="description"  content="前段时间，我写了个 MTProxy 的一键脚本，那个脚本用的是 MTProto Proxy 官方项目的，而前几天我又发现一个用 Go 语言实现的 MTProto Proxy，并且功能更完善，所以我又写了个 Go 语言版一键脚本。 注意：MTProxy 仅支持 Telegram" />
+<meta name="description" content="前段时间，我写了个 MTProxy 的一键脚本，那个脚本用的是 MTProto Proxy 官方项目的，而前几天我又发现一个用 Go 语言实现的 MTProto Proxy，并且功能更完善，所以我又写了个 Go 语言版一键脚本。 注意：MTProxy 仅支持 Telegram">
 
-<meta name="keywords"  content="go,mtproxy,shell,telegram,脚本" />
+<meta name="keywords" content="go,mtproxy,shell,telegram,脚本">
 
-<link rel="canonical" href="https://doub.io/shell-jc9/" />
+<link rel="canonical" href="https://doub.io/shell-jc9/">
 <!-- /all in one seo pack -->
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='toggle-box-css'  href='https://doub.io/wp-content/plugins/toggle-box/toggle-box.css?ver=4.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='style-css'  href='https://doub.io/wp-content/themes/yusi1.0/style.css?ver=1.0' type='text/css' media='all' />
-<script>!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://steadfastsystem.com/v2/0/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script><script type='text/javascript' src='https://doub.io/wp-content/themes/yusi1.0/js/jquery1.min.js?ver=1.0'></script>
-<script type='text/javascript' src='https://doub.io/wp-content/plugins/toggle-box/js/toggle-box.js?ver=4.8.1'></script>
-<link rel='https://api.w.org/' href='https://doub.io/wp-json/' />
-<link rel='prev' title='『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本' href='https://doub.io/shell-jc8/' />
-<link rel='next' title='网页管理 Brook、SS、Socks5 代理账号 —— Brook-Web 使用教程' href='https://doub.io/brook-jc6/' />
-<link rel='shortlink' href='https://doub.io/?p=2931' />
-<link rel="alternate" type="application/json+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fshell-jc9%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fshell-jc9%2F&#038;format=xml" />
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="stylesheet" id="toggle-box-css" href="./shell-jc9_files/toggle-box.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="./shell-jc9_files/style.css" type="text/css" media="all">
+<script>!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://steadfastsystem.com/v2/0/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script><script type="text/javascript" src="./shell-jc9_files/jquery1.min.js.下载"></script>
+<script type="text/javascript" src="./shell-jc9_files/toggle-box.js.下载"></script>
+<link rel="https://api.w.org/" href="https://doub.io/wp-json/">
+<link rel="prev" title="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本" href="https://doub.io/shell-jc8/">
+<link rel="next" title="网页管理 Brook、SS、Socks5 代理账号 —— Brook-Web 使用教程" href="https://doub.io/brook-jc6/">
+<link rel="shortlink" href="https://doub.io/?p=2931">
+<link rel="alternate" type="application/json+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fshell-jc9%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fshell-jc9%2F&amp;format=xml">
 <style>
 .yk6fd2b{
     font-size: 20px;
@@ -382,7 +382,7 @@ window._deel = {name: '逗比根据地',url: 'https://doub.io/wp-content/themes/
         killAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
     }
 </script>
-    <link rel="stylesheet" href="https://doub.io/wp-content/plugins/wp-content-index/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./shell-jc9_files/style(1).css" type="text/css" media="all">
 <meta name="keywords" content="Go, MTProxy, shell, Telegram, 脚本, Shell脚本">
 <meta name="description" content="前段时间，我写了个 MTProxy 的一键脚本，那个脚本用的是 MTProto Proxy 官方项目的，而前几天我又发现一个用 Go 语言实现的 MTProto Proxy，并且功能更完善，所以我又写了个 Go 语言版一键脚本。 注意：MTProxy 仅支持 Telegram 客户端使用，无法用于代理其他网站和软件！ 逗比根据地 交流群组：https://t.me/doubi  逗比根据地 公告频道：https://t.me/doubi">
 <!--[if lt IE 9]><script src="https://doub.io/wp-content/themes/yusi1.0/js/html5.js"></script><![endif]-->
@@ -408,10 +408,10 @@ window.uabInject = function() {};
 <header id="header" class="header">
 <div class="container-inner" style="display: block;">
  <div class="yusi-logo" style="display: block;">
-                    <a href="/">
+                    <a href="https://doub.io/">
                         <h1>
-                                                        <span style="font-family:'jin_mei_mxplzx86d456993036';color: #fff;font-weight: normal;font-size: 54px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">逗比根据地</span>
-                                                        <span style="font-family:'LiDeBiao-Xing320e75d0253036';color: #fff;font-size: 24px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">– 世界那么逗，我想出去看看</span>
+                                                        <span style="font-family:&#39;jin_mei_mxplzx86d456993036&#39;;color: #fff;font-weight: normal;font-size: 54px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">逗比根据地</span>
+                                                        <span style="font-family:&#39;LiDeBiao-Xing320e75d0253036&#39;;color: #fff;font-size: 24px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">– 世界那么逗，我想出去看看</span>
                                                     </h1>
                     </a>
     </div>
@@ -420,9 +420,9 @@ window.uabInject = function() {};
 	<div id="nav-header" class="navbar" style="display: block;">
 		
 		<ul class="nav">
-			<li><a href="https://doub.io"><i class="fa fa-fire"></i> 首页</a></li>
+			<li><a href="https://doub.io/"><i class="fa fa-fire"></i> 首页</a></li>
 <li><a target="_blank" href="https://doub.io/dbtj/"><i class="fa fa-star"></i> 逗比推荐</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/dbwz/">碉堡网站</a></li>
 	<li><a target="_blank" href="https://doub.io/dbrj/">逗比软件</a></li>
 	<li><a target="_blank" href="https://doub.io/xnzj/">虚拟主机</a></li>
@@ -430,7 +430,7 @@ window.uabInject = function() {};
 </ul>
 </li>
 <li><a target="_blank" href="https://doub.io/kxsw/"><i class="fa fa-globe fa-spin"></i> 科学上网</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/androidkxsw/">安卓合集</a></li>
 	<li><a target="_blank" href="https://doub.io/pckxsw/">电脑合集</a></li>
 	<li><a target="_blank" href="https://doub.io/wlzy/">网络资源</a></li>
@@ -441,7 +441,7 @@ window.uabInject = function() {};
 </ul>
 </li>
 <li><a target="_blank" href="https://doub.io/ss-jc26/"><i class="fa fa-paper-plane" style="font-size: 19px;"></i> Shadowsocks</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/all-one/"><span style="color: #ffe200;">网站文章 合辑</span></a></li>
 	<li><a target="_blank" href="https://doub.io/ss-jc26/">所有教程 合辑</a></li>
 	<li><a target="_blank" href="https://doub.io/ss-jc35/">小白常见 问题</a></li>
@@ -456,10 +456,10 @@ window.uabInject = function() {};
 <li><a target="_blank" href="https://softs.wtf/"><i class="fa fa-cloud"></i> 逗比云</a></li>
 <li><a target="_blank" href="https://doub.io/guestbook/"><i class="fa fa-list-alt"></i> 留言</a></li>
 <li style="float:right;">
-                    <div class="toggle-search" style="width: 60px;"><i class="fa fa-search"></i><a href="#" style="padding: 0;">搜索</a></div>
-<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href='https://doub.io/search/' + encodeURIComponent(this.s.value).replace(/%20/g, '+'); return false;" action="/"><div> <input type="ext" class="search" name="s" onblur="if(this.value=='')this.value='请善用搜索功能...';" onfocus="if(this.value=='请善用搜索功能...')this.value='';" value="请善用搜索功能..."></div></form></div></div>
+                    <div class="toggle-search" style="width: 60px;"><i class="fa fa-search"></i><a href="https://doub.io/shell-jc9/#" style="padding: 0;">搜索</a></div>
+<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href=&#39;https://doub.io/search/&#39; + encodeURIComponent(this.s.value).replace(/%20/g, &#39;+&#39;); return false;" action="https://doub.io/"><div> <input type="ext" class="search" name="s" onblur="if(this.value==&#39;&#39;)this.value=&#39;请善用搜索功能...&#39;;" onfocus="if(this.value==&#39;请善用搜索功能...&#39;)this.value=&#39;&#39;;" value="请善用搜索功能..."></div></form></div></div>
 </li>
-		</ul>
+		</ul><div class="screen-mini"><button data-type="screen-nav" class="btn btn-inverse screen-nav"><i class="fa fa-list"></i></button></div>
 	</div>
 </header>
 <section class="container"><div class="speedbar">
@@ -467,7 +467,7 @@ window.uabInject = function() {};
 <div style="float: right;margin: 0 10px;"><a target="_blank" href="https://doub.io/tougao/"><i class="fa fa-envelope" style="color: #1abc9c;opacity: 1;"></i>投稿文章</a> | <a target="_blank" href="https://doub.io/guanggao/"><i class="fa fa-money" style="color: #1abc9c;opacity: 1;"></i>广告合作</a> | <a target="_blank" href="https://doub.io/go/tg"><i class="fa fa-paper-plane" style="color: #1abc9c;opacity: 1;"></i>Telegram 群组</a> / <a target="_blank" href="https://doub.io/go/tg_a">公告频道</a> / <a target="_blank" href="https://doub.io/telegram-jc1/">使用教程</a></div></div>
 	</div>
 	<div class="guangg guangg-site"><div style="position: absolute;left: 4px;top: 14px;font-size: 12px;color: #fff;border: 1px solid #ffffff;line-height: 12px;opacity: 0.9;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/gigsgigscloud/"><img src="https://img.doub.pw/abc/gigsgigscloud-06.gif" class="top_guangg" /></a></div><div class="content-wrap">
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/gigsgigscloud/"><img src="./shell-jc9_files/gigsgigscloud-06.gif" class="top_guangg"></a></div><div class="content-wrap">
 <div style="display: block;">
 	<div class="content" style="display: block;">
 
@@ -480,27 +480,27 @@ window.uabInject = function() {};
 				<span class="muted"><i class="fa fa-comments-o"></i> <a href="https://doub.io/shell-jc9/#comments">40评论</a></span>							</div>
 		</header>
 <div class="guangg guangg-post"><div style="position: absolute;left: 3px;top: 14px;font-size: 12px;color: #fff;border: 1px solid #ffffff;line-height: 12px;opacity: 0.9;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/yitianjian_shadow/"><img src="https://img.doub.pw/abc/yitianjian_shadow_01.png" class="top_guangg" /></a></div>		<article class="article-content">
-			<div id="content-index" class="content-index"><div class="content-index-title"><a id="content-index-togglelink" href="javascript:content_index_toggleToc()">文章目录 ⚐</a></div>
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/yitianjian_shadow/"><img src="./shell-jc9_files/yitianjian_shadow_01.png" class="top_guangg"></a></div>		<article class="article-content">
+			<div id="content-index" class="content-index"><div class="content-index-title"><a id="content-index-togglelink" href="javascript:content_index_toggleToc()" data-original-title="" title="">文章目录 ⚐</a></div>
 <script type="text/javascript" language="javascript">
 window.content_index_showTocToggle=false;function content_index_toggleToc(){var tts="文章目录 ⚐";var tth="文章目录 ⚑";if(window.content_index_showTocToggle){window.content_index_showTocToggle=false;document.getElementById("content-index-contents").style.display="none";document.getElementById("content-index-togglelink").innerHTML=tts}else{window.content_index_showTocToggle=true;document.getElementById("content-index-contents").style.display="block";document.getElementById("content-index-togglelink").innerHTML=tth}}
 </script>
-<ul id="content-index-contents" style="display: none;"><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#为什么要用 MTProxy ？为何不直接用代理软件？" title="为什么要用 MTProxy ？为何不直接用代理软件？"><span>为什么要用 MTProxy ？为何不直接用代理软件？</span></a></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#该版本相比官方版有什么区别？" title="该版本相比官方版有什么区别？"><span>该版本相比官方版有什么区别？</span></a></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#系统要求" title="系统要求"><span>系统要求</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#脚本版本" title="脚本版本"><span>脚本版本</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#安装步骤" title="安装步骤"><span>安装步骤</span></a></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#使用说明" title="使用说明"><span>使用说明</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#其他操作" title="其他操作"><span>其他操作</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#Telegram 使用方法说明：" title="Telegram 使用方法说明："><span>Telegram 使用方法说明：</span></a></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#其他说明" title="其他说明"><span>其他说明</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#Telegram一直无法连接代理的可能原因之一" title="Telegram一直无法连接代理的可能原因之一"><span>Telegram一直无法连接代理的可能原因之一</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#启动失败，日志提示 'S' option requires exactly 32 hex digits 错误" title="启动失败，日志提示 'S' option requires exactly 32 hex digits 错误"><span>启动失败，日志提示 'S' option requires exactly 32 hex digits 错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#提示wget: unknown host “raw.githubusercontent.com” 之类的错误" title="提示wget: unknown host “raw.githubusercontent.com” 之类的错误"><span>提示wget: unknown host “raw.githubusercontent.com” 之类的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#提示 wget: command not found 的错误" title="提示 wget: command not found 的错误"><span>提示 wget: command not found 的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#升级脚本" title="升级脚本"><span>升级脚本</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#更新日志" title="更新日志"><span>更新日志</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#2018年11月10日，版本 v1.0.1" title="2018年11月10日，版本 v1.0.1"><span>2018年11月10日，版本 v1.0.1</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#2018年10月29日，版本 v1.0.0" title="2018年10月29日，版本 v1.0.0"><span>2018年10月29日，版本 v1.0.0</span></a></li></ul></li></ul></div>
-<div class="old-message">本文最后更新于 <a><strong>2018年11月10日 16:01</strong></a> 可能会因为没有更新而失效。如已失效或需要修正，请留言！</div><p>前段时间，我写了个 MTProxy 的一键脚本，那个脚本用的是 MTProto Proxy 官方项目的，而前几天我又发现一个用 Go 语言实现的 MTProto Proxy，并且功能更完善，所以我又写了个 Go 语言版一键脚本。</p>
+<ul id="content-index-contents" style="display: none;"><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%20MTProxy%20%EF%BC%9F%E4%B8%BA%E4%BD%95%E4%B8%8D%E7%9B%B4%E6%8E%A5%E7%94%A8%E4%BB%A3%E7%90%86%E8%BD%AF%E4%BB%B6%EF%BC%9F" title="" data-original-title="为什么要用 MTProxy ？为何不直接用代理软件？"><span>为什么要用 MTProxy ？为何不直接用代理软件？</span></a></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#%E8%AF%A5%E7%89%88%E6%9C%AC%E7%9B%B8%E6%AF%94%E5%AE%98%E6%96%B9%E7%89%88%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F" title="" data-original-title="该版本相比官方版有什么区别？"><span>该版本相比官方版有什么区别？</span></a></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#%E7%B3%BB%E7%BB%9F%E8%A6%81%E6%B1%82" title="" data-original-title="系统要求"><span>系统要求</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#%E8%84%9A%E6%9C%AC%E7%89%88%E6%9C%AC" title="" data-original-title="脚本版本"><span>脚本版本</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4" title="" data-original-title="安装步骤"><span>安装步骤</span></a></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" title="" data-original-title="使用说明"><span>使用说明</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#%E5%85%B6%E4%BB%96%E6%93%8D%E4%BD%9C" title="" data-original-title="其他操作"><span>其他操作</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#Telegram%20%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%E8%AF%B4%E6%98%8E%EF%BC%9A" title="" data-original-title="Telegram 使用方法说明："><span>Telegram 使用方法说明：</span></a></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E" title="" data-original-title="其他说明"><span>其他说明</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#Telegram%E4%B8%80%E7%9B%B4%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E4%BB%A3%E7%90%86%E7%9A%84%E5%8F%AF%E8%83%BD%E5%8E%9F%E5%9B%A0%E4%B9%8B%E4%B8%80" title="" data-original-title="Telegram一直无法连接代理的可能原因之一"><span>Telegram一直无法连接代理的可能原因之一</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%EF%BC%8C%E6%97%A5%E5%BF%97%E6%8F%90%E7%A4%BA%20&#39;S&#39;%20option%20requires%20exactly%2032%20hex%20digits%20%E9%94%99%E8%AF%AF" title="" data-original-title="启动失败，日志提示 &#39;S&#39; option requires exactly 32 hex digits 错误"><span>启动失败，日志提示 'S' option requires exactly 32 hex digits 错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#%E6%8F%90%E7%A4%BAwget:%C2%A0unknown%20host%20%E2%80%9Craw.githubusercontent.com%E2%80%9D%20%E4%B9%8B%E7%B1%BB%E7%9A%84%E9%94%99%E8%AF%AF" title="" data-original-title="提示wget: unknown host “raw.githubusercontent.com” 之类的错误"><span>提示wget:&nbsp;unknown host “raw.githubusercontent.com” 之类的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#%E6%8F%90%E7%A4%BA%20wget:%20command%20not%20found%20%E7%9A%84%E9%94%99%E8%AF%AF" title="" data-original-title="提示 wget: command not found 的错误"><span>提示 wget: command not found 的错误</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#%E5%8D%87%E7%BA%A7%E8%84%9A%E6%9C%AC" title="" data-original-title="升级脚本"><span>升级脚本</span></a></li></ul></li><li class="content-index-level-1"><a href="https://doub.io/shell-jc9/#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97" title="" data-original-title="更新日志"><span>更新日志</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#2018%E5%B9%B411%E6%9C%8810%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.1" title="" data-original-title="2018年11月10日，版本 v1.0.1"><span>2018年11月10日，版本 v1.0.1</span></a></li><li class="content-index-level-2"><a href="https://doub.io/shell-jc9/#2018%E5%B9%B410%E6%9C%8829%E6%97%A5%EF%BC%8C%E7%89%88%E6%9C%AC%20v1.0.0" title="" data-original-title="2018年10月29日，版本 v1.0.0"><span>2018年10月29日，版本 v1.0.0</span></a></li></ul></li></ul></div>
+<div class="old-message">本文最后更新于 <a data-original-title="" title=""><strong>2018年11月10日 16:01</strong></a> 可能会因为没有更新而失效。如已失效或需要修正，请留言！</div><p>前段时间，我写了个 MTProxy 的一键脚本，那个脚本用的是 MTProto Proxy 官方项目的，而前几天我又发现一个用 Go 语言实现的&nbsp;MTProto Proxy，并且功能更完善，所以我又写了个 Go 语言版一键脚本。</p>
 <blockquote><p><em>注意：</em>MTProxy <strong>仅支持 Telegram 客户端使用</strong>，无法用于代理其他网站和软件！</p></blockquote>
-<p><strong>逗比根据地 交流群组：<a href="https://t.me/doubi" target="_blank" rel="noopener">https://t.me/doubi</a></strong></p>
-<p><strong>逗比根据地 公告频道：<a href="https://t.me/doubi_a" target="_blank" rel="noopener">https://t.me/doubi_a</a></strong></p>
-<p><strong>Telegram 使用教程：<a href="https://doub.io/telegram-jc1/" target="_blank" rel="noopener">https://doub.io/telegram-jc1/</a></strong></p>
-<hr />
-<p><strong>Github 项目地址：<a href="https://github.com/9seconds/mtg" target="_blank" rel="noopener">https://github.com/9seconds/mtg</a></strong></p>
-<p><strong>该项目为 Go 语言编写，官方项目为 C 语言编写的：<a title="『原创』Telegram 专用的轻量化代理工具 —— MTProxy 一键脚本" href="https://doub.io/shell-jc7/" target="_blank" rel="noopener">『原创』MTProxy 一键脚本</a></strong></p>
-<hr />
+<p><strong>逗比根据地 交流群组：<a href="https://t.me/doubi" target="_blank" rel="noopener" data-original-title="" title="">https://t.me/doubi</a></strong></p>
+<p><strong>逗比根据地 公告频道：<a href="https://t.me/doubi_a" target="_blank" rel="noopener" data-original-title="" title="">https://t.me/doubi_a</a></strong></p>
+<p><strong>Telegram 使用教程：<a href="https://doub.io/telegram-jc1/" target="_blank" rel="noopener" data-original-title="" title="">https://doub.io/telegram-jc1/</a></strong></p>
+<hr>
+<p><strong>Github 项目地址：<a href="https://github.com/9seconds/mtg" target="_blank" rel="noopener" data-original-title="" title="">https://github.com/9seconds/mtg</a></strong></p>
+<p><strong>该项目为 Go 语言编写，官方项目为 C 语言编写的：<a title="" href="https://doub.io/shell-jc7/" target="_blank" rel="noopener" data-original-title="『原创』Telegram 专用的轻量化代理工具 —— MTProxy 一键脚本">『原创』MTProxy 一键脚本</a></strong></p>
+<hr>
 <h2 id="为什么要用 MTProxy ？为何不直接用代理软件？">为什么要用 MTProxy ？为何不直接用代理软件？</h2>
 <p>可能有人会疑问：MTProxy 是一个只能 Telegram 客户端使用的代理，那么为什么不直接用其他代理软件呢？</p>
 <p>我就特地来回答一下大家的疑问。</p>
 <p><strong>1. 移动设备便捷性：</strong>对于电脑用户来说， MTProxy 相对鸡肋，因为很多人都是代理软件开机启动并且全天不关。但是对于手机用户来说，每次要查看 Telegram 客户端，都需要先开启代理软件，而如果你在手机上不是经常要挂代理，但是你会经常去 Telegram 里吹比打屁，那么你就很适合使用 MTProxy 了，<strong>它可以让你使用 Telegram 客户端像使用国内的 QQ、微信一样方便，打开即用。</strong></p>
 <p><strong>2. 适合分享给朋友：</strong>当你觉得 TG很好用，想要劝身边的朋友抛弃 QQ、微信 转投 Telegram 时，你却发现你还需要给他配置一套代理软件、代理账号，指导他如何使用代理软件，巴拉巴拉的。但是如果你有 MTProxy 代理账号，那么<strong>只需要填写代理配置后，即可直接使用！</strong></p>
-<hr />
+<hr>
 <h2 id="该版本相比官方版有什么区别？">该版本相比官方版有什么区别？</h2>
 <ol>
 <li>支持 IPv6 。</li>
@@ -511,104 +511,27 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <li>NAT 服务器无需填写内网IP，只需脚本自动识别公网IP（支持自定义）。</li>
 <li>支持强制安全模式（只有密匙头部包含 dd 的客户端才能链接，降低被墙几率）。</li>
 </ol>
-<hr />
+<hr>
 <h2 id="系统要求">系统要求</h2>
 <p>CentOS 6+ / Debian 7+ / Ubuntu 14.04 +</p>
-<hr />
+<hr>
 <h3 id="脚本版本">脚本版本</h3>
 <p><strong>Ver:</strong> 1.0.1</p>
-<hr />
+<hr>
 <h2 id="安装步骤">安装步骤</h2>
 <p>执行下面的代码下载并运行脚本。</p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/doubi/master/mtproxy_go.sh &amp;&amp; chmod +x mtproxy_go.sh &amp;&amp; bash mtproxy_go.sh
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">wget </span><span class="pun">-</span><span class="pln">N </span><span class="pun">--</span><span class="kwd">no</span><span class="pun">-</span><span class="pln">check</span><span class="pun">-</span><span class="pln">certificate https</span><span class="pun">:</span><span class="com">//raw.githubusercontent.com/user1121114685/doubi/master/mtproxy_go.sh &amp;&amp; chmod +x mtproxy_go.sh &amp;&amp; bash mtproxy_go.sh</span></li></ol></pre>
 <p>运行脚本后会出现脚本操作菜单，选择并输入<code> 1 </code>就会开始安装。</p>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
-<pre class="prettyprint linenums">请输入 MTProxy 端口 [1-65535]
-(默认: 443):
-
-========================
-	端口 :  443 
-========================
-
-请输入 MTProxy 密匙（手动输入必须为32位，[0-9][a-z][A-Z]，建议随机生成）
-(避免出错，强烈推荐随机生成，直接回车):
-
-========================
-	密码 :  xxxxx 
-========================
-
-请输入 MTProxy 的 TAG标签（TAG标签必须是32位，TAG标签只有在通过官方机器人 @MTProxybot 分享代理账号后才会获得，不清楚请留空回车）
-(默认：回车跳过):
-
-如果本机是NAT服务器（谷歌云、微软云、阿里云等，网卡绑定的IP为 10.xx.xx.xx 开头的），则需要指定公网 IPv4。
-(默认：自动检测 IPv4 地址):
-
-========================
-	NAT-IPv4 :  X.X.X.X 
-========================
-
-如果本机是NAT服务器（谷歌云、微软云、阿里云等），则需要指定公网 IPv6。
-(默认：自动检测 IPv6 地址):
-
-========================
-	NAT-IPv6 :  XXXXX 
-========================
-
-是否启用强制安全模式？[Y/n]
-只有启用[安全混淆模式]的客户端才能链接(即密匙头部有 dd 字符)，降低服务器被墙几率，建议开启。
-(默认：Y 启用):
-
-========================
-	强制安全模式 :  YES 
-========================
-
-[信息] MTProxy 停止成功 !
-[信息] MTProxy 启动中...
-[信息] MTProxy 启动成功 !
-
-Mtproto Proxy 用户配置：
-————————————————
- 地址	: X.X.X.X
- 地址	: XXXXX
- 端口	: 443
- 密匙	: xxxxx
- 链接	: tg://proxy?server=X.X.X.X&amp;port=443&amp;secret=xxxxx
- 链接	: https://t.me/proxy?server=X.X.X.X&amp;port=443&amp;secret=xxxxx
- 链接	: tg://proxy?server=XXXXX&amp;port=443&amp;secret=xxxxx
- 链接	: https://t.me/proxy?server=XXXXX&amp;port=443&amp;secret=xxxxx
-</pre>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/shell-jc9/#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">请输入</span><span class="pln"> </span><span class="typ">MTProxy</span><span class="pln"> </span><span class="pun">端口</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">-</span><span class="lit">65535</span><span class="pun">]</span></li><li class="L1"><span class="pun">(默认:</span><span class="pln"> </span><span class="lit">443</span><span class="pun">):</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="pun">========================</span></li><li class="L4"><span class="pln">	</span><span class="pun">端口</span><span class="pln"> </span><span class="pun">:</span><span class="pln">  </span><span class="lit">443</span><span class="pln"> </span></li><li class="L5"><span class="pun">========================</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="pun">请输入</span><span class="pln"> </span><span class="typ">MTProxy</span><span class="pln"> </span><span class="pun">密匙（手动输入必须为</span><span class="lit">32</span><span class="pun">位，[</span><span class="lit">0</span><span class="pun">-</span><span class="lit">9</span><span class="pun">][</span><span class="pln">a</span><span class="pun">-</span><span class="pln">z</span><span class="pun">][</span><span class="pln">A</span><span class="pun">-</span><span class="pln">Z</span><span class="pun">]，建议随机生成）</span></li><li class="L8"><span class="pun">(避免出错，强烈推荐随机生成，直接回车):</span></li><li class="L9"><span class="pln">&nbsp;</span></li><li class="L0"><span class="pun">========================</span></li><li class="L1"><span class="pln">	</span><span class="pun">密码</span><span class="pln"> </span><span class="pun">:</span><span class="pln">  xxxxx </span></li><li class="L2"><span class="pun">========================</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="pun">请输入</span><span class="pln"> </span><span class="typ">MTProxy</span><span class="pln"> </span><span class="pun">的</span><span class="pln"> TAG</span><span class="pun">标签（</span><span class="pln">TAG</span><span class="pun">标签必须是</span><span class="lit">32</span><span class="pun">位，</span><span class="pln">TAG</span><span class="pun">标签只有在通过官方机器人</span><span class="pln"> </span><span class="lit">@MTProxybot</span><span class="pln"> </span><span class="pun">分享代理账号后才会获得，不清楚请留空回车）</span></li><li class="L5"><span class="pun">(默认：回车跳过):</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="pun">如果本机是</span><span class="pln">NAT</span><span class="pun">服务器（谷歌云、微软云、阿里云等，网卡绑定的</span><span class="pln">IP</span><span class="pun">为</span><span class="pln"> </span><span class="lit">10.xx</span><span class="pun">.</span><span class="pln">xx</span><span class="pun">.</span><span class="pln">xx </span><span class="pun">开头的），则需要指定公网</span><span class="pln"> </span><span class="typ">IPv4</span><span class="pun">。</span></li><li class="L8"><span class="pun">(默认：自动检测</span><span class="pln"> </span><span class="typ">IPv4</span><span class="pln"> </span><span class="pun">地址):</span></li><li class="L9"><span class="pln">&nbsp;</span></li><li class="L0"><span class="pun">========================</span></li><li class="L1"><span class="pln">	NAT</span><span class="pun">-</span><span class="typ">IPv4</span><span class="pln"> </span><span class="pun">:</span><span class="pln">  X</span><span class="pun">.</span><span class="pln">X</span><span class="pun">.</span><span class="pln">X</span><span class="pun">.</span><span class="pln">X </span></li><li class="L2"><span class="pun">========================</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="pun">如果本机是</span><span class="pln">NAT</span><span class="pun">服务器（谷歌云、微软云、阿里云等），则需要指定公网</span><span class="pln"> </span><span class="typ">IPv6</span><span class="pun">。</span></li><li class="L5"><span class="pun">(默认：自动检测</span><span class="pln"> </span><span class="typ">IPv6</span><span class="pln"> </span><span class="pun">地址):</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="pun">========================</span></li><li class="L8"><span class="pln">	NAT</span><span class="pun">-</span><span class="typ">IPv6</span><span class="pln"> </span><span class="pun">:</span><span class="pln">  XXXXX </span></li><li class="L9"><span class="pun">========================</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="pun">是否启用强制安全模式？[</span><span class="pln">Y</span><span class="pun">/</span><span class="pln">n</span><span class="pun">]</span></li><li class="L2"><span class="pun">只有启用[安全混淆模式]的客户端才能链接(即密匙头部有</span><span class="pln"> dd </span><span class="pun">字符)，降低服务器被墙几率，建议开启。</span></li><li class="L3"><span class="pun">(默认：</span><span class="pln">Y </span><span class="pun">启用):</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pun">========================</span></li><li class="L6"><span class="pln">	</span><span class="pun">强制安全模式</span><span class="pln"> </span><span class="pun">:</span><span class="pln">  YES </span></li><li class="L7"><span class="pun">========================</span></li><li class="L8"><span class="pln">&nbsp;</span></li><li class="L9"><span class="pun">[信息]</span><span class="pln"> </span><span class="typ">MTProxy</span><span class="pln"> </span><span class="pun">停止成功</span><span class="pln"> </span><span class="pun">!</span></li><li class="L0"><span class="pun">[信息]</span><span class="pln"> </span><span class="typ">MTProxy</span><span class="pln"> </span><span class="pun">启动中...</span></li><li class="L1"><span class="pun">[信息]</span><span class="pln"> </span><span class="typ">MTProxy</span><span class="pln"> </span><span class="pun">启动成功</span><span class="pln"> </span><span class="pun">!</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="typ">Mtproto</span><span class="pln"> </span><span class="typ">Proxy</span><span class="pln"> </span><span class="pun">用户配置：</span></li><li class="L4"><span class="pun">————————————————</span></li><li class="L5"><span class="pln"> </span><span class="pun">地址</span><span class="pln">	</span><span class="pun">:</span><span class="pln"> X</span><span class="pun">.</span><span class="pln">X</span><span class="pun">.</span><span class="pln">X</span><span class="pun">.</span><span class="pln">X</span></li><li class="L6"><span class="pln"> </span><span class="pun">地址</span><span class="pln">	</span><span class="pun">:</span><span class="pln"> XXXXX</span></li><li class="L7"><span class="pln"> </span><span class="pun">端口</span><span class="pln">	</span><span class="pun">:</span><span class="pln"> </span><span class="lit">443</span></li><li class="L8"><span class="pln"> </span><span class="pun">密匙</span><span class="pln">	</span><span class="pun">:</span><span class="pln"> xxxxx</span></li><li class="L9"><span class="pln"> </span><span class="pun">链接</span><span class="pln">	</span><span class="pun">:</span><span class="pln"> tg</span><span class="pun">:</span><span class="com">//proxy?server=X.X.X.X&amp;port=443&amp;secret=xxxxx</span></li><li class="L0"><span class="pln"> </span><span class="pun">链接</span><span class="pln">	</span><span class="pun">:</span><span class="pln"> https</span><span class="pun">:</span><span class="com">//t.me/proxy?server=X.X.X.X&amp;port=443&amp;secret=xxxxx</span></li><li class="L1"><span class="pln"> </span><span class="pun">链接</span><span class="pln">	</span><span class="pun">:</span><span class="pln"> tg</span><span class="pun">:</span><span class="com">//proxy?server=XXXXX&amp;port=443&amp;secret=xxxxx</span></li><li class="L2"><span class="pln"> </span><span class="pun">链接</span><span class="pln">	</span><span class="pun">:</span><span class="pln"> https</span><span class="pun">:</span><span class="com">//t.me/proxy?server=XXXXX&amp;port=443&amp;secret=xxxxx</span></li></ol></pre>
 <p></p></div>
-<hr />
+<hr>
 <h2 id="使用说明">使用说明</h2>
 <p>进入下载脚本的目录并运行脚本：</p>
-<pre class="prettyprint linenums">./mtproxy_go.sh
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">./</span><span class="pln">mtproxy_go</span><span class="pun">.</span><span class="pln">sh</span></li></ol></pre>
 <p>然后选择你要执行的选项即可。</p>
-<pre class="prettyprint linenums">  MTProxy-Go 一键管理脚本 [vX.X.X]
-  ---- Toyo | doub.io/shell-jc9 ----
-  
-  0. 升级脚本
-————————————
-  1. 安装 MTProxy
-  2. 更新 MTProxy
-  3. 卸载 MTProxy
-————————————
-  4. 启动 MTProxy
-  5. 停止 MTProxy
-  6. 重启 MTProxy
-————————————
-  7. 设置 账号配置
-  8. 查看 账号信息
-  9. 查看 日志信息
- 10. 查看 链接信息
-————————————
-
- 当前状态: 已安装 并 已启动
-
- 请输入数字 [0-10]:
-</pre>
-<hr />
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">  </span><span class="typ">MTProxy</span><span class="pun">-</span><span class="typ">Go</span><span class="pln"> </span><span class="pun">一键管理脚本</span><span class="pln"> </span><span class="pun">[</span><span class="pln">vX</span><span class="pun">.</span><span class="pln">X</span><span class="pun">.</span><span class="pln">X</span><span class="pun">]</span></li><li class="L1"><span class="pln">  </span><span class="pun">----</span><span class="pln"> </span><span class="typ">Toyo</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> doub</span><span class="pun">.</span><span class="pln">io</span><span class="pun">/</span><span class="pln">shell</span><span class="pun">-</span><span class="pln">jc9 </span><span class="pun">----</span></li><li class="L2"><span class="pln">  </span></li><li class="L3"><span class="pln">  </span><span class="lit">0.</span><span class="pln"> </span><span class="pun">升级脚本</span></li><li class="L4"><span class="pun">————————————</span></li><li class="L5"><span class="pln">  </span><span class="lit">1.</span><span class="pln"> </span><span class="pun">安装</span><span class="pln"> </span><span class="typ">MTProxy</span></li><li class="L6"><span class="pln">  </span><span class="lit">2.</span><span class="pln"> </span><span class="pun">更新</span><span class="pln"> </span><span class="typ">MTProxy</span></li><li class="L7"><span class="pln">  </span><span class="lit">3.</span><span class="pln"> </span><span class="pun">卸载</span><span class="pln"> </span><span class="typ">MTProxy</span></li><li class="L8"><span class="pun">————————————</span></li><li class="L9"><span class="pln">  </span><span class="lit">4.</span><span class="pln"> </span><span class="pun">启动</span><span class="pln"> </span><span class="typ">MTProxy</span></li><li class="L0"><span class="pln">  </span><span class="lit">5.</span><span class="pln"> </span><span class="pun">停止</span><span class="pln"> </span><span class="typ">MTProxy</span></li><li class="L1"><span class="pln">  </span><span class="lit">6.</span><span class="pln"> </span><span class="pun">重启</span><span class="pln"> </span><span class="typ">MTProxy</span></li><li class="L2"><span class="pun">————————————</span></li><li class="L3"><span class="pln">  </span><span class="lit">7.</span><span class="pln"> </span><span class="pun">设置</span><span class="pln"> </span><span class="pun">账号配置</span></li><li class="L4"><span class="pln">  </span><span class="lit">8.</span><span class="pln"> </span><span class="pun">查看</span><span class="pln"> </span><span class="pun">账号信息</span></li><li class="L5"><span class="pln">  </span><span class="lit">9.</span><span class="pln"> </span><span class="pun">查看</span><span class="pln"> </span><span class="pun">日志信息</span></li><li class="L6"><span class="pln"> </span><span class="lit">10.</span><span class="pln"> </span><span class="pun">查看</span><span class="pln"> </span><span class="pun">链接信息</span></li><li class="L7"><span class="pun">————————————</span></li><li class="L8"><span class="pln">&nbsp;</span></li><li class="L9"><span class="pln"> </span><span class="pun">当前状态:</span><span class="pln"> </span><span class="pun">已安装</span><span class="pln"> </span><span class="pun">并</span><span class="pln"> </span><span class="pun">已启动</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="pln"> </span><span class="pun">请输入数字</span><span class="pln"> </span><span class="pun">[</span><span class="lit">0</span><span class="pun">-</span><span class="lit">10</span><span class="pun">]:</span></li></ol></pre>
+<hr>
 <h3 id="其他操作">其他操作</h3>
 <p><strong>启动：</strong>/etc/init.d/mtproxy-go start</p>
 <p><strong>停止：</strong>/etc/init.d/mtproxy-go stop</p>
@@ -617,45 +540,36 @@ Mtproto Proxy 用户配置：
 <p><strong>安装目录：</strong>/usr/local/mtproxy-go</p>
 <p><strong>配置文件：</strong>/usr/local/mtproxy-go/mtproxy.conf</p>
 <p><strong>日志文件：</strong>/usr/local/mtproxy-go/mtproxy.log</p>
-<hr />
+<hr>
 <h2 id="Telegram 使用方法说明：">Telegram 使用方法说明：</h2>
-<p>另一个教程写了，这里就不再重复了：<a href="https://doub.io/shell-jc7/#Telegram 使用方法说明：" target="_blank" rel="noopener">https://doub.io/shell-jc7/#Telegram 使用方法说明：</a></p>
-<hr />
+<p>另一个教程写了，这里就不再重复了：<a href="https://doub.io/shell-jc7/#Telegram%20%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%E8%AF%B4%E6%98%8E%EF%BC%9A" target="_blank" rel="noopener" data-original-title="" title="">https://doub.io/shell-jc7/#Telegram 使用方法说明：</a></p>
+<hr>
 <h2 id="其他说明">其他说明</h2>
 <blockquote><p><em>注意：</em>MTProxy <strong>仅支持 Telegram 客户端使用</strong>，无法用于其他软件！</p></blockquote>
-<hr />
+<hr>
 <h3 id="Telegram一直无法连接代理的可能原因之一">Telegram一直无法连接代理的可能原因之一</h3>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/shell-jc9/#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
 <p>MTProxy 对时间差要求严格，如果服务器与本地的系统时间相差过大(不清楚具体多少，但是差几分钟就不行)就会无法建立连接。</p>
 <p>脚本一开始安装时，就已经将系统时区改为北京时区，不过时间可能还不够准确。</p>
 <p>你可以安装 ntp 来定时校准时间，或者手动校准时间：</p>
-<pre class="prettyprint linenums">date -s "08:05:00"
-# 修改时间为 08:05:00
-# 当然也要记得校准本地设备系统时间偶~
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">date </span><span class="pun">-</span><span class="pln">s </span><span class="str">"08:05:00"</span></li><li class="L1"><span class="com"># 修改时间为 08:05:00</span></li><li class="L2"><span class="com"># 当然也要记得校准本地设备系统时间偶~</span></li></ol></pre>
 <p></p></div>
-<hr />
-<h3 id="启动失败，日志提示 'S' option requires exactly 32 hex digits 错误">启动失败，日志提示 'S' option requires exactly 32 hex digits 错误</h3>
+<hr>
+<h3 id="启动失败，日志提示 &#39;S&#39; option requires exactly 32 hex digits 错误">启动失败，日志提示 'S' option requires exactly 32 hex digits 错误</h3>
 <p>该问题只出现于自定义密码时，因为 MTProxy 为了安全性而要求<strong>密码必须是 32位</strong>（多了少了都不行），如果数量不对就会提示这个，<strong>建议用脚本随机生成！</strong></p>
-<hr />
-<h3 id="提示wget: unknown host “raw.githubusercontent.com” 之类的错误">提示wget: unknown host “raw.githubusercontent.com” 之类的错误</h3>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<hr>
+<h3 id="提示wget: unknown host “raw.githubusercontent.com” 之类的错误">提示wget:&nbsp;unknown host “raw.githubusercontent.com” 之类的错误</h3>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/shell-jc9/#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
 <p>这是无法解析我的域名，多半是DNS的问题，请更换DNS为谷歌DNS(以下两行一起复制 一起执行)。</p>
-<pre class="prettyprint linenums">echo -e "nameserver 8.8.8.8\nnameserver 8.8.4.4" &gt; /etc/resolv.conf
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">echo </span><span class="pun">-</span><span class="pln">e </span><span class="str">"nameserver 8.8.8.8\nnameserver 8.8.4.4"</span><span class="pln"> </span><span class="pun">&gt;</span><span class="pln"> </span><span class="str">/etc/</span><span class="pln">resolv</span><span class="pun">.</span><span class="pln">conf</span></li></ol></pre>
 <p></p></div>
-<hr />
+<hr>
 <h3 id="提示 wget: command not found 的错误">提示 wget: command not found 的错误</h3>
-<p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
+<p class="toggle" style="margin: 0;"><a href="https://doub.io/shell-jc9/#" data-original-title="" title="">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
 <p>这是你的系统精简的太干净了，wget都没有安装，所以需要安装wget。</p>
-<pre class="prettyprint linenums"># CentOS系统:
-yum install -y wget
-
-# Debian/Ubuntu系统:
-apt-get install -y wget
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># CentOS系统:</span></li><li class="L1"><span class="pln">yum install </span><span class="pun">-</span><span class="pln">y wget</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="com"># Debian/Ubuntu系统:</span></li><li class="L4"><span class="pln">apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> install </span><span class="pun">-</span><span class="pln">y wget</span></li></ol></pre>
 <p></p></div>
-<hr />
+<hr>
 <h3 id="升级脚本">升级脚本</h3>
 <p>升级脚本只需要重新下载脚本文件就可以了，会自动覆盖原文件。</p>
 <h2 id="更新日志">更新日志</h2>
@@ -664,17 +578,17 @@ apt-get install -y wget
 <p>—— 该功能适合于IP经常变更的服务器，不需要每次都手动修改了。</p>
 <h3 id="2018年10月29日，版本 v1.0.0">2018年10月29日，版本 v1.0.0</h3>
 <p><strong>1. 推出</strong> 正式版。</p>
-<hr />
-<p><strong>逗比根据地 交流群组：<a href="https://t.me/doubi" target="_blank" rel="noopener">https://t.me/doubi</a></strong></p>
-<p><strong>逗比根据地 公告频道：<a href="https://t.me/doubi_a" target="_blank" rel="noopener">https://t.me/doubi_a</a></strong></p>
-<p><pre style="border-left: solid 4px #1abc9c;"><strong>转载请超链接注明：</strong><a href="https://doub.io">逗比根据地</a> &raquo; <a href="https://doub.io/shell-jc9/">『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本</a></pre><pre><strong>责任声明：</strong>本站一切资源仅用作交流学习，请勿用作商业或违法行为！如造成任何后果，本站概不负责！</pre></p>
+<hr>
+<p><strong>逗比根据地 交流群组：<a href="https://t.me/doubi" target="_blank" rel="noopener" data-original-title="" title="">https://t.me/doubi</a></strong></p>
+<p><strong>逗比根据地 公告频道：<a href="https://t.me/doubi_a" target="_blank" rel="noopener" data-original-title="" title="">https://t.me/doubi_a</a></strong></p>
+<p></p><pre style="border-left: solid 4px #1abc9c;"><strong>转载请超链接注明：</strong><a href="https://doub.io/" data-original-title="" title="">逗比根据地</a> » <a href="https://doub.io/shell-jc9/" data-original-title="" title="">『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本</a></pre><pre><strong>责任声明：</strong>本站一切资源仅用作交流学习，请勿用作商业或违法行为！如造成任何后果，本站概不负责！</pre><p></p>
 
       
 <div class="article-social">
-			<a href="javascript:;" data-action="ding" data-id="2931" id="Addlike" class="action"><i class="fa fa-thumbs-o-up"></i>赞 (<span class="count">91</span>)</a></div>
+			<a href="javascript:;" data-action="ding" data-id="2931" id="Addlike" class="action" data-original-title="" title=""><i class="fa fa-thumbs-o-up"></i>赞 (<span class="count">91</span>)</a></div>
 	</article>	
 				<footer class="article-footer">
-			<div class="article-tags"><i class="fa fa-tags"></i><a href="https://doub.io/tag/go/" rel="tag">Go</a><a href="https://doub.io/tag/mtproxy/" rel="tag">MTProxy</a><a href="https://doub.io/tag/shell/" rel="tag">shell</a><a href="https://doub.io/tag/telegram/" rel="tag">Telegram</a><a href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" rel="tag">脚本</a></div></footer>
+			<div class="article-tags"><i class="fa fa-tags"></i><a href="https://doub.io/tag/go/" rel="tag" data-original-title="" title="">Go</a><a href="https://doub.io/tag/mtproxy/" rel="tag" data-original-title="" title="">MTProxy</a><a href="https://doub.io/tag/shell/" rel="tag" data-original-title="" title="">shell</a><a href="https://doub.io/tag/telegram/" rel="tag" data-original-title="" title="">Telegram</a><a href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" rel="tag" data-original-title="" title="">脚本</a></div></footer>
 	<nav class="article-nav">
 			<span class="article-nav-prev"><i class="fa fa-angle-double-left"></i> <a href="https://doub.io/shell-jc8/" rel="prev">『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本</a></span>
 			<span class="article-nav-next"><a href="https://doub.io/brook-jc6/" rel="next">网页管理 <strong>Brook、SS、Socks5</strong> 代理账号 —— Brook-Web 使用教程</a>  <i class="fa fa-angle-double-right"></i></span>
@@ -683,24 +597,24 @@ apt-get install -y wget
 		<div class="related_top">
 			<div class="related_posts"><ul class="related_img">
 
-		<li class="related_box"  >
-		<a href="https://doub.io/ss-jc67/" title="『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/shadowsocks3.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本" />	<br><span class="r_title">『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本</span></a>
+		<li class="related_box">
+		<a href="https://doub.io/ss-jc67/" title="『原创』Shadowsocks &lt;strong&gt;Go版&lt;/strong&gt; 一键安装管理脚本" target="_blank">
+<img src="./shell-jc9_files/timthumb.php" alt="『原创』Shadowsocks &lt;strong&gt;Go版&lt;/strong&gt; 一键安装管理脚本">	<br><span class="r_title">『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/shell-jc8/" title="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/telegram.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本" />	<br><span class="r_title">『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本</span></a>
+<img src="./shell-jc9_files/timthumb(1).php" alt="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本">	<br><span class="r_title">『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/daze-jc3/" title="『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/daze-01.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本" />	<br><span class="r_title">『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本</span></a>
+<img src="./shell-jc9_files/timthumb(2).php" alt="『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本">	<br><span class="r_title">『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/shell-jc7/" title="『原创』Telegram 专用的轻量化代理工具 —— MTProxy 一键脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/telegram.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Telegram 专用的轻量化代理工具 —— MTProxy 一键脚本" />	<br><span class="r_title">『原创』Telegram 专用的轻量化代理工具 —— MTProxy 一键脚本</span></a>
+<img src="./shell-jc9_files/timthumb(1).php" alt="『原创』Telegram 专用的轻量化代理工具 —— MTProxy 一键脚本">	<br><span class="r_title">『原创』Telegram 专用的轻量化代理工具 —— MTProxy 一键脚本</span></a>
 		</li>
 	</ul>
 
@@ -719,18 +633,18 @@ apt-get install -y wget
 		
 		<div class="comt">
 			<div class="comt-box">
-				<textarea placeholder="本站所有评论均会审核，因缓存原因，审核中的评论刷新页面后就会不显示，请知晓勿重发。" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById('submit').click();return false};"></textarea>
+				<textarea placeholder="本站所有评论均会审核，因缓存原因，审核中的评论刷新页面后就会不显示，请知晓勿重发。" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById(&#39;submit&#39;).click();return false};"></textarea>
 				<div class="comt-ctrl">
 					<button class="btn btn-primary pull-right" type="submit" name="submit" id="submit" tabindex="5"><i class="fa fa-check-square-o"></i> 提交评论</button>
-					<div class="comt-tips pull-right"><input type='hidden' name='comment_post_ID' value='2931' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</div>
+					<div class="comt-tips pull-right"><input type="hidden" name="comment_post_ID" value="2931" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+<div class="comt-tip comt-loading" style="display: none;">正在提交, 请稍候...</div><div class="comt-tip comt-error" style="display: none;">#</div></div>
 					<span data-type="comment-insert-smilie" class="muted comt-smilie"><i class="fa fa-smile-o"></i> 表情</span>
-					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked"/>有人回复时邮件通知我</label></span>
+					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked">有人回复时邮件通知我</label></span>
 				</div>
 			</div>
 
-												<div class="comt-comterinfo" id="comment-author-info" >
+												<div class="comt-comterinfo" id="comment-author-info">
 						<h4>Hi，您需要填写昵称和邮箱！</h4>
 						<ul>
 							<li class="form-inline"><label class="hide" for="author">昵称</label><input class="ipt" type="text" name="author" id="author" value="" tabindex="2" placeholder="昵称"><span class="help-inline">昵称 (必填)</span></li>
@@ -749,50 +663,27 @@ apt-get install -y wget
 		<i class="fa fa-comments-o"></i> <b> (40)</b>个小伙伴在吐槽
 	</div>
 	<ol class="commentlist">
-		<li class="comment even thread-even depth-1" id="comment-45839"><div class="c-avatar"><div class="c-main" id="div-comment-45839">希望增加自动更新ip功能，方便自动更换ip的机器使用<div class="c-meta"><span class="c-author">hhh</span>2018-11-10 00:49 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45839#respond' onclick='return addComment.moveForm( "div-comment-45839", "45839", "respond", "2931" )' aria-label='回复给hhh'>回复</a></div></div></div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-45839"><div class="c-avatar"><div class="c-main" id="div-comment-45839">希望增加自动更新ip功能，方便自动更换ip的机器使用<div class="c-meta"><span class="c-author">hhh</span>2018-11-10 00:49 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45839#respond" onclick="return addComment.moveForm( &quot;div-comment-45839&quot;, &quot;45839&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给hhh">回复</a></div></div></div></li><!-- #comment-## -->
 <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-45816"><div class="c-avatar"><div class="c-main" id="div-comment-45816">查看链接信息提示
 Cannot open netlink socket: Protocol not supported
-看了一下网上的解决方法都是nginx和php的问题，但是我服务器这两个都没有Apache也没有就装了rclone同步网盘用<div class="c-meta"><span class="c-author">lll</span>2018-11-09 17:13 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45816#respond' onclick='return addComment.moveForm( "div-comment-45816", "45816", "respond", "2931" )' aria-label='回复给lll'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45824"><div class="c-avatar"><div class="c-main" id="div-comment-45824"><pre class="prettyprint linenums" ># 手动执行一下，然后告诉我输出内容（如果有敏感IP信息请打码）。
-ss state connected sport = :端口 -tn
-</pre><div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-09 20:35 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45824#respond' onclick='return addComment.moveForm( "div-comment-45824", "45824", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+看了一下网上的解决方法都是nginx和php的问题，但是我服务器这两个都没有Apache也没有就装了rclone同步网盘用<div class="c-meta"><span class="c-author">lll</span>2018-11-09 17:13 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45816#respond" onclick="return addComment.moveForm( &quot;div-comment-45816&quot;, &quot;45816&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给lll">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45824"><div class="c-avatar"><div class="c-main" id="div-comment-45824"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># 手动执行一下，然后告诉我输出内容（如果有敏感IP信息请打码）。</span></li><li class="L1"><span class="pln">ss state connected sport </span><span class="pun">=</span><span class="pln"> </span><span class="pun">:端口</span><span class="pln"> </span><span class="pun">-</span><span class="pln">tn</span></li></ol></pre><div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-09 20:35 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45824#respond" onclick="return addComment.moveForm( &quot;div-comment-45824&quot;, &quot;45824&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-45656"><div class="c-avatar"><div class="c-main" id="div-comment-45656">正确的服务器时间应该是GMT+8吗<div class="c-meta"><span class="c-author">Yang</span>2018-11-06 22:52 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45656#respond' onclick='return addComment.moveForm( "div-comment-45656", "45656", "respond", "2931" )' aria-label='回复给Yang'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45658"><div class="c-avatar"><div class="c-main" id="div-comment-45658">是的，北京时区。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-07 00:23 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45658#respond' onclick='return addComment.moveForm( "div-comment-45658", "45658", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-45656"><div class="c-avatar"><div class="c-main" id="div-comment-45656">正确的服务器时间应该是GMT+8吗<div class="c-meta"><span class="c-author">Yang</span>2018-11-06 22:52 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45656#respond" onclick="return addComment.moveForm( &quot;div-comment-45656&quot;, &quot;45656&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Yang">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45658"><div class="c-avatar"><div class="c-main" id="div-comment-45658">是的，北京时区。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-07 00:23 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45658#respond" onclick="return addComment.moveForm( &quot;div-comment-45658&quot;, &quot;45658&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-45578"><div class="c-avatar"><div class="c-main" id="div-comment-45578"><pre class="prettyprint linenums" >{
-  "ipv4": {
-    "tg_url": "tg://proxy?port=8946&amp;secret=dd5524ee2e3a7015045f12934417b947f0&amp;server=x.x.x.x",
-    "tme_url": "https://t.me/proxy?port=8946&amp;secret=dd5524ee2e3a7015045f12934417b947f0&amp;server=x.x.x.x",
-    "tg_qrcode": "https://api.qrserver.com/v1/create-qr-code?data=tg%3A%2F%2Fproxy%3Fport%3D8946%26secret%3Ddd5524ee2e3a7015045f12934417b947f0%26server%3Dx.x.x.x&amp;format=svg&amp;qzone=4",
-    "tme_qrcode": "https://api.qrserver.com/v1/create-qr-code?data=tg%3A%2F%2Fproxy%3Fport%3D8946%26secret%3Ddd5524ee2e3a7015045f12934417b947f0%26server%3Dx.x.x.x&amp;format=svg&amp;qzone=4"
-  },
-  "ipv6": {
-    "tg_url": "",
-    "tme_url": "",
-    "tg_qrcode": "",
-    "tme_qrcode": ""
-  },
-  "secret_for_mtproxybot": "5524ee2e3a7015045f12934417b947f0"
-}
-{"level":"error","ts":1541425163.1271372,"logger":"main","msg":"Cannot initialize client connection","connection_id":"e6e5d5e4-bff4-4e9d-a494-524308aebd48","error":"Cannot extract frame: Cannot extract obfuscated header: read tcp x.x.x.x:8946-&gt;x.x.x.x:22870: i/o timeout","errorVerbose":"read tcp x.x.x.x:8946-&gt;x.x.x.x:22870: i/o timeout\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/obfuscated2/frame.go:87: Cannot extract obfuscated header\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/client/direct.go:36: Cannot extract frame"}
-{"level":"error","ts":1541425163.77422,"logger":"main","msg":"Cannot initialize client connection","connection_id":"61db5fa5-50fc-4f6f-b261-347e5381df68","error":"Cannot extract frame: Cannot extract obfuscated header: read tcp x.x.x.x:8946-&gt;x.x.x.x:22879: i/o timeout","errorVerbose":"read tcp x.x.x.x:8946-&gt;x.x.x.x:22879: i/o timeout\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/obfuscated2/frame.go:87: Cannot extract obfuscated header\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/client/direct.go:36: Cannot extract frame"}
-{"level":"error","ts":1541425163.7894843,"logger":"main","msg":"Cannot initialize client connection","connection_id":"5a8ab790-681f-4e6b-b8ff-02a844a6b4d0","error":"Cannot extract frame: Cannot extract obfuscated header: read tcp x.x.x.x:8946-&gt;x.x.x.x:22880: i/o timeout","errorVerbose":"read tcp x.x.x.x:8946-&gt;x.x.x.x:22880: i/o timeout\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/obfuscated2/frame.go:87: Cannot extract obfuscated header\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/client/direct.go:36: Cannot extract frame"}
-
-
-这是什么错误啊？？？
-</pre><div class="c-meta"><span class="c-author">温暖他人</span>2018-11-05 21:44 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45578#respond' onclick='return addComment.moveForm( "div-comment-45578", "45578", "respond", "2931" )' aria-label='回复给温暖他人'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45587"><div class="c-avatar"><div class="c-main" id="div-comment-45587">你的TG客户端代理处的密匙头部填写 dd 字符没有？<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-05 22:27 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45587#respond' onclick='return addComment.moveForm( "div-comment-45587", "45587", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment odd alt depth-3" id="comment-45614"><div class="c-avatar"><div class="c-main" id="div-comment-45614">秘钥那里是这个：dd5524ee2e3a7015045f12934417b947f0<div class="c-meta"><span class="c-author">温暖他人</span>2018-11-06 13:32 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45614#respond' onclick='return addComment.moveForm( "div-comment-45614", "45614", "respond", "2931" )' aria-label='回复给温暖他人'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-4" id="comment-45621"><div class="c-avatar"><div class="c-main" id="div-comment-45621">你的TG客户端是不是最新的？<br />
-这个错误似乎是客户端发送给服务端的消息，服务端无法识别。<br />
-你关掉强制安全模式，然后客户端处去掉密匙开头的 dd 字符再试试。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-06 13:45 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45621#respond' onclick='return addComment.moveForm( "div-comment-45621", "45621", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment odd alt depth-5" id="comment-45622"><div class="c-avatar"><div class="c-main" id="div-comment-45622">不行哇。<div class="c-meta"><span class="c-author">温暖他人</span>2018-11-06 13:57 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45622#respond' onclick='return addComment.moveForm( "div-comment-45622", "45622", "respond", "2931" )' aria-label='回复给温暖他人'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-6" id="comment-45623"><div class="c-avatar"><div class="c-main" id="div-comment-45623">[你关掉强制安全模式，然后客户端处去掉密匙开头的 dd 字符再试试。] 这样不行？<br />
-那抱歉了，该问题我无法解决了，请去 Github 联系作者解决。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-06 13:58 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45623#respond' onclick='return addComment.moveForm( "div-comment-45623", "45623", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment odd alt depth-7" id="comment-45625"><div class="c-avatar"><div class="c-main" id="div-comment-45625">我提了一个issue，看能不能解决吧。我用你的另一个官方的那个C语言的脚本也用不了，日志好像也没报错，就是连不上。。。<div class="c-meta"><span class="c-author">温暖他人</span>2018-11-06 14:20 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45625#respond' onclick='return addComment.moveForm( "div-comment-45625", "45625", "respond", "2931" )' aria-label='回复给温暖他人'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-45578"><div class="c-avatar"><div class="c-main" id="div-comment-45578"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">{</span></li><li class="L1"><span class="pln">  </span><span class="str">"ipv4"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="str">"tg_url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"tg://proxy?port=8946&amp;secret=dd5524ee2e3a7015045f12934417b947f0&amp;server=x.x.x.x"</span><span class="pun">,</span></li><li class="L3"><span class="pln">    </span><span class="str">"tme_url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://t.me/proxy?port=8946&amp;secret=dd5524ee2e3a7015045f12934417b947f0&amp;server=x.x.x.x"</span><span class="pun">,</span></li><li class="L4"><span class="pln">    </span><span class="str">"tg_qrcode"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://api.qrserver.com/v1/create-qr-code?data=tg%3A%2F%2Fproxy%3Fport%3D8946%26secret%3Ddd5524ee2e3a7015045f12934417b947f0%26server%3Dx.x.x.x&amp;format=svg&amp;qzone=4"</span><span class="pun">,</span></li><li class="L5"><span class="pln">    </span><span class="str">"tme_qrcode"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://api.qrserver.com/v1/create-qr-code?data=tg%3A%2F%2Fproxy%3Fport%3D8946%26secret%3Ddd5524ee2e3a7015045f12934417b947f0%26server%3Dx.x.x.x&amp;format=svg&amp;qzone=4"</span></li><li class="L6"><span class="pln">  </span><span class="pun">},</span></li><li class="L7"><span class="pln">  </span><span class="str">"ipv6"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></li><li class="L8"><span class="pln">    </span><span class="str">"tg_url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span></li><li class="L9"><span class="pln">    </span><span class="str">"tme_url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span></li><li class="L0"><span class="pln">    </span><span class="str">"tg_qrcode"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span></li><li class="L1"><span class="pln">    </span><span class="str">"tme_qrcode"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span></li><li class="L2"><span class="pln">  </span><span class="pun">},</span></li><li class="L3"><span class="pln">  </span><span class="str">"secret_for_mtproxybot"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"5524ee2e3a7015045f12934417b947f0"</span></li><li class="L4"><span class="pun">}</span></li><li class="L5"><span class="pun">{</span><span class="str">"level"</span><span class="pun">:</span><span class="str">"error"</span><span class="pun">,</span><span class="str">"ts"</span><span class="pun">:</span><span class="lit">1541425163.1271372</span><span class="pun">,</span><span class="str">"logger"</span><span class="pun">:</span><span class="str">"main"</span><span class="pun">,</span><span class="str">"msg"</span><span class="pun">:</span><span class="str">"Cannot initialize client connection"</span><span class="pun">,</span><span class="str">"connection_id"</span><span class="pun">:</span><span class="str">"e6e5d5e4-bff4-4e9d-a494-524308aebd48"</span><span class="pun">,</span><span class="str">"error"</span><span class="pun">:</span><span class="str">"Cannot extract frame: Cannot extract obfuscated header: read tcp x.x.x.x:8946-&gt;x.x.x.x:22870: i/o timeout"</span><span class="pun">,</span><span class="str">"errorVerbose"</span><span class="pun">:</span><span class="str">"read tcp x.x.x.x:8946-&gt;x.x.x.x:22870: i/o timeout\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/obfuscated2/frame.go:87: Cannot extract obfuscated header\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/client/direct.go:36: Cannot extract frame"</span><span class="pun">}</span></li><li class="L6"><span class="pun">{</span><span class="str">"level"</span><span class="pun">:</span><span class="str">"error"</span><span class="pun">,</span><span class="str">"ts"</span><span class="pun">:</span><span class="lit">1541425163.77422</span><span class="pun">,</span><span class="str">"logger"</span><span class="pun">:</span><span class="str">"main"</span><span class="pun">,</span><span class="str">"msg"</span><span class="pun">:</span><span class="str">"Cannot initialize client connection"</span><span class="pun">,</span><span class="str">"connection_id"</span><span class="pun">:</span><span class="str">"61db5fa5-50fc-4f6f-b261-347e5381df68"</span><span class="pun">,</span><span class="str">"error"</span><span class="pun">:</span><span class="str">"Cannot extract frame: Cannot extract obfuscated header: read tcp x.x.x.x:8946-&gt;x.x.x.x:22879: i/o timeout"</span><span class="pun">,</span><span class="str">"errorVerbose"</span><span class="pun">:</span><span class="str">"read tcp x.x.x.x:8946-&gt;x.x.x.x:22879: i/o timeout\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/obfuscated2/frame.go:87: Cannot extract obfuscated header\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/client/direct.go:36: Cannot extract frame"</span><span class="pun">}</span></li><li class="L7"><span class="pun">{</span><span class="str">"level"</span><span class="pun">:</span><span class="str">"error"</span><span class="pun">,</span><span class="str">"ts"</span><span class="pun">:</span><span class="lit">1541425163.7894843</span><span class="pun">,</span><span class="str">"logger"</span><span class="pun">:</span><span class="str">"main"</span><span class="pun">,</span><span class="str">"msg"</span><span class="pun">:</span><span class="str">"Cannot initialize client connection"</span><span class="pun">,</span><span class="str">"connection_id"</span><span class="pun">:</span><span class="str">"5a8ab790-681f-4e6b-b8ff-02a844a6b4d0"</span><span class="pun">,</span><span class="str">"error"</span><span class="pun">:</span><span class="str">"Cannot extract frame: Cannot extract obfuscated header: read tcp x.x.x.x:8946-&gt;x.x.x.x:22880: i/o timeout"</span><span class="pun">,</span><span class="str">"errorVerbose"</span><span class="pun">:</span><span class="str">"read tcp x.x.x.x:8946-&gt;x.x.x.x:22880: i/o timeout\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/obfuscated2/frame.go:87: Cannot extract obfuscated header\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/client/direct.go:36: Cannot extract frame"</span><span class="pun">}</span></li><li class="L8"><span class="pln">&nbsp;</span></li><li class="L9"><span class="pln">&nbsp;</span></li><li class="L0"><span class="pun">这是什么错误啊？？？</span></li></ol></pre><div class="c-meta"><span class="c-author">温暖他人</span>2018-11-05 21:44 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45578#respond" onclick="return addComment.moveForm( &quot;div-comment-45578&quot;, &quot;45578&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给温暖他人">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45587"><div class="c-avatar"><div class="c-main" id="div-comment-45587">你的TG客户端代理处的密匙头部填写 dd 字符没有？<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-05 22:27 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45587#respond" onclick="return addComment.moveForm( &quot;div-comment-45587&quot;, &quot;45587&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment odd alt depth-3" id="comment-45614"><div class="c-avatar"><div class="c-main" id="div-comment-45614">秘钥那里是这个：dd5524ee2e3a7015045f12934417b947f0<div class="c-meta"><span class="c-author">温暖他人</span>2018-11-06 13:32 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45614#respond" onclick="return addComment.moveForm( &quot;div-comment-45614&quot;, &quot;45614&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给温暖他人">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-4" id="comment-45621"><div class="c-avatar"><div class="c-main" id="div-comment-45621">你的TG客户端是不是最新的？<br>
+这个错误似乎是客户端发送给服务端的消息，服务端无法识别。<br>
+你关掉强制安全模式，然后客户端处去掉密匙开头的 dd 字符再试试。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-06 13:45 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45621#respond" onclick="return addComment.moveForm( &quot;div-comment-45621&quot;, &quot;45621&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment odd alt depth-5" id="comment-45622"><div class="c-avatar"><div class="c-main" id="div-comment-45622">不行哇。<div class="c-meta"><span class="c-author">温暖他人</span>2018-11-06 13:57 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45622#respond" onclick="return addComment.moveForm( &quot;div-comment-45622&quot;, &quot;45622&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给温暖他人">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-6" id="comment-45623"><div class="c-avatar"><div class="c-main" id="div-comment-45623">[你关掉强制安全模式，然后客户端处去掉密匙开头的 dd 字符再试试。] 这样不行？<br>
+那抱歉了，该问题我无法解决了，请去 Github 联系作者解决。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-06 13:58 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45623#respond" onclick="return addComment.moveForm( &quot;div-comment-45623&quot;, &quot;45623&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment odd alt depth-7" id="comment-45625"><div class="c-avatar"><div class="c-main" id="div-comment-45625">我提了一个issue，看能不能解决吧。我用你的另一个官方的那个C语言的脚本也用不了，日志好像也没报错，就是连不上。。。<div class="c-meta"><span class="c-author">温暖他人</span>2018-11-06 14:20 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45625#respond" onclick="return addComment.moveForm( &quot;div-comment-45625&quot;, &quot;45625&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给温暖他人">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
@@ -801,72 +692,60 @@ ss state connected sport = :端口 -tn
 </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even depth-3" id="comment-45620"><div class="c-avatar"><div class="c-main" id="div-comment-45620">客户端使用上应该没问题啊，我另一个服务器也是用这个配置的能用。这个服务器用v2ray,ssr什么的也都正常，端口也没问题。就是这个日志报错说的到底是什么啊？<div class="c-meta"><span class="c-author">温暖他人</span>2018-11-06 13:44 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45620#respond' onclick='return addComment.moveForm( "div-comment-45620", "45620", "respond", "2931" )' aria-label='回复给温暖他人'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even depth-3" id="comment-45620"><div class="c-avatar"><div class="c-main" id="div-comment-45620">客户端使用上应该没问题啊，我另一个服务器也是用这个配置的能用。这个服务器用v2ray,ssr什么的也都正常，端口也没问题。就是这个日志报错说的到底是什么啊？<div class="c-meta"><span class="c-author">温暖他人</span>2018-11-06 13:44 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45620#respond" onclick="return addComment.moveForm( &quot;div-comment-45620&quot;, &quot;45620&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给温暖他人">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-45545"><div class="c-avatar"><div class="c-main" id="div-comment-45545">想请教下，博主是否有了解到存在 V2R + TLS + WebSocket 被 Ban 的先例，因为想使用这个方案自用，担心被 Ban 的问题，所以了解下。还有博主的博客只是 DNS 被污染了，所以可以推荐大家使用 https://github.com/chengr28/pcap_dnsproxy 或者 https://github.com/jedisct1/dnscrypt-proxy 来解决这个问题，或者使用可以启用 DoH 或 DoT 支持的浏览器来访问，比如 Firefox 的桌面版和移动版都支持。<div class="c-meta"><span class="c-author"><a href='https://blog.gazer.win' rel='external nofollow' class='url'>清雨</a></span>2018-11-05 09:00 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45545#respond' onclick='return addComment.moveForm( "div-comment-45545", "45545", "respond", "2931" )' aria-label='回复给清雨'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-45541"><div class="c-avatar"><div class="c-main" id="div-comment-45541">[错误] MTProxy 最新版本获取失败！<div class="c-meta"><span class="c-author">逗比一号</span>2018-11-05 00:45 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45541#respond' onclick='return addComment.moveForm( "div-comment-45541", "45541", "respond", "2931" )' aria-label='回复给逗比一号'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45553"><div class="c-avatar"><div class="c-main" id="div-comment-45553">你的服务器与 Github 直接连接有问题。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-05 12:30 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45553#respond' onclick='return addComment.moveForm( "div-comment-45553", "45553", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-45545"><div class="c-avatar"><div class="c-main" id="div-comment-45545">想请教下，博主是否有了解到存在 V2R + TLS + WebSocket 被 Ban 的先例，因为想使用这个方案自用，担心被 Ban 的问题，所以了解下。还有博主的博客只是 DNS 被污染了，所以可以推荐大家使用 https://github.com/chengr28/pcap_dnsproxy 或者 https://github.com/jedisct1/dnscrypt-proxy 来解决这个问题，或者使用可以启用 DoH 或 DoT 支持的浏览器来访问，比如 Firefox 的桌面版和移动版都支持。<div class="c-meta"><span class="c-author"><a href="https://blog.gazer.win/" rel="external nofollow" class="url" target="_blank">清雨</a></span>2018-11-05 09:00 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45545#respond" onclick="return addComment.moveForm( &quot;div-comment-45545&quot;, &quot;45545&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给清雨">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-45541"><div class="c-avatar"><div class="c-main" id="div-comment-45541">[错误] MTProxy 最新版本获取失败！<div class="c-meta"><span class="c-author">逗比一号</span>2018-11-05 00:45 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45541#respond" onclick="return addComment.moveForm( &quot;div-comment-45541&quot;, &quot;45541&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给逗比一号">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45553"><div class="c-avatar"><div class="c-main" id="div-comment-45553">你的服务器与 Github 直接连接有问题。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-05 12:30 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45553#respond" onclick="return addComment.moveForm( &quot;div-comment-45553&quot;, &quot;45553&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-45508"><div class="c-avatar"><div class="c-main" id="div-comment-45508">果然是被占用了，换了个端口能用了<div class="c-meta"><span class="c-author">xd</span>2018-11-03 23:28 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45508#respond' onclick='return addComment.moveForm( "div-comment-45508", "45508", "respond", "2931" )' aria-label='回复给xd'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-45507"><div class="c-avatar"><div class="c-main" id="div-comment-45507"><pre class="prettyprint linenums" >启动失败，这是因为我的端口被占用了吗
-
-  },
-  "ipv6": {
-    "tg_url": "",
-    "tme_url": "",
-    "tg_qrcode": "",
-    "tme_qrcode": ""
-  },
-  "secret_for_mtproxybot": "393d17acb14efc4031e943f8a0c03940"
-}
-{"level":"fatal","ts":1541258633.2504404,"msg":"Server stopped","error":"Cannot create listen socket: listen tcp 0.0.0.0:443: bind: address already in use","errorVerbose":"listen tcp 0.0.0.0:443: bind: address already in use\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/proxy/proxy.go:32: Cannot create listen socket"}
-</pre><div class="c-meta"><span class="c-author">xd</span>2018-11-03 23:26 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45507#respond' onclick='return addComment.moveForm( "div-comment-45507", "45507", "respond", "2931" )' aria-label='回复给xd'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-45487"><div class="c-avatar"><div class="c-main" id="div-comment-45487">为什么用了这个ping比Shadowrocket延迟要高<div class="c-meta"><span class="c-author">PDD</span>2018-11-03 21:16 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45487#respond' onclick='return addComment.moveForm( "div-comment-45487", "45487", "respond", "2931" )' aria-label='回复给PDD'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45494"><div class="c-avatar"><div class="c-main" id="div-comment-45494">我不清楚TG客户端的 延迟 是怎么算的，我的服务器TCPing延迟只有40ms左右。可能测试的是通过代理连接至TG服务器的延迟吧。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-03 22:09 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45494#respond' onclick='return addComment.moveForm( "div-comment-45494", "45494", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="comment-45508"><div class="c-avatar"><div class="c-main" id="div-comment-45508">果然是被占用了，换了个端口能用了<div class="c-meta"><span class="c-author">xd</span>2018-11-03 23:28 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45508#respond" onclick="return addComment.moveForm( &quot;div-comment-45508&quot;, &quot;45508&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给xd">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-45507"><div class="c-avatar"><div class="c-main" id="div-comment-45507"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">启动失败，这是因为我的端口被占用了吗</span></li><li class="L1"><span class="pln">&nbsp;</span></li><li class="L2"><span class="pln">  </span><span class="pun">},</span></li><li class="L3"><span class="pln">  </span><span class="str">"ipv6"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></li><li class="L4"><span class="pln">    </span><span class="str">"tg_url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span></li><li class="L5"><span class="pln">    </span><span class="str">"tme_url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span></li><li class="L6"><span class="pln">    </span><span class="str">"tg_qrcode"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span></li><li class="L7"><span class="pln">    </span><span class="str">"tme_qrcode"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span></li><li class="L8"><span class="pln">  </span><span class="pun">},</span></li><li class="L9"><span class="pln">  </span><span class="str">"secret_for_mtproxybot"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"393d17acb14efc4031e943f8a0c03940"</span></li><li class="L0"><span class="pun">}</span></li><li class="L1"><span class="pun">{</span><span class="str">"level"</span><span class="pun">:</span><span class="str">"fatal"</span><span class="pun">,</span><span class="str">"ts"</span><span class="pun">:</span><span class="lit">1541258633.2504404</span><span class="pun">,</span><span class="str">"msg"</span><span class="pun">:</span><span class="str">"Server stopped"</span><span class="pun">,</span><span class="str">"error"</span><span class="pun">:</span><span class="str">"Cannot create listen socket: listen tcp 0.0.0.0:443: bind: address already in use"</span><span class="pun">,</span><span class="str">"errorVerbose"</span><span class="pun">:</span><span class="str">"listen tcp 0.0.0.0:443: bind: address already in use\n/home/vagrant/safe/go/src/github.com/9seconds/mtg/proxy/proxy.go:32: Cannot create listen socket"</span><span class="pun">}</span></li></ol></pre><div class="c-meta"><span class="c-author">xd</span>2018-11-03 23:26 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45507#respond" onclick="return addComment.moveForm( &quot;div-comment-45507&quot;, &quot;45507&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给xd">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="comment-45487"><div class="c-avatar"><div class="c-main" id="div-comment-45487">为什么用了这个ping比Shadowrocket延迟要高<div class="c-meta"><span class="c-author">PDD</span>2018-11-03 21:16 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45487#respond" onclick="return addComment.moveForm( &quot;div-comment-45487&quot;, &quot;45487&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给PDD">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45494"><div class="c-avatar"><div class="c-main" id="div-comment-45494">我不清楚TG客户端的 延迟 是怎么算的，我的服务器TCPing延迟只有40ms左右。可能测试的是通过代理连接至TG服务器的延迟吧。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-03 22:09 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45494#respond" onclick="return addComment.moveForm( &quot;div-comment-45494&quot;, &quot;45494&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-45433"><div class="c-avatar"><div class="c-main" id="div-comment-45433">老大，请问mtproxy使用bbr有加速效果吗？<div class="c-meta"><span class="c-author">OkOk</span>2018-11-02 20:22 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45433#respond' onclick='return addComment.moveForm( "div-comment-45433", "45433", "respond", "2931" )' aria-label='回复给OkOk'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45437"><div class="c-avatar"><div class="c-main" id="div-comment-45437">MTProxy 是TCP传输，所以BBR会对其起到加速作用的。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-02 23:03 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45437#respond' onclick='return addComment.moveForm( "div-comment-45437", "45437", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-45433"><div class="c-avatar"><div class="c-main" id="div-comment-45433">老大，请问mtproxy使用bbr有加速效果吗？<div class="c-meta"><span class="c-author">OkOk</span>2018-11-02 20:22 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45433#respond" onclick="return addComment.moveForm( &quot;div-comment-45433&quot;, &quot;45433&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给OkOk">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45437"><div class="c-avatar"><div class="c-main" id="div-comment-45437">MTProxy 是TCP传输，所以BBR会对其起到加速作用的。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-02 23:03 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45437#respond" onclick="return addComment.moveForm( &quot;div-comment-45437&quot;, &quot;45437&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-45420"><div class="c-avatar"><div class="c-main" id="div-comment-45420">是否能与v2ray共存呢<div class="c-meta"><span class="c-author">洗澡交朋友</span>2018-11-02 14:47 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45420#respond' onclick='return addComment.moveForm( "div-comment-45420", "45420", "respond", "2931" )' aria-label='回复给洗澡交朋友'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45421"><div class="c-avatar"><div class="c-main" id="div-comment-45421">只要端口不一样，那么就不会冲突。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-02 14:57 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45421#respond' onclick='return addComment.moveForm( "div-comment-45421", "45421", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="comment-45420"><div class="c-avatar"><div class="c-main" id="div-comment-45420">是否能与v2ray共存呢<div class="c-meta"><span class="c-author">洗澡交朋友</span>2018-11-02 14:47 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45420#respond" onclick="return addComment.moveForm( &quot;div-comment-45420&quot;, &quot;45420&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给洗澡交朋友">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45421"><div class="c-avatar"><div class="c-main" id="div-comment-45421">只要端口不一样，那么就不会冲突。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-02 14:57 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45421#respond" onclick="return addComment.moveForm( &quot;div-comment-45421&quot;, &quot;45421&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-45399"><div class="c-avatar"><div class="c-main" id="div-comment-45399">为什么我的自动生成的密钥居然是34位的？不是32位的？<div class="c-meta"><span class="c-author">fhbtothe</span>2018-11-02 08:30 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45399#respond' onclick='return addComment.moveForm( "div-comment-45399", "45399", "respond", "2931" )' aria-label='回复给fhbtothe'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45412"><div class="c-avatar"><div class="c-main" id="div-comment-45412">密匙前面的 dd 字符代表客户端通过随即混淆安全模式链接服务端，推荐使用，因为一些人发现在伊朗不使用该模式活不过多长时间。如果你要去官方机器人处分享账号并获取TAG，那么你需要去掉这个 dd 字符，分享给他人时再加上。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-11-02 12:50 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45412#respond' onclick='return addComment.moveForm( "div-comment-45412", "45412", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div><ul class="children">
-<li class="comment even depth-3" id="comment-45419"><div class="c-avatar"><div class="c-main" id="div-comment-45419">这样啊，明白了，谢谢！<div class="c-meta"><span class="c-author">fhbtothe</span>2018-11-02 13:49 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45419#respond' onclick='return addComment.moveForm( "div-comment-45419", "45419", "respond", "2931" )' aria-label='回复给fhbtothe'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-45399"><div class="c-avatar"><div class="c-main" id="div-comment-45399">为什么我的自动生成的密钥居然是34位的？不是32位的？<div class="c-meta"><span class="c-author">fhbtothe</span>2018-11-02 08:30 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45399#respond" onclick="return addComment.moveForm( &quot;div-comment-45399&quot;, &quot;45399&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给fhbtothe">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-45412"><div class="c-avatar"><div class="c-main" id="div-comment-45412">密匙前面的 dd 字符代表客户端通过随即混淆安全模式链接服务端，推荐使用，因为一些人发现在伊朗不使用该模式活不过多长时间。如果你要去官方机器人处分享账号并获取TAG，那么你需要去掉这个 dd 字符，分享给他人时再加上。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-11-02 12:50 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45412#respond" onclick="return addComment.moveForm( &quot;div-comment-45412&quot;, &quot;45412&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div><ul class="children">
+<li class="comment even depth-3" id="comment-45419"><div class="c-avatar"><div class="c-main" id="div-comment-45419">这样啊，明白了，谢谢！<div class="c-meta"><span class="c-author">fhbtothe</span>2018-11-02 13:49 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45419#respond" onclick="return addComment.moveForm( &quot;div-comment-45419&quot;, &quot;45419&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给fhbtothe">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-45375"><div class="c-avatar"><div class="c-main" id="div-comment-45375">ipv6无效<div class="c-meta"><span class="c-author">居然</span>2018-11-01 18:18 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45375#respond' onclick='return addComment.moveForm( "div-comment-45375", "45375", "respond", "2931" )' aria-label='回复给居然'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-45337"><div class="c-avatar"><div class="c-main" id="div-comment-45337">大佬，为什么逗比云进不去啊，我已经挂代理了<div class="c-meta"><span class="c-author">液体可怕</span>2018-10-31 22:09 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45337#respond' onclick='return addComment.moveForm( "div-comment-45337", "45337", "respond", "2931" )' aria-label='回复给液体可怕'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-45334"><div class="c-avatar"><div class="c-main" id="div-comment-45334">终于可以用telegram了，可以用，谢了。<div class="c-meta"><span class="c-author">yaoGG</span>2018-10-31 18:36 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45334#respond' onclick='return addComment.moveForm( "div-comment-45334", "45334", "respond", "2931" )' aria-label='回复给yaoGG'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-45312"><div class="c-avatar"><div class="c-main" id="div-comment-45312">确实IPV6无法使用，IPV4正常。<div class="c-meta"><span class="c-author">xie</span>2018-10-31 10:40 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45312#respond' onclick='return addComment.moveForm( "div-comment-45312", "45312", "respond", "2931" )' aria-label='回复给xie'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-45270"><div class="c-avatar"><div class="c-main" id="div-comment-45270">gce安装没问题，搬瓦工下载脚本后就不动了<div class="c-meta"><span class="c-author">小高</span>2018-10-30 11:26 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45270#respond' onclick='return addComment.moveForm( "div-comment-45270", "45270", "respond", "2931" )' aria-label='回复给小高'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45272"><div class="c-avatar"><div class="c-main" id="div-comment-45272">不动是什么意思？贴出完整信息。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-10-30 11:48 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45272#respond' onclick='return addComment.moveForm( "div-comment-45272", "45272", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-45375"><div class="c-avatar"><div class="c-main" id="div-comment-45375">ipv6无效<div class="c-meta"><span class="c-author">居然</span>2018-11-01 18:18 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45375#respond" onclick="return addComment.moveForm( &quot;div-comment-45375&quot;, &quot;45375&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给居然">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-45337"><div class="c-avatar"><div class="c-main" id="div-comment-45337">大佬，为什么逗比云进不去啊，我已经挂代理了<div class="c-meta"><span class="c-author">液体可怕</span>2018-10-31 22:09 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45337#respond" onclick="return addComment.moveForm( &quot;div-comment-45337&quot;, &quot;45337&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给液体可怕">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-45334"><div class="c-avatar"><div class="c-main" id="div-comment-45334">终于可以用telegram了，可以用，谢了。<div class="c-meta"><span class="c-author">yaoGG</span>2018-10-31 18:36 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45334#respond" onclick="return addComment.moveForm( &quot;div-comment-45334&quot;, &quot;45334&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给yaoGG">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-45312"><div class="c-avatar"><div class="c-main" id="div-comment-45312">确实IPV6无法使用，IPV4正常。<div class="c-meta"><span class="c-author">xie</span>2018-10-31 10:40 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45312#respond" onclick="return addComment.moveForm( &quot;div-comment-45312&quot;, &quot;45312&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给xie">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-45270"><div class="c-avatar"><div class="c-main" id="div-comment-45270">gce安装没问题，搬瓦工下载脚本后就不动了<div class="c-meta"><span class="c-author">小高</span>2018-10-30 11:26 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45270#respond" onclick="return addComment.moveForm( &quot;div-comment-45270&quot;, &quot;45270&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给小高">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45272"><div class="c-avatar"><div class="c-main" id="div-comment-45272">不动是什么意思？贴出完整信息。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-10-30 11:48 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45272#respond" onclick="return addComment.moveForm( &quot;div-comment-45272&quot;, &quot;45272&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-45254"><div class="c-avatar"><div class="c-main" id="div-comment-45254">逗比，我用你的GO语言MTProto Proxy脚本安装后报错无法启动<div class="c-meta"><span class="c-author">hjh</span>2018-10-29 22:07 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45254#respond' onclick='return addComment.moveForm( "div-comment-45254", "45254", "respond", "2931" )' aria-label='回复给hjh'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45256"><div class="c-avatar"><div class="c-main" id="div-comment-45256">请贴出日志。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-10-29 23:27 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45256#respond' onclick='return addComment.moveForm( "div-comment-45256", "45256", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-45254"><div class="c-avatar"><div class="c-main" id="div-comment-45254">逗比，我用你的GO语言MTProto Proxy脚本安装后报错无法启动<div class="c-meta"><span class="c-author">hjh</span>2018-10-29 22:07 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45254#respond" onclick="return addComment.moveForm( &quot;div-comment-45254&quot;, &quot;45254&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给hjh">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45256"><div class="c-avatar"><div class="c-main" id="div-comment-45256">请贴出日志。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-10-29 23:27 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45256#respond" onclick="return addComment.moveForm( &quot;div-comment-45256&quot;, &quot;45256&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-45250"><div class="c-avatar"><div class="c-main" id="div-comment-45250">安装后ipv4可以用，ipv6不行。但是服务器是可以用ipv6访问SSH的<div class="c-meta"><span class="c-author">Reyn</span>2018-10-29 20:06 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45250#respond' onclick='return addComment.moveForm( "div-comment-45250", "45250", "respond", "2931" )' aria-label='回复给Reyn'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45258"><div class="c-avatar"><div class="c-main" id="div-comment-45258">我本地没有 IPv6 所以没有测试过到底行不行，反正作者说是可以的，而我脚本默认也开放 IPv6 防火墙端口规则了。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-10-29 23:30 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45258#respond' onclick='return addComment.moveForm( "div-comment-45258", "45258", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-45250"><div class="c-avatar"><div class="c-main" id="div-comment-45250">安装后ipv4可以用，ipv6不行。但是服务器是可以用ipv6访问SSH的<div class="c-meta"><span class="c-author">Reyn</span>2018-10-29 20:06 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45250#respond" onclick="return addComment.moveForm( &quot;div-comment-45250&quot;, &quot;45250&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Reyn">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45258"><div class="c-avatar"><div class="c-main" id="div-comment-45258">我本地没有 IPv6 所以没有测试过到底行不行，反正作者说是可以的，而我脚本默认也开放 IPv6 防火墙端口规则了。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-10-29 23:30 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45258#respond" onclick="return addComment.moveForm( &quot;div-comment-45258&quot;, &quot;45258&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-45237"><div class="c-avatar"><div class="c-main" id="div-comment-45237">更新日志的时间是不是错了<div class="c-meta"><span class="c-author"><a href='http://joyace.xyx' rel='external nofollow' class='url'>Joyace</a></span>2018-10-29 15:35 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45237#respond' onclick='return addComment.moveForm( "div-comment-45237", "45237", "respond", "2931" )' aria-label='回复给Joyace'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45238"><div class="c-avatar"><div class="c-main" id="div-comment-45238">忘记改了。。已修复。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2018-10-29 15:35 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45238#respond' onclick='return addComment.moveForm( "div-comment-45238", "45238", "respond", "2931" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-45237"><div class="c-avatar"><div class="c-main" id="div-comment-45237">更新日志的时间是不是错了<div class="c-meta"><span class="c-author"><a href="http://joyace.xyx/" rel="external nofollow" class="url" target="_blank">Joyace</a></span>2018-10-29 15:35 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45237#respond" onclick="return addComment.moveForm( &quot;div-comment-45237&quot;, &quot;45237&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Joyace">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-45238"><div class="c-avatar"><div class="c-main" id="div-comment-45238">忘记改了。。已修复。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2018-10-29 15:35 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45238#respond" onclick="return addComment.moveForm( &quot;div-comment-45238&quot;, &quot;45238&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment odd alt thread-even depth-1" id="comment-45235"><div class="c-avatar"><div class="c-main" id="div-comment-45235">ipv6戳到大学狗的内心了！<div class="c-meta"><span class="c-author">elf</span>2018-10-29 14:59 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/shell-jc9/?replytocom=45235#respond' onclick='return addComment.moveForm( "div-comment-45235", "45235", "respond", "2931" )' aria-label='回复给elf'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-45235"><div class="c-avatar"><div class="c-main" id="div-comment-45235">ipv6戳到大学狗的内心了！<div class="c-meta"><span class="c-author">elf</span>2018-10-29 14:59 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/shell-jc9/?replytocom=45235#respond" onclick="return addComment.moveForm( &quot;div-comment-45235&quot;, &quot;45235&quot;, &quot;respond&quot;, &quot;2931&quot; )" aria-label="回复给elf">回复</a></div></div></div></li><!-- #comment-## -->
 	</ol>
-	<div class="commentnav"	>
+	<div class="commentnav">
 			</div>
 </div>
 </div>
@@ -875,7 +754,7 @@ ss state connected sport = :端口 -tn
 </div>
 <aside class="sidebar">	
 <div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="position: absolute;left: 4px;top: 4px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/walllink/"><img src="https://img.doub.pw/abc/walllink-03.png" /></a></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align:center;padding: 10px 20px 5px;display: block;">
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/walllink/"><img src="./shell-jc9_files/walllink-03.png"></a></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align:center;padding: 10px 20px 5px;display: block;">
 <a class="wid-xiaobai" style="background-color: #03A9F4;padding-top:15px;padding-bottom:15px;font-size: 16px;font-weight: bold;" target="_blank" href="https://doub.io/all-one/">逗比根据地 所有文章教程分类合辑</a>
 <a class="wid-xiaobai" style="background-color: #1ABCFF;padding-top: 7px;padding-bottom: 7px;font-weight: bold;font-size: 15px;" target="_blank" href="https://doub.io/goflyway-jc3/">CDN 复活被墙IP 继续做代理</a>
 <a class="wid-xiaobai" style="background-color: #1ABCFF;padding-top: 7px;padding-bottom: 7px;font-weight: bold;font-size: 15px;" target="_blank" href="https://doub.io/goflyway-jc5/">KCP 复活被墙IP 继续做代理</a>
@@ -902,10 +781,10 @@ ss state connected sport = :端口 -tn
 <a class="wid-xiaobai" style="background-color: #2d2d2d;" target="_blank" href="https://doub.io/paypal-jc2/">PayPal 更换汇率结算方式降低手续费</a>
 </div></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="background-color: #eee;">
 <div style="position: absolute;margin-left: 4px;margin-top: 4px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/kanfanba/"><img style="margin-bottom: 10px;" src="https://img.doub.pw/abc/kanfanba-02.png"/></a>
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/kanfanba/"><img style="margin-bottom: 10px;" src="./shell-jc9_files/kanfanba-02.png"></a>
 <div style="position: absolute;margin-left: 4px;margin-top: 4px;width: 24px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
 
-<div id="guangg_image"></div>
+<div id="guangg_image"><a target="_blank" title="特别声明：此图片为广告投放，与本站无任何关系。" href="https://doub.io/go/virmach-kvm/"><img src="./shell-jc9_files/virmach-03.png"></a></div>
 <script type="text/javascript">
 var image_url=new Array()
 image_url=["https://doub.io/go/vultr-100/","https://doub.io/vpszy-21/","https://doub.io/go/virmach-kvm/"]
@@ -921,17 +800,17 @@ document.getElementById("guangg_image").innerHTML = "<a target=\"_blank\" title=
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/10</span></p>
 			<span class="label label-1">v1.0.1</span>
-			<a target="_blank" href="https://doub.io/shell-jc9/" title="点击进入该文件的介绍页面。">MTProxy_go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/shell-jc9/" title="点击进入该文件的介绍页面。">MTProxy_go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./shell-jc9_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/10</span></p>
 			<span class="label label-2">v1.0.8</span>
-			<a target="_blank" href="https://doub.io/shell-jc7/" title="点击进入该文件的介绍页面。">MTProxy.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/shell-jc7/" title="点击进入该文件的介绍页面。">MTProxy.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./shell-jc9_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/07</span></p>
 			<span class="label label-3">v1.0.0</span>
-			<a target="_blank" href="https://doub.io/ss-jc67/" title="点击进入该文件的介绍页面。">ss-go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/ss-jc67/" title="点击进入该文件的介绍页面。">ss-go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./shell-jc9_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/02</span></p>
@@ -969,11 +848,11 @@ document.getElementById("guangg_image").innerHTML = "<a target=\"_blank\" title=
 			<a target="_blank" href="https://doub.io/dbrj-17/" title="点击进入该文件的介绍页面。">DAZE Tools</a>
 		</li>
 	</ul>
-</div></div></div><div class="widget d_tag"><div class="title"><h2>逗比の标签</h2></div><div class="d_tags"><a title="60个话题" target="_blank" href="https://doub.io/tag/shadowsocks/">Shadowsocks (60)</a><a title="47个话题" target="_blank" href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/">脚本 (47)</a><a title="45个话题" target="_blank" href="https://doub.io/tag/%e6%95%99%e7%a8%8b/">教程 (45)</a><a title="32个话题" target="_blank" href="https://doub.io/tag/shadowsocksr/">ShadowsocksR (32)</a><a title="30个话题" target="_blank" href="https://doub.io/tag/kxsw/">科学上网 (30)</a><a title="20个话题" target="_blank" href="https://doub.io/tag/shell/">shell (20)</a><a title="19个话题" target="_blank" href="https://doub.io/tag/vps/">VPS (19)</a><a title="18个话题" target="_blank" href="https://doub.io/tag/linux/">Linux (18)</a><a title="16个话题" target="_blank" href="https://doub.io/tag/vpn/">VPN (16)</a><a title="11个话题" target="_blank" href="https://doub.io/tag/bt/">BT (11)</a><a title="10个话题" target="_blank" href="https://doub.io/tag/%e7%a3%81%e5%8a%9b%e9%93%be%e6%8e%a5/">磁力链接 (10)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e5%8e%9f%e5%88%9b%e8%bd%af%e4%bb%b6/">原创软件 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/">端口转发 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e4%ba%91/">百度云 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/brook/">Brook (9)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/">国内中转 (8)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86/">反向代理 (8)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98/">百度网盘 (8)</a><a title="7个话题" target="_blank" href="https://doub.io/tag/goflyway/">GoFlyway (7)</a><a title="7个话题" target="_blank" href="https://doub.io/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/">搬瓦工 (7)</a></div></div></aside></section>
+</div></div></div><div class="widget d_tag"><div class="title"><h2>逗比の标签</h2></div><div class="d_tags"><a title="" target="_blank" href="https://doub.io/tag/shadowsocks/" data-original-title="60个话题">Shadowsocks (60)</a><a title="" target="_blank" href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" data-original-title="47个话题">脚本 (47)</a><a title="" target="_blank" href="https://doub.io/tag/%e6%95%99%e7%a8%8b/" data-original-title="45个话题">教程 (45)</a><a title="" target="_blank" href="https://doub.io/tag/shadowsocksr/" data-original-title="32个话题">ShadowsocksR (32)</a><a title="" target="_blank" href="https://doub.io/tag/kxsw/" data-original-title="30个话题">科学上网 (30)</a><a title="" target="_blank" href="https://doub.io/tag/shell/" data-original-title="20个话题">shell (20)</a><a title="" target="_blank" href="https://doub.io/tag/vps/" data-original-title="19个话题">VPS (19)</a><a title="" target="_blank" href="https://doub.io/tag/linux/" data-original-title="18个话题">Linux (18)</a><a title="" target="_blank" href="https://doub.io/tag/vpn/" data-original-title="16个话题">VPN (16)</a><a title="" target="_blank" href="https://doub.io/tag/bt/" data-original-title="11个话题">BT (11)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%a3%81%e5%8a%9b%e9%93%be%e6%8e%a5/" data-original-title="10个话题">磁力链接 (10)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%8e%9f%e5%88%9b%e8%bd%af%e4%bb%b6/" data-original-title="9个话题">原创软件 (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/" data-original-title="9个话题">端口转发 (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e4%ba%91/" data-original-title="9个话题">百度云 (9)</a><a title="" target="_blank" href="https://doub.io/tag/brook/" data-original-title="9个话题">Brook (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/" data-original-title="8个话题">国内中转 (8)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86/" data-original-title="8个话题">反向代理 (8)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98/" data-original-title="8个话题">百度网盘 (8)</a><a title="" target="_blank" href="https://doub.io/tag/goflyway/" data-original-title="7个话题">GoFlyway (7)</a><a title="" target="_blank" href="https://doub.io/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/" data-original-title="7个话题">搬瓦工 (7)</a></div></div></aside></section>
 <footer class="footer">
     <div class="footer-inner">
         <div class="copyright pull-left">
-         <a href="https://doub.io" title="逗比根据地">逗比根据地</a> 版权所有，保留一切权利 · 基于 <a href="https://cn.wordpress.org/" target="_blank">WordPress</a> · <a href="https://doub.io/jzzy-5/" target="_blank">欲思主题</a> © 2015-2018        </div>
+         <a href="https://doub.io/" title="逗比根据地">逗比根据地</a> 版权所有，保留一切权利 · 基于 <a href="https://cn.wordpress.org/" target="_blank">WordPress</a> · <a href="https://doub.io/jzzy-5/" target="_blank">欲思主题</a> © 2015-2018        </div>
         <div class="trackcode pull-right">
             <script>
 var _hmt = _hmt || [];
@@ -985,7 +864,7 @@ var _hmt = _hmt || [];
 })();
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72227254-1"></script>
+<script async="" src="./shell-jc9_files/js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -1001,8 +880,8 @@ var _hmt = _hmt || [];
                 <span class="close-btn fa fa-times-circle"> </span>
                         <div class="yk6fd2b"></div>
     </div>
-</div><script type='text/javascript' src='https://doub.io/wp-content/themes/yusi1.0/js/jquery.js?ver=1.0'></script>
-<script type='text/javascript' src='https://doub.io/wp-includes/js/wp-embed.min.js?ver=4.8.1'></script>
+</div><script type="text/javascript" src="./shell-jc9_files/jquery.js.下载"></script>
+<script type="text/javascript" src="./shell-jc9_files/wp-embed.min.js.下载"></script>
 
 <script type="text/javascript">
 var open = false;
@@ -1020,4 +899,4 @@ if(document.body.scrollWidth < 768){
     $(".hot-posts").hide();
 }
 </script>
-<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_6971c5901860620dc711b8ea461af719");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_6971c5901860620dc711b8ea461af719");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_6971c5901860620dc711b8ea461af719");if (z != "") e["url"].value = z;}</script></body></html><!-- hyper cache gzip 2018-11-19 04:38:14 -->
+<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_6971c5901860620dc711b8ea461af719");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_6971c5901860620dc711b8ea461af719");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_6971c5901860620dc711b8ea461af719");if (z != "") e["url"].value = z;}</script><div class="rollto"><button class="btn btn-inverse" data-type="totop" title="回顶部"><i class="fa fa-arrow-up"></i></button><button class="btn btn-inverse" data-type="Widescreen" title="宽屏显示"><i class="fa fa-arrows-h"></i></button><button class="btn btn-inverse" data-type="torespond" title="发评论"><i class="fa fa-comment-o"></i></button></div></body></html>

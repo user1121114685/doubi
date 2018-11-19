@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://doub.io/wlzy-8/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta http-equiv="X-UA-Compatible" content="IE=10,IE=9,IE=8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <style type="text/css">
@@ -11,31 +11,31 @@
 @font-face {font-family: 'LiDeBiao-Xing320e75d0253036';src: url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.gif');src: url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.gif?#iefix') format('embedded-opentype'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.bmp') format('woff'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.jpg') format('truetype'),     url('https://doub.io/wp-content/themes/yusi1.0/img/56e3a918f629da0ad88fbde8.png#LiDeBiao-Xing3') format('svg');   }.css20e75d0253036{font-family: 'LiDeBiao-Xing320e75d0253036';}
 tbody tr:nth-child(odd) { background-color:#f9f9f9; }
 </style>
-<link rel="stylesheet" type="text/css" href="https://doub.io/wp-content/themes/yusi1.0/csshake.css">
-<link id="favicon" href="https://doub.io/wp-content/themes/yusi1.0/img/logo.ico" rel="icon" type="img/x-icon" />
+<link rel="stylesheet" type="text/css" href="./wlzy-8_files/csshake.css">
+<link id="favicon" href="https://doub.io/wp-content/themes/yusi1.0/img/logo.ico" rel="icon" type="img/x-icon">
 <title>『原创』SimpleHTTPServer 快速搭建HTTP Web服务 + 一键脚本 | 逗比根据地</title>
-<script>
+<script type="text/javascript" async="" src="./wlzy-8_files/analytics.js.下载"></script><script src="./wlzy-8_files/hm.js.下载"></script><script async="" src="./wlzy-8_files/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ"></script><script>
 window._deel = {name: '逗比根据地',url: 'https://doub.io/wp-content/themes/yusi1.0', ajaxpager: 'on', commenton: 1, roll: [1,3]}
 </script>
 
 <!-- All in One SEO Pack 2.3.16 by Michael Torbert of Semper Fi Web Design[1897,1960] -->
-<meta name="description"  content="有的时候你可能需要临时下载VPS中某个文件，但是又没有或者不想用SFTP去下载，那你可能就需要SimpleHTTPServer了。 SimpleHTTPServer是python自带的一个HTTP服务，可以方便的搭建一个临时的HTTP服务，提供文件浏览和下载的web服务。 使用步骤 注意，因为SimpleHT" />
+<meta name="description" content="有的时候你可能需要临时下载VPS中某个文件，但是又没有或者不想用SFTP去下载，那你可能就需要SimpleHTTPServer了。 SimpleHTTPServer是python自带的一个HTTP服务，可以方便的搭建一个临时的HTTP服务，提供文件浏览和下载的web服务。 使用步骤 注意，因为SimpleHT">
 
-<meta name="keywords"  content="python,simplehttpserver,脚本" />
+<meta name="keywords" content="python,simplehttpserver,脚本">
 
-<link rel="canonical" href="https://doub.io/wlzy-8/" />
+<link rel="canonical" href="https://doub.io/wlzy-8/">
 <!-- /all in one seo pack -->
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='toggle-box-css'  href='https://doub.io/wp-content/plugins/toggle-box/toggle-box.css?ver=4.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='style-css'  href='https://doub.io/wp-content/themes/yusi1.0/style.css?ver=1.0' type='text/css' media='all' />
-<script>!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://steadfastsystem.com/v2/0/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script><script type='text/javascript' src='https://doub.io/wp-content/themes/yusi1.0/js/jquery1.min.js?ver=1.0'></script>
-<script type='text/javascript' src='https://doub.io/wp-content/plugins/toggle-box/js/toggle-box.js?ver=4.8.1'></script>
-<link rel='https://api.w.org/' href='https://doub.io/wp-json/' />
-<link rel='prev' title='『视频|重制新版』ShadowsocksR 服务端安装+客户端使用 新手小白视频教程' href='https://doub.io/ss-jc41/' />
-<link rel='next' title='『失效』分享一个利用百度接口API的百度云 不限速 下载工具' href='https://doub.io/wlzy-9/' />
-<link rel='shortlink' href='https://doub.io/?p=1613' />
-<link rel="alternate" type="application/json+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-8%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-8%2F&#038;format=xml" />
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="stylesheet" id="toggle-box-css" href="./wlzy-8_files/toggle-box.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="./wlzy-8_files/style.css" type="text/css" media="all">
+<script>!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://steadfastsystem.com/v2/0/jvaHUe4UtmSj7Yh8mL0BlzGoBBk0NWwHXz5ER4hR-e9NGt1pt6h33Z1SIGp1cJAVyYFj9EYghxigl7dRyMdNUGevdj4xXLZQDN3X0jYDf2-IcaAPCwbLtAvVyetqxVefWu7AUYQDQ",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script><script type="text/javascript" src="./wlzy-8_files/jquery1.min.js.下载"></script>
+<script type="text/javascript" src="./wlzy-8_files/toggle-box.js.下载"></script>
+<link rel="https://api.w.org/" href="https://doub.io/wp-json/">
+<link rel="prev" title="『视频|重制新版』ShadowsocksR 服务端安装+客户端使用 新手小白视频教程" href="https://doub.io/ss-jc41/">
+<link rel="next" title="『失效』分享一个利用百度接口API的百度云 不限速 下载工具" href="https://doub.io/wlzy-9/">
+<link rel="shortlink" href="https://doub.io/?p=1613">
+<link rel="alternate" type="application/json+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-8%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://doub.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdoub.io%2Fwlzy-8%2F&amp;format=xml">
 <style>
 .yk35492{
     font-size: 20px;
@@ -382,7 +382,7 @@ window._deel = {name: '逗比根据地',url: 'https://doub.io/wp-content/themes/
         killAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
     }
 </script>
-    <link rel="stylesheet" href="https://doub.io/wp-content/plugins/wp-content-index/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./wlzy-8_files/style(1).css" type="text/css" media="all">
 <meta name="keywords" content="python, SimpleHTTPServer, 脚本, Shell脚本, 网络资源">
 <meta name="description" content="有的时候你可能需要临时下载VPS中某个文件，但是又没有或者不想用SFTP去下载，那你可能就需要SimpleHTTPServer了。  SimpleHTTPServer是python自带的一个HTTP服务，可以方便的搭建一个临时的HTTP服务，提供文件浏览和下载的web服务。 使用步骤 注意，因为SimpleHTTPServer是python自带的一个组件，所以使用这个命令的前提就是系统已安装python。  检查Python是否安装： ">
 <!--[if lt IE 9]><script src="https://doub.io/wp-content/themes/yusi1.0/js/html5.js"></script><![endif]-->
@@ -408,10 +408,10 @@ window.uabInject = function() {};
 <header id="header" class="header">
 <div class="container-inner" style="display: block;">
  <div class="yusi-logo" style="display: block;">
-                    <a href="/">
+                    <a href="https://doub.io/">
                         <h1>
-                                                        <span style="font-family:'jin_mei_mxplzx86d456993036';color: #fff;font-weight: normal;font-size: 54px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">逗比根据地</span>
-                                                        <span style="font-family:'LiDeBiao-Xing320e75d0253036';color: #fff;font-size: 24px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">– 世界那么逗，我想出去看看</span>
+                                                        <span style="font-family:&#39;jin_mei_mxplzx86d456993036&#39;;color: #fff;font-weight: normal;font-size: 54px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">逗比根据地</span>
+                                                        <span style="font-family:&#39;LiDeBiao-Xing320e75d0253036&#39;;color: #fff;font-size: 24px;animation: shake-slow 300s ease-in-out infinite;" class="preview-item small shake-slow shake-constant shake-constant--hover">– 世界那么逗，我想出去看看</span>
                                                     </h1>
                     </a>
     </div>
@@ -420,9 +420,9 @@ window.uabInject = function() {};
 	<div id="nav-header" class="navbar" style="display: block;">
 		
 		<ul class="nav">
-			<li><a href="https://doub.io"><i class="fa fa-fire"></i> 首页</a></li>
+			<li><a href="https://doub.io/"><i class="fa fa-fire"></i> 首页</a></li>
 <li><a target="_blank" href="https://doub.io/dbtj/"><i class="fa fa-star"></i> 逗比推荐</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/dbwz/">碉堡网站</a></li>
 	<li><a target="_blank" href="https://doub.io/dbrj/">逗比软件</a></li>
 	<li><a target="_blank" href="https://doub.io/xnzj/">虚拟主机</a></li>
@@ -430,7 +430,7 @@ window.uabInject = function() {};
 </ul>
 </li>
 <li class="current-post-ancestor"><a target="_blank" href="https://doub.io/kxsw/"><i class="fa fa-globe fa-spin"></i> 科学上网</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/androidkxsw/">安卓合集</a></li>
 	<li><a target="_blank" href="https://doub.io/pckxsw/">电脑合集</a></li>
 	<li class="current-post-ancestor current-menu-parent"><a target="_blank" href="https://doub.io/wlzy/">网络资源</a></li>
@@ -441,7 +441,7 @@ window.uabInject = function() {};
 </ul>
 </li>
 <li><a target="_blank" href="https://doub.io/ss-jc26/"><i class="fa fa-paper-plane" style="font-size: 19px;"></i> Shadowsocks</a>
-<ul  class="sub-menu">
+<ul class="sub-menu">
 	<li><a target="_blank" href="https://doub.io/all-one/"><span style="color: #ffe200;">网站文章 合辑</span></a></li>
 	<li><a target="_blank" href="https://doub.io/ss-jc26/">所有教程 合辑</a></li>
 	<li><a target="_blank" href="https://doub.io/ss-jc35/">小白常见 问题</a></li>
@@ -456,10 +456,10 @@ window.uabInject = function() {};
 <li><a target="_blank" href="https://softs.wtf/"><i class="fa fa-cloud"></i> 逗比云</a></li>
 <li><a target="_blank" href="https://doub.io/guestbook/"><i class="fa fa-list-alt"></i> 留言</a></li>
 <li style="float:right;">
-                    <div class="toggle-search" style="width: 60px;"><i class="fa fa-search"></i><a href="#" style="padding: 0;">搜索</a></div>
-<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href='https://doub.io/search/' + encodeURIComponent(this.s.value).replace(/%20/g, '+'); return false;" action="/"><div> <input type="ext" class="search" name="s" onblur="if(this.value=='')this.value='请善用搜索功能...';" onfocus="if(this.value=='请善用搜索功能...')this.value='';" value="请善用搜索功能..."></div></form></div></div>
+                    <div class="toggle-search" style="width: 60px;"><i class="fa fa-search"></i><a href="https://doub.io/wlzy-8/#" style="padding: 0;">搜索</a></div>
+<div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href=&#39;https://doub.io/search/&#39; + encodeURIComponent(this.s.value).replace(/%20/g, &#39;+&#39;); return false;" action="https://doub.io/"><div> <input type="ext" class="search" name="s" onblur="if(this.value==&#39;&#39;)this.value=&#39;请善用搜索功能...&#39;;" onfocus="if(this.value==&#39;请善用搜索功能...&#39;)this.value=&#39;&#39;;" value="请善用搜索功能..."></div></form></div></div>
 </li>
-		</ul>
+		</ul><div class="screen-mini"><button data-type="screen-nav" class="btn btn-inverse screen-nav"><i class="fa fa-list"></i></button></div>
 	</div>
 </header>
 <section class="container"><div class="speedbar">
@@ -467,7 +467,7 @@ window.uabInject = function() {};
 <div style="float: right;margin: 0 10px;"><a target="_blank" href="https://doub.io/tougao/"><i class="fa fa-envelope" style="color: #1abc9c;opacity: 1;"></i>投稿文章</a> | <a target="_blank" href="https://doub.io/guanggao/"><i class="fa fa-money" style="color: #1abc9c;opacity: 1;"></i>广告合作</a> | <a target="_blank" href="https://doub.io/go/tg"><i class="fa fa-paper-plane" style="color: #1abc9c;opacity: 1;"></i>Telegram 群组</a> / <a target="_blank" href="https://doub.io/go/tg_a">公告频道</a> / <a target="_blank" href="https://doub.io/telegram-jc1/">使用教程</a></div></div>
 	</div>
 	<div class="guangg guangg-site"><div style="position: absolute;left: 4px;top: 14px;font-size: 12px;color: #fff;border: 1px solid #ffffff;line-height: 12px;opacity: 0.9;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/gigsgigscloud/"><img src="https://img.doub.pw/abc/gigsgigscloud-06.gif" class="top_guangg" /></a></div><div class="content-wrap">
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/gigsgigscloud/"><img src="./wlzy-8_files/gigsgigscloud-06.gif" class="top_guangg"></a></div><div class="content-wrap">
 <div style="display: block;">
 	<div class="content" style="display: block;">
 
@@ -480,27 +480,21 @@ window.uabInject = function() {};
 				<span class="muted"><i class="fa fa-comments-o"></i> <a href="https://doub.io/wlzy-8/#comments">8评论</a></span>							</div>
 		</header>
 <div class="guangg guangg-post"><div style="position: absolute;left: 3px;top: 14px;font-size: 12px;color: #fff;border: 1px solid #ffffff;line-height: 12px;opacity: 0.9;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/yitianjian_shadow/"><img src="https://img.doub.pw/abc/yitianjian_shadow_01.png" class="top_guangg" /></a></div>		<article class="article-content">
-			<div id="content-index" class="content-index"><div class="content-index-title"><a id="content-index-togglelink" href="javascript:content_index_toggleToc()">文章目录 ⚐</a></div>
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/yitianjian_shadow/"><img src="./wlzy-8_files/yitianjian_shadow_01.png" class="top_guangg"></a></div>		<article class="article-content">
+			<div id="content-index" class="content-index"><div class="content-index-title"><a id="content-index-togglelink" href="javascript:content_index_toggleToc()" data-original-title="" title="">文章目录 ⚐</a></div>
 <script type="text/javascript" language="javascript">
 window.content_index_showTocToggle=false;function content_index_toggleToc(){var tts="文章目录 ⚐";var tth="文章目录 ⚑";if(window.content_index_showTocToggle){window.content_index_showTocToggle=false;document.getElementById("content-index-contents").style.display="none";document.getElementById("content-index-togglelink").innerHTML=tts}else{window.content_index_showTocToggle=true;document.getElementById("content-index-contents").style.display="block";document.getElementById("content-index-togglelink").innerHTML=tth}}
 </script>
-<ul id="content-index-contents" style="display: none;"><li class="content-index-level-1"><a href="https://doub.io/wlzy-8/#使用步骤" title="使用步骤"><span>使用步骤</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-8/#直接使用" title="直接使用"><span>直接使用</span></a><ul class="children"><li class="content-index-level-3"><a href="https://doub.io/wlzy-8/#前台运行：" title="前台运行："><span>前台运行：</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-8/#后台运行：" title="后台运行："><span>后台运行：</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-8/#结束进程：" title="结束进程："><span>结束进程：</span></a></li></ul></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-8/#脚本使用" title="脚本使用"><span>脚本使用</span></a><ul class="children"><li class="content-index-level-3"><a href="https://doub.io/wlzy-8/#启动HTTP服务器：" title="启动HTTP服务器："><span>启动HTTP服务器：</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-8/#停止HTTP服务器：" title="停止HTTP服务器："><span>停止HTTP服务器：</span></a></li></ul></li></ul></li></ul></div>
-<div class="old-message">本文最后更新于 <a><strong>2018年9月20日 19:53</strong></a> 可能会因为没有更新而失效。如已失效或需要修正，请留言！</div><p>有的时候你可能需要临时下载VPS中某个文件，但是又没有或者不想用SFTP去下载，那你可能就需要SimpleHTTPServer了。</p>
+<ul id="content-index-contents" style="display: none;"><li class="content-index-level-1"><a href="https://doub.io/wlzy-8/#%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4" title="" data-original-title="使用步骤"><span>使用步骤</span></a><ul class="children"><li class="content-index-level-2"><a href="https://doub.io/wlzy-8/#%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8" title="" data-original-title="直接使用"><span>直接使用</span></a><ul class="children"><li class="content-index-level-3"><a href="https://doub.io/wlzy-8/#%E5%89%8D%E5%8F%B0%E8%BF%90%E8%A1%8C%EF%BC%9A" title="" data-original-title="前台运行："><span>前台运行：</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-8/#%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%EF%BC%9A" title="" data-original-title="后台运行："><span>后台运行：</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-8/#%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B%EF%BC%9A" title="" data-original-title="结束进程："><span>结束进程：</span></a></li></ul></li><li class="content-index-level-2"><a href="https://doub.io/wlzy-8/#%E8%84%9A%E6%9C%AC%E4%BD%BF%E7%94%A8" title="" data-original-title="脚本使用"><span>脚本使用</span></a><ul class="children"><li class="content-index-level-3"><a href="https://doub.io/wlzy-8/#%E5%90%AF%E5%8A%A8HTTP%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9A" title="" data-original-title="启动HTTP服务器："><span>启动HTTP服务器：</span></a></li><li class="content-index-level-3"><a href="https://doub.io/wlzy-8/#%E5%81%9C%E6%AD%A2HTTP%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9A" title="" data-original-title="停止HTTP服务器："><span>停止HTTP服务器：</span></a></li></ul></li></ul></li></ul></div>
+<div class="old-message">本文最后更新于 <a data-original-title="" title=""><strong>2018年9月20日 19:53</strong></a> 可能会因为没有更新而失效。如已失效或需要修正，请留言！</div><p>有的时候你可能需要临时下载VPS中某个文件，但是又没有或者不想用SFTP去下载，那你可能就需要SimpleHTTPServer了。</p>
 <p>SimpleHTTPServer是python自带的一个HTTP服务，可以方便的搭建一个临时的HTTP服务，提供文件浏览和下载的web服务。</p>
 <h2 id="使用步骤">使用步骤</h2>
 <p>注意，因为SimpleHTTPServer是python自带的一个组件，所以使用这个命令的前提就是<strong>系统已安装python</strong>。</p>
 <p><strong>检查Python是否安装：</strong></p>
-<pre class="prettyprint linenums">python -V
-# 正常情况下应该返回 Python 2.7.x ，如果返回命令找不到 python: command not found ，那么说明没有安装Python。
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">python </span><span class="pun">-</span><span class="pln">V</span></li><li class="L1"><span class="com"># 正常情况下应该返回&nbsp;Python 2.7.x ，如果返回命令找不到 python: command not found ，那么说明没有安装Python。</span></li></ol></pre>
 <p><strong>安装 Python：</strong></p>
-<pre class="prettyprint linenums"># CentOS 系统：
-yum update &amp;&amp; yum install python python2.7 -y
-
-# Debian/Ubuntu 系统：
-apt-get update &amp;&amp; apt-get install python python2.7 -y</pre>
-<hr />
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com"># CentOS 系统：</span></li><li class="L1"><span class="pln">yum update </span><span class="pun">&amp;&amp;</span><span class="pln"> yum install python python2</span><span class="pun">.</span><span class="lit">7</span><span class="pln"> </span><span class="pun">-</span><span class="pln">y</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="com"># Debian/Ubuntu 系统：</span></li><li class="L4"><span class="pln">apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> update </span><span class="pun">&amp;&amp;</span><span class="pln"> apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln">&nbsp;install python python2</span><span class="pun">.</span><span class="lit">7</span><span class="pln"> </span><span class="pun">-</span><span class="pln">y</span></li></ol></pre>
+<hr>
 <p>如果你只是临时想要下载几个VPS中的文件，那你可以<strong>直接使用</strong>，如果你是需要频繁的开放某个文件夹，以HTTP下载文件，那你适合<strong>使用脚本</strong>。</p>
 <pre>注意：如果你开放的文件夹中有<code> index.html </code>文件，那会直接显示这个文件，如果没有这个文件那会以 文件列表的形式 显示目录下所有文件。</pre>
 <p>无论使用那种方法创建HTTP服务，创建完成之后都可以通过<code> http://VPS-IP:8000 </code>访问你刚才开放的文件夹，默认是8000 可以自己改。</p>
@@ -508,68 +502,43 @@ apt-get update &amp;&amp; apt-get install python python2.7 -y</pre>
 <h4 id="前台运行：">前台运行：</h4>
 <p>首先<code> cd </code>到你要开放的文件夹中，然后使用下面的命令可以把 当前文件夹内的所有文件 发布到VPS的<code> 8000 </code>端口。</p>
 <p>但是这条命令是直接在前台运行，不是后台运行的，也就是说如果<code> Ctrl + C </code>，则该端口就会关闭。</p>
-<pre class="prettyprint linenums">python -m SimpleHTTPServer 8000
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">python </span><span class="pun">-</span><span class="pln">m </span><span class="typ">SimpleHTTPServer</span><span class="pln"> </span><span class="lit">8000</span></li></ol></pre>
 <h4 id="后台运行：">后台运行：</h4>
 <p>在上述命令的最后加一个<code> &amp; </code>，则该命令产生的进程在后台运行，不会影响当前终端的使用。</p>
 <p>生成的新的进程为当前SSH的子进程，所以，当我们关闭当前SSH链接时，相应的子进程也会被kill掉，这也不是我们想要的结果。</p>
-<pre class="prettyprint linenums">python -m SimpleHTTPServer 8000 &amp;
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">python&nbsp;</span><span class="pun">-</span><span class="pln">m&nbsp;</span><span class="typ">SimpleHTTPServer</span><span class="pln">&nbsp;</span><span class="lit">8000</span><span class="pln">&nbsp;</span><span class="pun">&amp;</span></li></ol></pre>
 <p>在命令的开头加一个<code> nohup </code>，忽略所有的挂断信号，如果当前SSH链接关闭，则当前进程会挂载到init进程下，成为其子进程，这样即使退出当前用户，其 8000 端口也可以使用。</p>
-<pre class="prettyprint linenums">nohup python -m SimpleHTTPServer 8000 &amp;
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">nohup&nbsp;python&nbsp;</span><span class="pun">-</span><span class="pln">m&nbsp;</span><span class="typ">SimpleHTTPServer</span><span class="pln">&nbsp;</span><span class="lit">8000</span><span class="pln">&nbsp;</span><span class="pun">&amp;</span></li></ol></pre>
 <h4 id="结束进程：">结束进程：</h4>
 <p>如果你是直接用第一个命令前台运行，那你可以直接使用<code> Ctrl + C </code>来关闭HTTP服务。</p>
 <p>如果你使用<code> &amp; </code>或者<code> nohup </code>把进程放到了后台运行，那你就需要使用下面这个命令结束进程。</p>
-<pre class="prettyprint linenums">eval $(ps -ef | grep "[0-9] python -m SimpleHTTPServer" | awk '{print "kill "$2}')
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="kwd">eval</span><span class="pln"> $</span><span class="pun">(</span><span class="pln">ps </span><span class="pun">-</span><span class="pln">ef </span><span class="pun">|</span><span class="pln"> grep </span><span class="str">"[0-9] python -m SimpleHTTPServer"</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> awk </span><span class="str">'{print "kill "$2}'</span><span class="pun">)</span></li></ol></pre>
 <h3 id="脚本使用">脚本使用</h3>
 <p>无论使用那种方法创建HTTP服务，创建完成之后都可以通过<code> http://VPS-IP:8000 </code>访问你刚才开放的文件夹，默认是8000 可以自己改。</p>
 <p>下载启动/停止脚本，并赋予执行权限。</p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/user1121114685/doubi/master/pythonhttp.sh &amp;&amp; chmod +x pythonhttp.sh
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">wget </span><span class="pun">-</span><span class="pln">N&nbsp;</span><span class="pun">--</span><span class="kwd">no</span><span class="pun">-</span><span class="pln">check</span><span class="pun">-</span><span class="pln">certificate https</span><span class="pun">:</span><span class="com">//raw.githubusercontent.com/user1121114685/doubi/master/pythonhttp.sh &amp;&amp; chmod +x pythonhttp.sh</span></li></ol></pre>
 <h4 id="启动HTTP服务器：">启动HTTP服务器：</h4>
-<pre class="prettyprint linenums">bash pythonhttp.sh start
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">bash pythonhttp</span><span class="pun">.</span><span class="pln">sh start</span></li></ol></pre>
 <h4 id="停止HTTP服务器：">停止HTTP服务器：</h4>
-<pre class="prettyprint linenums">bash pythonhttp.sh stop
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">bash pythonhttp</span><span class="pun">.</span><span class="pln">sh stop</span></li></ol></pre>
 <p>查看日志（日志位于你开放HTTP的文件夹内）：</p>
-<pre class="prettyprint linenums">cat httpserver.log
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">cat httpserver</span><span class="pun">.</span><span class="pln">log</span></li></ol></pre>
 <p>如果你需要持续的查看/监控日志，那可以使用这个命令：</p>
-<pre class="prettyprint linenums">tail -f httpserver.log
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">tail </span><span class="pun">-</span><span class="pln">f httpserver</span><span class="pun">.</span><span class="pln">log</span></li></ol></pre>
 <p>启动脚本后，会提醒你输入要开放的HTTP端口 和 目录。</p>
-<pre class="prettyprint linenums">请输入要开放的端口 [1-65535]:
-(默认端口: 8000):
-
-请输入你要开放的目录(绝对路径):
-(直接回车, 默认当前文件夹):
-
-========================
-请检查配置是否正确 !
-
-端口 : 8000
-目录 : /root
-========================
-
-按任意键继续，如有错误，请使用 Ctrl + C 退出.
-
-HTTP服务器已经启动。 地址: http://VPS_IP:8000
-</pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">请输入要开放的端口</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">-</span><span class="lit">65535</span><span class="pun">]:</span></li><li class="L1"><span class="pun">(默认端口:</span><span class="pln"> </span><span class="lit">8000</span><span class="pun">):</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="pun">请输入你要开放的目录(绝对路径):</span></li><li class="L4"><span class="pun">(直接回车,</span><span class="pln"> </span><span class="pun">默认当前文件夹):</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pun">========================</span></li><li class="L7"><span class="pun">请检查配置是否正确</span><span class="pln"> </span><span class="pun">!</span></li><li class="L8"><span class="pln">&nbsp;</span></li><li class="L9"><span class="pun">端口</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="lit">8000</span></li><li class="L0"><span class="pun">目录</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">/root</span></li><li class="L1"><span class="str">========================</span></li><li class="L2"><span class="str">&nbsp;</span></li><li class="L3"><span class="str">按任意键继续，如有错误，请使用 Ctrl + C 退出.</span></li><li class="L4"><span class="str">&nbsp;</span></li><li class="L5"><span class="str">HTTP服务器已经启动。 地址: http:/</span><span class="pun">/</span><span class="pln">VPS_IP</span><span class="pun">:</span><span class="lit">8000</span></li></ol></pre>
 <p>脚本默认的SimpleHTTPServer端口是<code> 8000 </code>，默认回车是开放脚本当前所在的 目录。</p>
 <p>如果你需要重新开一个其他目录的HTTP服务器，那么不需要<code> bash pythonhttp.sh stop </code>停止，可以直接<code> bash pythonhttp.sh start </code>，因为会自动检测并停止已经运行的HTTP服务器。</p>
-<hr />
+<hr>
 <p>这个脚本很简单，也只是我随手写的，因为主要考虑到这个命令本身就是为了快捷的开放一个临时的HTTP服务，如果写的太复杂就失去了意义。如果有什么BUG记得下面评论留言！</p>
-<p><pre style="border-left: solid 4px #1abc9c;"><strong>转载请超链接注明：</strong><a href="https://doub.io">逗比根据地</a> &raquo; <a href="https://doub.io/wlzy-8/">『原创』SimpleHTTPServer 快速搭建HTTP Web服务 + 一键脚本</a></pre><pre><strong>责任声明：</strong>本站一切资源仅用作交流学习，请勿用作商业或违法行为！如造成任何后果，本站概不负责！</pre></p>
+<p></p><pre style="border-left: solid 4px #1abc9c;"><strong>转载请超链接注明：</strong><a href="https://doub.io/" data-original-title="" title="">逗比根据地</a> » <a href="https://doub.io/wlzy-8/" data-original-title="" title="">『原创』SimpleHTTPServer 快速搭建HTTP Web服务 + 一键脚本</a></pre><pre><strong>责任声明：</strong>本站一切资源仅用作交流学习，请勿用作商业或违法行为！如造成任何后果，本站概不负责！</pre><p></p>
 
       
 <div class="article-social">
-			<a href="javascript:;" data-action="ding" data-id="1613" id="Addlike" class="action"><i class="fa fa-thumbs-o-up"></i>赞 (<span class="count">17</span>)</a></div>
+			<a href="javascript:;" data-action="ding" data-id="1613" id="Addlike" class="action" data-original-title="" title=""><i class="fa fa-thumbs-o-up"></i>赞 (<span class="count">17</span>)</a></div>
 	</article>	
 				<footer class="article-footer">
-			<div class="article-tags"><i class="fa fa-tags"></i><a href="https://doub.io/tag/python/" rel="tag">python</a><a href="https://doub.io/tag/simplehttpserver/" rel="tag">SimpleHTTPServer</a><a href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" rel="tag">脚本</a></div></footer>
+			<div class="article-tags"><i class="fa fa-tags"></i><a href="https://doub.io/tag/python/" rel="tag" data-original-title="" title="">python</a><a href="https://doub.io/tag/simplehttpserver/" rel="tag" data-original-title="" title="">SimpleHTTPServer</a><a href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" rel="tag" data-original-title="" title="">脚本</a></div></footer>
 	<nav class="article-nav">
 			<span class="article-nav-prev"><i class="fa fa-angle-double-left"></i> <a href="https://doub.io/ss-jc41/" rel="prev">『视频|重制新版』ShadowsocksR 服务端安装+客户端使用 新手小白视频教程</a></span>
 			<span class="article-nav-next"><a href="https://doub.io/wlzy-9/" rel="next">『失效』分享一个利用百度接口API的百度云 不限速 下载工具</a>  <i class="fa fa-angle-double-right"></i></span>
@@ -578,24 +547,24 @@ HTTP服务器已经启动。 地址: http://VPS_IP:8000
 		<div class="related_top">
 			<div class="related_posts"><ul class="related_img">
 
-		<li class="related_box"  >
-		<a href="https://doub.io/ss-jc67/" title="『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/shadowsocks3.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本" />	<br><span class="r_title">『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本</span></a>
+		<li class="related_box">
+		<a href="https://doub.io/ss-jc67/" title="『原创』Shadowsocks &lt;strong&gt;Go版&lt;/strong&gt; 一键安装管理脚本" target="_blank">
+<img src="./wlzy-8_files/timthumb.php" alt="『原创』Shadowsocks &lt;strong&gt;Go版&lt;/strong&gt; 一键安装管理脚本">	<br><span class="r_title">『原创』Shadowsocks <strong>Go版</strong> 一键安装管理脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
-		<a href="https://doub.io/shell-jc9/" title="『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/telegram.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本" />	<br><span class="r_title">『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本</span></a>
+		<li class="related_box">
+		<a href="https://doub.io/shell-jc9/" title="『原创』Telegram 专用的轻量化代理工具 —— MTProxy &lt;strong&gt;Go版&lt;/strong&gt; 一键脚本" target="_blank">
+<img src="./wlzy-8_files/timthumb(1).php" alt="『原创』Telegram 专用的轻量化代理工具 —— MTProxy &lt;strong&gt;Go版&lt;/strong&gt; 一键脚本">	<br><span class="r_title">『原创』Telegram 专用的轻量化代理工具 —— MTProxy <strong>Go版</strong> 一键脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/shell-jc8/" title="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/telegram.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本" />	<br><span class="r_title">『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本</span></a>
+<img src="./wlzy-8_files/timthumb(1).php" alt="『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本">	<br><span class="r_title">『原创』实时监测服务器IP是否被墙并推送消息至 Telegram 一键脚本</span></a>
 		</li>
 	
-		<li class="related_box"  >
+		<li class="related_box">
 		<a href="https://doub.io/daze-jc3/" title="『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本" target="_blank">
-<img src="https://doub.io/wp-content/themes/yusi1.0/timthumb.php?src=https://doub.io/wp-content/uploads/daze-01.png&h=110&w=185&q=90&zc=1&ct=1" alt="『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本" />	<br><span class="r_title">『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本</span></a>
+<img src="./wlzy-8_files/timthumb(2).php" alt="『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本">	<br><span class="r_title">『原创』Go语言轻量化 代理工具 —— DAZE 一键安装管理脚本</span></a>
 		</li>
 	</ul>
 
@@ -614,18 +583,18 @@ HTTP服务器已经启动。 地址: http://VPS_IP:8000
 		
 		<div class="comt">
 			<div class="comt-box">
-				<textarea placeholder="本站所有评论均会审核，因缓存原因，审核中的评论刷新页面后就会不显示，请知晓勿重发。" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById('submit').click();return false};"></textarea>
+				<textarea placeholder="本站所有评论均会审核，因缓存原因，审核中的评论刷新页面后就会不显示，请知晓勿重发。" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById(&#39;submit&#39;).click();return false};"></textarea>
 				<div class="comt-ctrl">
 					<button class="btn btn-primary pull-right" type="submit" name="submit" id="submit" tabindex="5"><i class="fa fa-check-square-o"></i> 提交评论</button>
-					<div class="comt-tips pull-right"><input type='hidden' name='comment_post_ID' value='1613' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</div>
+					<div class="comt-tips pull-right"><input type="hidden" name="comment_post_ID" value="1613" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+<div class="comt-tip comt-loading" style="display: none;">正在提交, 请稍候...</div><div class="comt-tip comt-error" style="display: none;">#</div></div>
 					<span data-type="comment-insert-smilie" class="muted comt-smilie"><i class="fa fa-smile-o"></i> 表情</span>
-					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked"/>有人回复时邮件通知我</label></span>
+					<span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked">有人回复时邮件通知我</label></span>
 				</div>
 			</div>
 
-												<div class="comt-comterinfo" id="comment-author-info" >
+												<div class="comt-comterinfo" id="comment-author-info">
 						<h4>Hi，您需要填写昵称和邮箱！</h4>
 						<ul>
 							<li class="form-inline"><label class="hide" for="author">昵称</label><input class="ipt" type="text" name="author" id="author" value="" tabindex="2" placeholder="昵称"><span class="help-inline">昵称 (必填)</span></li>
@@ -644,28 +613,26 @@ HTTP服务器已经启动。 地址: http://VPS_IP:8000
 		<i class="fa fa-comments-o"></i> <b> (8)</b>个小伙伴在吐槽
 	</div>
 	<ol class="commentlist">
-		<li class="comment even thread-even depth-1" id="comment-38530"><div class="c-avatar"><div class="c-main" id="div-comment-38530">顺便写一下Python3的http.server，毕竟Python2马上就要淘汰了<div class="c-meta"><span class="c-author">peter</span>2018-05-29 13:40 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-8/?replytocom=38530#respond' onclick='return addComment.moveForm( "div-comment-38530", "38530", "respond", "1613" )' aria-label='回复给peter'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-34738"><div class="c-avatar"><div class="c-main" id="div-comment-34738">如果能上传就好了。<div class="c-meta"><span class="c-author">春秋</span>2018-03-24 11:36 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-8/?replytocom=34738#respond' onclick='return addComment.moveForm( "div-comment-34738", "34738", "respond", "1613" )' aria-label='回复给春秋'>回复</a></div></div></div></li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-28966"><div class="c-avatar"><div class="c-main" id="div-comment-28966">怎样让SimpleHTTPServer使用80端口，我改80端口提示SimpleHTTPServe启动失败，别的端口就能<div class="c-meta"><span class="c-author">kyo</span>2017-12-28 11:29 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-8/?replytocom=28966#respond' onclick='return addComment.moveForm( "div-comment-28966", "28966", "respond", "1613" )' aria-label='回复给kyo'>回复</a></div></div></div><ul class="children">
+		<li class="comment even thread-even depth-1" id="comment-38530"><div class="c-avatar"><div class="c-main" id="div-comment-38530">顺便写一下Python3的http.server，毕竟Python2马上就要淘汰了<div class="c-meta"><span class="c-author">peter</span>2018-05-29 13:40 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-8/?replytocom=38530#respond" onclick="return addComment.moveForm( &quot;div-comment-38530&quot;, &quot;38530&quot;, &quot;respond&quot;, &quot;1613&quot; )" aria-label="回复给peter">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-34738"><div class="c-avatar"><div class="c-main" id="div-comment-34738">如果能上传就好了。<div class="c-meta"><span class="c-author">春秋</span>2018-03-24 11:36 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-8/?replytocom=34738#respond" onclick="return addComment.moveForm( &quot;div-comment-34738&quot;, &quot;34738&quot;, &quot;respond&quot;, &quot;1613&quot; )" aria-label="回复给春秋">回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="comment-28966"><div class="c-avatar"><div class="c-main" id="div-comment-28966">怎样让SimpleHTTPServer使用80端口，我改80端口提示SimpleHTTPServe启动失败，别的端口就能<div class="c-meta"><span class="c-author">kyo</span>2017-12-28 11:29 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-8/?replytocom=28966#respond" onclick="return addComment.moveForm( &quot;div-comment-28966&quot;, &quot;28966&quot;, &quot;respond&quot;, &quot;1613&quot; )" aria-label="回复给kyo">回复</a></div></div></div><ul class="children">
 <li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-29039"><div class="c-avatar"><div class="c-main" id="div-comment-29039">启动失败提示什么？是否有其他程序占用 80端口？很多系统自带 Apache 或 Nginx ，他们会占用80端口，可以通过<code> netstat -lntp </code>命令查看端口占用情况，使用下面代码关闭Apache 或 Nginx：
-<pre class="prettyprint linenums" >/etc/init.d/nginx stop
-/etc/init.d/apache2 stop
-</pre><div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-12-30 17:58 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-8/?replytocom=29039#respond' onclick='return addComment.moveForm( "div-comment-29039", "29039", "respond", "1613" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="str">/etc/</span><span class="pln">init</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">nginx stop</span></li><li class="L1"><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">init</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">apache2 stop</span></li></ol></pre><div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-12-30 17:58 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-8/?replytocom=29039#respond" onclick="return addComment.moveForm( &quot;div-comment-29039&quot;, &quot;29039&quot;, &quot;respond&quot;, &quot;1613&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-odd thread-alt depth-1" id="comment-23261"><div class="c-avatar"><div class="c-main" id="div-comment-23261">楼主，想问一下，这个脚本能否改成同时也支持ipv6呢？我的网站已经开启了ipv6，也能访问，但是不知道怎么能同时支持ipv6的simplehttpserver，望楼主花一点时间处理一下，非常感谢<div class="c-meta"><span class="c-author">yancysang</span>2017-11-24 13:36 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-8/?replytocom=23261#respond' onclick='return addComment.moveForm( "div-comment-23261", "23261", "respond", "1613" )' aria-label='回复给yancysang'>回复</a></div></div></div><ul class="children">
-<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-23265"><div class="c-avatar"><div class="c-main" id="div-comment-23265">SimpleHTTPServer 只适合于临时开放Web服务，选项很少，没见到监听 IPv6的选项，我也没办法。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-11-24 13:47 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-8/?replytocom=23265#respond' onclick='return addComment.moveForm( "div-comment-23265", "23265", "respond", "1613" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-23261"><div class="c-avatar"><div class="c-main" id="div-comment-23261">楼主，想问一下，这个脚本能否改成同时也支持ipv6呢？我的网站已经开启了ipv6，也能访问，但是不知道怎么能同时支持ipv6的simplehttpserver，望楼主花一点时间处理一下，非常感谢<div class="c-meta"><span class="c-author">yancysang</span>2017-11-24 13:36 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-8/?replytocom=23261#respond" onclick="return addComment.moveForm( &quot;div-comment-23261&quot;, &quot;23261&quot;, &quot;respond&quot;, &quot;1613&quot; )" aria-label="回复给yancysang">回复</a></div></div></div><ul class="children">
+<li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-23265"><div class="c-avatar"><div class="c-main" id="div-comment-23265">SimpleHTTPServer 只适合于临时开放Web服务，选项很少，没见到监听 IPv6的选项，我也没办法。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-11-24 13:47 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-8/?replytocom=23265#respond" onclick="return addComment.moveForm( &quot;div-comment-23265&quot;, &quot;23265&quot;, &quot;respond&quot;, &quot;1613&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li class="comment even thread-even depth-1" id="comment-10006"><div class="c-avatar"><div class="c-main" id="div-comment-10006">你好。脚本安装怎么设置断开连接后一样可以下载？现在断开连接后就不能下载了。还有教程有个小错误。启动http服务 bash pythonhttp start 。少了.sh<div class="c-meta"><span class="c-author">lao</span>2017-01-18 23:34 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-8/?replytocom=10006#respond' onclick='return addComment.moveForm( "div-comment-10006", "10006", "respond", "1613" )' aria-label='回复给lao'>回复</a></div></div></div><ul class="children">
+<li class="comment even thread-even depth-1" id="comment-10006"><div class="c-avatar"><div class="c-main" id="div-comment-10006">你好。脚本安装怎么设置断开连接后一样可以下载？现在断开连接后就不能下载了。还有教程有个小错误。启动http服务 bash pythonhttp start 。少了.sh<div class="c-meta"><span class="c-author">lao</span>2017-01-18 23:34 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-8/?replytocom=10006#respond" onclick="return addComment.moveForm( &quot;div-comment-10006&quot;, &quot;10006&quot;, &quot;respond&quot;, &quot;1613&quot; )" aria-label="回复给lao">回复</a></div></div></div><ul class="children">
 <li class="comment byuser comment-author-toyo bypostauthor odd alt depth-2" id="comment-10007"><div class="c-avatar"><div class="c-main" id="div-comment-10007">脚本中是用<code> nohup </code>来守护进程的，断开SSH连接后也是在后台运行的，我测试是正常的。
-文章中的文字BUG修复了。<br />
-同时我都快忘了我写过这个脚本了，看了下发现一些BUG，修复了一下。<br />
-还有加入了 自动开放/删除端口 防火墙规则的功能。<div class="c-meta"><span class="c-author"><a href='https://doub.io' rel='external nofollow' class='url'>Toyo</a></span>2017-01-19 00:06 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/wlzy-8/?replytocom=10007#respond' onclick='return addComment.moveForm( "div-comment-10007", "10007", "respond", "1613" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
+文章中的文字BUG修复了。<br>
+同时我都快忘了我写过这个脚本了，看了下发现一些BUG，修复了一下。<br>
+还有加入了 自动开放/删除端口 防火墙规则的功能。<div class="c-meta"><span class="c-author"><a href="https://doub.io/" rel="external nofollow" class="url" target="_blank">Toyo</a></span>2017-01-19 00:06 <a rel="nofollow" class="comment-reply-link" href="https://doub.io/wlzy-8/?replytocom=10007#respond" onclick="return addComment.moveForm( &quot;div-comment-10007&quot;, &quot;10007&quot;, &quot;respond&quot;, &quot;1613&quot; )" aria-label="回复给Toyo">回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
 	</ol>
-	<div class="commentnav"	>
+	<div class="commentnav">
 			</div>
 </div>
 </div>
@@ -674,7 +641,7 @@ HTTP服务器已经启动。 地址: http://VPS_IP:8000
 </div>
 <aside class="sidebar">	
 <div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="position: absolute;left: 4px;top: 4px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/walllink/"><img src="https://img.doub.pw/abc/walllink-03.png" /></a></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align:center;padding: 10px 20px 5px;display: block;">
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/walllink/"><img src="./wlzy-8_files/walllink-03.png"></a></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align:center;padding: 10px 20px 5px;display: block;">
 <a class="wid-xiaobai" style="background-color: #03A9F4;padding-top:15px;padding-bottom:15px;font-size: 16px;font-weight: bold;" target="_blank" href="https://doub.io/all-one/">逗比根据地 所有文章教程分类合辑</a>
 <a class="wid-xiaobai" style="background-color: #1ABCFF;padding-top: 7px;padding-bottom: 7px;font-weight: bold;font-size: 15px;" target="_blank" href="https://doub.io/goflyway-jc3/">CDN 复活被墙IP 继续做代理</a>
 <a class="wid-xiaobai" style="background-color: #1ABCFF;padding-top: 7px;padding-bottom: 7px;font-weight: bold;font-size: 15px;" target="_blank" href="https://doub.io/goflyway-jc5/">KCP 复活被墙IP 继续做代理</a>
@@ -701,10 +668,10 @@ HTTP服务器已经启动。 地址: http://VPS_IP:8000
 <a class="wid-xiaobai" style="background-color: #2d2d2d;" target="_blank" href="https://doub.io/paypal-jc2/">PayPal 更换汇率结算方式降低手续费</a>
 </div></div></div><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="background-color: #eee;">
 <div style="position: absolute;margin-left: 4px;margin-top: 4px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
-<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/kanfanba/"><img style="margin-bottom: 10px;" src="https://img.doub.pw/abc/kanfanba-02.png"/></a>
+<a title="特别声明：此图片为广告投放，与本站无任何关系。" target="_blank" href="https://doub.io/go/kanfanba/"><img style="margin-bottom: 10px;" src="./wlzy-8_files/kanfanba-02.png"></a>
 <div style="position: absolute;margin-left: 4px;margin-top: 4px;width: 24px;font-size: 12px;color: #000;border: 1px solid #000;line-height: 12px;opacity: 0.5;">广告</div>
 
-<div id="guangg_image"></div>
+<div id="guangg_image"><a target="_blank" title="特别声明：此图片为广告投放，与本站无任何关系。" href="https://doub.io/go/virmach-kvm/"><img src="./wlzy-8_files/virmach-03.png"></a></div>
 <script type="text/javascript">
 var image_url=new Array()
 image_url=["https://doub.io/go/vultr-100/","https://doub.io/vpszy-21/","https://doub.io/go/virmach-kvm/"]
@@ -720,17 +687,17 @@ document.getElementById("guangg_image").innerHTML = "<a target=\"_blank\" title=
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/10</span></p>
 			<span class="label label-1">v1.0.1</span>
-			<a target="_blank" href="https://doub.io/shell-jc9/" title="点击进入该文件的介绍页面。">MTProxy_go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/shell-jc9/" title="点击进入该文件的介绍页面。">MTProxy_go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./wlzy-8_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/10</span></p>
 			<span class="label label-2">v1.0.8</span>
-			<a target="_blank" href="https://doub.io/shell-jc7/" title="点击进入该文件的介绍页面。">MTProxy.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/shell-jc7/" title="点击进入该文件的介绍页面。">MTProxy.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./wlzy-8_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/07</span></p>
 			<span class="label label-3">v1.0.0</span>
-			<a target="_blank" href="https://doub.io/ss-jc67/" title="点击进入该文件的介绍页面。">ss-go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="https://img.doub.pw/other/new.gif"/>
+			<a target="_blank" href="https://doub.io/ss-jc67/" title="点击进入该文件的介绍页面。">ss-go.sh</a><img style="margin-left: 5px;margin-bottom: 4px;" src="./wlzy-8_files/new.gif">
 		</li>
 		<li>
 			<p><span class="post-comments"><i class="fa fa-clock-o"></i>2018/11/02</span></p>
@@ -768,11 +735,11 @@ document.getElementById("guangg_image").innerHTML = "<a target=\"_blank\" title=
 			<a target="_blank" href="https://doub.io/dbrj-17/" title="点击进入该文件的介绍页面。">DAZE Tools</a>
 		</li>
 	</ul>
-</div></div></div><div class="widget d_tag"><div class="title"><h2>逗比の标签</h2></div><div class="d_tags"><a title="60个话题" target="_blank" href="https://doub.io/tag/shadowsocks/">Shadowsocks (60)</a><a title="47个话题" target="_blank" href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/">脚本 (47)</a><a title="45个话题" target="_blank" href="https://doub.io/tag/%e6%95%99%e7%a8%8b/">教程 (45)</a><a title="32个话题" target="_blank" href="https://doub.io/tag/shadowsocksr/">ShadowsocksR (32)</a><a title="30个话题" target="_blank" href="https://doub.io/tag/kxsw/">科学上网 (30)</a><a title="20个话题" target="_blank" href="https://doub.io/tag/shell/">shell (20)</a><a title="19个话题" target="_blank" href="https://doub.io/tag/vps/">VPS (19)</a><a title="18个话题" target="_blank" href="https://doub.io/tag/linux/">Linux (18)</a><a title="16个话题" target="_blank" href="https://doub.io/tag/vpn/">VPN (16)</a><a title="11个话题" target="_blank" href="https://doub.io/tag/bt/">BT (11)</a><a title="10个话题" target="_blank" href="https://doub.io/tag/%e7%a3%81%e5%8a%9b%e9%93%be%e6%8e%a5/">磁力链接 (10)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e5%8e%9f%e5%88%9b%e8%bd%af%e4%bb%b6/">原创软件 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/">端口转发 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e4%ba%91/">百度云 (9)</a><a title="9个话题" target="_blank" href="https://doub.io/tag/brook/">Brook (9)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/">国内中转 (8)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86/">反向代理 (8)</a><a title="8个话题" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98/">百度网盘 (8)</a><a title="7个话题" target="_blank" href="https://doub.io/tag/goflyway/">GoFlyway (7)</a><a title="7个话题" target="_blank" href="https://doub.io/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/">搬瓦工 (7)</a></div></div></aside></section>
+</div></div></div><div class="widget d_tag"><div class="title"><h2>逗比の标签</h2></div><div class="d_tags"><a title="" target="_blank" href="https://doub.io/tag/shadowsocks/" data-original-title="60个话题">Shadowsocks (60)</a><a title="" target="_blank" href="https://doub.io/tag/%e8%84%9a%e6%9c%ac/" data-original-title="47个话题">脚本 (47)</a><a title="" target="_blank" href="https://doub.io/tag/%e6%95%99%e7%a8%8b/" data-original-title="45个话题">教程 (45)</a><a title="" target="_blank" href="https://doub.io/tag/shadowsocksr/" data-original-title="32个话题">ShadowsocksR (32)</a><a title="" target="_blank" href="https://doub.io/tag/kxsw/" data-original-title="30个话题">科学上网 (30)</a><a title="" target="_blank" href="https://doub.io/tag/shell/" data-original-title="20个话题">shell (20)</a><a title="" target="_blank" href="https://doub.io/tag/vps/" data-original-title="19个话题">VPS (19)</a><a title="" target="_blank" href="https://doub.io/tag/linux/" data-original-title="18个话题">Linux (18)</a><a title="" target="_blank" href="https://doub.io/tag/vpn/" data-original-title="16个话题">VPN (16)</a><a title="" target="_blank" href="https://doub.io/tag/bt/" data-original-title="11个话题">BT (11)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%a3%81%e5%8a%9b%e9%93%be%e6%8e%a5/" data-original-title="10个话题">磁力链接 (10)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%8e%9f%e5%88%9b%e8%bd%af%e4%bb%b6/" data-original-title="9个话题">原创软件 (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91/" data-original-title="9个话题">端口转发 (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e4%ba%91/" data-original-title="9个话题">百度云 (9)</a><a title="" target="_blank" href="https://doub.io/tag/brook/" data-original-title="9个话题">Brook (9)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%9b%bd%e5%86%85%e4%b8%ad%e8%bd%ac/" data-original-title="8个话题">国内中转 (8)</a><a title="" target="_blank" href="https://doub.io/tag/%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86/" data-original-title="8个话题">反向代理 (8)</a><a title="" target="_blank" href="https://doub.io/tag/%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98/" data-original-title="8个话题">百度网盘 (8)</a><a title="" target="_blank" href="https://doub.io/tag/goflyway/" data-original-title="7个话题">GoFlyway (7)</a><a title="" target="_blank" href="https://doub.io/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/" data-original-title="7个话题">搬瓦工 (7)</a></div></div></aside></section>
 <footer class="footer">
     <div class="footer-inner">
         <div class="copyright pull-left">
-         <a href="https://doub.io" title="逗比根据地">逗比根据地</a> 版权所有，保留一切权利 · 基于 <a href="https://cn.wordpress.org/" target="_blank">WordPress</a> · <a href="https://doub.io/jzzy-5/" target="_blank">欲思主题</a> © 2015-2018        </div>
+         <a href="https://doub.io/" title="逗比根据地">逗比根据地</a> 版权所有，保留一切权利 · 基于 <a href="https://cn.wordpress.org/" target="_blank">WordPress</a> · <a href="https://doub.io/jzzy-5/" target="_blank">欲思主题</a> © 2015-2018        </div>
         <div class="trackcode pull-right">
             <script>
 var _hmt = _hmt || [];
@@ -784,7 +751,7 @@ var _hmt = _hmt || [];
 })();
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72227254-1"></script>
+<script async="" src="./wlzy-8_files/js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -800,8 +767,8 @@ var _hmt = _hmt || [];
                 <span class="close-btn fa fa-times-circle"> </span>
                         <div class="yk35492"></div>
     </div>
-</div><script type='text/javascript' src='https://doub.io/wp-content/themes/yusi1.0/js/jquery.js?ver=1.0'></script>
-<script type='text/javascript' src='https://doub.io/wp-includes/js/wp-embed.min.js?ver=4.8.1'></script>
+</div><script type="text/javascript" src="./wlzy-8_files/jquery.js.下载"></script>
+<script type="text/javascript" src="./wlzy-8_files/wp-embed.min.js.下载"></script>
 
 <script type="text/javascript">
 var open = false;
@@ -819,4 +786,4 @@ if(document.body.scrollWidth < 768){
     $(".hot-posts").hide();
 }
 </script>
-<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_6971c5901860620dc711b8ea461af719");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_6971c5901860620dc711b8ea461af719");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_6971c5901860620dc711b8ea461af719");if (z != "") e["url"].value = z;}</script></body></html><!-- hyper cache gzip 2018-11-19 09:01:04 -->
+<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_6971c5901860620dc711b8ea461af719");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_6971c5901860620dc711b8ea461af719");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_6971c5901860620dc711b8ea461af719");if (z != "") e["url"].value = z;}</script><div class="rollto"><button class="btn btn-inverse" data-type="totop" title="回顶部"><i class="fa fa-arrow-up"></i></button><button class="btn btn-inverse" data-type="Widescreen" title="宽屏显示"><i class="fa fa-arrows-h"></i></button><button class="btn btn-inverse" data-type="torespond" title="发评论"><i class="fa fa-comment-o"></i></button></div></body></html>
