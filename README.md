@@ -7,8 +7,6 @@
 
 * [***代理相关***](#代理相关)
   * [ss-go.sh](#ss_gosh)
-  * [ssr.sh](#ssrsh)
-  * [ssrmu.sh](#ssrmush)
   * [brook.sh](#brooksh)
   * [goflyway.sh](#goflywaysh)
   * [daze.sh](#dazesh)
@@ -41,9 +39,7 @@
   * [adbyby.sh](#adbybysh)
   * [gfw_push.sh](#gfw_pushsh)
   * [libsodium.sh](#libsodiumsh)
-  * [ssrstatus.sh](#ssrstatussh)
-  * [ssr_check.sh](#ssr_checksh)
-  * [ssr_ip_check.sh](#ssr_ip_checksh)
+
 
 ---
 
