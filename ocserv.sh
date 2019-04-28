@@ -9,7 +9,7 @@ export PATH
 #	Author: Toyo
 #	Blog: https://doub.io/vpnzy-7/
 #=================================================
-sh_ver="1.0.7"
+sh_ver="1.0.8"
 file="/usr/local/sbin/ocserv"
 conf_file="/etc/ocserv"
 conf="/etc/ocserv/ocserv.conf"
@@ -77,8 +77,8 @@ Download_ocserv(){
 	make
 	make install
 	cd .. && cd ..
-	rm -rf ocserv/
-	
+	rm -rf ocserv
+	rm -rf ocserv-*
 	if [[ -e ${file} ]]; then
 		mkdir "${conf_file}"
 		wget --no-check-certificate -N -P "${conf_file}" "https://raw.githubusercontent.com/user1121114685/doubi/master/other/ocserv.conf"
@@ -519,6 +519,7 @@ check_sys
 echo && echo -e " ocserv 一键安装管理脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
   -- Toyo | doub.io/vpnzy-7 --
   -- 少侠修改  --
+
  ${Green_font_prefix}0.${Font_color_suffix} 升级脚本
 ————————————
  ${Green_font_prefix}1.${Font_color_suffix} 安装 ocserv
