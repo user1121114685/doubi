@@ -9,13 +9,13 @@ export PATH
 #	Author: Toyo
 #	Blog: https://doub.io/vpnzy-7/
 #=================================================
-sh_ver="1.0.5"
+sh_ver="1.0.6"
 file="/usr/local/sbin/ocserv"
 conf_file="/etc/ocserv"
 conf="/etc/ocserv/ocserv.conf"
 passwd_file="/etc/ocserv/ocpasswd"
 log_file="/tmp/ocserv.log"
-ocserv_ver="0.11.8"
+ocserv_ver="0.12.3"
 PID_FILE="/var/run/ocserv.pid"
 
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
@@ -246,8 +246,8 @@ Set_tcp_port(){
 	while true
 	do
 	echo -e "请输入VPN服务端的TCP端口"
-	read -e -p "(默认: 443):" set_tcp_port
-	[[ -z "$set_tcp_port" ]] && set_tcp_port="443"
+	read -e -p "(默认: 4999):" set_tcp_port
+	[[ -z "$set_tcp_port" ]] && set_tcp_port="4999"
 	echo $((${set_tcp_port}+0)) &>/dev/null
 	if [[ $? -eq 0 ]]; then
 		if [[ ${set_tcp_port} -ge 1 ]] && [[ ${set_tcp_port} -le 65535 ]]; then
